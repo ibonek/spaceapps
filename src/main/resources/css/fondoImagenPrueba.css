@@ -1,0 +1,5 @@
+.invisible{
+    -fx-background-image: url("../images/paisaje.jpg");
+    -fx-background-size: cover,auto;
+    -fx-background-repeat: no-repeat;
+}
