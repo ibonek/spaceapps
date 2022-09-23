@@ -1,3 +1,5 @@
 .anchoMax{
-
+    -fx-background-image: url("../imagenes/paisaje.png");
+    -fx-background-size: cover,auto;
+    -fx-background-repeat: no-repeat;
 }
