@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 
-<VBox fx:id="fondo" alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
-   <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
-      <VBox prefHeight="232.0" prefWidth="134.0">
-         <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="340.0">
-            <ImageView fx:id="tick1" fitHeight="25.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" />
-            <Button mnemonicParsing="false" text="1st Question" />
-         </HBox>
-         <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="340.0">
-            <ImageView fx:id="tick2" fitHeight="25.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" />
-            <Button mnemonicParsing="false" text="2nd Question" />
-         </HBox>
-         <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="340.0">
-            <ImageView fx:id="tick4" fitHeight="25.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" />
-            <Button mnemonicParsing="false" text="3th Question" />
-         </HBox>
-         <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="340.0">
-            <ImageView fx:id="tick3" fitHeight="25.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" />
-            <Button mnemonicParsing="false" text="4th Question" />
-         </HBox>
-         <HBox.margin>
-            <Insets right="10.0" />
-         </HBox.margin>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="New Game" />
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="161.0" prefWidth="212.0">
+               <children>
+                  <ImageView fitHeight="63.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="131.0" promptText="Name" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+            <Button mnemonicParsing="false" text="Begin" />
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
       </VBox>
-   </HBox>
-   <ImageView fx:id="imgTeles" fitHeight="62.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
-   <Label text="Telescope">
-      <VBox.margin>
-         <Insets bottom="10.0" />
-      </VBox.margin></Label>
-</VBox>
+      <Line endX="-100.0" endY="364.0" startX="-100.0" stroke="#bcb1b1" />
+      <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>
