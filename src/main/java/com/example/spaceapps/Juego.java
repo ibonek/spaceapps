@@ -1,8 +1,9 @@
 package com.example.spaceapps;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 
-public class Juego {
+public class Juego implements Serializable {
     private LinkedList<Pregunta> preguntas = new LinkedList<>();
     private int nivelActual = 1;
 
