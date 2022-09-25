@@ -5,7 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 
 public class HelloApplication extends Application {
     @Override
@@ -23,4 +25,5 @@ public class HelloApplication extends Application {
         System.out.println(juego.getPreguntas());
         launch();
     }
+
 }
