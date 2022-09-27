@@ -26,7 +26,7 @@
                         <Image url="@../../../imagenes/astronaut.png" />
                      </image>
                   </ImageView>
-                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="131.0" promptText="Name" />
+                  <TextField fx:id="nombre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="131.0" promptText="Name" />
                </children>
                <padding>
                   <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />

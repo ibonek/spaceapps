@@ -39,8 +39,8 @@ public class Juego implements Serializable {
         pregunta.setCuerpoPregunta("Approximately where is the James Webb telescope located?");
         pregunta.setExplicacion("The orbit of the James Webb Space Telescope is around L2, 1.500.000km from Earth. This is one of the 5 Lagrange points. Lagrange points are points of gravitational equilibrium for small-mass objects under the influence of two massive orbiting bodies." +
         "Webb's orbit does not lie exactly at the L2 point because the Earth's shadow on the Sun would be large enough to reduce the amount of energy available to Webb's solar panels.");
-        pregunta.getListaOpciones().add("Aproximately the distance of the Moon");
-        pregunta.getListaOpciones().add("Aproximately at point L2");
+        pregunta.getListaOpciones().add("Approximately the distance of the Moon");
+        pregunta.getListaOpciones().add("Approximately at point L2");
         pregunta.getListaOpciones().add("In the U.S");
         pregunta.getListaOpciones().add("Somewhere in Europe");
         pregunta.setOpcionCorrecta(1);
