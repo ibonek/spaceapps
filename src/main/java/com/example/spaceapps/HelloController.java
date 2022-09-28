@@ -43,8 +43,8 @@ public class HelloController {
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
             Stage stage1 = (Stage) bBegin.getScene().getWindow();
-            //controllerOpciones controlador = fxmlLoader.getController();
-            //controlador.setearPreguntas(0);
+            controllerOpciones controlador = fxmlLoader.getController();
+            controlador.setearPreguntas(0);
             stage1.close();
             stage.setTitle("Hello!");
             stage.setMaximized(false);
