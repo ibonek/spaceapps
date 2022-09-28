@@ -4,30 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="algo">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_18_ea_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_18_ea_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_18_ea_6.xml" afterDir="false" />
+    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="algo2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/Juego.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/Juego.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/OpcionesMultiples.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/Pregunta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/Pregunta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/VerdaderoFalso.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/listaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/listaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/seleccionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/seleccionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/vfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/vfController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +84,7 @@
       <workItem from="1664301389990" duration="9863000" />
       <workItem from="1664314821535" duration="60000" />
       <workItem from="1664358906258" duration="1839000" />
-      <workItem from="1664360987849" duration="4478000" />
+      <workItem from="1664360987849" duration="5375000" />
     </task>
     <task id="LOCAL-00001" summary="algo">
       <created>1664313547737</created>
@@ -127,7 +107,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664360526505</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="algo2">
+      <created>1664365925695</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664365925695</updated>
+    </task>
+    <task id="LOCAL-00005" summary="algo2">
+      <created>1664365935369</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664365935369</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +140,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="algo" />
-    <option name="LAST_COMMIT_MESSAGE" value="algo" />
+    <MESSAGE value="algo2" />
+    <option name="LAST_COMMIT_MESSAGE" value="algo2" />
   </component>
 </project>

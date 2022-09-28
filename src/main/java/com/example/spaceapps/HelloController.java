@@ -17,6 +17,9 @@ public class HelloController {
 
     @FXML
     private Button bBegin;
+    @FXML
+    private Label errornombre;
+
 
     @FXML
     private TextField nombre;
@@ -39,6 +42,7 @@ public class HelloController {
     @FXML
     void pressBegin(ActionEvent event) throws IOException {
         if(!nombre.getText().isBlank()) {
+            errornombre.visibleProperty().set(false);
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ventanaOpcMult.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
@@ -51,6 +55,10 @@ public class HelloController {
             stage.setResizable(false);
             stage.setScene(scene);
             stage.show();
+        }
+        else {
+            errornombre.visibleProperty().set(true);
+            errornombre.setText("Debe introducir un nombre");
         }
     }
 
