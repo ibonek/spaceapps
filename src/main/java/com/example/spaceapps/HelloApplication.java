@@ -23,7 +23,23 @@ public class HelloApplication extends Application {
 
     public static void main(String[] args) {
         Juego juego = new Juego();
-        System.out.println(juego.getPreguntas());
+        /*
+
+        Si quieres acceder a una pregunta en concreto:
+        juego.getPreguntas().get(numPregunta);
+
+        Si quieres acceder a una respuesta de una pregunta en concreto:
+        juego.getPreguntas().get(numPregunta).getListaOpciones().get(numRespuesta);
+
+        Si quieres saber si esa respuesta es la correcta o no:
+        juego.getPreguntas().get(numPregunta).getListaOpciones().get(numRespuesta).isCorrecta();
+
+
+        Las preguntas verdadero y falso solo tienen 2 posibles respuestas obviamente así que cuidado al usar numRespuesta > 1 porque puede que estés en una pregunta con 2 respuestas
+         */
+        int numPregunta=3;
+        int numRespuesta= 1;
+        System.out.println( juego.getPreguntas().get(numPregunta).getListaOpciones().get(numRespuesta));
         launch();
     }
 

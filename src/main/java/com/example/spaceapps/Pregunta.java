@@ -2,9 +2,9 @@ package com.example.spaceapps;
 
 import java.util.LinkedList;
 
-public abstract class Pregunta{
+public class Pregunta {
     private String cuerpoPregunta;
-
+    private LinkedList<Respuesta> listaOpciones=new LinkedList<>();
     private String explicacion;
 
     private boolean resuelta = false;
@@ -35,11 +35,17 @@ public abstract class Pregunta{
         this.explicacion = explicacion;
     }
 
+    public LinkedList<Respuesta> getListaOpciones() {
+        return listaOpciones;
+    }
+
     @Override
     public String toString() {
-        return "cuerpoPregunta='" + cuerpoPregunta + '\'' +
+        return "Pregunta{" +
+                "cuerpoPregunta='" + cuerpoPregunta + '\'' +
+                ", listaOpciones=" + listaOpciones +
                 ", explicacion='" + explicacion + '\'' +
-                ", resuelta=" + resuelta
-                ;
+                ", resuelta=" + resuelta +
+                '}';
     }
 }
