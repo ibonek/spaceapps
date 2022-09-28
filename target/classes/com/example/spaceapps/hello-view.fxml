@@ -33,6 +33,7 @@
                </padding>
             </VBox>
             <Button fx:id="bBegin" mnemonicParsing="false" onAction="#pressBegin" text="Begin" />
+            <Label fx:id="errornombre" textFill="RED" />
          </children>
          <padding>
             <Insets left="20.0" right="20.0" />

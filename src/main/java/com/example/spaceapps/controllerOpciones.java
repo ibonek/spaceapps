@@ -14,8 +14,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import static javafx.scene.paint.Color.DARKSEAGREEN;
-import static javafx.scene.paint.Color.RED;
+import static javafx.scene.paint.Color.*;
 
 public class controllerOpciones {
 
@@ -36,7 +35,8 @@ public class controllerOpciones {
 
     @FXML
     private Label pregunta;
-
+    @FXML
+    private Button continuar;
     @FXML
     private Label progreso;
     int contador;
@@ -53,7 +53,10 @@ public class controllerOpciones {
     @FXML
     void botonAceptar(ActionEvent event) {
 
+        setearPreguntas(p+1);
+
     }
+
 
     @FXML
     void botonAtras(ActionEvent event) throws IOException {
@@ -108,6 +111,19 @@ public class controllerOpciones {
         r=4;
     }
     public void setearPreguntas(int n){
+        opcion1.setDisable(false);
+        opcion2.setDisable(false);
+        opcion3.setDisable(false);
+        opcion4.setDisable(false);
+        compr.setDisable(false);
+        opcion1.setSelected(false);
+        opcion2.setSelected(false);
+        opcion3.setSelected(false);
+        opcion4.setSelected(false);
+        opcion1.setTextFill(BLACK);
+        opcion2.setTextFill(BLACK);
+        opcion3.setTextFill(BLACK);
+        opcion4.setTextFill(BLACK);
          p = n;
         pregunta.setText(juego.getPreguntas().get(p).getCuerpoPregunta().toString() );
 
@@ -150,6 +166,8 @@ public class controllerOpciones {
         opcion3.setDisable(true);
         opcion4.setDisable(true);
         compr.setDisable(true);
+        continuar.setDisable(false);
+
     }
 
 
