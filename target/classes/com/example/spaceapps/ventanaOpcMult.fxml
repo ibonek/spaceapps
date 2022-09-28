@@ -27,7 +27,7 @@
       <HBox alignment="BOTTOM_RIGHT" prefHeight="171.0" prefWidth="484.0" spacing="30.0">
          <children>
             <Button fx:id="compr" mnemonicParsing="false" onAction="#botonComprobar" prefHeight="26.0" prefWidth="82.0" text="Comprobar" />
-            <Button mnemonicParsing="false" onAction="#botonAceptar" text="Continuar" />
+            <Button fx:id="continuar" disable="true" mnemonicParsing="false" onAction="#botonAceptar" text="Continuar" />
          </children>
       </HBox>
    </children>
