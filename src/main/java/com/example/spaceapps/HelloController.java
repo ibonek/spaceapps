@@ -11,7 +11,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.io.*;
 
 public class HelloController {
 
@@ -63,9 +63,23 @@ public class HelloController {
     }
 
     @FXML
-    void pressContinue(ActionEvent event) {
+    void pressContinue(ActionEvent event) throws IOException, ClassNotFoundException {
 
 
     }
 
+    public void Guardar(Juego juego)throws IOException{
+        FileOutputStream fos = new FileOutputStream("juego.bin");
+        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        oos.writeObject(juego);
+        oos.close();
+    }
+
+    public Juego Cargar()throws IOException, ClassNotFoundException{
+        FileInputStream fis = new FileInputStream("juego.bin");
+        ObjectInputStream ois = new ObjectInputStream(fis);
+        Juego juego = (Juego) ois.readObject();
+        ois.close();
+        return juego;
+    }
 }

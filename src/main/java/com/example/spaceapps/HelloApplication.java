@@ -5,9 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 public class HelloApplication extends Application {
     @Override
@@ -37,9 +35,9 @@ public class HelloApplication extends Application {
 
         Las preguntas verdadero y falso solo tienen 2 posibles respuestas obviamente así que cuidado al usar numRespuesta > 1 porque puede que estés en una pregunta con 2 respuestas
          */
-        int numPregunta=3;
-        int numRespuesta= 1;
-        System.out.println( juego.getPreguntas().get(numPregunta).getListaOpciones().get(numRespuesta));
+        int numPregunta = 3;
+        int numRespuesta = 1;
+        System.out.println(juego.getPreguntas().get(numPregunta).getListaOpciones().get(numRespuesta));
         launch();
     }
 
