@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spaceapps" target="18" />
+      <module name="spaceapps" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

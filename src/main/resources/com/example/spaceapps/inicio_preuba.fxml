@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<HBox fx:id="fondo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.HelloController">
+   <children>
+      <VBox alignment="CENTER" spacing="10.0" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="307.0" fitWidth="296.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagenes/logo/Sin%20título-1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="bBegin" mnemonicParsing="false" onAction="#pressBegin" text="New game" />
+            <Button fx:id="bBegin1" layoutX="284.0" layoutY="237.0" mnemonicParsing="false" onAction="#pressBegin" text="Load game" />
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+      <Line endX="-100.0" endY="364.0" startX="-100.0" stroke="#bcb1b1" strokeWidth="2.0" />
+   </children>
+</HBox>

@@ -5,15 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="algo2">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_18_ea_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_18_ea_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_18_ea_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/inicio_preuba.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/load_preuba.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/new_preuba.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/Cartwheel Galaxy (hubbel).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/Cartwheel Galaxy (webb).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/NGC 3324 (hubble).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/NGC 3324 (webb).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/tarantula (hubel).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/tarantula (webb).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondos/fondo_observatorio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondos/fondo_persona.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondos/fondo_telescopio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/logo/Sin título-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_18_ea_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_18_ea_6.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22__12_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22__12_21__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/lista.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/lista.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +57,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/com/example/spaceapps" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\com\example\spaceapps" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\imagenes\logo" />
+      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\imagenes\fondo estrellas" />
+      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\imagenes\fondos" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -77,6 +103,11 @@
       <workItem from="1664314821535" duration="60000" />
       <workItem from="1664358906258" duration="1839000" />
       <workItem from="1664360987849" duration="5375000" />
+      <workItem from="1664442780610" duration="2067000" />
+      <workItem from="1664446220295" duration="218000" />
+      <workItem from="1664446453622" duration="2998000" />
+      <workItem from="1664451633406" duration="83000" />
+      <workItem from="1664451730065" duration="481000" />
     </task>
     <task id="LOCAL-00001" summary="algo">
       <created>1664313547737</created>
@@ -129,7 +160,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="algo" />
