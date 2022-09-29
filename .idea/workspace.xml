@@ -5,29 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="algo2">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/inicio_preuba.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/load_preuba.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/new_preuba.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/Cartwheel Galaxy (hubbel).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/Cartwheel Galaxy (webb).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/NGC 3324 (hubble).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/NGC 3324 (webb).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/tarantula (hubel).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/tarantula (webb).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondos/fondo_observatorio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondos/fondo_persona.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondos/fondo_telescopio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/logo/Sin título-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_18_ea_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_18_ea_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22__12_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22__12_21__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_18_ea_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_18_ea_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_18_ea_6.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/lista.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/lista.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/jupiter.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/jupiter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/marte.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/marte.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/mercurio.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/mercurio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/neptuno.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/neptuno.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/saturno.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/saturno.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/urano.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/urano.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/venus.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/venus.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,28 +48,26 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2FMP6M2wRcwwxI5JFSrvFxdkITE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/com/example/spaceapps" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\com\example\spaceapps" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\imagenes\logo" />
-      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\imagenes\fondo estrellas" />
-      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\imagenes\fondos" />
-    </key>
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.spaceapps.HelloApplication" />
@@ -103,11 +101,6 @@
       <workItem from="1664314821535" duration="60000" />
       <workItem from="1664358906258" duration="1839000" />
       <workItem from="1664360987849" duration="5375000" />
-      <workItem from="1664442780610" duration="2067000" />
-      <workItem from="1664446220295" duration="218000" />
-      <workItem from="1664446453622" duration="2998000" />
-      <workItem from="1664451633406" duration="83000" />
-      <workItem from="1664451730065" duration="481000" />
     </task>
     <task id="LOCAL-00001" summary="algo">
       <created>1664313547737</created>
@@ -165,5 +158,9 @@
     <MESSAGE value="algo" />
     <MESSAGE value="algo2" />
     <option name="LAST_COMMIT_MESSAGE" value="algo2" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
