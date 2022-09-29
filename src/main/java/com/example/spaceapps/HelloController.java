@@ -11,7 +11,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-import java.io.*;
+import java.io.IOException;
 
 public class HelloController {
 
@@ -43,17 +43,14 @@ public class HelloController {
     void pressBegin(ActionEvent event) throws IOException {
         if(!nombre.getText().isBlank()) {
             errornombre.visibleProperty().set(false);
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("nivel1.fxml"));
-
-            //controllerOpciones controlador = fxmlLoader.getController();
-            //controlador.setearPreguntas(0);
-            Stage stage1 = (Stage) bBegin.getScene().getWindow();
-            stage1.close();
-
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("v-f.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
-            stage.setScene(scene);
-            stage.setTitle("Nivel 1");
+            Stage stage1 = (Stage) bBegin.getScene().getWindow();
+           vfController controlador = fxmlLoader.getController();
+            controlador.setearPreguntas(2);
+            stage1.close();
+            stage.setTitle("Hello!");
             stage.setMaximized(false);
             stage.setResizable(false);
             stage.setScene(scene);
@@ -66,23 +63,9 @@ public class HelloController {
     }
 
     @FXML
-    void pressContinue(ActionEvent event) throws IOException, ClassNotFoundException {
+    void pressContinue(ActionEvent event) {
 
 
     }
 
-    public void Guardar(Juego juego)throws IOException{
-        FileOutputStream fos = new FileOutputStream("juego.bin");
-        ObjectOutputStream oos = new ObjectOutputStream(fos);
-        oos.writeObject(juego);
-        oos.close();
-    }
-
-    public Juego Cargar()throws IOException, ClassNotFoundException{
-        FileInputStream fis = new FileInputStream("juego.bin");
-        ObjectInputStream ois = new ObjectInputStream(fis);
-        Juego juego = (Juego) ois.readObject();
-        ois.close();
-        return juego;
-    }
 }

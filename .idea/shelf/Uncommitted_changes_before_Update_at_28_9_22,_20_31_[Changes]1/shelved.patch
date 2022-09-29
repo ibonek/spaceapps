@@ -1,0 +1,66 @@
+Index: target/classes/com/example/spaceapps/ventanaOpcMult.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/classes/com/example/spaceapps/ventanaOpcMult.fxml b/target/classes/com/example/spaceapps/ventanaOpcMult.fxml
+--- a/target/classes/com/example/spaceapps/ventanaOpcMult.fxml	
++++ b/target/classes/com/example/spaceapps/ventanaOpcMult.fxml	
+@@ -27,7 +27,7 @@
+       <HBox alignment="BOTTOM_RIGHT" prefHeight="171.0" prefWidth="484.0" spacing="30.0">
+          <children>
+             <Button fx:id="compr" mnemonicParsing="false" onAction="#botonComprobar" prefHeight="26.0" prefWidth="82.0" text="Comprobar" />
+-            <Button mnemonicParsing="false" onAction="#botonAceptar" text="Continuar" />
++            <Button fx:id="continuar" disable="true" mnemonicParsing="false" onAction="#botonAceptar" text="Continuar" />
+          </children>
+       </HBox>
+    </children>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,12 +5,10 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="algo2">
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_09_2022_13_55__Changes_.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/hello-view.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/HelloController.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -88,7 +86,7 @@
+       <workItem from="1664314821535" duration="60000" />
+       <workItem from="1664358906258" duration="1839000" />
+       <workItem from="1664360987849" duration="5506000" />
+-      <workItem from="1664383867572" duration="3996000" />
++      <workItem from="1664383867572" duration="4415000" />
+     </task>
+     <task id="LOCAL-00001" summary="algo">
+       <created>1664313547737</created>
+@@ -132,7 +130,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1664366674119</updated>
+     </task>
+-    <option name="localTasksCounter" value="7" />
++    <task id="LOCAL-00007" summary="algo2">
++      <created>1664389058585</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1664389058585</updated>
++    </task>
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
