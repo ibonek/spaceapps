@@ -16,7 +16,7 @@
          </children>
       </HBox>
       <Label fx:id="pregunta" wrapText="true" />
-      <VBox prefHeight="200.0" prefWidth="100.0" spacing="50.0">
+      <VBox prefHeight="242.0" prefWidth="484.0" spacing="50.0">
          <children>
             <RadioButton fx:id="opcion1" mnemonicParsing="false" onAction="#botonResp1" />
             <RadioButton fx:id="opcion2" mnemonicParsing="false" onAction="#botonResp2" />
