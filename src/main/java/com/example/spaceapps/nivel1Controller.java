@@ -2,11 +2,16 @@ package com.example.spaceapps;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class nivel1Controller {
 
@@ -47,22 +52,62 @@ public class nivel1Controller {
     }
 
     @FXML
-    void bVenus(ActionEvent event) {
+    void bVenus(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        controllerOpciones controller = fxmlLoader.getController();
+        controller.setearPreguntas(0);
+        stage.setTitle("Pregunta 1");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
 
     }
 
     @FXML
-    void botonLuna(ActionEvent event) {
+    void botonLuna(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        controllerOpciones controller = fxmlLoader.getController();
+        controller.setearPreguntas(1);
+        stage.setTitle("Pregunta 2");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    void botonMercurio(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("v-f.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        vfController controller = fxmlLoader.getController();
+        controller.setearPreguntas(2);
+        stage.setTitle("Pregunta 3");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
 
     }
 
     @FXML
-    void botonMercurio(ActionEvent event) {
-
-    }
-
-    @FXML
-    void irANivel2(ActionEvent event) {
+    void irANivel2(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel2.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        Stage stage1 = (Stage) bVenus.getScene().getWindow();
+        nivel2Controller controlador = fxmlLoader.getController();
+        stage1.close();
+        stage.setTitle("Level 2");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
 
     }
     public void ponerNombre(String n){

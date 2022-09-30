@@ -21,6 +21,7 @@ public class HelloController {
     private Label errornombre;
 
 
+
     @FXML
     private TextField nombre;
 

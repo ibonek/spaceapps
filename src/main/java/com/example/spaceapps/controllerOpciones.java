@@ -51,16 +51,8 @@ public class controllerOpciones {
     Respuesta respuestaCorrecta;
 
     @FXML
-    void botonAceptar(ActionEvent event) {
-
-        setearPreguntas(p+1);
-
-    }
-
-
-    @FXML
-    void botonAtras(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+    void botonAceptar(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel1.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         Stage stage1 = (Stage) pregunta.getScene().getWindow();
@@ -69,6 +61,15 @@ public class controllerOpciones {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+
+
+    }
+
+
+    @FXML
+    void botonAtras(ActionEvent event) throws IOException {
+        Stage stage1 = (Stage) pregunta.getScene().getWindow();
+        stage1.close();
     }
 
     @FXML
@@ -77,7 +78,7 @@ public class controllerOpciones {
         opcion2.setSelected(false);
         opcion3.setSelected(false);
         opcion4.setSelected(false);
-        respuestaSeleccionada = juego.getPreguntas().get(p).getListaOpciones().get(p);
+        respuestaSeleccionada = juego.getPreguntas().get(p).getListaOpciones().get(0);
         r=1;
     }
 
@@ -87,7 +88,7 @@ public class controllerOpciones {
         opcion2.setSelected(true);
         opcion3.setSelected(false);
         opcion4.setSelected(false);
-        respuestaSeleccionada = juego.getPreguntas().get(p).getListaOpciones().get(p+1);
+        respuestaSeleccionada = juego.getPreguntas().get(p).getListaOpciones().get(1);
         r=2;
     }
 
@@ -97,7 +98,7 @@ public class controllerOpciones {
         opcion2.setSelected(false);
         opcion3.setSelected(true);
         opcion4.setSelected(false);
-        respuestaSeleccionada = juego.getPreguntas().get(p).getListaOpciones().get(p+2);
+        respuestaSeleccionada = juego.getPreguntas().get(p).getListaOpciones().get(2);
         r=3;
     }
 
@@ -107,7 +108,7 @@ public class controllerOpciones {
         opcion2.setSelected(false);
         opcion3.setSelected(false);
         opcion4.setSelected(true);
-        respuestaSeleccionada = juego.getPreguntas().get(p).getListaOpciones().get(p+3);
+        respuestaSeleccionada = juego.getPreguntas().get(p).getListaOpciones().get(3);
         r=4;
     }
     public void setearPreguntas(int n){
@@ -132,14 +133,14 @@ public class controllerOpciones {
         PERO IRIA DENTRO DEL SET TEXT.
         esto era de prueba xd:)))
         */
-        opcion1.setText(juego.getPreguntas().get(p).getListaOpciones().get(p).getCuerpoRespuesta());
-        resp1= juego.getPreguntas().get(p).getListaOpciones().get(p).isCorrecta();
-        opcion2.setText(juego.getPreguntas().get(p).getListaOpciones().get(p+1).getCuerpoRespuesta());
-        resp2= juego.getPreguntas().get(p).getListaOpciones().get(p+1).isCorrecta();
-        opcion3.setText(juego.getPreguntas().get(p).getListaOpciones().get(p+2).getCuerpoRespuesta());
-        resp3= juego.getPreguntas().get(p).getListaOpciones().get(p+2).isCorrecta();
-        opcion4.setText(juego.getPreguntas().get(p).getListaOpciones().get(p+3).getCuerpoRespuesta());
-        resp4= juego.getPreguntas().get(p).getListaOpciones().get(p+3).isCorrecta();
+        opcion1.setText(juego.getPreguntas().get(p).getListaOpciones().get(0).getCuerpoRespuesta());
+        resp1= juego.getPreguntas().get(p).getListaOpciones().get(0).isCorrecta();
+        opcion2.setText(juego.getPreguntas().get(p).getListaOpciones().get(1).getCuerpoRespuesta());
+        resp2= juego.getPreguntas().get(p).getListaOpciones().get(1).isCorrecta();
+        opcion3.setText(juego.getPreguntas().get(p).getListaOpciones().get(2).getCuerpoRespuesta());
+        resp3= juego.getPreguntas().get(p).getListaOpciones().get(2).isCorrecta();
+        opcion4.setText(juego.getPreguntas().get(p).getListaOpciones().get(3).getCuerpoRespuesta());
+        resp4= juego.getPreguntas().get(p).getListaOpciones().get(3).isCorrecta();
 
 
     }
