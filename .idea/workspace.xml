@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="Ultimos fondos niveles + niveles + controladores">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel4Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel5Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel4.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel5.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/fondoImagenPrueba.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/fondoImagenPrueba.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/nivel4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/nivel4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/nivel5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/nivel5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/fondos/fondo_observatorio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/fondos/fondo_persona.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/fondos/fondo_telescopio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/fondoImagenPrueba.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/css/fondoImagenPrueba.css" afterDir="false" />
-    </list>
+    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="Ultimos fondos niveles + niveles + controladores" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664548048118</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Ultimos fondos niveles + niveles + controladores">
+      <created>1664551843770</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664551843770</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
