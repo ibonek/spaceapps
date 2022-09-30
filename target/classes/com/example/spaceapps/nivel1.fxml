@@ -18,7 +18,7 @@
          <children>
             <MenuButton fx:id="botonN2" blendMode="SRC_ATOP" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.91" prefHeight="58.0" prefWidth="66.0" style="-fx-border-color: #0; -fx-border-width: #0; -fx-background-radius: #0;" textFill="TRANSPARENT">
               <items>
-                <MenuItem disable="true" mnemonicParsing="false" onAction="#irANivel2" text="Level 2" />
+                <MenuItem mnemonicParsing="false" onAction="#irANivel2" text="Level 2" />
                 <MenuItem disable="true" mnemonicParsing="false" onAction="#IrANivel3" text="Level 3" />
                   <MenuItem disable="true" mnemonicParsing="false" onAction="#IrANivel4" text="Level 4" />
                   <MenuItem disable="true" mnemonicParsing="false" onAction="#IrANivel5" text="Level 5" />
