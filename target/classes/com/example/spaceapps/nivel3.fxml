@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="fondo3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="653.0" stylesheets="@../../../css/fondoImagenPrueba.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.nivel2Controller">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="26.0" />
+      <VBox prefHeight="400.0" prefWidth="213.0">
+         <children>
+            <MenuButton fx:id="botonN2" blendMode="SRC_ATOP" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.89" prefHeight="60.0" prefWidth="66.0" style="-fx-border-color: 0; -fx-border-width: 0; -fx-background-radius: 0;">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#irANivel1" text="Level 1" />
+                <MenuItem mnemonicParsing="false" onAction="#IrANivel3" text="Level 3" />
+                  <MenuItem mnemonicParsing="false" onAction="#IrANivel4" text="Level 4" />
+                  <MenuItem mnemonicParsing="false" onAction="#IrANivel5" text="Level 5" />
+              </items>
+               <graphic>
+                  <ImageView fitHeight="84.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagenes/star3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets right="2.0" />
+               </VBox.margin>
+            </MenuButton>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="eNombre" prefHeight="20.0" prefWidth="91.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="bMarte" contentDisplay="GRAPHIC_ONLY" maxHeight="66.0" maxWidth="66.0" minHeight="55.0" minWidth="56.0" mnemonicParsing="false" onAction="#botonMarte" prefHeight="55.0" prefWidth="56.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/urano.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="400.0" prefWidth="198.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="bJupiter" contentDisplay="GRAPHIC_ONLY" maxHeight="66.0" maxWidth="66.0" minHeight="66.0" minWidth="66.0" mnemonicParsing="false" onAction="#botonJupiter" prefHeight="66.0" prefWidth="66.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="79.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/neptuno.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="400.0" prefWidth="196.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="184.0" prefWidth="196.0">
+               <children>
+                  <Button fx:id="bSaturno" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonSaturno" prefHeight="29.0" prefWidth="28.0" text="Button">
+                     <graphic>
+                        <ImageView fx:id="botonSaturno" fitHeight="41.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/pluto.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets top="3.0" />
+   </padding>
+</HBox>
