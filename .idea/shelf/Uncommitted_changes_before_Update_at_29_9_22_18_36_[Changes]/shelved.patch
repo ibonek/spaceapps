@@ -1,0 +1,68 @@
+Index: .idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml
+rename from .idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml
+rename to .idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml
+--- a/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml	
++++ b/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml	
+@@ -1,7 +1,7 @@
+ <component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-fxml:win:18-ea+6">
++  <library name="Maven: org.openjfx:javafx-fxml:linux:18-ea+6">
+     <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-win.jar!/" />
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-linux.jar!/" />
+     </CLASSES>
+     <JAVADOC>
+       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-javadoc.jar!/" />
+Index: .idea/libraries/Maven__org_openjfx_javafx_base_win_18_ea_6.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_base_win_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml
+rename from .idea/libraries/Maven__org_openjfx_javafx_base_win_18_ea_6.xml
+rename to .idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml
+--- a/.idea/libraries/Maven__org_openjfx_javafx_base_win_18_ea_6.xml	
++++ b/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml	
+@@ -1,7 +1,7 @@
+ <component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-base:win:18-ea+6">
++  <library name="Maven: org.openjfx:javafx-base:linux:18-ea+6">
+     <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18-ea+6/javafx-base-18-ea+6-win.jar!/" />
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18-ea+6/javafx-base-18-ea+6-linux.jar!/" />
+     </CLASSES>
+     <JAVADOC>
+       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18-ea+6/javafx-base-18-ea+6-javadoc.jar!/" />
+Index: .idea/libraries/Maven__org_openjfx_javafx_graphics_win_18_ea_6.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_18_ea_6.xml
+rename from .idea/libraries/Maven__org_openjfx_javafx_graphics_win_18_ea_6.xml
+rename to .idea/libraries/Maven__org_openjfx_javafx_graphics_linux_18_ea_6.xml
+--- a/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_18_ea_6.xml	
++++ b/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_18_ea_6.xml	
+@@ -1,7 +1,7 @@
+ <component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-graphics:win:18-ea+6">
++  <library name="Maven: org.openjfx:javafx-graphics:linux:18-ea+6">
+     <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/18-ea+6/javafx-graphics-18-ea+6-win.jar!/" />
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/18-ea+6/javafx-graphics-18-ea+6-linux.jar!/" />
+     </CLASSES>
+     <JAVADOC>
+       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/18-ea+6/javafx-graphics-18-ea+6-javadoc.jar!/" />
+Index: .idea/libraries/Maven__org_openjfx_javafx_controls_win_18_ea_6.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_controls_win_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_18_ea_6.xml
+rename from .idea/libraries/Maven__org_openjfx_javafx_controls_win_18_ea_6.xml
+rename to .idea/libraries/Maven__org_openjfx_javafx_controls_linux_18_ea_6.xml
+--- a/.idea/libraries/Maven__org_openjfx_javafx_controls_win_18_ea_6.xml	
++++ b/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_18_ea_6.xml	
+@@ -1,7 +1,7 @@
+ <component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-controls:win:18-ea+6">
++  <library name="Maven: org.openjfx:javafx-controls:linux:18-ea+6">
+     <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/18-ea+6/javafx-controls-18-ea+6-win.jar!/" />
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/18-ea+6/javafx-controls-18-ea+6-linux.jar!/" />
+     </CLASSES>
+     <JAVADOC>
+       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/18-ea+6/javafx-controls-18-ea+6-javadoc.jar!/" />

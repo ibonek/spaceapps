@@ -1,0 +1,361 @@
+Index: src/main/java/com/example/spaceapps/seleccion.fxml
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/seleccion.fxml b/src/main/java/com/example/spaceapps/seleccion.fxml
+deleted file mode 100644
+--- a/src/main/java/com/example/spaceapps/seleccion.fxml	
++++ /dev/null	
+@@ -1,14 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-
+-<?import java.lang.*?>
+-<?import java.util.*?>
+-<?import javafx.scene.*?>
+-<?import javafx.scene.control.*?>
+-<?import javafx.scene.layout.*?>
+-
+-<AnchorPane xmlns="http://javafx.com/javafx"
+-            xmlns:fx="http://javafx.com/fxml"
+-            fx:controller="com.example.spaceapps.seleccionController"
+-            prefHeight="400.0" prefWidth="600.0">
+-
+-</AnchorPane>
+Index: src/main/java/com/example/spaceapps/seleccionController.java
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/seleccionController.java b/src/main/java/com/example/spaceapps/seleccionController.java
+deleted file mode 100644
+--- a/src/main/java/com/example/spaceapps/seleccionController.java	
++++ /dev/null	
+@@ -1,4 +0,0 @@
+-package com.example.spaceapps;
+-
+-public class seleccionController {
+-}
+Index: src/main/resources/com/example/spaceapps/hello-view.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/spaceapps/hello-view.fxml b/src/main/resources/com/example/spaceapps/hello-view.fxml
+--- a/src/main/resources/com/example/spaceapps/hello-view.fxml	
++++ b/src/main/resources/com/example/spaceapps/hello-view.fxml	
+@@ -3,6 +3,7 @@
+ <?import javafx.geometry.Insets?>
+ <?import javafx.scene.control.Button?>
+ <?import javafx.scene.control.Label?>
++<?import javafx.scene.control.ListView?>
+ <?import javafx.scene.control.TextField?>
+ <?import javafx.scene.image.Image?>
+ <?import javafx.scene.image.ImageView?>
+@@ -40,11 +41,12 @@
+          </padding>
+       </VBox>
+       <Line endX="-100.0" endY="364.0" startX="-100.0" stroke="#bcb1b1" strokeWidth="2.0" />
+-      <VBox alignment="CENTER" spacing="10.0" HBox.hgrow="ALWAYS">
++      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="244.0" spacing="10.0" HBox.hgrow="ALWAYS">
+          <children>
+             <Label fx:id="lLoad" text="Load" />
+-            <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="161.0" prefWidth="200.0" />
++            <ListView fx:id="listaJuegos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="163.0" prefWidth="207.0" style="-fx-background-color: #bcb1b1;" />
+             <Button fx:id="bContinue" mnemonicParsing="false" onAction="#pressContinue" text="Continue" />
++            <Region prefHeight="15.0" prefWidth="129.0" />
+          </children></VBox>
+    </children>
+ </HBox>
+Index: src/main/resources/com/example/spaceapps/load_preuba.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/spaceapps/load_preuba.fxml b/src/main/resources/com/example/spaceapps/load_preuba.fxml
+--- a/src/main/resources/com/example/spaceapps/load_preuba.fxml	
++++ b/src/main/resources/com/example/spaceapps/load_preuba.fxml	
+@@ -1,18 +1,19 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import javafx.scene.control.*?>
+-<?import javafx.scene.layout.*?>
+-<?import javafx.scene.text.*?>
++<?import javafx.scene.control.Button?>
++<?import javafx.scene.control.Label?>
++<?import javafx.scene.layout.HBox?>
++<?import javafx.scene.layout.VBox?>
++<?import javafx.scene.text.Font?>
+ 
+-<HBox fx:id="fondo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.HelloController">
++<HBox fx:id="fondo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.HelloController">
+    <children>
+       <VBox alignment="CENTER" spacing="10.0" HBox.hgrow="ALWAYS">
+          <children>
+-            <Label fx:id="lLoad" prefHeight="54.0" prefWidth="192.0" text="Load game">
++            <Label fx:id="lLoad" prefHeight="54.0" prefWidth="217.0" text="Load game">
+                <font>
+                   <Font size="38.0" />
+                </font></Label>
+-            <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="161.0" prefWidth="200.0" />
+             <Button fx:id="bContinue" mnemonicParsing="false" onAction="#pressContinue" text="Continue" />
+          </children></VBox>
+    </children>
+Index: src/main/java/com/example/spaceapps/nivel1.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/nivel1.fxml b/src/main/java/com/example/spaceapps/nivel1.fxml
+--- a/src/main/java/com/example/spaceapps/nivel1.fxml	
++++ b/src/main/java/com/example/spaceapps/nivel1.fxml	
+@@ -1,14 +1,20 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import java.lang.*?>
+-<?import java.util.*?>
+-<?import javafx.scene.*?>
+-<?import javafx.scene.control.*?>
+-<?import javafx.scene.layout.*?>
++<?import javafx.geometry.Insets?>
++<?import javafx.scene.layout.HBox?>
++<?import javafx.scene.layout.VBox?>
+ 
+-<AnchorPane xmlns="http://javafx.com/javafx"
+-            xmlns:fx="http://javafx.com/fxml"
+-            fx:controller="com.example.spaceapps.nivel1Controller"
+-            prefHeight="400.0" prefWidth="600.0">
+-
+-</AnchorPane>
++<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="HBox" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.nivel1Controller">
++   <children>
++      <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
++         <children>
++            <HBox alignment="CENTER" prefHeight="82.0" prefWidth="193.0" />
++         </children>
++         <HBox.margin>
++            <Insets left="20.0" />
++         </HBox.margin>
++      </VBox>
++      <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
++      <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
++   </children>
++</fx:root>
+Index: spaceapps.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spaceapps.iml b/spaceapps.iml
+--- a/spaceapps.iml	
++++ b/spaceapps.iml	
+@@ -11,9 +11,9 @@
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:18-ea+6" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:18-ea+6" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:linux:18-ea+6" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:18-ea+6" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:18-ea+6" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:linux:18-ea+6" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.1" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.opentest4j:opentest4j:1.2.0" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-commons:1.8.1" level="project" />
+@@ -22,8 +22,8 @@
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.8.1" level="project" />
+     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:18-ea+6" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:win:18-ea+6" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:linux:18-ea+6" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-base:18-ea+6" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:18-ea+6" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:linux:18-ea+6" level="project" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: src/main/java/com/example/spaceapps/v-f.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/v-f.fxml b/src/main/java/com/example/spaceapps/v-f.fxml
+--- a/src/main/java/com/example/spaceapps/v-f.fxml	
++++ b/src/main/java/com/example/spaceapps/v-f.fxml	
+@@ -7,8 +7,7 @@
+ <?import javafx.scene.layout.HBox?>
+ <?import javafx.scene.layout.VBox?>
+ 
+-
+-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vfController">
++<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.vfController">
+    <children>
+       <HBox prefHeight="109.0" prefWidth="494.0" spacing="365.0">
+          <children>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,29 +5,20 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="algo2">
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/inicio_preuba.fxml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/load_preuba.fxml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/new_preuba.fxml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/Cartwheel Galaxy (hubbel).jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/Cartwheel Galaxy (webb).png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/NGC 3324 (hubble).png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/NGC 3324 (webb).png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/tarantula (hubel).png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondo estrellas/tarantula (webb).png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondos/fondo_observatorio.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondos/fondo_persona.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/fondos/fondo_telescopio.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/logo/Sin título-1.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_18_ea_6.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_18_ea_6.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22__12_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22__12_21__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_18_ea_6.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_18_ea_6.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/lista.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/lista.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1.fxml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/seleccion.fxml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/seleccionController.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/v-f.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/v-f.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/hello-view.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/load_preuba.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/load_preuba.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/hello-view.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -47,27 +38,35 @@
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
++  </component>
++  <component name="MavenImportPreferences">
++    <option name="generalSettings">
++      <MavenGeneralSettings>
++        <option name="useMavenConfig" value="true" />
++      </MavenGeneralSettings>
++    </option>
+   </component>
+   <component name="ProjectId" id="2FMP6M2wRcwwxI5JFSrvFxdkITE" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">
+-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+-    <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/com/example/spaceapps" />
+-  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "last_opened_file_path": "/home/alberto/Documentos/src/main/java/com/example/spaceapps",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)"
++  }
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+-      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\com\example\spaceapps" />
+-    </key>
+-    <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\imagenes\logo" />
+-      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\imagenes\fondo estrellas" />
+-      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\imagenes\fondos" />
++      <recent name="$PROJECT_DIR$/src/main/java/com/example/spaceapps" />
+     </key>
+   </component>
+   <component name="RunManager">
+@@ -103,11 +102,6 @@
+       <workItem from="1664314821535" duration="60000" />
+       <workItem from="1664358906258" duration="1839000" />
+       <workItem from="1664360987849" duration="5375000" />
+-      <workItem from="1664442780610" duration="2067000" />
+-      <workItem from="1664446220295" duration="218000" />
+-      <workItem from="1664446453622" duration="2998000" />
+-      <workItem from="1664451633406" duration="83000" />
+-      <workItem from="1664451730065" duration="481000" />
+     </task>
+     <task id="LOCAL-00001" summary="algo">
+       <created>1664313547737</created>
+Index: target/classes/com/example/spaceapps/hello-view.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/classes/com/example/spaceapps/hello-view.fxml b/target/classes/com/example/spaceapps/hello-view.fxml
+--- a/target/classes/com/example/spaceapps/hello-view.fxml	
++++ b/target/classes/com/example/spaceapps/hello-view.fxml	
+@@ -3,6 +3,7 @@
+ <?import javafx.geometry.Insets?>
+ <?import javafx.scene.control.Button?>
+ <?import javafx.scene.control.Label?>
++<?import javafx.scene.control.ListView?>
+ <?import javafx.scene.control.TextField?>
+ <?import javafx.scene.image.Image?>
+ <?import javafx.scene.image.ImageView?>
+@@ -40,11 +41,12 @@
+          </padding>
+       </VBox>
+       <Line endX="-100.0" endY="364.0" startX="-100.0" stroke="#bcb1b1" strokeWidth="2.0" />
+-      <VBox alignment="CENTER" spacing="10.0" HBox.hgrow="ALWAYS">
++      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="244.0" spacing="10.0" HBox.hgrow="ALWAYS">
+          <children>
+             <Label fx:id="lLoad" text="Load" />
+-            <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="161.0" prefWidth="200.0" />
++            <ListView fx:id="listaJuegos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="163.0" prefWidth="207.0" style="-fx-background-color: #bcb1b1;" />
+             <Button fx:id="bContinue" mnemonicParsing="false" onAction="#pressContinue" text="Continue" />
++            <Region prefHeight="15.0" prefWidth="129.0" />
+          </children></VBox>
+    </children>
+ </HBox>
+Index: src/main/java/com/example/spaceapps/HelloController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/HelloController.java b/src/main/java/com/example/spaceapps/HelloController.java
+--- a/src/main/java/com/example/spaceapps/HelloController.java	
++++ b/src/main/java/com/example/spaceapps/HelloController.java	
+@@ -43,14 +43,17 @@
+     void pressBegin(ActionEvent event) throws IOException {
+         if(!nombre.getText().isBlank()) {
+             errornombre.visibleProperty().set(false);
+-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("v-f.fxml"));
+-            Scene scene = new Scene(fxmlLoader.load());
+-            Stage stage = new Stage();
++            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("nivel1.fxml"));
++
++            //controllerOpciones controlador = fxmlLoader.getController();
++            //controlador.setearPreguntas(0);
+             Stage stage1 = (Stage) bBegin.getScene().getWindow();
+-            controllerOpciones controlador = fxmlLoader.getController();
+-            controlador.setearPreguntas(2);
+             stage1.close();
+-            stage.setTitle("Hello!");
++
++            Scene scene = new Scene(fxmlLoader.load());
++            Stage stage = new Stage();
++            stage.setScene(scene);
++            stage.setTitle("Nivel 1");
+             stage.setMaximized(false);
+             stage.setResizable(false);
+             stage.setScene(scene);

@@ -1,0 +1,289 @@
+Index: src/main/java/com/example/spaceapps/v-f.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.Button?>\n<?import javafx.scene.control.Label?>\n<?import javafx.scene.control.RadioButton?>\n<?import javafx.scene.layout.HBox?>\n<?import javafx.scene.layout.VBox?>\n\n\n<VBox maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"655.0\" prefWidth=\"524.0\" xmlns=\"http://javafx.com/javafx/18\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"vfController\">\n   <children>\n      <HBox prefHeight=\"109.0\" prefWidth=\"494.0\" spacing=\"365.0\">\n         <children>\n            <Button mnemonicParsing=\"false\" onAction=\"#botonAtras\" text=\"Atrás\" />\n            <Label fx:id=\"progreso\" prefHeight=\"17.0\" prefWidth=\"71.0\" />\n         </children>\n         <opaqueInsets>\n            <Insets />\n         </opaqueInsets>\n      </HBox>\n      <Label fx:id=\"pregunta\">\n         <VBox.margin>\n            <Insets top=\"80.0\" />\n         </VBox.margin>\n      </Label>\n      <VBox prefHeight=\"200.0\" prefWidth=\"100.0\" spacing=\"50.0\">\n         <children>\n            <RadioButton fx:id=\"opcionV\" mnemonicParsing=\"false\" onAction=\"#botonRespV\" />\n            <RadioButton fx:id=\"opcionF\" mnemonicParsing=\"false\" onAction=\"#botonRespF\" prefHeight=\"70.0\" prefWidth=\"16.0\" />\n         </children>\n         <VBox.margin>\n            <Insets top=\"50.0\" />\n         </VBox.margin>\n      </VBox>\n      <HBox alignment=\"BOTTOM_RIGHT\" prefHeight=\"216.0\" prefWidth=\"494.0\" spacing=\"30.0\">\n         <children>\n            <Button fx:id=\"compr\" mnemonicParsing=\"false\" onAction=\"#botonComprobar\" prefHeight=\"26.0\" prefWidth=\"82.0\" text=\"Comprobar\" />\n            <Button disable=\"true\" mnemonicParsing=\"false\" onAction=\"#botonAceptar\" text=\"Continuar\" />\n         </children>\n      </HBox>\n   </children>\n   <padding>\n      <Insets bottom=\"15.0\" left=\"15.0\" right=\"15.0\" top=\"15.0\" />\n   </padding>\n</VBox>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/v-f.fxml b/src/main/java/com/example/spaceapps/v-f.fxml
+--- a/src/main/java/com/example/spaceapps/v-f.fxml	(revision 00494832b21f4ef10d530f94ec4ef5e1160d7a02)
++++ b/src/main/java/com/example/spaceapps/v-f.fxml	(date 1664394146815)
+@@ -7,8 +7,7 @@
+ <?import javafx.scene.layout.HBox?>
+ <?import javafx.scene.layout.VBox?>
+ 
+-
+-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vfController">
++<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.vfController">
+    <children>
+       <HBox prefHeight="109.0" prefWidth="494.0" spacing="365.0">
+          <children>
+Index: src/main/java/com/example/spaceapps/HelloController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.spaceapps;\n\nimport javafx.event.ActionEvent;\nimport javafx.fxml.FXML;\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Button;\nimport javafx.scene.control.Label;\nimport javafx.scene.control.TextField;\nimport javafx.scene.layout.HBox;\nimport javafx.scene.layout.VBox;\nimport javafx.stage.Stage;\n\nimport java.io.IOException;\n\npublic class HelloController {\n\n    @FXML\n    private Button bBegin;\n    @FXML\n    private Label errornombre;\n\n\n    @FXML\n    private TextField nombre;\n\n    @FXML\n    private Button bContinue;\n\n    @FXML\n    private HBox fondo;\n\n    @FXML\n    private Label lLoad;\n\n    @FXML\n    private Label lNew;\n\n    @FXML\n    private VBox marcoNombre;\n\n    @FXML\n    void pressBegin(ActionEvent event) throws IOException {\n        if(!nombre.getText().isBlank()) {\n            errornombre.visibleProperty().set(false);\n            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"v-f.fxml\"));\n            Scene scene = new Scene(fxmlLoader.load());\n            Stage stage = new Stage();\n            Stage stage1 = (Stage) bBegin.getScene().getWindow();\n            controllerOpciones controlador = fxmlLoader.getController();\n            controlador.setearPreguntas(2);\n            stage1.close();\n            stage.setTitle(\"Hello!\");\n            stage.setMaximized(false);\n            stage.setResizable(false);\n            stage.setScene(scene);\n            stage.show();\n        }\n        else {\n            errornombre.visibleProperty().set(true);\n            errornombre.setText(\"Debe introducir un nombre\");\n        }\n    }\n\n    @FXML\n    void pressContinue(ActionEvent event) {\n\n\n    }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/HelloController.java b/src/main/java/com/example/spaceapps/HelloController.java
+--- a/src/main/java/com/example/spaceapps/HelloController.java	(revision 00494832b21f4ef10d530f94ec4ef5e1160d7a02)
++++ b/src/main/java/com/example/spaceapps/HelloController.java	(date 1664394497803)
+@@ -43,14 +43,14 @@
+     void pressBegin(ActionEvent event) throws IOException {
+         if(!nombre.getText().isBlank()) {
+             errornombre.visibleProperty().set(false);
+-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("v-f.fxml"));
++            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel1.fxml"));
+             Scene scene = new Scene(fxmlLoader.load());
+             Stage stage = new Stage();
+             Stage stage1 = (Stage) bBegin.getScene().getWindow();
+-            controllerOpciones controlador = fxmlLoader.getController();
+-            controlador.setearPreguntas(2);
++            //controllerOpciones controlador = fxmlLoader.getController();
++            //controlador.setearPreguntas(0);
+             stage1.close();
+-            stage.setTitle("Hello!");
++            stage.setTitle("Nivel 1");
+             stage.setMaximized(false);
+             stage.setResizable(false);
+             stage.setScene(scene);
+Index: src/main/java/com/example/spaceapps/seleccion.fxml
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/seleccion.fxml b/src/main/java/com/example/spaceapps/seleccion.fxml
+deleted file mode 100644
+--- a/src/main/java/com/example/spaceapps/seleccion.fxml	(revision 00494832b21f4ef10d530f94ec4ef5e1160d7a02)
++++ /dev/null	(revision 00494832b21f4ef10d530f94ec4ef5e1160d7a02)
+@@ -1,14 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-
+-<?import java.lang.*?>
+-<?import java.util.*?>
+-<?import javafx.scene.*?>
+-<?import javafx.scene.control.*?>
+-<?import javafx.scene.layout.*?>
+-
+-<AnchorPane xmlns="http://javafx.com/javafx"
+-            xmlns:fx="http://javafx.com/fxml"
+-            fx:controller="com.example.spaceapps.seleccionController"
+-            prefHeight="400.0" prefWidth="600.0">
+-
+-</AnchorPane>
+Index: src/main/java/com/example/spaceapps/seleccionController.java
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/seleccionController.java b/src/main/java/com/example/spaceapps/seleccionController.java
+deleted file mode 100644
+--- a/src/main/java/com/example/spaceapps/seleccionController.java	(revision 00494832b21f4ef10d530f94ec4ef5e1160d7a02)
++++ /dev/null	(revision 00494832b21f4ef10d530f94ec4ef5e1160d7a02)
+@@ -1,4 +0,0 @@
+-package com.example.spaceapps;
+-
+-public class seleccionController {
+-}
+Index: .idea/libraries/Maven__org_openjfx_javafx_controls_linux_18_ea_6.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_18_ea_6.xml
+new file mode 100644
+--- /dev/null	(date 1664393716291)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_18_ea_6.xml	(date 1664393716291)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.openjfx:javafx-controls:linux:18-ea+6">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/18-ea+6/javafx-controls-18-ea+6-linux.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/18-ea+6/javafx-controls-18-ea+6-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/18-ea+6/javafx-controls-18-ea+6-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml
+new file mode 100644
+--- /dev/null	(date 1664393716283)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml	(date 1664393716283)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.openjfx:javafx-base:linux:18-ea+6">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18-ea+6/javafx-base-18-ea+6-linux.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18-ea+6/javafx-base-18-ea+6-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18-ea+6/javafx-base-18-ea+6-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: spaceapps.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule=\"true\" type=\"JAVA_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\" LANGUAGE_LEVEL=\"JDK_18\">\n    <output url=\"file://$MODULE_DIR$/target/classes\" />\n    <output-test url=\"file://$MODULE_DIR$/target/test-classes\" />\n    <content url=\"file://$MODULE_DIR$\">\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/java\" isTestSource=\"false\" />\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/resources\" type=\"java-resource\" />\n      <excludeFolder url=\"file://$MODULE_DIR$/target\" />\n    </content>\n    <orderEntry type=\"inheritedJdk\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-controls:18-ea+6\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-controls:win:18-ea+6\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-fxml:18-ea+6\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-fxml:win:18-ea+6\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter-api:5.8.1\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.opentest4j:opentest4j:1.2.0\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.platform:junit-platform-commons:1.8.1\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.apiguardian:apiguardian-api:1.1.2\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter-engine:5.8.1\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.platform:junit-platform-engine:1.8.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: javax.servlet:javax.servlet-api:4.0.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-graphics:18-ea+6\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-graphics:win:18-ea+6\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-base:18-ea+6\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-base:win:18-ea+6\" level=\"project\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spaceapps.iml b/spaceapps.iml
+--- a/spaceapps.iml	(revision 00494832b21f4ef10d530f94ec4ef5e1160d7a02)
++++ b/spaceapps.iml	(date 1664393716271)
+@@ -11,9 +11,9 @@
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:18-ea+6" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:18-ea+6" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:linux:18-ea+6" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:18-ea+6" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:18-ea+6" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:linux:18-ea+6" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.1" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.opentest4j:opentest4j:1.2.0" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-commons:1.8.1" level="project" />
+@@ -22,8 +22,8 @@
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.8.1" level="project" />
+     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:18-ea+6" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:win:18-ea+6" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:linux:18-ea+6" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-base:18-ea+6" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:18-ea+6" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:linux:18-ea+6" level="project" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: src/main/java/com/example/spaceapps/nivel1.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<?import java.lang.*?>\n<?import java.util.*?>\n<?import javafx.scene.*?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<AnchorPane xmlns=\"http://javafx.com/javafx\"\n            xmlns:fx=\"http://javafx.com/fxml\"\n            fx:controller=\"com.example.spaceapps.nivel1Controller\"\n            prefHeight=\"400.0\" prefWidth=\"600.0\">\n\n</AnchorPane>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/nivel1.fxml b/src/main/java/com/example/spaceapps/nivel1.fxml
+--- a/src/main/java/com/example/spaceapps/nivel1.fxml	(revision 00494832b21f4ef10d530f94ec4ef5e1160d7a02)
++++ b/src/main/java/com/example/spaceapps/nivel1.fxml	(date 1664395479768)
+@@ -1,14 +1,28 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import java.lang.*?>
+-<?import java.util.*?>
+-<?import javafx.scene.*?>
+-<?import javafx.scene.control.*?>
+-<?import javafx.scene.layout.*?>
++<?import com.gluonhq.charm.glisten.control.ProgressBar?>
++<?import javafx.geometry.Insets?>
++<?import javafx.scene.layout.HBox?>
++<?import javafx.scene.layout.VBox?>
++<?import javafx.scene.shape.Circle?>
+ 
+-<AnchorPane xmlns="http://javafx.com/javafx"
+-            xmlns:fx="http://javafx.com/fxml"
+-            fx:controller="com.example.spaceapps.nivel1Controller"
+-            prefHeight="400.0" prefWidth="600.0">
+ 
+-</AnchorPane>
++<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
++   <children>
++      <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
++         <children>
++            <HBox alignment="CENTER" prefHeight="82.0" prefWidth="193.0">
++               <children>
++                  <Circle fill="DODGERBLUE" radius="27.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" />
++                  <ProgressBar prefHeight="12.0" prefWidth="143.0" progress="0.38" />
++               </children>
++            </HBox>
++         </children>
++         <HBox.margin>
++            <Insets left="20.0" />
++         </HBox.margin>
++      </VBox>
++      <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
++      <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
++   </children>
++</HBox>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"algo2\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/hello-view.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/hello-view.fxml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"FxmlFile\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"generalSettings\">\n      <MavenGeneralSettings>\n        <option name=\"useMavenConfig\" value=\"true\" />\n      </MavenGeneralSettings>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"2FMP6M2wRcwwxI5JFSrvFxdkITE\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;\n  }\n}</component>\n  <component name=\"RunManager\">\n    <configuration name=\"HelloApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.spaceapps.HelloApplication\" />\n      <module name=\"spaceapps\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.example.spaceapps.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.HelloApplication\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"\" />\n      <created>1664298806623</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1664298806623</updated>\n      <workItem from=\"1664298810150\" duration=\"1663000\" />\n      <workItem from=\"1664301389990\" duration=\"9863000\" />\n      <workItem from=\"1664314821535\" duration=\"60000\" />\n      <workItem from=\"1664358906258\" duration=\"1839000\" />\n      <workItem from=\"1664360987849\" duration=\"5375000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"algo\">\n      <created>1664313547737</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664313547737</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"algo\">\n      <created>1664359725564</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664359725564</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"algo\">\n      <created>1664360526505</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664360526505</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"algo2\">\n      <created>1664365925695</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664365925695</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"algo2\">\n      <created>1664365935369</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664365935369</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"6\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"algo\" />\n    <MESSAGE value=\"algo2\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"algo2\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 00494832b21f4ef10d530f94ec4ef5e1160d7a02)
++++ b/.idea/workspace.xml	(date 1664395485380)
+@@ -5,9 +5,17 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="algo2">
++      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_18_ea_6.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_18_ea_6.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/hello-view.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/seleccion.fxml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/seleccionController.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/v-f.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/v-f.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+Index: .idea/libraries/Maven__org_openjfx_javafx_graphics_linux_18_ea_6.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_18_ea_6.xml
+new file mode 100644
+--- /dev/null	(date 1664393716307)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_18_ea_6.xml	(date 1664393716307)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.openjfx:javafx-graphics:linux:18-ea+6">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/18-ea+6/javafx-graphics-18-ea+6-linux.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/18-ea+6/javafx-graphics-18-ea+6-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/18-ea+6/javafx-graphics-18-ea+6-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml
+new file mode 100644
+--- /dev/null	(date 1664393716295)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml	(date 1664393716295)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.openjfx:javafx-fxml:linux:18-ea+6">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-linux.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file

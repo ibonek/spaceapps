@@ -1,0 +1,125 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"algo2\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_18_ea_6.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_18_ea_6.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_18_ea_6.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/spaceapps.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/spaceapps.iml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/jupiter.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/jupiter.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/marte.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/marte.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/mercurio.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/mercurio.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/neptuno.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/neptuno.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/saturno.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/saturno.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/star.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/star.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/star1.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/star1.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/star2.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/star2.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/star3.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/star3.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/star4.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/star4.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/star5.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/star5.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/star6.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/star6.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/urano.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/urano.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/imagenes/venus.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/imagenes/venus.png\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"FxmlFile\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"generalSettings\">\n      <MavenGeneralSettings>\n        <option name=\"useMavenConfig\" value=\"true\" />\n      </MavenGeneralSettings>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"2FMP6M2wRcwwxI5JFSrvFxdkITE\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"settings.editor.selected.configurable\": \"MavenSettings\"\n  }\n}]]></component>\n  <component name=\"RunManager\">\n    <configuration name=\"HelloApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.spaceapps.HelloApplication\" />\n      <module name=\"spaceapps\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.example.spaceapps.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.HelloApplication\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"\" />\n      <created>1664298806623</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1664298806623</updated>\n      <workItem from=\"1664298810150\" duration=\"1663000\" />\n      <workItem from=\"1664301389990\" duration=\"9863000\" />\n      <workItem from=\"1664314821535\" duration=\"60000\" />\n      <workItem from=\"1664358906258\" duration=\"1839000\" />\n      <workItem from=\"1664360987849\" duration=\"5375000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"algo\">\n      <created>1664313547737</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664313547737</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"algo\">\n      <created>1664359725564</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664359725564</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"algo\">\n      <created>1664360526505</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664360526505</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"algo2\">\n      <created>1664365925695</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664365925695</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"algo2\">\n      <created>1664365935369</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664365935369</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"6\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"algo\" />\n    <MESSAGE value=\"algo2\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"algo2\" />\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 786facc90d11993c6b803cb8aeb7119c56a765ff)
++++ b/.idea/workspace.xml	(date 1664470874038)
+@@ -4,30 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="algo2">
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_18_ea_6.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_18_ea_6.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_18_ea_6.xml" beforeDir="false" />
++    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="Nivel 1 e intento de arreglo del boton begin (hello)">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/jupiter.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/jupiter.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/marte.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/marte.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/mercurio.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/mercurio.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/neptuno.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/neptuno.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/saturno.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/saturno.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star1.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star2.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star3.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star4.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star5.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/star6.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/urano.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/urano.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/venus.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/venus.png" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -47,27 +25,29 @@
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+-  </component>
+-  <component name="MavenImportPreferences">
+-    <option name="generalSettings">
+-      <MavenGeneralSettings>
+-        <option name="useMavenConfig" value="true" />
+-      </MavenGeneralSettings>
+-    </option>
+   </component>
+   <component name="ProjectId" id="2FMP6M2wRcwwxI5JFSrvFxdkITE" />
+-  <component name="ProjectLevelVcsManager">
+-    <ConfirmationsSetting value="2" id="Add" />
+-  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+-    "settings.editor.selected.configurable": "MavenSettings"
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "last_opened_file_path": "/home/alberto/Documentos/src/main/java/com/example/spaceapps"
+   }
+ }]]></component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/src/main/java/com/example/spaceapps" />
++      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\com\example\spaceapps" />
++    </key>
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\imagenes\logo" />
++      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\imagenes\fondo estrellas" />
++      <recent name="C:\Users\ibonek\IdeaProjects\spaceapps\src\main\resources\imagenes\fondos" />
++    </key>
++  </component>
+   <component name="RunManager">
+     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="com.example.spaceapps.HelloApplication" />
+@@ -101,6 +81,11 @@
+       <workItem from="1664314821535" duration="60000" />
+       <workItem from="1664358906258" duration="1839000" />
+       <workItem from="1664360987849" duration="5375000" />
++      <workItem from="1664442780610" duration="2067000" />
++      <workItem from="1664446220295" duration="218000" />
++      <workItem from="1664446453622" duration="2998000" />
++      <workItem from="1664451633406" duration="83000" />
++      <workItem from="1664451730065" duration="481000" />
+     </task>
+     <task id="LOCAL-00001" summary="algo">
+       <created>1664313547737</created>
+@@ -137,7 +122,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1664365935369</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="Nivel 1 e intento de arreglo del boton begin (hello)">
++      <created>1664470854237</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1664470854237</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -157,10 +149,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="algo" />
+     <MESSAGE value="algo2" />
+-    <option name="LAST_COMMIT_MESSAGE" value="algo2" />
+-  </component>
+-  <component name="XSLT-Support.FileAssociations.UIState">
+-    <expand />
+-    <select />
++    <MESSAGE value="Nivel 1 e intento de arreglo del boton begin (hello)" />
++    <option name="LAST_COMMIT_MESSAGE" value="Nivel 1 e intento de arreglo del boton begin (hello)" />
+   </component>
+ </project>
+\ No newline at end of file
