@@ -4,6 +4,9 @@
 #fondo2{
     -fx-background-image: url("nivel2.jpg");
 }
+#fondo3{
+    -fx-background-image: url("nivel3.jpg");
+}
 #botonN2{
     -fx-background-color: TRANSPARENT;
 }
