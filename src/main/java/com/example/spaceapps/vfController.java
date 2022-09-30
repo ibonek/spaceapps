@@ -24,7 +24,8 @@ public class vfController {
 
     @FXML
     private RadioButton opcionV;
-
+    @FXML
+    private Button cont;
     @FXML
     private Label progreso;
     @FXML
@@ -64,20 +65,13 @@ public class vfController {
 
         if (resp1) opcionV.setTextFill(DARKSEAGREEN);
         if (resp2) opcionF.setTextFill(DARKSEAGREEN);
+        if(r==2 && resp1) {opcionF.setTextFill(RED); System.out.println("hola");}
 
-
-        if(!respuestaSeleccionada.isCorrecta()){
-
-            if(r==1) opcionV.setTextFill(RED);
-
-            if(r==2) opcionF.setTextFill(RED);
-
-        }
         opcionV.setDisable(true);
         opcionF.setDisable(true);
 
         compr.setDisable(true);
-
+        cont.setDisable(false);
     }
 
 
@@ -86,7 +80,6 @@ public class vfController {
     void botonRespV(ActionEvent event) {
         opcionV.setSelected(true);
         opcionF.setSelected(false);
-        respuestaSeleccionada = juego.getPreguntas().get(p).getListaOpciones().get(p);
         r=1;
 
     }
@@ -94,7 +87,6 @@ public class vfController {
     void botonRespF(ActionEvent event) {
         opcionV.setSelected(false);
         opcionF.setSelected(true);
-        respuestaSeleccionada = juego.getPreguntas().get(p).getListaOpciones().get(p+1);
         r=2;
 
     }
@@ -102,15 +94,10 @@ public class vfController {
         p = n;
         pregunta.setText(juego.getPreguntas().get(p).getCuerpoPregunta().toString() );
 
-
-       /* NO SÉ CÓMO HACER QUE SALGAN LAS RESPUESTAS DE LA LISTA DE OPCIONES
-        PERO IRIA DENTRO DEL SET TEXT.
-        esto era de prueba xd:)))
-        */
-        opcionV.setText(juego.getPreguntas().get(p).getListaOpciones().get(p).getCuerpoRespuesta());
-        resp1= juego.getPreguntas().get(p).getListaOpciones().get(p).isCorrecta();
-        opcionF.setText(juego.getPreguntas().get(p).getListaOpciones().get(p+1).getCuerpoRespuesta());
-        resp2= juego.getPreguntas().get(p).getListaOpciones().get(p+1).isCorrecta();
+        opcionV.setText("True");
+        resp1= juego.getPreguntas().get(p).getListaOpciones().get(0).isCorrecta();
+        opcionF.setText("False");
+        resp2= juego.getPreguntas().get(p).getListaOpciones().get(1).isCorrecta();
 
 
 

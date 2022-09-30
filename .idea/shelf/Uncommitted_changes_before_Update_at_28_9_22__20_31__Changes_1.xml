@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_28_9_22,_20_31_[Changes]1" date="1664389882594" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22,_20_31_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 28/9/22, 20:31 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/HelloController.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/HelloController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22,_20_31_[Changes]1/HelloController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/controllerOpciones.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/controllerOpciones.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22,_20_31_[Changes]1/controllerOpciones.class" />
+  </binary>
+</changelist>
