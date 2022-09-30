@@ -43,14 +43,14 @@ public class HelloController {
     void pressBegin(ActionEvent event) throws IOException {
         if(!nombre.getText().isBlank()) {
             errornombre.visibleProperty().set(false);
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("v-f.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel1.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
             Stage stage1 = (Stage) bBegin.getScene().getWindow();
-           vfController controlador = fxmlLoader.getController();
-            controlador.setearPreguntas(2);
+            nivel1Controller controlador = fxmlLoader.getController();
+            controlador.ponerNombre(nombre.getText());
             stage1.close();
-            stage.setTitle("Hello!");
+            stage.setTitle("Level 1");
             stage.setMaximized(false);
             stage.setResizable(false);
             stage.setScene(scene);
