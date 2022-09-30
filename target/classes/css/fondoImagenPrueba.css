@@ -1,5 +1,12 @@
-.invisible{
-    -fx-background-image: url("../imagenes/paisaje.png");
-    -fx-background-size: cover,auto;
-    -fx-background-repeat: no-repeat;
+#fondo1{
+    -fx-background-image: url("nivel1.jpg");
+}
+#fondo2{
+    -fx-background-image: url("nivel2.jpg");
+}
+#botonN2{
+    -fx-background-color: TRANSPARENT;
+}
+.button{
+    -fx-background-color: TRANSPARENT;
 }
