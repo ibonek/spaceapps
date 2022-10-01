@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox fx:id="fondo4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="666.0" stylesheets="@../../../css/fondoImagenPrueba.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.nivel4Controller">
+<HBox fx:id="fondo4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="899.0" stylesheets="@../../../css/fondoImagenPrueba.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.nivel4Controller">
    <children>
       <VBox prefHeight="400.0" prefWidth="26.0" />
       <VBox prefHeight="400.0" prefWidth="213.0">

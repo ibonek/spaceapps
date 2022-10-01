@@ -12,10 +12,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox fx:id="fondo3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="641.0" stylesheets="@../../../css/fondoImagenPrueba.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.nivel3Controller">
+<HBox fx:id="fondo3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="899.0" stylesheets="@../../../css/fondoImagenPrueba.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.nivel3Controller">
    <children>
       <VBox prefHeight="400.0" prefWidth="26.0" />
-      <VBox prefHeight="400.0" prefWidth="213.0">
+      <VBox prefHeight="400.0" prefWidth="213.0" HBox.hgrow="ALWAYS">
          <children>
             <MenuButton fx:id="botonN2" blendMode="SRC_ATOP" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.91" prefHeight="58.0" prefWidth="66.0" style="-fx-border-color: #0; -fx-border-width: #0; -fx-background-radius: #0;" textFill="TRANSPARENT">
               <items>
@@ -64,7 +64,7 @@
             </HBox>
          </children>
       </VBox>
-      <VBox prefHeight="407.0" prefWidth="198.0">
+      <VBox alignment="CENTER_LEFT" prefHeight="407.0" prefWidth="198.0">
          <children>
             <Region prefHeight="21.0" prefWidth="198.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
@@ -87,10 +87,10 @@
             </HBox>
          </children>
       </VBox>
-      <VBox prefHeight="400.0" prefWidth="196.0">
+      <VBox alignment="TOP_RIGHT" prefHeight="400.0" prefWidth="196.0">
          <children>
             <HBox prefHeight="100.0" prefWidth="200.0" />
-            <HBox alignment="BOTTOM_RIGHT" prefHeight="184.0" prefWidth="196.0">
+            <HBox alignment="TOP_RIGHT" prefHeight="184.0" prefWidth="196.0">
                <children>
                   <Button fx:id="bPluto" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonPluto" prefHeight="23.0" prefWidth="19.0" text="Button">
                      <graphic>
@@ -103,7 +103,7 @@
                   </Button>
                </children>
                <VBox.margin>
-                  <Insets right="15.0" />
+                  <Insets right="30.0" />
                </VBox.margin>
             </HBox>
          </children>
