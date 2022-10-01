@@ -1,0 +1,7 @@
+#fondo{
+    -fx-background-image: url("marco.png");
+}
+*{
+    -fx-text-fill: white;
+
+}
