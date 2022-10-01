@@ -50,7 +50,7 @@ public class HelloController {
             opciones.crearJuego();
             controlador.setOpciones(opciones);
             stage1.close();
-            stage.setTitle("Level 2");
+            stage.setTitle("Login");
             stage.setMaximized(false);
             stage.setResizable(false);
             stage.setScene(scene);

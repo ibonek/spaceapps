@@ -83,6 +83,7 @@ public class SelectorController {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controlador.getPuntos());
+        setVidas(opciones.juego.getVidas());
     }
 
     @FXML
@@ -101,6 +102,7 @@ public class SelectorController {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controlador.getPuntos());
+        setVidas(opciones.juego.getVidas());
     }
 
     @FXML
@@ -119,6 +121,7 @@ public class SelectorController {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controlador.getPuntos());
+        setVidas(opciones.juego.getVidas());
     }
 
     @FXML
@@ -137,6 +140,7 @@ public class SelectorController {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controlador.getPuntos());
+        setVidas(opciones.juego.getVidas());
     }
     @FXML
     void BotonLevel5(ActionEvent event) throws IOException {
@@ -154,6 +158,7 @@ public class SelectorController {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controlador.getPuntos());
+        setVidas(opciones.juego.getVidas());
     }
     public OpcionesJuego getOpciones() {
         return opciones;
