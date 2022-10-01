@@ -9,8 +9,26 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_19_ea_7.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nombreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nombreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/listaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel3Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel4Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel4Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel5Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel5Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel3.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel4.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel5.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel5.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel3.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel5.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel5.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/imagenes/star1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star2.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/imagenes/star2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star3.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/imagenes/star3.png" afterDir="false" />
