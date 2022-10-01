@@ -23,6 +23,9 @@ public class nivel1Controller {
     public void setOpciones(OpcionesJuego opciones) {
         this.opciones = opciones;
     }
+    public void setPuntos(int n){
+        puntos.setText(n + "");
+    }
 
     @FXML
     private Button bLuna;
@@ -78,12 +81,13 @@ public class nivel1Controller {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
         stage.showAndWait();
-        puntos.setText(controller.getPoints());
-        if(controller.getVidas() == 3){
+        vidas = controller.getVidas();
+
+        if(vidas == 3){
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(true);
-        } else if(controller.getVidas() == 2){
+        } else if(vidas == 2){
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(false);
@@ -92,7 +96,7 @@ public class nivel1Controller {
             vida2.setVisible(false);
             vida3.setVisible(false);
         }
-
+        puntos.setText(controller.getPoints());
     }
 
     @FXML
