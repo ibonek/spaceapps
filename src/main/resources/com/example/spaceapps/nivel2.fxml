@@ -14,11 +14,47 @@
       <VBox prefHeight="400.0" prefWidth="26.0" />
       <VBox prefHeight="400.0" prefWidth="213.0" HBox.hgrow="ALWAYS">
          <children>
-            <ImageView fitHeight="107.0" fitWidth="327.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../imagenes/star2.png" />
-               </image>
-            </ImageView>
+            <HBox fx:id="cabecera5" alignment="TOP_RIGHT" prefHeight="107.0" prefWidth="327.0">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="97.0" prefWidth="130.0">
+                     <children>
+                        <ImageView fitHeight="111.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/star2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="121.0" prefWidth="350.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="350.0" spacing="10.0">
+                           <children>
+                              <ImageView fx:id="vida1" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../imagenes/corazon.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="vida2" fitHeight="50.0" fitWidth="40.0" layoutX="10.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../imagenes/corazon.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="vida3" fitHeight="50.0" fitWidth="40.0" layoutX="10.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../imagenes/corazon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <Label fx:id="puntos" text="0">
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
                   <Label fx:id="eNombre" prefHeight="20.0" prefWidth="91.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
@@ -30,7 +66,7 @@
                <VBox.margin>
                   <Insets left="20.0" />
                </VBox.margin></HBox>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
                <children>
                   <Button fx:id="bMarte" contentDisplay="GRAPHIC_ONLY" maxHeight="66.0" maxWidth="66.0" minHeight="55.0" minWidth="56.0" mnemonicParsing="false" onAction="#botonMarte" prefHeight="55.0" prefWidth="56.0" text="Button">
                      <graphic>
@@ -69,10 +105,10 @@
             </HBox>
          </children>
       </VBox>
-      <VBox prefHeight="400.0" prefWidth="196.0">
+      <VBox alignment="CENTER_RIGHT" prefHeight="400.0" prefWidth="196.0">
          <children>
             <HBox prefHeight="100.0" prefWidth="200.0" />
-            <HBox alignment="CENTER" prefHeight="184.0" prefWidth="196.0">
+            <HBox alignment="TOP_CENTER" prefHeight="436.0" prefWidth="196.0">
                <children>
                   <Button fx:id="bSaturno" contentDisplay="GRAPHIC_ONLY" maxHeight="66.0" maxWidth="66.0" minHeight="66.0" minWidth="66.0" mnemonicParsing="false" onAction="#botonSaturno" prefHeight="66.0" prefWidth="66.0" text="Button">
                      <graphic>
@@ -85,6 +121,15 @@
                   </Button>
                </children>
             </HBox>
+            <Button fx:id="bLupa" ellipsisString="" mnemonicParsing="false" onAction="#botonLupa" prefHeight="56.0" prefWidth="72.0" text="Button">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagenes/lupa.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
       </VBox>
    </children>
