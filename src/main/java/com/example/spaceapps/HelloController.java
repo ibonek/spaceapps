@@ -20,8 +20,6 @@ public class HelloController {
     @FXML
     private Label errornombre;
 
-
-
     @FXML
     private TextField nombre;
 
@@ -64,8 +62,9 @@ public class HelloController {
     }
 
     @FXML
-    void pressContinue(ActionEvent event) {
-
+    void pressContinue(ActionEvent event) throws IOException, ClassNotFoundException {
+        OpcionesJuego opciones = new OpcionesJuego();
+        opciones.juego = opciones.Cargar("juego.bin");
 
     }
 

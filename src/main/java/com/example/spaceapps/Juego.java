@@ -7,6 +7,26 @@ public class Juego implements Serializable {
     private LinkedList<Pregunta> preguntas = new LinkedList<>();
     private int nivelActual = 1;
 
+    private int puntos = 0;
+
+    private int vidas= 3;
+
+    public int getPuntos() {
+        return puntos;
+    }
+
+    public void setPuntos(int puntos) {
+        this.puntos = puntos;
+    }
+
+    public int getVidas() {
+        return vidas;
+    }
+
+    public void setVidas(int vidas) {
+        this.vidas = vidas;
+    }
+
     public Juego() {
         try {
             crearPreguntas();
@@ -91,7 +111,7 @@ public class Juego implements Serializable {
         respuesta.setCuerpoRespuesta("Somewhere in Europe");
 
         pregunta.getListaOpciones().add(respuesta);
-        preguntas.add(pregunta);
+        addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -107,7 +127,7 @@ public class Juego implements Serializable {
         respuesta.setCuerpoRespuesta("False");
         pregunta.getListaOpciones().add(respuesta);
         pregunta.setExplicacion("The James Webb Space Telescope must be kept below 50 K (-223.2 ºC); otherwise, infrared radiation from the telescope itself would overwhelm its sensors. To maintain this temperature, a large sunshield blocks light and heat from nearby space bodies and stops impacts from small asteroids. In addition, a mechanical helium gas cooler is located on the hot side of the environmental shield");
-        preguntas.add(pregunta);
+        addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         pregunta = new Pregunta();
@@ -130,7 +150,7 @@ public class Juego implements Serializable {
         respuesta= new Respuesta();
         respuesta.setCuerpoRespuesta("29 April 2001");
         pregunta.getListaOpciones().add(respuesta);
-        preguntas.add(pregunta);
+        addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         pregunta= new Pregunta();
@@ -146,7 +166,7 @@ public class Juego implements Serializable {
         pregunta.getListaOpciones().add(respuesta);
 
         pregunta.setExplicacion("The James Webb Space Telescope is considered the formal successor to the Hubbel Space Telescope and the Spitzer Space Telescope. In addition, the James Webb will surpass these two telescopes by being able to see many more stars and older galaxies, giving us the highest resolution images of space to date");
-        preguntas.add(pregunta);
+        addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         pregunta = new Pregunta();
@@ -169,7 +189,7 @@ public class Juego implements Serializable {
         respuesta.setCuerpoRespuesta("To study galaxy formation and evolution");
         respuesta.setCorrecta();
         pregunta.getListaOpciones().add(respuesta);
-        preguntas.add(pregunta);
+        addConComprobacion(pregunta);
 
         ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -186,7 +206,7 @@ public class Juego implements Serializable {
         pregunta.getListaOpciones().add(respuesta);
 
         pregunta.setExplicacion("The James Webb Space Telescope observes in near-infrared light rather than visible or ultraviolet light in order to accomplish more effectively its objectives");
-        preguntas.add(pregunta);
+        addConComprobacion(pregunta);
 
         ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 

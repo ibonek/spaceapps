@@ -1,0 +1,39 @@
+<changelist name="Uncommitted_changes_before_Update_at_1_10_22_11_21_[Changes]" date="1664616062433" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_21_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 1/10/22 11:21 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/imagenes/JamesWebb.png" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/nivel4Controller.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/nivel4Controller.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_21_[Changes]/nivel4Controller.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/imagenes/hubble.png" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/vfController.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/vfController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_21_[Changes]/vfController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/controllerOpciones.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/controllerOpciones.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_21_[Changes]/controllerOpciones.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/Juego.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/Juego.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_21_[Changes]/Juego.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/HelloController.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/HelloController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_21_[Changes]/HelloController.class" />
+  </binary>
+</changelist>
