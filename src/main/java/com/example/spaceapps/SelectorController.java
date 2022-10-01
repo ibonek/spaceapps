@@ -1,12 +1,18 @@
 package com.example.spaceapps;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class SelectorController {
 
+    OpcionesJuego opciones;
     @FXML
     private Button bLevel1;
 
@@ -34,8 +40,13 @@ public class SelectorController {
     }
 
     @FXML
-    void botonLevel1(ActionEvent event) {
-
+    void botonLevel1(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel1.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        nivel1Controller controlador = fxmlLoader.getController();
+        controlador.ponerNombre(opciones.juego.getNombre());
+        controlador.setOpciones(opciones);
     }
 
     @FXML
@@ -53,4 +64,11 @@ public class SelectorController {
 
     }
 
+    public OpcionesJuego getOpciones() {
+        return opciones;
+    }
+
+    public void setOpciones(OpcionesJuego opciones) {
+        this.opciones = opciones;
+    }
 }

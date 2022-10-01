@@ -107,7 +107,8 @@ public class nivel1Controller {
         stage.show();
 
     }
-    void comprobarAciertos(){
+    void setearPuntos(){
+    puntos.setText(opciones.juego.getPuntos()+"");
 
     }
     public void ponerNombre(String n){

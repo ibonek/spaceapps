@@ -49,6 +49,8 @@ public class controllerOpciones {
     @FXML
     private Button continuar;
     @FXML
+    private Label puntos;
+    @FXML
     int p;
     int r;
     Juego juego = new Juego();
@@ -164,6 +166,8 @@ public class controllerOpciones {
 
         if (respuestaSeleccionada == null) return ;
         if(!respuestaSeleccionada.isCorrecta()){
+            opciones.juego.restPuntos();
+
             bTryAgain.setDisable(false);
             bTryAgain.setVisible(true);
             comprobar.setDisable(true);
@@ -177,6 +181,7 @@ public class controllerOpciones {
          }
 
         if(respuestaSeleccionada.isCorrecta()){
+            opciones.juego.setPuntos();
             comprobar.setDisable(true);
             continuar.setDisable(false);
             opciones.juego.setAciertos();
@@ -191,12 +196,14 @@ public class controllerOpciones {
 
             if(r==4) opcion4.setTextFill(DARKSEAGREEN);
         }
+        puntos.setText(opciones.juego.getPuntos()+"");
         opcion1.setDisable(true);
         opcion2.setDisable(true);
         opcion3.setDisable(true);
         opcion4.setDisable(true);
-
-
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel"+(opciones.juego.getAciertos()/3)+1+ ".fxml"));
+        nivel1Controller controller = fxmlLoader.getController();
+        controller.setearPuntos();
 
     }
 
