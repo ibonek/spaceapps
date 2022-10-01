@@ -42,22 +42,6 @@ public class SelectorController {
         puntos.setText(n + "");
     }
     @FXML
-    void BotonLevel5(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel5.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        nivel5Controller controlador = fxmlLoader.getController();
-        controlador.ponerNombre(opciones.juego.getNombre());
-        controlador.setPuntos(Integer.parseInt(puntos.getText()));
-        controlador.setOpciones(opciones);stage.setMaximized(false);
-        stage.setResizable(false);
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.setScene(scene);
-        stage.showAndWait();
-        puntos.setText(controlador.getPuntos());
-    }
-
-    @FXML
     void botonLevel1(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel1.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -120,7 +104,21 @@ public class SelectorController {
         stage.showAndWait();
         puntos.setText(controlador.getPuntos());
     }
-
+    @FXML
+    void BotonLevel5(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel5.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        nivel5Controller controlador = fxmlLoader.getController();
+        controlador.ponerNombre(opciones.juego.getNombre());
+        controlador.setPuntos(Integer.parseInt(puntos.getText()));
+        controlador.setOpciones(opciones);stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.showAndWait();
+        puntos.setText(controlador.getPuntos());
+    }
     public OpcionesJuego getOpciones() {
         return opciones;
     }
