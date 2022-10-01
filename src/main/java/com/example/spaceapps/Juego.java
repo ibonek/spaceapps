@@ -59,6 +59,7 @@ public class Juego implements Serializable {
     }
 
     public void addConComprobacion(Pregunta pregunta)throws Exception{
+        /*
         int contador = 0;
         for (Respuesta r: pregunta.getListaOpciones()){
             if (r.isCorrecta()){
@@ -68,9 +69,11 @@ public class Juego implements Serializable {
         if (contador != 1){
             throw new Exception();
         } else{
+
+         */
             preguntas.add(pregunta);
         }
-    }
+
 
     private void crearPreguntas() throws Exception {
         Pregunta pregunta = new Pregunta();
