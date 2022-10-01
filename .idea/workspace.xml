@@ -5,25 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="algo2">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/selectorNiveles.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/fuente.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/indice_y_nombre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/indice_y_nombre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/indice_y_nombre.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/indice.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/indice.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/indice_y_nombre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/indice_y_nombre.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel3.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel5.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel5.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/fondoImagenPrueba.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/css/fondoImagenPrueba.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/indice.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/css/indice.css" afterDir="false" />
     </list>
     <list id="e1bbeacc-1f3a-4eae-adbf-3a95dc39406c" name="Changes by alberto" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel5Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel5Controller.java" afterDir="false" />
@@ -39,7 +26,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/star4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/star5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/star5.png" afterDir="false" />
     </list>
-    <list id="ed55b4af-09e8-4d78-bd90-fc2c71182115" name="Changes by Gabriel" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +72,8 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.externalResources"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -199,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664618143177</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="algo2">
+      <created>1664623017871</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664623017871</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,5 +226,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

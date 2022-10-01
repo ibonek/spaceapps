@@ -1,13 +1,13 @@
 #fondo{
-    -fx-background-image: url("buena.jpg");
+    -fx-background-image: url("buena.jpg");}
 
-}
+
 #titulo{
     -fx-text-fill: white;
     -fx-font-size: 25pt;
     -fx-font-family: "Engravers MT";
 }
-#botonNew{
+#bBegin{
     -fx-font-size: 22pt;
     -fx-font-family: "Engravers MT";
     -fx-background-color: transparent;
@@ -17,7 +17,7 @@
     -fx-border-width: 5;
 
 }
-#botonContinuar{
+#bContinue{
     -fx-font-size: 22pt;
     -fx-font-family: "Engravers MT";
     -fx-background-color: transparent;

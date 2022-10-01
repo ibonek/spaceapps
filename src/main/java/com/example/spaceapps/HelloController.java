@@ -22,12 +22,12 @@ public class HelloController {
 
     @FXML
     private TextField nombre;
-
+    @FXML
+    private VBox fondo;
     @FXML
     private Button bContinue;
 
-    @FXML
-    private HBox fondo;
+
 
     @FXML
     private Label lLoad;
