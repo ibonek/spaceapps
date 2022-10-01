@@ -17,7 +17,7 @@
          <children>
             <ImageView fitHeight="107.0" fitWidth="327.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../css/star4.png" />
+                  <Image url="@../../../imagenes/star4.png" />
                </image>
             </ImageView>
             <HBox prefHeight="100.0" prefWidth="200.0">
