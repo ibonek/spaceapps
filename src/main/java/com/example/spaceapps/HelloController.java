@@ -40,8 +40,7 @@ public class HelloController {
 
     @FXML
     void pressBegin(ActionEvent event) throws IOException {
-        if(!nombre.getText().isBlank()) {
-            errornombre.visibleProperty().set(false);
+
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("new_preuba.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             OpcionesJuego opciones = new OpcionesJuego();
@@ -56,11 +55,7 @@ public class HelloController {
             stage.setResizable(false);
             stage.setScene(scene);
             stage.show();
-        }
-        else{
-            errornombre.visibleProperty().set(true);
-            errornombre.setText("You must introduce a valid name");
-        }
+
     }
 
     @FXML

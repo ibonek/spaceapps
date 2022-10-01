@@ -55,7 +55,7 @@ public class nombreController {
         else {
             errornombre.visibleProperty().set(true);
             errornombre.setText("You must introduce a valid name");
-        }}}
+        }}
 
     public OpcionesJuego getOpciones() {
         return opciones;
