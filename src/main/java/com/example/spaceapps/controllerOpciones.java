@@ -72,10 +72,15 @@ public class controllerOpciones {
         controller.comprobarAciertos();*/
         Stage stage1 = (Stage) pregunta.getScene().getWindow();
         stage1.close();
-       /* stage.setMaximized(false);
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel"+ opciones.juego.getAciertos()/3+1 + ".fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        nivel1Controller controller = fxmlLoader.getController();
+        controller.setearPuntos();
+       stage.setMaximized(false);
         stage.setResizable(false);
         stage.setScene(scene);
-        stage.show();*/
+        stage.show();
 
 
     }
@@ -196,17 +201,19 @@ public class controllerOpciones {
 
             if(r==4) opcion4.setTextFill(DARKSEAGREEN);
         }
-        puntos.setText(opciones.juego.getPuntos()+"");
+        setearPuntos();
         opcion1.setDisable(true);
         opcion2.setDisable(true);
         opcion3.setDisable(true);
         opcion4.setDisable(true);
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel"+(opciones.juego.getAciertos()/3)+1+ ".fxml"));
-        nivel1Controller controller = fxmlLoader.getController();
-        controller.setearPuntos();
+
 
     }
+    void setearPuntos(){
+        puntos.setText(opciones.juego.getPuntos()+"");
 
+
+    }
 
 
 }

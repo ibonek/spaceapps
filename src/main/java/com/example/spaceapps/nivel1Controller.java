@@ -67,6 +67,8 @@ public class nivel1Controller {
         controllerOpciones controller = fxmlLoader.getController();
         controller.setearPreguntas(0);
         controller.setOpciones(opciones);
+        controller.setearPuntos();
+
         stage.setTitle("Pregunta 1");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -83,7 +85,7 @@ public class nivel1Controller {
         controllerOpciones controller = fxmlLoader.getController();
         controller.setearPreguntas(1);
         controller.setOpciones(opciones);
-
+        controller.setearPuntos();
         stage.setTitle("Pregunta 2");
         stage.setMaximized(false);
         stage.setResizable(false);
