@@ -137,7 +137,8 @@ public class nivel1Controller {
             //deshabilitar luna
         }
         if(controller.getBoolean()){
-            //habilitar botonExpLuna y y hacerlo visible
+            expLuna.setVisible(true);
+            expLuna.setDisable(false);
         }
 
         if(opciones.juego.getVidas() == 3){
