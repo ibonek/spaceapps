@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="marcoNombre" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="291.0" style="-fx-background-color: #bcb1b1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.nombreController">
+<VBox fx:id="marcoNombre" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="328.0" style="-fx-background-color: #bcb1b1;" stylesheets="@../../../css/fuente.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.nombreController">
    <children>
       <Label fx:id="lNew" prefHeight="53.0" prefWidth="163.0" text="New Game">
          <font>
@@ -25,15 +25,12 @@
          </image>
       </ImageView>
       <TextField fx:id="nombre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="131.0" promptText="Name" />
-      <Label fx:id="lNew1" layoutX="168.0" layoutY="89.0" />
-      <Button fx:id="bContinue" mnemonicParsing="false" onAction="#pressContinue" text="Continue" />
-      <Label fx:id="errornombre" textFill="RED" visible="false">
+      <Button fx:id="bContinue" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#pressContinue" prefHeight="51.0" prefWidth="172.0" text="Continue">
          <VBox.margin>
-            <Insets top="20.0" />
-         </VBox.margin>
-      </Label>
+            <Insets bottom="30.0" top="20.0" />
+         </VBox.margin></Button>
    </children>
    <padding>
-      <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+      <Insets left="20.0" right="20.0" top="20.0" />
    </padding>
 </VBox>
