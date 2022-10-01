@@ -11,10 +11,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox fx:id="fondo2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="653.0" stylesheets="@../../../css/fondoImagenPrueba.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.nivel2Controller">
+<HBox fx:id="fondo2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="899.0" stylesheets="@../../../css/fondoImagenPrueba.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.nivel2Controller">
    <children>
       <VBox prefHeight="400.0" prefWidth="26.0" />
-      <VBox prefHeight="400.0" prefWidth="213.0">
+      <VBox prefHeight="400.0" prefWidth="213.0" HBox.hgrow="ALWAYS">
          <children>
             <MenuButton fx:id="botonN2" blendMode="SRC_ATOP" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.89" prefHeight="60.0" prefWidth="66.0" style="-fx-border-color: 0; -fx-border-width: 0; -fx-background-radius: 0;">
               <items>
@@ -45,7 +45,7 @@
                      </font>
                   </Label>
                </children></HBox>
-            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
                   <Button fx:id="bMarte" contentDisplay="GRAPHIC_ONLY" maxHeight="66.0" maxWidth="66.0" minHeight="55.0" minWidth="56.0" mnemonicParsing="false" onAction="#botonMarte" prefHeight="55.0" prefWidth="56.0" text="Button">
                      <graphic>
@@ -63,7 +63,7 @@
             </HBox>
          </children>
       </VBox>
-      <VBox prefHeight="400.0" prefWidth="198.0">
+      <VBox alignment="BOTTOM_CENTER" prefHeight="400.0" prefWidth="198.0">
          <children>
             <HBox prefHeight="100.0" prefWidth="200.0" />
             <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">

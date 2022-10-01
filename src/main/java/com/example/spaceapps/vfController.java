@@ -57,15 +57,6 @@ public class vfController {
 
     @FXML
     void botonAtras(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        Stage stage1 = (Stage) pregunta.getScene().getWindow();
-        stage1.close();
-        stage.setMaximized(false);
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
 
     }
 

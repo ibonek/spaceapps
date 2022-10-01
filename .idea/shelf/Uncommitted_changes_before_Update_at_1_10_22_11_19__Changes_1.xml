@@ -1,0 +1,49 @@
+<changelist name="Uncommitted_changes_before_Update_at_1_10_22_11_19_[Changes]1" date="1664615979515" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 1/10/22 11:19 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/css/nivel2.jpg" />
+    <option name="AFTER_PATH" value="src/main/resources/css/nivel2.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19_[Changes]1/nivel2.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/HelloApplication.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/HelloApplication.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19_[Changes]1/HelloApplication.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/nivel4Controller.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/nivel4Controller.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19_[Changes]1/nivel4Controller.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/vfController.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/vfController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19_[Changes]1/vfController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/css/nivel3.jpg" />
+    <option name="AFTER_PATH" value="src/main/resources/css/nivel3.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19_[Changes]1/nivel3.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/css/nivel1.jpg" />
+    <option name="AFTER_PATH" value="src/main/resources/css/nivel1.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19_[Changes]1/nivel1.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/imagenes/fonodsnivel/nivel4.jpg" />
+    <option name="AFTER_PATH" value="src/main/resources/imagenes/fonodsnivel/nivel4.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19_[Changes]1/nivel4.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/resources/css/nivel5.jpg" />
+    <option name="AFTER_PATH" value="src/main/resources/css/nivel5.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19_[Changes]1/nivel5.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/nivel3Controller.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/nivel3Controller.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19_[Changes]1/nivel3Controller.class" />
+  </binary>
+</changelist>
