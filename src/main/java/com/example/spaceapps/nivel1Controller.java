@@ -235,11 +235,33 @@ public class nivel1Controller {
         }
     }
     public void desbloquear(){
-        bVenus.setDisable(false);
-        e2.setTextFill(WHITE);
-        bLuna.setDisable(true);
-        e1.setTextFill(YELLOW);
-        expLuna.setVisible(true);
-        expLuna.setDisable(false);
+        if(opciones.juego.getAciertos() > 3){
+            e1.setTextFill(YELLOW);
+            e2.setTextFill(YELLOW);
+            e3.setTextFill(YELLOW);
+            expLuna.setVisible(true);
+            expLuna.setDisable(false);
+            expVenus.setVisible(true);
+            expVenus.setDisable(false);
+            expMercurio.setVisible(true);
+            expMercurio.setDisable(false);
+        }
+        if(opciones.juego.getAciertos() > 2){
+            e1.setTextFill(YELLOW);
+            e2.setTextFill(YELLOW);
+            expLuna.setVisible(true);
+            expLuna.setDisable(false);
+            expVenus.setVisible(true);
+            expVenus.setDisable(false);
+            bMercurio.setDisable(false);
+        }
+        if(opciones.juego.getAciertos() > 1){
+            bVenus.setDisable(false);
+            e2.setTextFill(WHITE);
+            bLuna.setDisable(true);
+            e1.setTextFill(YELLOW);
+            expLuna.setVisible(true);
+            expLuna.setDisable(false);
+        }
     }
 }
