@@ -46,7 +46,7 @@ public class nombreController {
 
             opciones.crearJuego();
             opciones.juego.setNombre(nombre.getText());
-            controlador.setOpciones(opciones);
+            controlador.setOpciones(opciones, opciones.juego.getNombre());
             stage1.close();
             stage.setTitle("Level 1");
             stage.setMaximized(false);
