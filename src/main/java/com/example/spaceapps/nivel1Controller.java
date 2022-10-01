@@ -130,6 +130,16 @@ public class nivel1Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
+        if(controller.getBoolean()){
+            //habilitar botonVenus
+        }
+        if(controller.getBoolean()){
+            //deshabilitar luna
+        }
+        if(controller.getBoolean()){
+            //habilitar botonExpLuna y y hacerlo visible
+        }
+
         if(opciones.juego.getVidas() == 3){
             vida1.setVisible(true);
             vida2.setVisible(true);
