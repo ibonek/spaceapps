@@ -73,6 +73,7 @@ public class nivel1Controller {
     @FXML
     private ImageView vida3;
 
+    public boolean correcto;
     @FXML
     void botonExpVenus(ActionEvent event) {
 
@@ -134,21 +135,10 @@ public class nivel1Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
-        if(controller.getBoolean() == true){
-            bVenus.setDisable(false);
-            e2.setTextFill(WHITE);
+        correcto = controller.getBoolean();
+        if(correcto){
+            desbloquear();
         }
-        if(controller.getBoolean()){
-            //deshabilitar luna
-            bLuna.setDisable(true);
-            e1.setTextFill(YELLOW);
-
-        }
-        if(controller.getBoolean()){
-            expLuna.setVisible(true);
-            expLuna.setDisable(false);
-        }
-
         if(opciones.juego.getVidas() == 3){
             vida1.setVisible(true);
             vida2.setVisible(true);
@@ -243,5 +233,13 @@ public class nivel1Controller {
             opciones.juego.setVidas(3);
             opciones.juego.resetearPuntos();
         }
+    }
+    public void desbloquear(){
+        bVenus.setDisable(false);
+        e2.setTextFill(WHITE);
+        bLuna.setDisable(true);
+        e1.setTextFill(YELLOW);
+        expLuna.setVisible(true);
+        expLuna.setDisable(false);
     }
 }
