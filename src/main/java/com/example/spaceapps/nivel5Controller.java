@@ -80,6 +80,9 @@ public class nivel5Controller {
     }
     public void ponerNombre(String n){
         eNombre.setText(n);
-
+    }
+    public String getPuntos(){return puntos.getText();}
+    public void setPuntos(int n){
+        puntos.setText(n + "");
     }
 }
