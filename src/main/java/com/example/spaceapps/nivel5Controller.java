@@ -54,14 +54,6 @@ public class nivel5Controller {
     @FXML
     private ImageView vida3;
     private OpcionesJuego opciones;
-
-    public OpcionesJuego getOpciones() {
-        return opciones;
-    }
-
-    public void setOpciones(OpcionesJuego opciones) {
-        this.opciones = opciones;
-    }
     @FXML
     void botonAguNegro(ActionEvent event) {
 
@@ -85,8 +77,32 @@ public class nivel5Controller {
     public void ponerNombre(String n){
         eNombre.setText(n);
     }
+    public OpcionesJuego getOpciones() {
+        return opciones;
+    }
+
+    public void setOpciones(OpcionesJuego opciones) {
+        this.opciones = opciones;
+    }
+
     public String getPuntos(){return puntos.getText();}
     public void setPuntos(int n){
         puntos.setText(n + "");
+    }
+
+    public void setVidas(int v){
+        if(v == 3){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+        } else if(v == 2){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(false);
+            vida3.setVisible(false);
+        }
     }
 }

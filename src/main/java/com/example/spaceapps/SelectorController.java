@@ -93,7 +93,9 @@ public class SelectorController {
         nivel2Controller controlador = fxmlLoader.getController();
         controlador.ponerNombre(opciones.juego.getNombre());
         controlador.setPuntos(Integer.parseInt(puntos.getText()));
-        controlador.setOpciones(opciones);stage.setMaximized(false);
+        controlador.setOpciones(opciones);
+        controlador.setVidas(opciones.juego.getVidas());
+        stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
@@ -109,7 +111,9 @@ public class SelectorController {
         nivel3Controller controlador = fxmlLoader.getController();
         controlador.ponerNombre(opciones.juego.getNombre());
         controlador.setPuntos(Integer.parseInt(puntos.getText()));
-        controlador.setOpciones(opciones);stage.setMaximized(false);
+        controlador.setOpciones(opciones);
+        controlador.setVidas(opciones.juego.getVidas());
+        stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
@@ -125,7 +129,9 @@ public class SelectorController {
         nivel4Controller controlador = fxmlLoader.getController();
         controlador.ponerNombre(opciones.juego.getNombre());
         controlador.setPuntos(Integer.parseInt(puntos.getText()));
-        controlador.setOpciones(opciones);stage.setMaximized(false);
+        controlador.setOpciones(opciones);
+        stage.setMaximized(false);
+        controlador.setVidas(opciones.juego.getVidas());
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
@@ -140,7 +146,9 @@ public class SelectorController {
         nivel5Controller controlador = fxmlLoader.getController();
         controlador.ponerNombre(opciones.juego.getNombre());
         controlador.setPuntos(Integer.parseInt(puntos.getText()));
-        controlador.setOpciones(opciones);stage.setMaximized(false);
+        controlador.setOpciones(opciones);
+        controlador.setVidas(opciones.juego.getVidas());
+        stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
