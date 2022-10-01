@@ -98,6 +98,7 @@ public class Juego implements Serializable {
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------
+        /*
         //pregunta de imagen
         pregunta.setCuerpoPregunta("");
         pregunta.setExplicacion("");
@@ -107,7 +108,7 @@ public class Juego implements Serializable {
 
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
+        respuesta.setCuerpoRespuesta(".");
         respuesta.setCorrecta();
         pregunta.getListaOpciones().add(respuesta);
 
@@ -120,7 +121,10 @@ public class Juego implements Serializable {
 
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
+
+         */
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
+        /*
         pregunta= new Pregunta();
         pregunta.setCuerpoPregunta("");
 
@@ -135,8 +139,9 @@ public class Juego implements Serializable {
 
         pregunta.setExplicacion("");
         addConComprobacion(pregunta);
+        */
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------
-        //imagen
+ /*       //imagen
         pregunta.setCuerpoPregunta("");
         pregunta.setExplicacion("");
         respuesta = new Respuesta();
@@ -145,7 +150,7 @@ public class Juego implements Serializable {
 
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
+        respuesta.setCuerpoRespuesta(".");
         respuesta.setCorrecta();
         pregunta.getListaOpciones().add(respuesta);
 
@@ -158,9 +163,9 @@ public class Juego implements Serializable {
 
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
-
+*/
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------
-        pregunta.setCuerpoPregunta("");
+/*        pregunta.setCuerpoPregunta("");
         pregunta.setExplicacion("");
         respuesta = new Respuesta();
         respuesta.setCuerpoRespuesta("");
@@ -168,7 +173,7 @@ public class Juego implements Serializable {
 
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
+        respuesta.setCuerpoRespuesta(".");
         respuesta.setCorrecta();
         pregunta.getListaOpciones().add(respuesta);
 
@@ -181,7 +186,7 @@ public class Juego implements Serializable {
 
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
-
+*/
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         pregunta= new Pregunta();
@@ -262,6 +267,7 @@ public class Juego implements Serializable {
         pregunta.setExplicacion("The James Webb Space Telescope must be kept below 50 K (-223.2 ºC); otherwise, infrared radiation from the telescope itself would overwhelm its sensors. To maintain this temperature, a large sunshield blocks light and heat from nearby space bodies and stops impacts from small asteroids. In addition, a mechanical helium gas cooler is located on the hot side of the environmental shield");
         addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
+        /*
         pregunta.setCuerpoPregunta("");
         pregunta.setExplicacion("");
         respuesta = new Respuesta();
@@ -270,7 +276,7 @@ public class Juego implements Serializable {
 
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
+        respuesta.setCuerpoRespuesta(".");
         respuesta.setCorrecta();
         pregunta.getListaOpciones().add(respuesta);
 
@@ -283,6 +289,8 @@ public class Juego implements Serializable {
 
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
+
+         */
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         pregunta = new Pregunta();
