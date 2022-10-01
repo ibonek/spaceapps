@@ -1,0 +1,316 @@
+Index: src/main/resources/css/fondoImagenPrueba.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#fondo1{\n    -fx-background-image: url(\"nivel1.jpg\");\n}\n#fondo2{\n    -fx-background-image: url(\"nivel2.jpg\");\n}\n#fondo3{\n    -fx-background-image: url(\"nivel3.jpg\");\n}\n#fondo4{\n    -fx-background-image: url(\"nivel4.jpg\");\n}\n#fondo5{\n    -fx-background-image: url(\"nivel5.jpg\");\n}\n#botonN2{\n    -fx-background-color: TRANSPARENT;\n}\n.button{\n    -fx-background-color: TRANSPARENT;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/css/fondoImagenPrueba.css b/src/main/resources/css/fondoImagenPrueba.css
+--- a/src/main/resources/css/fondoImagenPrueba.css	(revision ace0f76475c08d2b51d51322d41e4a442ab1d24f)
++++ b/src/main/resources/css/fondoImagenPrueba.css	(date 1664626300020)
+@@ -1,3 +1,6 @@
++#fondoSelect{
++    -fx-background-image: url("selec.jpg");
++}
+ #fondo1{
+     -fx-background-image: url("nivel1.jpg");
+ }
+Index: src/main/resources/com/example/spaceapps/selectorNiveles.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<?import java.lang.*?>\n<?import java.util.*?>\n<?import javafx.scene.*?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<AnchorPane xmlns=\"http://javafx.com/javafx\"\n            xmlns:fx=\"http://javafx.com/fxml\"\n            fx:controller=\"com.example.spaceapps.SelectorNiveles\"\n            prefHeight=\"400.0\" prefWidth=\"600.0\">\n\n</AnchorPane>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/spaceapps/selectorNiveles.fxml b/src/main/resources/com/example/spaceapps/selectorNiveles.fxml
+--- a/src/main/resources/com/example/spaceapps/selectorNiveles.fxml	(revision ace0f76475c08d2b51d51322d41e4a442ab1d24f)
++++ b/src/main/resources/com/example/spaceapps/selectorNiveles.fxml	(date 1664631502987)
+@@ -1,14 +1,134 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import java.lang.*?>
+-<?import java.util.*?>
+-<?import javafx.scene.*?>
+-<?import javafx.scene.control.*?>
+-<?import javafx.scene.layout.*?>
++<?import javafx.scene.control.Button?>
++<?import javafx.scene.control.Label?>
++<?import javafx.scene.image.Image?>
++<?import javafx.scene.image.ImageView?>
++<?import javafx.scene.layout.HBox?>
++<?import javafx.scene.layout.Region?>
++<?import javafx.scene.layout.VBox?>
++<?import javafx.scene.text.Font?>
+ 
+-<AnchorPane xmlns="http://javafx.com/javafx"
+-            xmlns:fx="http://javafx.com/fxml"
+-            fx:controller="com.example.spaceapps.SelectorNiveles"
+-            prefHeight="400.0" prefWidth="600.0">
+-
+-</AnchorPane>
++<HBox fx:id="fondoSelect" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="899.0" stylesheets="@../../../css/fondoImagenPrueba.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.SelectorController">
++   <children>
++      <VBox alignment="BOTTOM_RIGHT" prefHeight="600.0" prefWidth="105.0">
++         <children>
++            <ImageView fitHeight="71.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
++               <image>
++                  <Image url="@../../../imagenes/astronaut.png" />
++               </image>
++            </ImageView>
++            <Label fx:id="eNombre" prefHeight="20.0" prefWidth="73.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
++               <font>
++                  <Font name="System Bold" size="16.0" />
++               </font>
++            </Label>
++         </children>
++      </VBox>
++      <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
++         <children>
++            <HBox alignment="CENTER" prefHeight="224.0" prefWidth="355.0">
++               <children>
++                  <Region prefHeight="224.0" prefWidth="61.0" />
++                  <Button fx:id="bLevel3" ellipsisString="" mnemonicParsing="false" onAction="#botonLevel3">
++                     <graphic>
++                        <ImageView fitHeight="58.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
++                           <image>
++                              <Image url="@../../../imagenes/fonodsnivel/telescopio-espacial-hubble.png" />
++                           </image>
++                        </ImageView>
++                     </graphic>
++                  </Button>
++                  <Label text="Level 3" textFill="WHITE">
++                     <font>
++                        <Font name="System Bold" size="14.0" />
++                     </font>
++                  </Label>
++               </children>
++            </HBox>
++            <HBox prefHeight="165.0" prefWidth="397.0">
++               <children>
++                  <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
++                     <children>
++                        <Button fx:id="bLevel2" mnemonicParsing="false" onAction="#botonLevel2">
++                           <graphic>
++                              <ImageView fitHeight="51.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
++                                 <image>
++                                    <Image url="@../../../imagenes/fonodsnivel/telescope%20(2).png" />
++                                 </image>
++                              </ImageView>
++                           </graphic>
++                        </Button>
++                        <Label text="Level 2" textFill="WHITE">
++                           <font>
++                              <Font name="System Bold" size="14.0" />
++                           </font>
++                        </Label>
++                     </children>
++                  </VBox>
++                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
++                     <children>
++                        <Button fx:id="bLevel1" mnemonicParsing="false" onAction="#botonLevel1">
++                           <graphic>
++                              <ImageView fitHeight="70.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
++                                 <image>
++                                    <Image url="@../../../imagenes/fonodsnivel/telescope.png" />
++                                 </image>
++                              </ImageView>
++                           </graphic>
++                        </Button>
++                        <Label text="Level 1" textFill="WHITE">
++                           <font>
++                              <Font name="System Bold" size="14.0" />
++                           </font>
++                        </Label>
++                     </children>
++                  </VBox>
++                  <Region prefHeight="165.0" prefWidth="26.0" />
++               </children>
++            </HBox>
++         </children>
++      </VBox>
++      <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
++         <children>
++            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
++               <children>
++                  <Label text="Level 4" textFill="WHITE">
++                     <font>
++                        <Font name="System Bold" size="14.0" />
++                     </font>
++                  </Label>
++                  <Button fx:id="bLevel4" mnemonicParsing="false" onAction="#botonLevvel4">
++                     <graphic>
++                        <ImageView fitHeight="69.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
++                           <image>
++                              <Image url="@../../../imagenes/fonodsnivel/telescopio-espacial-hubble%20(1).png" />
++                           </image>
++                        </ImageView>
++                     </graphic>
++                  </Button>
++                  <Region prefHeight="300.0" prefWidth="73.0" />
++               </children>
++            </HBox>
++            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
++               <children>
++                  <Button fx:id="bLevel5" mnemonicParsing="false" onAction="#BotonLevel5">
++                     <graphic>
++                        <ImageView fitHeight="83.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
++                           <image>
++                              <Image url="@../../../imagenes/fonodsnivel/James-webb.png" />
++                           </image>
++                        </ImageView>
++                     </graphic>
++                  </Button>
++                  <Label text="Level 5" textFill="WHITE">
++                     <font>
++                        <Font name="System Bold" size="14.0" />
++                     </font>
++                  </Label>
++               </children>
++            </HBox>
++         </children>
++      </VBox>
++   </children>
++</HBox>
+Index: src/main/java/com/example/spaceapps/SelectorController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/SelectorController.java b/src/main/java/com/example/spaceapps/SelectorController.java
+new file mode 100644
+--- /dev/null	(date 1664631476994)
++++ b/src/main/java/com/example/spaceapps/SelectorController.java	(date 1664631476994)
+@@ -0,0 +1,56 @@
++package com.example.spaceapps;
++import javafx.event.ActionEvent;
++import javafx.fxml.FXML;
++import javafx.scene.control.Button;
++import javafx.scene.control.Label;
++import javafx.scene.layout.HBox;
++
++public class SelectorController {
++
++    @FXML
++    private Button bLevel1;
++
++    @FXML
++    private Button bLevel2;
++
++    @FXML
++    private Button bLevel3;
++
++    @FXML
++    private Button bLevel4;
++
++    @FXML
++    private Button bLevel5;
++
++    @FXML
++    private Label eNombre;
++
++    @FXML
++    private HBox fondoSelect;
++
++    @FXML
++    void BotonLevel5(ActionEvent event) {
++
++    }
++
++    @FXML
++    void botonLevel1(ActionEvent event) {
++
++    }
++
++    @FXML
++    void botonLevel2(ActionEvent event) {
++
++    }
++
++    @FXML
++    void botonLevel3(ActionEvent event) {
++
++    }
++
++    @FXML
++    void botonLevvel4(ActionEvent event) {
++
++    }
++
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"Niveles finales (tamaño y botones)\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_18_ea_6.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_19_ea_7.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/spaceapps.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/spaceapps.iml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/listaController.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel3Controller.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel3Controller.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel4Controller.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel4Controller.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel5Controller.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel5Controller.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel1.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel1.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel2.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel2.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel3.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel3.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel4.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel4.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel5.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel5.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel2.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel2.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel3.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel3.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4Controller.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4Controller.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel5.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel5.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/imagenes/star1.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/imagenes/star1.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/imagenes/star2.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/imagenes/star2.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/imagenes/star3.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/imagenes/star3.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/imagenes/star4.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/imagenes/star4.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/imagenes/star5.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/imagenes/star5.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/imagenes/star6.png\" beforeDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"FxmlFile\" />\n        <option value=\"Class\" />\n        <option value=\"AnnotationType\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"generalSettings\">\n      <MavenGeneralSettings>\n        <option name=\"useMavenConfig\" value=\"true\" />\n      </MavenGeneralSettings>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"2FMP6M2wRcwwxI5JFSrvFxdkITE\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CreateClassDialog.RecentsKey\">\n      <recent name=\"com.example.spaceapps\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/resources/css\" />\n      <recent name=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"HelloApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.spaceapps.HelloApplication\" />\n      <module name=\"spaceapps\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.example.spaceapps.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.HelloApplication\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"\" />\n      <created>1664298806623</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1664298806623</updated>\n      <workItem from=\"1664298810150\" duration=\"1663000\" />\n      <workItem from=\"1664301389990\" duration=\"9863000\" />\n      <workItem from=\"1664314821535\" duration=\"60000\" />\n      <workItem from=\"1664358906258\" duration=\"1839000\" />\n      <workItem from=\"1664360987849\" duration=\"5375000\" />\n      <workItem from=\"1664531652163\" duration=\"96000\" />\n      <workItem from=\"1664531880746\" duration=\"42000\" />\n      <workItem from=\"1664531941749\" duration=\"2795000\" />\n      <workItem from=\"1664611383206\" duration=\"334000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"algo\">\n      <created>1664313547737</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664313547737</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"algo\">\n      <created>1664359725564</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664359725564</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"algo\">\n      <created>1664360526505</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664360526505</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"algo2\">\n      <created>1664365925695</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664365925695</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"algo2\">\n      <created>1664365935369</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664365935369</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"commit tonto\">\n      <created>1664519157536</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664519157536</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"algo2\">\n      <created>1664560719082</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664560719082</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"8\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"algo\" />\n    <MESSAGE value=\"commit tonto\" />\n    <MESSAGE value=\"algo2\" />\n    <MESSAGE value=\"Niveles finales (tamaño y botones)\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Niveles finales (tamaño y botones)\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ace0f76475c08d2b51d51322d41e4a442ab1d24f)
++++ b/.idea/workspace.xml	(date 1664631513667)
+@@ -5,36 +5,10 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="Niveles finales (tamaño y botones)">
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_18_ea_6.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_19_ea_7.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml" beforeDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/SelectorController.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/listaController.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel3Controller.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel4Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel4Controller.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel5Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel5Controller.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel1.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel2.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel3.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel4.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel5.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel5.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel2.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel3.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4Controller.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel5.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel5.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/imagenes/star1.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star2.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/imagenes/star2.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star3.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/imagenes/star3.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star4.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/imagenes/star4.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star5.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/imagenes/star5.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/star6.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/selectorNiveles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/selectorNiveles.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/css/fondoImagenPrueba.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/fondoImagenPrueba.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -44,9 +18,9 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
++        <option value="AnnotationType" />
+         <option value="FxmlFile" />
+         <option value="Class" />
+-        <option value="AnnotationType" />
+       </list>
+     </option>
+   </component>
+@@ -179,7 +153,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1664560719082</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <task id="LOCAL-00008" summary="Niveles finales (tamaño y botones)">
++      <created>1664625617195</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1664625617195</updated>
++    </task>
++    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
