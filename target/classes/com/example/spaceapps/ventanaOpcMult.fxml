@@ -11,7 +11,7 @@
    <children>
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="365.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#botonTryAgain" text="Try again" />
+            <Button mnemonicParsing="false" onAction="#botonAtras" text="Atrás" />
             <Label fx:id="progreso" prefHeight="17.0" prefWidth="71.0" />
          </children>
       </HBox>
@@ -26,8 +26,8 @@
       </VBox>
       <HBox alignment="BOTTOM_RIGHT" prefHeight="171.0" prefWidth="484.0" spacing="30.0">
          <children>
-            <Button fx:id="compr" mnemonicParsing="false" onAction="#botonComprobar" prefHeight="26.0" prefWidth="82.0" text="Comprobar" />
-            <Button fx:id="continuar" disable="true" mnemonicParsing="false" onAction="#botonContinuar" text="Continuar" />
+            <Button fx:id="compr" mnemonicParsing="false" onAction="#botonComprobar" prefHeight="26.0" prefWidth="82.0" text="Check" />
+            <Button fx:id="continuar" disable="true" mnemonicParsing="false" onAction="#botonContinuar" text="Continue" />
          </children>
       </HBox>
    </children>
