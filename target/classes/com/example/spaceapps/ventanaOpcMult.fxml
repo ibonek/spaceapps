@@ -8,8 +8,9 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox fx:id="fondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.controllerOpciones">
+<VBox fx:id="fondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="899.0" stylesheets="@../../../css/hojaniveles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.controllerOpciones">
    <children>
       <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="333.0" spacing="365.0" stylesheets="@../../../css/fuente.css">
          <children>
@@ -72,10 +73,13 @@
             <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="223.0" spacing="40.0" />
          </children>
       </HBox>
-      <Label fx:id="pregunta" alignment="CENTER" prefHeight="95.0" prefWidth="859.0" wrapText="true">
+      <Label fx:id="pregunta" alignment="CENTER" prefHeight="95.0" prefWidth="859.0" textFill="WHITE" wrapText="true">
          <VBox.margin>
             <Insets top="100.0" />
-         </VBox.margin></Label>
+         </VBox.margin>
+         <font>
+            <Font size="17.0" />
+         </font></Label>
       <HBox prefHeight="250.0" prefWidth="850.0">
          <children>
             <VBox prefHeight="200.0" prefWidth="425.0" spacing="100.0">
@@ -100,8 +104,11 @@
       </HBox>
       <HBox alignment="BOTTOM_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="859.0" spacing="30.0">
          <children>
-            <Button fx:id="comprobar" mnemonicParsing="false" onAction="#botonComprobar" prefHeight="25.0" prefWidth="80.0" text="Check" />
-            <Button fx:id="continuar" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonContinuar" prefHeight="25.0" prefWidth="80.0" text="Continue" />
+            <Button fx:id="comprobar" mnemonicParsing="false" onAction="#botonComprobar" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="Check" />
+            <Button fx:id="continuar" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonContinuar" prefHeight="33.0" prefWidth="80.0" style="-fx-border-color: white; -fx-background-color: transparent; -fx-border-width: 3;" text="Continue">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
          </children>
       </HBox>
    </children>
