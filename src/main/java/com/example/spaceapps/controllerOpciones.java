@@ -25,7 +25,7 @@ public class controllerOpciones {
         return puntos.getText();
     }
     public int getVidas(){
-        return vida;
+        return juego.getVidas();
     }
     OpcionesJuego opciones;
 
@@ -74,7 +74,6 @@ public class controllerOpciones {
     boolean resp2;
     boolean resp3;
     boolean resp4;
-    int vida;
     Respuesta respuestaSeleccionada;
 
     @FXML
@@ -172,11 +171,11 @@ public class controllerOpciones {
             opciones.juego.restPuntos();
             if(vida3.isVisible()){
                 vida3.setVisible(false);
-                vida = 2;
+                juego.setVidas(2);
             }else if(vida2.isVisible()){
                 vida3.setVisible(false);
                 vida2.setVisible(false);
-                vida = 1;
+                juego.setVidas(1);
             }else {
                 vida3.setVisible(false);
                 vida2.setVisible(false);
