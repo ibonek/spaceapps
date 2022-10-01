@@ -50,7 +50,15 @@ public class nivel5Controller {
 
     @FXML
     private ImageView vida3;
+    private OpcionesJuego opciones;
 
+    public OpcionesJuego getOpciones() {
+        return opciones;
+    }
+
+    public void setOpciones(OpcionesJuego opciones) {
+        this.opciones = opciones;
+    }
     @FXML
     void botonAguNegro(ActionEvent event) {
 
@@ -70,5 +78,8 @@ public class nivel5Controller {
     void botonSuperNova(ActionEvent event) {
 
     }
+    public void ponerNombre(String n){
+        eNombre.setText(n);
 
+    }
 }

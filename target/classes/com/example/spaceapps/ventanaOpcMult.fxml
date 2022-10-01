@@ -55,7 +55,7 @@
                   </VBox>
                   <HBox alignment="TOP_RIGHT" prefHeight="121.0" prefWidth="466.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <Button fx:id="bTryAgain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonTryAgain" prefHeight="45.0" prefWidth="45.0">
+                        <Button fx:id="bTryAgain" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonTryAgain" prefHeight="45.0" prefWidth="45.0" visible="false">
                            <HBox.margin>
                               <Insets right="20.0" top="20.0" />
                            </HBox.margin>

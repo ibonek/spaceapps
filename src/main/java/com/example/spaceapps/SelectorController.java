@@ -35,8 +35,16 @@ public class SelectorController {
     private HBox fondoSelect;
 
     @FXML
-    void BotonLevel5(ActionEvent event) {
-
+    void BotonLevel5(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel5.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        nivel5Controller controlador = fxmlLoader.getController();
+        controlador.ponerNombre(opciones.juego.getNombre());
+        controlador.setOpciones(opciones);stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
@@ -46,29 +54,57 @@ public class SelectorController {
         Stage stage = new Stage();
         nivel1Controller controlador = fxmlLoader.getController();
         controlador.ponerNombre(opciones.juego.getNombre());
-        controlador.setOpciones(opciones);
+        controlador.setOpciones(opciones);stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    void botonLevel2(ActionEvent event) {
-
+    void botonLevel2(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel2.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        nivel2Controller controlador = fxmlLoader.getController();
+        controlador.ponerNombre(opciones.juego.getNombre());
+        controlador.setOpciones(opciones);stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    void botonLevel3(ActionEvent event) {
-
+    void botonLevel3(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel3.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        nivel3Controller controlador = fxmlLoader.getController();
+        controlador.ponerNombre(opciones.juego.getNombre());
+        controlador.setOpciones(opciones);stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    void botonLevvel4(ActionEvent event) {
-
+    void botonLevvel4(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel4.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        nivel4Controller controlador = fxmlLoader.getController();
+        controlador.ponerNombre(opciones.juego.getNombre());
+        controlador.setOpciones(opciones);stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     public OpcionesJuego getOpciones() {
         return opciones;
     }
 
-    public void setOpciones(OpcionesJuego opciones) {
+    public void setOpciones(OpcionesJuego opciones, String n) {
         this.opciones = opciones;
+        eNombre.setText(n);
     }
 }
