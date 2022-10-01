@@ -14,6 +14,15 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class nivel1Controller {
+    private OpcionesJuego opciones;
+
+    public OpcionesJuego getOpciones() {
+        return opciones;
+    }
+
+    public void setOpciones(OpcionesJuego opciones) {
+        this.opciones = opciones;
+    }
 
     @FXML
     private HBox fondo1;
@@ -45,7 +54,6 @@ public class nivel1Controller {
     void IrANivel4(ActionEvent event) {
 
     }
-
     @FXML
     void IrANivel5(ActionEvent event) {
 
@@ -58,6 +66,7 @@ public class nivel1Controller {
         Stage stage = new Stage();
         controllerOpciones controller = fxmlLoader.getController();
         controller.setearPreguntas(0);
+        controller.setOpciones(opciones);
         stage.setTitle("Pregunta 1");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -73,6 +82,8 @@ public class nivel1Controller {
         Stage stage = new Stage();
         controllerOpciones controller = fxmlLoader.getController();
         controller.setearPreguntas(1);
+        controller.setOpciones(opciones);
+
         stage.setTitle("Pregunta 2");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -87,6 +98,8 @@ public class nivel1Controller {
         Stage stage = new Stage();
         vfController controller = fxmlLoader.getController();
         controller.setearPreguntas(2);
+        controller.setOpciones(opciones);
+
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -94,7 +107,6 @@ public class nivel1Controller {
         stage.show();
 
     }
-
     @FXML
     void irANivel2(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel2.fxml"));
@@ -110,8 +122,19 @@ public class nivel1Controller {
         stage.show();
 
     }
+    void comprobarAciertos(){
+
+        OpcionesJuego opciones = new OpcionesJuego();
+        if (opciones.juego.getAciertos()>=3 ) {
+            botonN2.setDisable(false);
+
+
+        }
+
+    }
     public void ponerNombre(String n){
         eNombre.setText(n);
+
     }
 }
 

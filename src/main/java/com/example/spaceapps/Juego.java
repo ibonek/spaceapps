@@ -5,11 +5,19 @@ import java.util.LinkedList;
 
 public class Juego implements Serializable {
     private LinkedList<Pregunta> preguntas = new LinkedList<>();
-    private int nivelActual = 1;
+    private int aciertos = 0;
 
     private int puntos = 0;
-
+    private String nombre;
     private int vidas= 3;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
     public int getPuntos() {
         return puntos;
@@ -39,9 +47,12 @@ public class Juego implements Serializable {
         return preguntas;
     }
 
+    public void setAciertos() {
+        aciertos++;
+    }
 
-    public int getNivelActual() {
-        return nivelActual;
+    public int getAciertos() {
+        return aciertos;
     }
 
     public void addConComprobacion(Pregunta pregunta)throws Exception{
@@ -58,9 +69,6 @@ public class Juego implements Serializable {
         }
     }
 
-    public void setNivelActual(int nivelActual) {
-        this.nivelActual = nivelActual;
-    }
     private void crearPreguntas() throws Exception {
         Pregunta pregunta = new Pregunta();
 

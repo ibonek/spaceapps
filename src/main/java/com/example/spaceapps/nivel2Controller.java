@@ -26,10 +26,19 @@ public class nivel2Controller {
         @FXML
         private MenuButton botonN2;
 
-        @FXML
-        private ImageView botonSaturno;
+    public OpcionesJuego getOpciones() {
+        return opciones;
+    }
 
-        @FXML
+    public void setOpciones(OpcionesJuego opciones) {
+        this.opciones = opciones;
+    }
+
+    @FXML
+        private ImageView botonSaturno;
+        private OpcionesJuego opciones;
+
+    @FXML
         void IrANivel3(ActionEvent event) throws IOException {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel3.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
@@ -83,7 +92,6 @@ public class nivel2Controller {
             stage.show();
 
         }
-
         @FXML
         void botonSaturno(ActionEvent event) throws IOException {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
