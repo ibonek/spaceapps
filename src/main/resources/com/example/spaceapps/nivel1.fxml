@@ -74,7 +74,7 @@
             <HBox prefHeight="100.0" prefWidth="200.0" />
             <HBox alignment="BOTTOM_CENTER" prefHeight="150.0" prefWidth="198.0">
                <children>
-                  <Label prefHeight="32.0" prefWidth="31.0" text="2" textFill="WHITE">
+                  <Label prefHeight="32.0" prefWidth="31.0" text="2" textFill="#7c7979">
                      <HBox.margin>
                         <Insets bottom="100.0" />
                      </HBox.margin>
@@ -82,7 +82,7 @@
                         <Font size="35.0" />
                      </font>
                   </Label>
-                  <Button fx:id="bVenus" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bVenus" prefHeight="108.0" prefWidth="122.0" text="Button">
+                  <Button fx:id="bVenus" contentDisplay="GRAPHIC_ONLY" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bVenus" prefHeight="108.0" prefWidth="122.0" text="Button">
                      <graphic>
                         <ImageView fx:id="imagenVenus" fitHeight="129.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -121,7 +121,7 @@
       </VBox>
       <VBox alignment="BOTTOM_RIGHT" prefHeight="400.0" prefWidth="196.0" HBox.hgrow="ALWAYS">
          <children>
-            <Label prefHeight="19.0" prefWidth="41.0" text="3" textFill="WHITE">
+            <Label prefHeight="19.0" prefWidth="41.0" text="3" textFill="#7c7979">
                <padding>
                   <Insets right="20.0" />
                </padding>
@@ -134,7 +134,7 @@
             </Label>
             <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="bMercurio" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonMercurio" prefHeight="82.0" prefWidth="77.0" text="Button">
+                  <Button fx:id="bMercurio" contentDisplay="GRAPHIC_ONLY" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonMercurio" prefHeight="82.0" prefWidth="77.0" text="Button">
                      <graphic>
                         <ImageView fx:id="imagenMercurio" fitHeight="94.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
                            <image>

@@ -53,12 +53,40 @@ public class nivel2Controller {
     private ImageView vida3;
 
     private OpcionesJuego opciones;
+
     public OpcionesJuego getOpciones() {
         return opciones;
     }
 
     public void setOpciones(OpcionesJuego opciones) {
         this.opciones = opciones;
+    }
+
+    public String getPuntos(){return puntos.getText();}
+    public void setPuntos(int n){
+        puntos.setText(n + "");
+    }
+
+    public void setVidas(int v){
+        if(opciones.juego.getVidas() == 3){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+        } else if(opciones.juego.getVidas() == 2){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(false);
+        } else if(opciones.juego.getVidas() == 1){
+            vida1.setVisible(true);
+            vida2.setVisible(false);
+            vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+            opciones.juego.setVidas(3);
+            opciones.juego.resetearPuntos();
+        }
     }
 
 
@@ -69,12 +97,14 @@ public class nivel2Controller {
         Stage stage = new Stage();
         controllerOpciones controller = fxmlLoader.getController();
         controller.setearPreguntas(3);
+        controller.setVidas(opciones.juego.getVidas());
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
         stage.showAndWait();
+
         puntos.setText(controller.getPoints());
 
     }
@@ -86,6 +116,7 @@ public class nivel2Controller {
         Stage stage = new Stage();
         vfController controller = fxmlLoader.getController();
         controller.setearPreguntas(4);
+        controller.setVidas(opciones.juego.getVidas());
         stage.setTitle("Pregunta 4");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -102,6 +133,7 @@ public class nivel2Controller {
         Stage stage = new Stage();
         controllerOpciones controller = fxmlLoader.getController();
         controller.setearPreguntas(5);
+        controller.setVidas(opciones.juego.getVidas());
         stage.setTitle("Pregunta 5");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -112,26 +144,11 @@ public class nivel2Controller {
     }
     @FXML
     void botonLupa(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("selectorNiveles.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        SelectorController controller = fxmlLoader.getController();
-        controller.setOpciones(opciones,opciones.juego.getNombre());
         Stage stage1 = (Stage) bJupiter.getScene().getWindow();
         stage1.close();
-        stage.setTitle("World Map");
-        stage.setMaximized(false);
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
-
     }
     public void ponerNombre(String n){
         eNombre.setText(n);
-    }
-    public String getPuntos(){return puntos.getText();}
-    public void setPuntos(int n){
-        puntos.setText(n + "");
     }
 }
 

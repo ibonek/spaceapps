@@ -52,6 +52,9 @@
                            <VBox.margin>
                               <Insets left="20.0" />
                            </VBox.margin>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
                         </Label>
                      </children>
                   </VBox>
@@ -59,9 +62,9 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Label fx:id="eNombre" prefHeight="38.0" prefWidth="126.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
+                  <Label fx:id="eNombre" prefHeight="38.0" prefWidth="290.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="16.0" />
+                        <Font name="System Bold" size="22.0" />
                      </font>
                   </Label>
                </children>
@@ -69,22 +72,15 @@
                   <Insets left="30.0" />
                </VBox.margin></HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <Label prefHeight="46.0" prefWidth="33.0" text="10" textAlignment="CENTER" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="16.0" />
-                     </font>
-                  </Label>
-               </children>
                <VBox.margin>
                   <Insets right="20.0" />
                </VBox.margin></HBox>
          </children>
       </VBox>
-      <VBox alignment="CENTER" prefHeight="407.0" prefWidth="198.0">
+      <VBox alignment="CENTER_RIGHT" prefHeight="407.0" prefWidth="198.0">
          <children>
             <Region prefHeight="21.0" prefWidth="198.0" />
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <HBox prefHeight="100.0" prefWidth="160.0">
                <children>
                   <Button fx:id="bCometa" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonCometa" prefHeight="94.0" prefWidth="103.0" text="Button">
                      <graphic>
@@ -95,13 +91,29 @@
                         </ImageView>
                      </graphic>
                   </Button>
+                  <Label prefHeight="35.0" prefWidth="31.0" text="10" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="CENTER" prefHeight="325.0" prefWidth="142.0">
                <padding>
                   <Insets right="10.0" />
                </padding>
             </HBox>
+            <Label text="11" textFill="#7c7979">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <VBox.margin>
+                  <Insets right="15.0" />
+               </VBox.margin>
+            </Label>
          </children>
       </VBox>
       <VBox alignment="BOTTOM_LEFT" prefHeight="400.0" prefWidth="196.0">
@@ -109,7 +121,7 @@
             <HBox prefHeight="44.0" prefWidth="196.0" />
             <HBox alignment="BOTTOM_LEFT" prefHeight="184.0" prefWidth="196.0">
                <children>
-                  <Button fx:id="bGalaxia" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonGalaxia" prefHeight="55.0" prefWidth="79.0" text="Button">
+                  <Button fx:id="bGalaxia" contentDisplay="GRAPHIC_ONLY" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonGalaxia" prefHeight="55.0" prefWidth="79.0" text="Button">
                      <graphic>
                         <ImageView fx:id="imagenGalaxia" fitHeight="99.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -118,14 +130,6 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label prefHeight="50.0" prefWidth="32.0" text="11" textAlignment="CENTER" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="16.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="20.0" />
-                     </HBox.margin>
-                  </Label>
                </children>
                <VBox.margin>
                   <Insets bottom="50.0" />
@@ -135,7 +139,7 @@
       </VBox>
       <VBox alignment="BOTTOM_RIGHT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
          <children>
-            <Button fx:id="bNebulosa" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonNebulosa" prefHeight="124.0" prefWidth="117.0" text="Button">
+            <Button fx:id="bNebulosa" contentDisplay="GRAPHIC_ONLY" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonNebulosa" prefHeight="124.0" prefWidth="117.0" text="Button">
                <graphic>
                   <ImageView fx:id="imagenNebulosa" fitHeight="129.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -147,10 +151,13 @@
                   <Insets right="20.0" />
                </VBox.margin>
             </Button>
-            <Label prefHeight="40.0" prefWidth="35.0" text="12" textAlignment="CENTER" textFill="WHITE">
+            <Label text="12" textFill="#7c7979">
                <font>
-                  <Font name="System Bold" size="16.0" />
+                  <Font size="27.0" />
                </font>
+               <VBox.margin>
+                  <Insets right="10.0" />
+               </VBox.margin>
             </Label>
             <Region prefHeight="210.0" prefWidth="117.0" />
             <Button fx:id="bLupa" ellipsisString="" mnemonicParsing="false" onAction="#botonLupa" prefHeight="56.0" prefWidth="72.0" text="Button">

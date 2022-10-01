@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 public class Juego implements Serializable {
     private LinkedList<Pregunta> preguntas = new LinkedList<>();
-    private int aciertos = 0;
+    private int aciertos = 1;
 
     private int puntos = 0;
     private String nombre;
@@ -22,7 +22,7 @@ public class Juego implements Serializable {
     public int getPuntos() {
         return puntos;
     }
-
+    public void resetearPuntos(){puntos = 0;}
     public void setPuntos() {
         puntos += 100;
     }

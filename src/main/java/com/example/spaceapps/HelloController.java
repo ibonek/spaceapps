@@ -50,7 +50,7 @@ public class HelloController {
             opciones.crearJuego();
             controlador.setOpciones(opciones);
             stage1.close();
-            stage.setTitle("Level 2");
+            stage.setTitle("Login");
             stage.setMaximized(false);
             stage.setResizable(false);
             stage.setScene(scene);
@@ -71,6 +71,7 @@ public class HelloController {
             SelectorController controlador = fxmlLoader.getController();
             controlador.setPuntos(opciones.juego.getPuntos());
             controlador.setOpciones(opciones, opciones.juego.getNombre());
+            controlador.setVidas(opciones.juego.getVidas());
             stage1.close();
             stage.setTitle("Browse the Webb");
             stage.setMaximized(false);

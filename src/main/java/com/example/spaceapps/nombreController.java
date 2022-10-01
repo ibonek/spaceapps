@@ -48,7 +48,7 @@ public class nombreController {
             opciones.juego.setNombre(nombre.getText());
             controlador.setOpciones(opciones, opciones.juego.getNombre());
             stage1.close();
-            stage.setTitle("Level 1");
+            stage.setTitle("Browse the Webb");
             stage.setMaximized(false);
             stage.setResizable(false);
             stage.setScene(scene);

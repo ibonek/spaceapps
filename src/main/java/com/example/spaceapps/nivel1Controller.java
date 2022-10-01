@@ -29,6 +29,22 @@ public class nivel1Controller {
         puntos.setText(n + "");
     }
 
+    public void setVidas(int v){
+        if(v == 3){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+        } else if(v == 2){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(false);
+            vida3.setVisible(false);
+        }
+    }
+
     @FXML
     private Button bLuna;
 
@@ -76,7 +92,7 @@ public class nivel1Controller {
         controller.setearPreguntas(0);
         controller.setOpciones(opciones);
         controller.setearPuntos();
-
+        controller.setVidas(opciones.juego.getVidas());
         stage.setTitle("Pregunta 1");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -91,10 +107,16 @@ public class nivel1Controller {
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(false);
-        } else {
+        } else if(opciones.juego.getVidas() == 1){
             vida1.setVisible(true);
             vida2.setVisible(false);
             vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+            opciones.juego.setVidas(3);
+            opciones.juego.resetearPuntos();
         }
         puntos.setText(controller.getPoints());
     }
@@ -108,6 +130,7 @@ public class nivel1Controller {
         controller.setearPreguntas(1);
         controller.setOpciones(opciones);
         controller.setearPuntos();
+        controller.setVidas(opciones.juego.getVidas());
         stage.setTitle("Pregunta 2");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -123,10 +146,16 @@ public class nivel1Controller {
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(false);
-        } else {
+        } else if(opciones.juego.getVidas() == 1){
             vida1.setVisible(true);
             vida2.setVisible(false);
             vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+            opciones.juego.setVidas(3);
+            opciones.juego.resetearPuntos();
         }
     }
 
@@ -138,7 +167,7 @@ public class nivel1Controller {
         vfController controller = fxmlLoader.getController();
         controller.setearPreguntas(2);
         controller.setOpciones(opciones);
-
+        controller.setVidas(opciones.juego.getVidas());
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -154,10 +183,16 @@ public class nivel1Controller {
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(false);
-        } else {
+        } else if(opciones.juego.getVidas() == 1){
             vida1.setVisible(true);
             vida2.setVisible(false);
             vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+            opciones.juego.setVidas(3);
+            opciones.juego.resetearPuntos();
         }
     }
     public void ponerNombre(String n){
@@ -168,7 +203,6 @@ public class nivel1Controller {
     void botonLupa(ActionEvent event) throws IOException {
         Stage stage1 = (Stage) bLuna.getScene().getWindow();
         stage1.close();
-
     }
 
 }

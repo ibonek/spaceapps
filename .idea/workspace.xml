@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment=".">
+    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="disable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/juego.bin" beforeDir="false" afterPath="$PROJECT_DIR$/juego.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/fondoImagenPrueba.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/fondoImagenPrueba.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel3.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel4.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel5.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/nivel5.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +266,70 @@
       <option name="project" value="LOCAL" />
       <updated>1664656602796</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary=".">
+      <created>1664657534347</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1664657534347</updated>
+    </task>
+    <task id="LOCAL-00025" summary=".">
+      <created>1664658382805</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1664658382805</updated>
+    </task>
+    <task id="LOCAL-00026" summary="lupita">
+      <created>1664658567355</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1664658567355</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Corazones y puntos en todos lados">
+      <created>1664658979818</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1664658979818</updated>
+    </task>
+    <task id="LOCAL-00028" summary="ajuste label nombre">
+      <created>1664659805838</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1664659805838</updated>
+    </task>
+    <task id="LOCAL-00029" summary="ajuste label nombre">
+      <created>1664660418712</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1664660418712</updated>
+    </task>
+    <task id="LOCAL-00030" summary="niveles con pregunta">
+      <created>1664660726666</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1664660726666</updated>
+    </task>
+    <task id="LOCAL-00031" summary="niveles con pregunta">
+      <created>1664661671100</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1664661671100</updated>
+    </task>
+    <task id="LOCAL-00032" summary="disable">
+      <created>1664663674805</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1664663674805</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +360,11 @@
     <MESSAGE value="inutil" />
     <MESSAGE value="Puntos en todos los niveles" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="lupita" />
+    <MESSAGE value="Corazones y puntos en todos lados" />
+    <MESSAGE value="ajuste label nombre" />
+    <MESSAGE value="niveles con pregunta" />
+    <MESSAGE value="disable" />
+    <option name="LAST_COMMIT_MESSAGE" value="disable" />
   </component>
 </project>

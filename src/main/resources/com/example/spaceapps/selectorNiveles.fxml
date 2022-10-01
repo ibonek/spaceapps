@@ -20,6 +20,28 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
+            <HBox prefHeight="24.0" prefWidth="105.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="vida1" fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagenes/corazon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="vida2" fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagenes/corazon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="vida3" fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagenes/corazon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
             <ImageView fitHeight="71.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../imagenes/astronaut.png" />
@@ -37,7 +59,7 @@
             <HBox alignment="CENTER" prefHeight="224.0" prefWidth="355.0">
                <children>
                   <Region prefHeight="224.0" prefWidth="61.0" />
-                  <Button fx:id="bLevel3" ellipsisString="" mnemonicParsing="false" onAction="#botonLevel3">
+                  <Button fx:id="bLevel3" disable="true" ellipsisString="" mnemonicParsing="false" onAction="#botonLevel3">
                      <graphic>
                         <ImageView fitHeight="58.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -46,7 +68,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label text="Level 3" textFill="WHITE">
+                  <Label text="Level 3" textFill="#7c7979">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -57,12 +79,12 @@
                <children>
                   <VBox alignment="TOP_RIGHT" prefHeight="165.0" prefWidth="88.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <Label text="Level 2" textFill="WHITE">
+                        <Label text="Level 2" textFill="#7c7979">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Button fx:id="bLevel2" mnemonicParsing="false" onAction="#botonLevel2">
+                        <Button fx:id="bLevel2" disable="true" mnemonicParsing="false" onAction="#botonLevel2">
                            <graphic>
                               <ImageView fitHeight="51.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -103,14 +125,14 @@
          <children>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                <children>
-                  <Label text="Level 4" textFill="WHITE">
+                  <Label text="Level 4" textFill="#7c7979">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Button fx:id="bLevel4" mnemonicParsing="false" onAction="#botonLevvel4">
+                  <Button fx:id="bLevel4" disable="true" mnemonicParsing="false" onAction="#botonLevvel4">
                      <graphic>
-                        <ImageView fitHeight="69.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView disable="true" fitHeight="69.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../imagenes/fonodsnivel/telescopio-espacial-hubble%20(1).png" />
                            </image>
@@ -122,16 +144,16 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                <children>
-                  <Button fx:id="bLevel5" mnemonicParsing="false" onAction="#BotonLevel5">
+                  <Button fx:id="bLevel5" disable="true" mnemonicParsing="false" onAction="#BotonLevel5">
                      <graphic>
-                        <ImageView fitHeight="83.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView disable="true" fitHeight="83.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../imagenes/fonodsnivel/James-webb.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label text="Level 5" textFill="WHITE">
+                  <Label text="Level 5" textFill="#7c7979">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>

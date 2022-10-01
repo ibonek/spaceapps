@@ -32,7 +32,21 @@ public class vfController {
     public void setOpciones(OpcionesJuego opciones) {
         this.opciones = opciones;
     }
-
+    public void setVidas(int v){
+        if(v == 3){
+            //vida1.setVisible(true);
+            //vida2.setVisible(true);
+            //vida3.setVisible(true);
+        } else if(v == 2){
+            //vida1.setVisible(true);
+            //vida2.setVisible(true);
+            //vida3.setVisible(false);
+        } else {
+            //vida1.setVisible(true);
+            //vida2.setVisible(false);
+            //vida3.setVisible(false);
+        }
+    }
     private OpcionesJuego opciones;
     @FXML
     private RadioButton opcionF;
