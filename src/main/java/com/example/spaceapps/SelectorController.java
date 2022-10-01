@@ -78,6 +78,7 @@ public class SelectorController {
         controlador.ponerNombre(opciones.juego.getNombre());
         controlador.setVidas(opciones.juego.getVidas());
         controlador.setPuntos(Integer.parseInt(puntos.getText()));
+        controlador.desbloquear();
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
