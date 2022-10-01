@@ -112,19 +112,8 @@ public class nivel2Controller {
     }
     @FXML
     void botonLupa(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("selectorNiveles.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        SelectorController controller = fxmlLoader.getController();
-        controller.setOpciones(opciones,opciones.juego.getNombre());
         Stage stage1 = (Stage) bJupiter.getScene().getWindow();
         stage1.close();
-        stage.setTitle("World Map");
-        stage.setMaximized(false);
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
-
     }
     public void ponerNombre(String n){
         eNombre.setText(n);

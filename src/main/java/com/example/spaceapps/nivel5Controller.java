@@ -6,6 +6,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class nivel5Controller {
 
@@ -70,8 +73,9 @@ public class nivel5Controller {
     }
 
     @FXML
-    void botonLupa(ActionEvent event) {
-
+    void botonLupa(ActionEvent event) throws IOException {
+        Stage stage1 = (Stage) bAguNegro.getScene().getWindow();
+        stage1.close();
     }
 
     @FXML

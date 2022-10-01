@@ -184,7 +184,6 @@ public class nivel1Controller {
     void botonLupa(ActionEvent event) throws IOException {
         Stage stage1 = (Stage) bLuna.getScene().getWindow();
         stage1.close();
-
     }
 
 }
