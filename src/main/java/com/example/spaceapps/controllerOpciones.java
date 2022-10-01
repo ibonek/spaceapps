@@ -179,6 +179,8 @@ public class controllerOpciones {
                 vida3.setVisible(false);
                 vida2.setVisible(false);
                 vida1.setVisible(false);
+                opciones.juego.setVidas(3);
+                opciones.juego.resetearPuntos();
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Alert");
                 alert.setHeaderText("You have lost all your lives");
