@@ -20,8 +20,6 @@ public class HelloController {
     @FXML
     private Label errornombre;
 
-
-
     @FXML
     private TextField nombre;
 
