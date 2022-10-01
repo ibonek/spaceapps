@@ -2,10 +2,13 @@ package com.example.spaceapps;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -52,13 +55,37 @@ public class nivel4Controller {
     private ImageView vida3;
     private OpcionesJuego opciones;
     @FXML
-    void botonCometa(ActionEvent event) {
-
+    void botonCometa(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        controllerOpciones controller = fxmlLoader.getController();
+        controller.setearPreguntas(3);
+        controller.setVidas(opciones.juego.getVidas());
+        stage.setTitle("Pregunta 3");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.showAndWait();
+        puntos.setText(controller.getPoints());
     }
 
     @FXML
-    void botonGalaxia(ActionEvent event) {
-
+    void botonGalaxia(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        controllerOpciones controller = fxmlLoader.getController();
+        controller.setearPreguntas(3);
+        controller.setVidas(opciones.juego.getVidas());
+        stage.setTitle("Pregunta 3");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.showAndWait();
+        puntos.setText(controller.getPoints());
     }
 
     @FXML
@@ -68,8 +95,20 @@ public class nivel4Controller {
     }
 
     @FXML
-    void botonNebulosa(ActionEvent event) {
-
+    void botonNebulosa(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        controllerOpciones controller = fxmlLoader.getController();
+        controller.setearPreguntas(3);
+        controller.setVidas(opciones.juego.getVidas());
+        stage.setTitle("Pregunta 3");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.showAndWait();
+        puntos.setText(controller.getPoints());
     }
     public void ponerNombre(String n){
         eNombre.setText(n);

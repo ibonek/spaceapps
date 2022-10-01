@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -48,7 +49,20 @@ private OpcionesJuego opciones;
     private ImageView vida3;
 
     @FXML
-    void bNeptuno(ActionEvent event) {
+    void bNeptuno(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        controllerOpciones controller = fxmlLoader.getController();
+        controller.setearPreguntas(3);
+        controller.setVidas(opciones.juego.getVidas());
+        stage.setTitle("Pregunta 3");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.showAndWait();
+        puntos.setText(controller.getPoints());
 
     }
 
@@ -66,12 +80,38 @@ private OpcionesJuego opciones;
     }
 
     @FXML
-    void botonPluto(ActionEvent event) {
+    void botonPluto(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        controllerOpciones controller = fxmlLoader.getController();
+        controller.setearPreguntas(3);
+        controller.setVidas(opciones.juego.getVidas());
+        stage.setTitle("Pregunta 3");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.showAndWait();
+        puntos.setText(controller.getPoints());
 
     }
 
     @FXML
-    void botonUrano(ActionEvent event) {
+    void botonUrano(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        controllerOpciones controller = fxmlLoader.getController();
+        controller.setearPreguntas(3);
+        controller.setVidas(opciones.juego.getVidas());
+        stage.setTitle("Pregunta 3");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.showAndWait();
+        puntos.setText(controller.getPoints());
 
     }
     public void ponerNombre(String n){

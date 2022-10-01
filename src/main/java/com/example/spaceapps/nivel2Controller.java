@@ -91,6 +91,7 @@ public class nivel2Controller {
         Stage stage = new Stage();
         controllerOpciones controller = fxmlLoader.getController();
         controller.setearPreguntas(3);
+        controller.setVidas(opciones.juego.getVidas());
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -108,6 +109,7 @@ public class nivel2Controller {
         Stage stage = new Stage();
         vfController controller = fxmlLoader.getController();
         controller.setearPreguntas(4);
+        controller.setVidas(opciones.juego.getVidas());
         stage.setTitle("Pregunta 4");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -124,6 +126,7 @@ public class nivel2Controller {
         Stage stage = new Stage();
         controllerOpciones controller = fxmlLoader.getController();
         controller.setearPreguntas(5);
+        controller.setVidas(opciones.juego.getVidas());
         stage.setTitle("Pregunta 5");
         stage.setMaximized(false);
         stage.setResizable(false);
