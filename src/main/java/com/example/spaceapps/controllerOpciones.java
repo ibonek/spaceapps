@@ -83,6 +83,8 @@ public class controllerOpciones {
     void botonTryAgain(ActionEvent event) throws IOException {
        setearPreguntas(p);
        continuar.setDisable(true);
+       bTryAgain.setDisable(true);
+       bTryAgain.setVisible(false);
     }
 
     @FXML
@@ -164,6 +166,7 @@ public class controllerOpciones {
         if(!respuestaSeleccionada.isCorrecta()){
             bTryAgain.setDisable(false);
             bTryAgain.setVisible(true);
+            comprobar.setDisable(true);
             if(r==1) opcion1.setTextFill(RED);
 
             if(r==2) opcion2.setTextFill(RED);
@@ -178,7 +181,8 @@ public class controllerOpciones {
             continuar.setDisable(false);
             opciones.juego.setAciertos();
             opciones.Guardar(opciones.juego);
-
+            bTryAgain.setDisable(true);
+            bTryAgain.setVisible(false);
             if(r==1) opcion1.setTextFill(DARKSEAGREEN);
 
             if(r==2) opcion2.setTextFill(DARKSEAGREEN);
