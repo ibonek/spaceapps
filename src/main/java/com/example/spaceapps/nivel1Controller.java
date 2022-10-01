@@ -15,6 +15,8 @@ import java.io.IOException;
 
 import static javafx.scene.paint.Color.WHITE;
 
+import static javafx.scene.paint.Color.YELLOW;
+
 public class nivel1Controller {
 
     @FXML
@@ -138,6 +140,8 @@ public class nivel1Controller {
         }
         if(controller.getBoolean()){
             //deshabilitar luna
+            bLuna.setDisable(true);
+            e1.setTextFill(YELLOW);
         }
         if(controller.getBoolean()){
             //habilitar botonExpLuna y y hacerlo visible
