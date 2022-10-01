@@ -71,6 +71,21 @@ public class HelloController {
         OpcionesJuego opciones = new OpcionesJuego();
         try {
             opciones.juego = opciones.Cargar("juego.bin");
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel1.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            Stage stage1 = (Stage) bBegin.getScene().getWindow();
+            nivel1Controller controlador = fxmlLoader.getController();
+            controlador.ponerNombre(nombre.getText());
+            opciones.crearJuego();
+            opciones.juego.setNombre(nombre.getText());
+            controlador.setOpciones(opciones);
+            stage1.close();
+            stage.setTitle("Level 1");
+            stage.setMaximized(false);
+            stage.setResizable(false);
+            stage.setScene(scene);
+            stage.show();
         } catch (Exception ex){
             ///Aqui va el codigo para que informe  que no puedes hacer eso
             System.out.println("No puedes cargar payaso");

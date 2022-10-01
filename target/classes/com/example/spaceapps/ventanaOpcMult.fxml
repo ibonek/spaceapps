@@ -7,27 +7,37 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="524.0" spacing="100.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.controllerOpciones">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="899.0" spacing="40.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.controllerOpciones">
    <children>
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="365.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#botonAtras" text="Atrás" />
-            <Label fx:id="progreso" prefHeight="17.0" prefWidth="71.0" />
+            <Button fx:id="bTryAgain" mnemonicParsing="false" onAction="#botonTryAgain" text="Try Again" />
          </children>
       </HBox>
       <Label fx:id="pregunta" wrapText="true" />
-      <VBox prefHeight="242.0" prefWidth="484.0" spacing="50.0">
+      <HBox prefHeight="250.0" prefWidth="850.0">
          <children>
-            <RadioButton fx:id="opcion1" mnemonicParsing="false" onAction="#botonResp1" />
-            <RadioButton fx:id="opcion2" mnemonicParsing="false" onAction="#botonResp2" />
-            <RadioButton fx:id="opcion3" mnemonicParsing="false" onAction="#botonResp3" />
-            <RadioButton fx:id="opcion4" mnemonicParsing="false" onAction="#botonResp4" />
+            <VBox prefHeight="200.0" prefWidth="425.0" spacing="100.0">
+               <children>
+                  <RadioButton fx:id="opcion1" mnemonicParsing="false" onAction="#botonResp1" />
+                  <RadioButton fx:id="opcion2" mnemonicParsing="false" onAction="#botonResp2" />
+               </children>
+            </VBox>
+            <VBox prefHeight="242.0" prefWidth="425.0" spacing="100.0">
+               <children>
+                  <RadioButton fx:id="opcion3" mnemonicParsing="false" onAction="#botonResp3" />
+                  <RadioButton fx:id="opcion4" mnemonicParsing="false" onAction="#botonResp4" />
+               </children>
+            </VBox>
          </children>
-      </VBox>
-      <HBox alignment="BOTTOM_RIGHT" prefHeight="171.0" prefWidth="484.0" spacing="30.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="BOTTOM_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="859.0" spacing="30.0">
          <children>
-            <Button fx:id="compr" mnemonicParsing="false" onAction="#botonComprobar" prefHeight="26.0" prefWidth="82.0" text="Check" />
-            <Button fx:id="continuar" disable="true" mnemonicParsing="false" onAction="#botonContinuar" text="Continue" />
+            <Button fx:id="comprobar" mnemonicParsing="false" onAction="#botonComprobar" prefHeight="25.0" prefWidth="80.0" text="Check" />
+            <Button fx:id="continuar" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonContinuar" prefHeight="25.0" prefWidth="80.0" text="Continue" />
          </children>
       </HBox>
    </children>
