@@ -111,10 +111,28 @@ public class nivel2Controller {
         puntos.setText(controller.getPoints());
     }
     @FXML
-    void botonLupa(ActionEvent event) {
+    void botonLupa(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("selectorNiveles.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        SelectorController controller = fxmlLoader.getController();
+        controller.setOpciones(opciones,opciones.juego.getNombre());
+        Stage stage1 = (Stage) bJupiter.getScene().getWindow();
+        stage1.close();
+        stage.setTitle("World Map");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
 
     }
-
+    public void ponerNombre(String n){
+        eNombre.setText(n);
+    }
+    public String getPuntos(){return puntos.getText();}
+    public void setPuntos(int n){
+        puntos.setText(n + "");
+    }
 }
 
 

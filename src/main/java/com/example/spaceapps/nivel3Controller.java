@@ -2,13 +2,18 @@ package com.example.spaceapps;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class nivel3Controller {
-
+private OpcionesJuego opciones;
     @FXML
     private Button bLupa;
 
@@ -47,8 +52,27 @@ public class nivel3Controller {
 
     }
 
+    public OpcionesJuego getOpciones() {
+        return opciones;
+    }
+
+    public void setOpciones(OpcionesJuego opciones) {
+        this.opciones = opciones;
+    }
     @FXML
-    void botonLupa(ActionEvent event) {
+    void botonLupa(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("selectorNiveles.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        SelectorController controller = fxmlLoader.getController();
+        controller.setOpciones(opciones,opciones.juego.getNombre());
+        Stage stage1 = (Stage) bNeptuno.getScene().getWindow();
+        stage1.close();
+        stage.setTitle("World Map");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
 
     }
 
@@ -61,5 +85,11 @@ public class nivel3Controller {
     void botonUrano(ActionEvent event) {
 
     }
-
+    public void ponerNombre(String n){
+        eNombre.setText(n);
+    }
+    public String getPuntos(){return puntos.getText();}
+    public void setPuntos(int n){
+        puntos.setText(n + "");
+    }
 }

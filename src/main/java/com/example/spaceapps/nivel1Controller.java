@@ -23,6 +23,8 @@ public class nivel1Controller {
     public void setOpciones(OpcionesJuego opciones) {
         this.opciones = opciones;
     }
+
+    public String getPuntos(){return puntos.getText();}
     public void setPuntos(int n){
         puntos.setText(n + "");
     }
@@ -138,10 +140,12 @@ public class nivel1Controller {
     }
     public void ponerNombre(String n){
         eNombre.setText(n);
-
     }
+
     @FXML
-    void botonLupa(ActionEvent event) {
+    void botonLupa(ActionEvent event) throws IOException {
+        Stage stage1 = (Stage) bLuna.getScene().getWindow();
+        stage1.close();
 
     }
 

@@ -47,7 +47,15 @@ public class nivel4Controller {
 
     @FXML
     private ImageView vida3;
+    private OpcionesJuego opciones;
 
+    public OpcionesJuego getOpciones() {
+        return opciones;
+    }
+
+    public void setOpciones(OpcionesJuego opciones) {
+        this.opciones = opciones;
+    }
     @FXML
     void botonCometa(ActionEvent event) {
 
@@ -67,5 +75,11 @@ public class nivel4Controller {
     void botonNebulosa(ActionEvent event) {
 
     }
-
+    public void ponerNombre(String n){
+        eNombre.setText(n);
+    }
+    public String getPuntos(){return puntos.getText();}
+    public void setPuntos(int n){
+        puntos.setText(n + "");
+    }
 }
