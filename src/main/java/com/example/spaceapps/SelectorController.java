@@ -74,10 +74,11 @@ public class SelectorController {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         nivel1Controller controlador = fxmlLoader.getController();
+        controlador.setOpciones(opciones);
         controlador.ponerNombre(opciones.juego.getNombre());
         controlador.setVidas(opciones.juego.getVidas());
         controlador.setPuntos(Integer.parseInt(puntos.getText()));
-        controlador.setOpciones(opciones);stage.setMaximized(false);
+        stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);

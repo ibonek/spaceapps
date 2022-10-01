@@ -52,6 +52,9 @@
                            <VBox.margin>
                               <Insets left="20.0" />
                            </VBox.margin>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
                         </Label>
                      </children>
                   </VBox>
@@ -61,7 +64,7 @@
                <children>
                   <Label fx:id="eNombre" prefHeight="38.0" prefWidth="308.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="16.0" />
+                        <Font name="System Bold" size="22.0" />
                      </font>
                   </Label>
                </children>
@@ -81,7 +84,7 @@
                   </Button>
                   <Label prefHeight="20.0" prefWidth="15.0" text="7" textAlignment="CENTER" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="16.0" />
+                        <Font name="System Bold" size="27.0" />
                      </font>
                      <HBox.margin>
                         <Insets left="20.0" />
@@ -99,7 +102,7 @@
             <Region prefHeight="21.0" prefWidth="198.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="bNeptuno" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bNeptuno" prefHeight="107.0" prefWidth="110.0" text="Button">
+                  <Button fx:id="bNeptuno" contentDisplay="GRAPHIC_ONLY" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bNeptuno" prefHeight="107.0" prefWidth="110.0" text="Button">
                      <graphic>
                         <ImageView fitHeight="140.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -108,12 +111,12 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label prefHeight="20.0" prefWidth="15.0" text="8" textAlignment="CENTER" textFill="WHITE">
+                  <Label text="8" textFill="#7c7979">
                      <font>
-                        <Font name="System Bold" size="16.0" />
+                        <Font size="27.0" />
                      </font>
                      <HBox.margin>
-                        <Insets left="10.0" />
+                        <Insets left="20.0" />
                      </HBox.margin>
                   </Label>
                </children>
@@ -130,7 +133,7 @@
             <HBox prefHeight="100.0" prefWidth="200.0" />
             <HBox alignment="TOP_RIGHT" prefHeight="438.0" prefWidth="166.0">
                <children>
-                  <Button fx:id="bPluto" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonPluto" prefHeight="64.0" prefWidth="65.0" text="Button">
+                  <Button fx:id="bPluto" contentDisplay="GRAPHIC_ONLY" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonPluto" prefHeight="64.0" prefWidth="65.0" text="Button">
                      <graphic>
                         <ImageView fitHeight="62.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -139,10 +142,13 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label prefHeight="20.0" prefWidth="15.0" stylesheets="@../../../css/fuente.css" text="9" textAlignment="CENTER" textFill="WHITE">
+                  <Label text="9" textFill="#7c7979">
                      <font>
-                        <Font name="System Bold" size="16.0" />
+                        <Font size="27.0" />
                      </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
                   </Label>
                </children>
                <VBox.margin>

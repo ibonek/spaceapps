@@ -14,36 +14,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class nivel1Controller {
-    private OpcionesJuego opciones;
-
-    public OpcionesJuego getOpciones() {
-        return opciones;
-    }
-
-    public void setOpciones(OpcionesJuego opciones) {
-        this.opciones = opciones;
-    }
-
-    public String getPuntos(){return puntos.getText();}
-    public void setPuntos(int n){
-        puntos.setText(n + "");
-    }
-
-    public void setVidas(int v){
-        if(v == 3){
-            vida1.setVisible(true);
-            vida2.setVisible(true);
-            vida3.setVisible(true);
-        } else if(v == 2){
-            vida1.setVisible(true);
-            vida2.setVisible(true);
-            vida3.setVisible(false);
-        } else {
-            vida1.setVisible(true);
-            vida2.setVisible(false);
-            vida3.setVisible(false);
-        }
-    }
 
     @FXML
     private Button bLuna;
@@ -58,7 +28,25 @@ public class nivel1Controller {
     private Button bVenus;
 
     @FXML
+    private Label e1;
+
+    @FXML
+    private Label e2;
+
+    @FXML
+    private Label e3;
+
+    @FXML
     private Label eNombre;
+
+    @FXML
+    private Button expLuna;
+
+    @FXML
+    private Button expMercurio;
+
+    @FXML
+    private Button expVenus;
 
     @FXML
     private HBox fondo1;
@@ -81,8 +69,18 @@ public class nivel1Controller {
     @FXML
     private ImageView vida3;
 
-    int vidas;
+    @FXML
+    void botonExpVenus(ActionEvent event) {
 
+    }
+    @FXML
+    void botonExpLuna(ActionEvent event) {
+
+    }
+    @FXML
+    void botonExpMercurio(ActionEvent event) {
+
+    }
     @FXML
     void bVenus(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
@@ -107,16 +105,10 @@ public class nivel1Controller {
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(false);
-        } else if(opciones.juego.getVidas() == 1){
+        } else {
             vida1.setVisible(true);
             vida2.setVisible(false);
             vida3.setVisible(false);
-        } else {
-            vida1.setVisible(true);
-            vida2.setVisible(true);
-            vida3.setVisible(true);
-            opciones.juego.setVidas(3);
-            opciones.juego.resetearPuntos();
         }
         puntos.setText(controller.getPoints());
     }
@@ -146,16 +138,10 @@ public class nivel1Controller {
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(false);
-        } else if(opciones.juego.getVidas() == 1){
+        } else {
             vida1.setVisible(true);
             vida2.setVisible(false);
             vida3.setVisible(false);
-        } else {
-            vida1.setVisible(true);
-            vida2.setVisible(true);
-            vida3.setVisible(true);
-            opciones.juego.setVidas(3);
-            opciones.juego.resetearPuntos();
         }
     }
 
@@ -204,5 +190,39 @@ public class nivel1Controller {
         Stage stage1 = (Stage) bLuna.getScene().getWindow();
         stage1.close();
     }
+    private OpcionesJuego opciones;
 
+    public OpcionesJuego getOpciones() {
+        return opciones;
+    }
+
+    public void setOpciones(OpcionesJuego opciones) {
+        this.opciones = opciones;
+    }
+
+    public String getPuntos(){return puntos.getText();}
+    public void setPuntos(int n){
+        puntos.setText(n + "");
+    }
+    public void setVidas(int v){
+        if(opciones.juego.getVidas() == 3){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+        } else if(opciones.juego.getVidas() == 2){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(false);
+        } else if(opciones.juego.getVidas() == 1){
+            vida1.setVisible(true);
+            vida2.setVisible(false);
+            vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+            opciones.juego.setVidas(3);
+            opciones.juego.resetearPuntos();
+        }
+    }
 }
