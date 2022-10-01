@@ -23,9 +23,5 @@ public class OpcionesJuego {
 
     public void crearJuego(){
         juego = new Juego();
-
-
-
-
     }
 }

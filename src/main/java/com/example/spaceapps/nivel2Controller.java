@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -71,8 +72,10 @@ public class nivel2Controller {
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
-        stage.show();
+        stage.showAndWait();
+        puntos.setText(controller.getPoints());
 
     }
 
@@ -86,8 +89,10 @@ public class nivel2Controller {
         stage.setTitle("Pregunta 4");
         stage.setMaximized(false);
         stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
-        stage.show();
+        stage.showAndWait();
+        puntos.setText(controller.getPoints());
 
     }
     @FXML
@@ -100,9 +105,10 @@ public class nivel2Controller {
         stage.setTitle("Pregunta 5");
         stage.setMaximized(false);
         stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
-        stage.show();
-
+        stage.showAndWait();
+        puntos.setText(controller.getPoints());
     }
     @FXML
     void botonLupa(ActionEvent event) {

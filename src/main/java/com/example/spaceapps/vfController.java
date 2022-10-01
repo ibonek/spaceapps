@@ -19,6 +19,12 @@ public class vfController {
     @FXML
     private Button compr;
 
+    @FXML
+    private Button puntos;
+
+    public String getPoints(){
+        return puntos.getText();
+    }
     public OpcionesJuego getOpciones() {
         return opciones;
     }

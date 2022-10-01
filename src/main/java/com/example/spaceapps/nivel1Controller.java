@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -59,6 +60,8 @@ public class nivel1Controller {
     @FXML
     private ImageView vida3;
 
+    int vidas;
+
     @FXML
     void bVenus(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
@@ -72,8 +75,24 @@ public class nivel1Controller {
         stage.setTitle("Pregunta 1");
         stage.setMaximized(false);
         stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
-        stage.show();
+        stage.showAndWait();
+        puntos.setText(controller.getPoints());
+        vidas = controller.getVidas();
+        if(vidas == 3){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+        } else if(vidas == 2){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(false);
+            vida3.setVisible(false);
+        }
 
     }
 
@@ -89,8 +108,11 @@ public class nivel1Controller {
         stage.setTitle("Pregunta 2");
         stage.setMaximized(false);
         stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
-        stage.show();
+        stage.showAndWait();
+        puntos.setText(controller.getPoints());
+        vidas = controller.getVidas();
     }
 
     @FXML
@@ -105,12 +127,10 @@ public class nivel1Controller {
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
+        stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
-        stage.show();
-
-    }
-    void setearPuntos(){
-    puntos.setText(opciones.juego.getPuntos()+"");
+        stage.showAndWait();
+        puntos.setText(controller.getPoints());
 
     }
     public void ponerNombre(String n){

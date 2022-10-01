@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -19,6 +20,20 @@ import static javafx.scene.paint.Color.*;
 public class controllerOpciones {
     @FXML
     private Button bTryAgain;
+
+    public String getPoints(){
+        return puntos.getText();
+    }
+    public int getVidas(){
+        if(vida3.isVisible()){
+            return 3;
+        } else if(vida2.isVisible()){
+            return 2;
+        } else {
+            return 1;
+        }
+
+    }
     OpcionesJuego opciones;
 
     public OpcionesJuego getOpciones() {
@@ -51,6 +66,14 @@ public class controllerOpciones {
     @FXML
     private Label puntos;
     @FXML
+    private ImageView vida1;
+
+    @FXML
+    private ImageView vida2;
+
+    @FXML
+    private ImageView vida3;
+
     int p;
     int r;
     Juego juego = new Juego();
@@ -58,26 +81,17 @@ public class controllerOpciones {
     boolean resp2;
     boolean resp3;
     boolean resp4;
-    int aciertos;
+    int vida;
     Respuesta respuestaSeleccionada;
-    Respuesta respuestaCorrecta;
 
     @FXML
     void botonContinuar(ActionEvent event) throws IOException {
-        /*int nivel = (opciones.juego.getAciertos()/3)+1;
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel"+nivel + ".fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        nivel1Controller controller = fxmlLoader.getController();
-        controller.comprobarAciertos();*/
         Stage stage1 = (Stage) pregunta.getScene().getWindow();
         stage1.close();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel"+ opciones.juego.getAciertos()/3+1 + ".fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        nivel1Controller controller = fxmlLoader.getController();
-        controller.setearPuntos();
-       stage.setMaximized(false);
+        stage.setMaximized(false);
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
@@ -172,6 +186,19 @@ public class controllerOpciones {
         if (respuestaSeleccionada == null) return ;
         if(!respuestaSeleccionada.isCorrecta()){
             opciones.juego.restPuntos();
+            if(vida3.isVisible()){
+                vida3.setVisible(false);
+                vida = 2;
+            }else if(vida2.isVisible()){
+                vida3.setVisible(false);
+                vida2.setVisible(false);
+                vida = 1;
+            }else {
+                vida3.setVisible(false);
+                vida2.setVisible(false);
+                vida1.setVisible(false);
+                //alerta muerto
+            }
 
             bTryAgain.setDisable(false);
             bTryAgain.setVisible(true);
