@@ -69,9 +69,7 @@ public class HelloController {
             Stage stage = new Stage();
             Stage stage1 = (Stage) bBegin.getScene().getWindow();
             nivel1Controller controlador = fxmlLoader.getController();
-            controlador.ponerNombre(nombre.getText());
-            opciones.crearJuego();
-            opciones.juego.setNombre(nombre.getText());
+            controlador.ponerNombre(opciones.juego.getNombre());
             controlador.setOpciones(opciones);
             stage1.close();
             stage.setTitle("Level 1");
@@ -79,7 +77,7 @@ public class HelloController {
             stage.setResizable(false);
             stage.setScene(scene);
             stage.show();
-        } catch (Exception ex){
+        } catch (IOException ex){
             ///Aqui va el codigo para que informe  que no puedes hacer eso
             System.out.println("No puedes cargar payaso");
         }

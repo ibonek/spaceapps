@@ -36,7 +36,7 @@ public class controllerOpciones {
     private RadioButton opcion2;
 
     @FXML
-    private Button compr;
+    private Button comprobar;
 
     @FXML
     private RadioButton opcion3;
@@ -62,18 +62,18 @@ public class controllerOpciones {
 
     @FXML
     void botonContinuar(ActionEvent event) throws IOException {
-        int nivel = (opciones.juego.getAciertos()/3)+1;
+        /*int nivel = (opciones.juego.getAciertos()/3)+1;
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel"+nivel + ".fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         nivel1Controller controller = fxmlLoader.getController();
-        controller.comprobarAciertos();
+        controller.comprobarAciertos();*/
         Stage stage1 = (Stage) pregunta.getScene().getWindow();
         stage1.close();
-        stage.setMaximized(false);
+       /* stage.setMaximized(false);
         stage.setResizable(false);
         stage.setScene(scene);
-        stage.show();
+        stage.show();*/
 
 
     }
@@ -128,7 +128,7 @@ public class controllerOpciones {
         opcion2.setDisable(false);
         opcion3.setDisable(false);
         opcion4.setDisable(false);
-        compr.setDisable(false);
+        comprobar.setDisable(false);
         opcion1.setSelected(false);
         opcion2.setSelected(false);
         opcion3.setSelected(false);
@@ -187,7 +187,7 @@ public class controllerOpciones {
         opcion2.setDisable(true);
         opcion3.setDisable(true);
         opcion4.setDisable(true);
-        compr.setDisable(true);
+        comprobar.setDisable(true);
         continuar.setDisable(false);
 
     }
