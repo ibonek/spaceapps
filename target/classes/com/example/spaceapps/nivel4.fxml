@@ -59,7 +59,7 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Label fx:id="eNombre" prefHeight="38.0" prefWidth="126.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
+                  <Label fx:id="eNombre" prefHeight="38.0" prefWidth="290.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -69,19 +69,12 @@
                   <Insets left="30.0" />
                </VBox.margin></HBox>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <Label prefHeight="46.0" prefWidth="33.0" text="10" textAlignment="CENTER" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="16.0" />
-                     </font>
-                  </Label>
-               </children>
                <VBox.margin>
                   <Insets right="20.0" />
                </VBox.margin></HBox>
          </children>
       </VBox>
-      <VBox alignment="CENTER" prefHeight="407.0" prefWidth="198.0">
+      <VBox alignment="CENTER_RIGHT" prefHeight="407.0" prefWidth="198.0">
          <children>
             <Region prefHeight="21.0" prefWidth="198.0" />
             <HBox prefHeight="100.0" prefWidth="200.0">
@@ -95,13 +88,26 @@
                         </ImageView>
                      </graphic>
                   </Button>
+                  <Label prefHeight="22.0" prefWidth="21.0" text="10" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="CENTER" prefHeight="325.0" prefWidth="142.0">
                <padding>
                   <Insets right="10.0" />
                </padding>
             </HBox>
+            <Label prefHeight="50.0" prefWidth="32.0" text="11" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
          </children>
       </VBox>
       <VBox alignment="BOTTOM_LEFT" prefHeight="400.0" prefWidth="196.0">
@@ -118,14 +124,6 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label prefHeight="50.0" prefWidth="32.0" text="11" textAlignment="CENTER" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="16.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="20.0" />
-                     </HBox.margin>
-                  </Label>
                </children>
                <VBox.margin>
                   <Insets bottom="50.0" />

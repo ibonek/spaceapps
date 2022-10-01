@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
@@ -180,7 +181,10 @@ public class controllerOpciones {
                 vida3.setVisible(false);
                 vida2.setVisible(false);
                 vida1.setVisible(false);
-                //alerta muerto
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("You've lost");
+                alert.setHeaderText("Ypu've lost all your lives");
+                alert.showAndWait();
             }
 
             bTryAgain.setDisable(false);
@@ -216,16 +220,25 @@ public class controllerOpciones {
         opcion2.setDisable(true);
         opcion3.setDisable(true);
         opcion4.setDisable(true);
-
-
     }
     void setearPuntos(){
         puntos.setText(opciones.juego.getPuntos()+"");
-
-
     }
-
-
+    public void setVidas(int v){
+        if(v == 3){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+        } else if(v == 2){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(false);
+            vida3.setVisible(false);
+        }
+    }
 }
 
 
