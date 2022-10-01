@@ -83,13 +83,11 @@ public class nivel1Controller {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
         stage.showAndWait();
-        vidas = controller.getVidas();
-
-        if(vidas == 3){
+        if(opciones.juego.getVidas() == 3){
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(true);
-        } else if(vidas == 2){
+        } else if(opciones.juego.getVidas() == 2){
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(false);
@@ -117,7 +115,19 @@ public class nivel1Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
-        vidas = controller.getVidas();
+        if(opciones.juego.getVidas() == 3){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+        } else if(opciones.juego.getVidas() == 2){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(false);
+            vida3.setVisible(false);
+        }
     }
 
     @FXML
@@ -136,7 +146,19 @@ public class nivel1Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
-
+        if(opciones.juego.getVidas() == 3){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+        } else if(opciones.juego.getVidas() == 2){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(false);
+            vida3.setVisible(false);
+        }
     }
     public void ponerNombre(String n){
         eNombre.setText(n);
