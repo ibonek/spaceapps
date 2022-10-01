@@ -49,6 +49,8 @@ public class controllerOpciones {
     @FXML
     private Button continuar;
     @FXML
+    private Label puntos;
+    @FXML
     int p;
     int r;
     Juego juego = new Juego();
@@ -70,10 +72,15 @@ public class controllerOpciones {
         controller.comprobarAciertos();*/
         Stage stage1 = (Stage) pregunta.getScene().getWindow();
         stage1.close();
-       /* stage.setMaximized(false);
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel"+ opciones.juego.getAciertos()/3+1 + ".fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        nivel1Controller controller = fxmlLoader.getController();
+        controller.setearPuntos();
+       stage.setMaximized(false);
         stage.setResizable(false);
         stage.setScene(scene);
-        stage.show();*/
+        stage.show();
 
 
     }
@@ -164,6 +171,8 @@ public class controllerOpciones {
 
         if (respuestaSeleccionada == null) return ;
         if(!respuestaSeleccionada.isCorrecta()){
+            opciones.juego.restPuntos();
+
             bTryAgain.setDisable(false);
             bTryAgain.setVisible(true);
             comprobar.setDisable(true);
@@ -177,6 +186,7 @@ public class controllerOpciones {
          }
 
         if(respuestaSeleccionada.isCorrecta()){
+            opciones.juego.setPuntos();
             comprobar.setDisable(true);
             continuar.setDisable(false);
             opciones.juego.setAciertos();
@@ -191,15 +201,19 @@ public class controllerOpciones {
 
             if(r==4) opcion4.setTextFill(DARKSEAGREEN);
         }
+        setearPuntos();
         opcion1.setDisable(true);
         opcion2.setDisable(true);
         opcion3.setDisable(true);
         opcion4.setDisable(true);
 
 
+    }
+    void setearPuntos(){
+        puntos.setText(opciones.juego.getPuntos()+"");
+
 
     }
-
 
 
 }

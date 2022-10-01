@@ -1,0 +1,493 @@
+Index: src/main/java/com/example/spaceapps/Juego.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.spaceapps;\n\nimport java.io.Serializable;\nimport java.util.LinkedList;\n\npublic class Juego implements Serializable {\n    private LinkedList<Pregunta> preguntas = new LinkedList<>();\n    private int aciertos = 0;\n\n    private int puntos = 0;\n    private String nombre;\n    private int vidas= 3;\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public int getPuntos() {\n        return puntos;\n    }\n\n    public void setPuntos(int puntos) {\n        this.puntos = puntos;\n    }\n\n    public int getVidas() {\n        return vidas;\n    }\n\n    public void setVidas(int vidas) {\n        this.vidas = vidas;\n    }\n\n    public Juego() {\n        try {\n            crearPreguntas();\n        } catch (Exception ex){\n            System.out.println(\"Has intentado crear una pregunta sin respuesta correcta o con más de 1 posible respuesta correcta\");\n        }\n    }\n\n    public LinkedList<Pregunta> getPreguntas() {\n        return preguntas;\n    }\n\n    public void setAciertos() {\n        aciertos++;\n    }\n\n    public int getAciertos() {\n        return aciertos;\n    }\n\n    public void addConComprobacion(Pregunta pregunta)throws Exception{\n        int contador = 0;\n        for (Respuesta r: pregunta.getListaOpciones()){\n            if (r.isCorrecta()){\n                contador++;\n            }\n        }\n        if (contador != 1){\n            throw new Exception();\n        } else{\n            preguntas.add(pregunta);\n        }\n    }\n\n    private void crearPreguntas() throws Exception {\n        Pregunta pregunta = new Pregunta();\n\n        pregunta.setCuerpoPregunta(\"Which organizations participated in the creation of the James Webb Telescope?\");\n        pregunta.setExplicacion(\"Since 1996, NASA, ESA and CSA have been collaborating in the creation of the James Webb Telescope. This means that a total of 20 countries are major contributors to this project\");\n\n        Respuesta respuesta= new Respuesta();\n        respuesta.setCuerpoRespuesta(\"NASA, ESA and CSA\");\n        respuesta.setCorrecta();\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta = new Respuesta();\n        respuesta.setCuerpoRespuesta(\"CNSA\");\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta = new Respuesta();\n        respuesta.setCuerpoRespuesta(\"RSA\");\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta = new Respuesta();\n        respuesta.setCuerpoRespuesta(\"JAXA\");\n        pregunta.getListaOpciones().add(respuesta);\n        addConComprobacion(pregunta);\n        //preguntas.add(pregunta);\n///---------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n\n        pregunta = new Pregunta();\n        pregunta.setCuerpoPregunta(\"Approximately where is the James Webb telescope located?\");\n        pregunta.setExplicacion(\"The orbit of the James Webb Space Telescope is around L2, 1.500.000km from Earth. This is one of the 5 Lagrange points. Lagrange points are points of gravitational equilibrium for small-mass objects under the influence of two massive orbiting bodies.\" +\n        \"Webb's orbit does not lie exactly at the L2 point because the Earth's shadow on the Sun would be large enough to reduce the amount of energy available to Webb's solar panels.\");\n\n        respuesta = new Respuesta();\n        respuesta.setCuerpoRespuesta(\"Approximately the distance of the Moon\");\n        pregunta.getListaOpciones().add(respuesta);\n\n\n        respuesta = new Respuesta();\n        respuesta.setCuerpoRespuesta(\"Approximately at point L2\");\n        respuesta.setCorrecta();\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta = new Respuesta();\n        respuesta.setCuerpoRespuesta(\"In the U.S\");\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta = new Respuesta();\n        respuesta.setCuerpoRespuesta(\"Somewhere in Europe\");\n\n        pregunta.getListaOpciones().add(respuesta);\n        addConComprobacion(pregunta);\n///---------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n\n        pregunta = new Pregunta();\n        pregunta.setCuerpoPregunta(\"It is necessary to keep the James Webb Telescope's temperature under 50 K (-223,2 ºC)?\");\n\n        respuesta= new Respuesta();\n        respuesta.setCuerpoRespuesta(\"True\");\n        respuesta.setCorrecta();\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta= new Respuesta();\n        respuesta.setCuerpoRespuesta(\"False\");\n        pregunta.getListaOpciones().add(respuesta);\n        pregunta.setExplicacion(\"The James Webb Space Telescope must be kept below 50 K (-223.2 ºC); otherwise, infrared radiation from the telescope itself would overwhelm its sensors. To maintain this temperature, a large sunshield blocks light and heat from nearby space bodies and stops impacts from small asteroids. In addition, a mechanical helium gas cooler is located on the hot side of the environmental shield\");\n        addConComprobacion(pregunta);\n///---------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n        pregunta = new Pregunta();\n        pregunta.setCuerpoPregunta(\"When was James Webb Telescope launched?\");\n        pregunta.setExplicacion(\"The James Webb Space Telescope was launched on 25 December 2021 on an Ariane 5 Rocket from French Guiana\");\n\n        respuesta= new Respuesta();\n        respuesta.setCuerpoRespuesta(\"25 December 2021\");\n        respuesta.setCorrecta();\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta= new Respuesta();\n        respuesta.setCuerpoRespuesta(\"14 February 2004\");\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta= new Respuesta();\n        respuesta.setCuerpoRespuesta(\"6 July 2015\");\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta= new Respuesta();\n        respuesta.setCuerpoRespuesta(\"29 April 2001\");\n        pregunta.getListaOpciones().add(respuesta);\n        addConComprobacion(pregunta);\n///---------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n        pregunta= new Pregunta();\n        pregunta.setCuerpoPregunta(\"James Webb Space Telescope is considered the formal succesor to the Hubbel Space Telescope\");\n\n        respuesta = new Respuesta();\n        respuesta.setCuerpoRespuesta(\"True\");\n        respuesta.setCorrecta();\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta = new Respuesta();\n        respuesta.setCuerpoRespuesta(\"False\");\n        pregunta.getListaOpciones().add(respuesta);\n\n        pregunta.setExplicacion(\"The James Webb Space Telescope is considered the formal successor to the Hubbel Space Telescope and the Spitzer Space Telescope. In addition, the James Webb will surpass these two telescopes by being able to see many more stars and older galaxies, giving us the highest resolution images of space to date\");\n        addConComprobacion(pregunta);\n///---------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n        pregunta = new Pregunta();\n        pregunta.setCuerpoPregunta(\"Which is one of the main objectives of the James Webb Telescope?\");\n        pregunta.setExplicacion(\"The James Webb Space Telescope has 4 main objectives: to study the formation and evolution of galaxies, to understand the formation of stars, to study the origins of life and to search for light from the first stars that formed in the universe after the Big Bang\");\n\n        respuesta= new Respuesta();\n        respuesta.setCuerpoRespuesta(\"To know the weather forecast\");\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta= new Respuesta();\n        respuesta.setCuerpoRespuesta(\"To understand the rotation of the Moon\");\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta= new Respuesta();\n        respuesta.setCuerpoRespuesta(\"To study the changes in the Earth's temperature\");\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta= new Respuesta();\n        respuesta.setCuerpoRespuesta(\"To study galaxy formation and evolution\");\n        respuesta.setCorrecta();\n        pregunta.getListaOpciones().add(respuesta);\n        addConComprobacion(pregunta);\n\n        ///---------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n        pregunta= new Pregunta();\n        pregunta.setCuerpoPregunta(\"Does the James Webb Space Telescope measure visible and ultraviolet light?\");\n\n        respuesta= new Respuesta();\n        respuesta.setCuerpoRespuesta(\"True\");\n        pregunta.getListaOpciones().add(respuesta);\n\n        respuesta= new Respuesta();\n        respuesta.setCuerpoRespuesta(\"False\");\n        respuesta.setCorrecta();\n        pregunta.getListaOpciones().add(respuesta);\n\n        pregunta.setExplicacion(\"The James Webb Space Telescope observes in near-infrared light rather than visible or ultraviolet light in order to accomplish more effectively its objectives\");\n        addConComprobacion(pregunta);\n\n        ///---------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n        /*\n        ¿Se pueden hacer preguntas que en vez de elegir entre opciones de texto se tenga que elegir entre imágenes? si se puede:\n\n        HAY QUE CAMBIAR ESTO Y SEGUIR LA ESTRUCTURA DEL RESTO\n\n        pregunta.setCuerpoPregunta(Select the image which was captured by James Webb Space Telescope);\n        pregunta.getListaOpciones().add(RUTA A IMAGEN DEL WEBBS FIRST DEEP FIELD);\n        pregunta.getListaOpciones().add(RUTA A IMAGEN DEL HABBEL FIRST DEEP FIELD);\n        pregunta.setOpcionCorrecta(0);\n        pregunta.setExplicacion(\"That image corresponds to Webb's First Deep Field which was the first full false-color image from the James Webb Telescope and the highest-resolution infrared view of the universe to date. The other image corresponds to the same galaxy cluster being captured by the Hubbel Telescope in 2017\");\n        preguntas.add(pregunta);\n\n        pregunta.setCuerpoPregunta(Select the Neptune's image which was captured by James Webb Space Telescope);\n        pregunta.getListaOpciones().add(RUTA A IMAGEN DEL NEPTUNO HABBEL);\n        pregunta.getListaOpciones().add(RUTA A IMAGEN DEL NEPTUNO WEBB);\n        pregunta.setOpcionCorrecta(1);\n        pregunta.setExplicacion(\"That image is the clearest ever seen of Neptune with its rings, moons and space dust. The other image is the Hubbel view of the same planet, the difference between the two images is due to the different wavelengths of light used by the two telescopes.\");\n        preguntas.add(pregunta);\n         */\n\n\n    }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/Juego.java b/src/main/java/com/example/spaceapps/Juego.java
+--- a/src/main/java/com/example/spaceapps/Juego.java	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
++++ b/src/main/java/com/example/spaceapps/Juego.java	(date 1664635805597)
+@@ -72,10 +72,51 @@
+     private void crearPreguntas() throws Exception {
+         Pregunta pregunta = new Pregunta();
+ 
++///---------------------------------------------------------------------------------------------------------------------------------------------------------------
++
++        pregunta.setCuerpoPregunta("What is the James Webb?");
++        pregunta.setExplicacion("James Webb is a NASA space telescope that was launched on December 25, 2021. And it is scanning a large part of the sky.");
++
++        Respuesta respuesta= new Respuesta();
++        respuesta.setCuerpoRespuesta("Spacial Telescope");
++        respuesta.setCorrecta();
++        pregunta.getListaOpciones().add(respuesta);
++
++        respuesta = new Respuesta();
++        respuesta.setCuerpoRespuesta("New car");
++        pregunta.getListaOpciones().add(respuesta);
++
++        respuesta = new Respuesta();
++        respuesta.setCuerpoRespuesta("Mobile phone");
++        pregunta.getListaOpciones().add(respuesta);
++
++        respuesta = new Respuesta();
++        respuesta.setCuerpoRespuesta("None of the above");
++        pregunta.getListaOpciones().add(respuesta);
++        addConComprobacion(pregunta);
++
++
++
++///---------------------------------------------------------------------------------------------------------------------------------------------------------------
++
++
++
++
++///---------------------------------------------------------------------------------------------------------------------------------------------------------------
++
++
++
++
++///---------------------------------------------------------------------------------------------------------------------------------------------------------------
++
++
++
++///---------------------------------------------------------------------------------------------------------------------------------------------------------------
++
+         pregunta.setCuerpoPregunta("Which organizations participated in the creation of the James Webb Telescope?");
+         pregunta.setExplicacion("Since 1996, NASA, ESA and CSA have been collaborating in the creation of the James Webb Telescope. This means that a total of 20 countries are major contributors to this project");
+ 
+-        Respuesta respuesta= new Respuesta();
++        respuesta= new Respuesta();
+         respuesta.setCuerpoRespuesta("NASA, ESA and CSA");
+         respuesta.setCorrecta();
+         pregunta.getListaOpciones().add(respuesta);
+Index: .idea/libraries/Maven__org_openjfx_javafx_base_mac_18_ea_6.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_base_mac_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_base_mac_18_ea_6.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_base_mac_18_ea_6.xml	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
++++ /dev/null	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-base:mac:18-ea+6">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18-ea+6/javafx-base-18-ea+6-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18-ea+6/javafx-base-18-ea+6-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18-ea+6/javafx-base-18-ea+6-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
++++ /dev/null	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-controls:mac:19-ea+7">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__16_27__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__16_27__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__16_27__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__16_27__Changes_.xml	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
++++ /dev/null	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
+@@ -1,34 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_1_10_22,_16_27_[Changes]" date="1664634464537" recycled="false" toDelete="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22,_16_27_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 1/10/22, 16:27 [Changes]" />
+-  <binary>
+-    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/HelloApplication.class" />
+-    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/HelloApplication.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22,_16_27_[Changes]/HelloApplication.class" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/Juego.class" />
+-    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/Juego.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22,_16_27_[Changes]/Juego.class" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/nivel1Controller.class" />
+-    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/nivel1Controller.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22,_16_27_[Changes]/nivel1Controller.class" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/controllerOpciones.class" />
+-    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/controllerOpciones.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22,_16_27_[Changes]/controllerOpciones.class" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="juego.bin" />
+-    <option name="AFTER_PATH" value="juego.bin" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22,_16_27_[Changes]/juego.bin" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/OpcionesJuego.class" />
+-    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/OpcionesJuego.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22,_16_27_[Changes]/OpcionesJuego.class" />
+-  </binary>
+-</changelist>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
++++ /dev/null	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-fxml:mac:18-ea+6">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
++++ /dev/null	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-graphics:mac:19-ea+7">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-mac.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: spaceapps.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule=\"true\" type=\"JAVA_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\" LANGUAGE_LEVEL=\"JDK_17\">\n    <output url=\"file://$MODULE_DIR$/target/classes\" />\n    <output-test url=\"file://$MODULE_DIR$/target/test-classes\" />\n    <content url=\"file://$MODULE_DIR$\">\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/java\" isTestSource=\"false\" />\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/resources\" type=\"java-resource\" />\n      <excludeFolder url=\"file://$MODULE_DIR$/target\" />\n    </content>\n    <orderEntry type=\"inheritedJdk\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-controls:19-ea+7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-controls:mac:19-ea+7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-fxml:18-ea+6\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-fxml:mac:18-ea+6\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter-api:5.8.1\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.opentest4j:opentest4j:1.2.0\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.platform:junit-platform-commons:1.8.1\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.apiguardian:apiguardian-api:1.1.2\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter-engine:5.8.1\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.platform:junit-platform-engine:1.8.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: javax.servlet:javax.servlet-api:4.0.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-graphics:19-ea+7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-graphics:mac:19-ea+7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-base:19-ea+7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-base:mac:19-ea+7\" level=\"project\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spaceapps.iml b/spaceapps.iml
+--- a/spaceapps.iml	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
++++ b/spaceapps.iml	(date 1664634823374)
+@@ -11,9 +11,9 @@
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:19-ea+7" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:mac:19-ea+7" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:linux:19-ea+7" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:18-ea+6" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:mac:18-ea+6" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:linux:18-ea+6" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.1" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.opentest4j:opentest4j:1.2.0" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-commons:1.8.1" level="project" />
+@@ -22,8 +22,8 @@
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.8.1" level="project" />
+     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:19-ea+7" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:mac:19-ea+7" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:19-ea+7" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:mac:19-ea+7" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:linux:19-ea+7" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:18-ea+6" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:linux:18-ea+6" level="project" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"algo2\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/juego.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/juego.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/pom.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/css/fuente.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/css/fuente.css\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"FxmlFile\" />\n        <option value=\"Class\" />\n        <option value=\"AnnotationType\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"generalSettings\">\n      <MavenGeneralSettings>\n        <option name=\"useMavenConfig\" value=\"true\" />\n      </MavenGeneralSettings>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"2FMP6M2wRcwwxI5JFSrvFxdkITE\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CreateClassDialog.RecentsKey\">\n      <recent name=\"com.example.spaceapps\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/resources/css\" />\n      <recent name=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"HelloApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.spaceapps.HelloApplication\" />\n      <module name=\"spaceapps\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.example.spaceapps.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.HelloApplication\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"\" />\n      <created>1664298806623</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1664298806623</updated>\n      <workItem from=\"1664298810150\" duration=\"1663000\" />\n      <workItem from=\"1664301389990\" duration=\"9863000\" />\n      <workItem from=\"1664314821535\" duration=\"60000\" />\n      <workItem from=\"1664358906258\" duration=\"1839000\" />\n      <workItem from=\"1664360987849\" duration=\"5375000\" />\n      <workItem from=\"1664531652163\" duration=\"96000\" />\n      <workItem from=\"1664531880746\" duration=\"42000\" />\n      <workItem from=\"1664531941749\" duration=\"2795000\" />\n      <workItem from=\"1664611383206\" duration=\"334000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"algo\">\n      <created>1664313547737</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664313547737</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"algo\">\n      <created>1664359725564</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664359725564</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"algo\">\n      <created>1664360526505</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664360526505</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"algo2\">\n      <created>1664365925695</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664365925695</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"algo2\">\n      <created>1664365935369</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664365935369</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"commit tonto\">\n      <created>1664519157536</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664519157536</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"algo2\">\n      <created>1664560719082</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664560719082</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"algo2\">\n      <created>1664626514602</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664626514602</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"algo2\">\n      <created>1664630313733</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664630313733</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"algo2\">\n      <created>1664631391948</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664631391948</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"11\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"algo\" />\n    <MESSAGE value=\"commit tonto\" />\n    <MESSAGE value=\"Niveles finales (tamaño y botones)\" />\n    <MESSAGE value=\"algo2\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"algo2\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
++++ b/.idea/workspace.xml	(date 1664635805645)
+@@ -4,13 +4,35 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="algo2">
++    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="Indice">
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_18_ea_6.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__16_27__Changes_.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/juego.bin" beforeDir="false" afterPath="$PROJECT_DIR$/juego.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/css/fuente.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/css/fuente.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/Juego.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/HelloApplication.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/HelloController.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/Juego.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/OpcionesJuego.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/Pregunta.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/Respuesta.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/SelectorController.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/indice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/indice.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel2Controller.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel3Controller.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4Controller.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel5Controller.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nombreController.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/preguntaImagenController.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/selectorNiveles.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/selectorNiveles.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/vfController.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/css/indice.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/css/indice.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -53,6 +75,7 @@
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/home/alberto/Documentos/src/main/resources/css&quot;,
+     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+@@ -62,6 +85,9 @@
+   <component name="RecentsManager">
+     <key name="CreateClassDialog.RecentsKey">
+       <recent name="com.example.spaceapps" />
++    </key>
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/src/main/resources/css" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/src/main/resources/css" />
+@@ -176,7 +202,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1664631391948</updated>
+     </task>
+-    <option name="localTasksCounter" value="11" />
++    <task id="LOCAL-00011" summary="Indice">
++      <created>1664634096540</created>
++      <option name="number" value="00011" />
++      <option name="presentableId" value="LOCAL-00011" />
++      <option name="project" value="LOCAL" />
++      <updated>1664634096540</updated>
++    </task>
++    <option name="localTasksCounter" value="12" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -198,6 +231,8 @@
+     <MESSAGE value="commit tonto" />
+     <MESSAGE value="Niveles finales (tamaño y botones)" />
+     <MESSAGE value="algo2" />
+-    <option name="LAST_COMMIT_MESSAGE" value="algo2" />
++    <MESSAGE value="Seleccion niveles" />
++    <MESSAGE value="Indice" />
++    <option name="LAST_COMMIT_MESSAGE" value="Indice" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: target/classes/com/example/spaceapps/selectorNiveles.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<?import javafx.scene.control.Button?>\n<?import javafx.scene.control.Label?>\n<?import javafx.scene.image.Image?>\n<?import javafx.scene.image.ImageView?>\n<?import javafx.scene.layout.HBox?>\n<?import javafx.scene.layout.Region?>\n<?import javafx.scene.layout.VBox?>\n<?import javafx.scene.text.Font?>\n\n<HBox fx:id=\"fondoSelect\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"600.0\" prefWidth=\"899.0\" stylesheets=\"@../../../css/fondoImagenPrueba.css\" xmlns=\"http://javafx.com/javafx/18\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.spaceapps.SelectorController\">\n   <children>\n      <VBox alignment=\"BOTTOM_RIGHT\" prefHeight=\"600.0\" prefWidth=\"105.0\">\n         <children>\n            <ImageView fitHeight=\"71.0\" fitWidth=\"97.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n               <image>\n                  <Image url=\"@../../../imagenes/astronaut.png\" />\n               </image>\n            </ImageView>\n            <Label fx:id=\"eNombre\" prefHeight=\"20.0\" prefWidth=\"73.0\" text=\"Nombre\" textAlignment=\"CENTER\" textFill=\"WHITE\">\n               <font>\n                  <Font name=\"System Bold\" size=\"16.0\" />\n               </font>\n            </Label>\n         </children>\n      </VBox>\n      <VBox prefHeight=\"200.0\" prefWidth=\"100.0\" HBox.hgrow=\"ALWAYS\">\n         <children>\n            <HBox alignment=\"CENTER\" prefHeight=\"224.0\" prefWidth=\"355.0\">\n               <children>\n                  <Region prefHeight=\"224.0\" prefWidth=\"61.0\" />\n                  <Button fx:id=\"bLevel3\" ellipsisString=\"\" mnemonicParsing=\"false\" onAction=\"#botonLevel3\">\n                     <graphic>\n                        <ImageView fitHeight=\"58.0\" fitWidth=\"57.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n                           <image>\n                              <Image url=\"@../../../imagenes/fonodsnivel/telescopio-espacial-hubble.png\" />\n                           </image>\n                        </ImageView>\n                     </graphic>\n                  </Button>\n                  <Label text=\"Level 3\" textFill=\"WHITE\">\n                     <font>\n                        <Font name=\"System Bold\" size=\"14.0\" />\n                     </font>\n                  </Label>\n               </children>\n            </HBox>\n            <HBox prefHeight=\"165.0\" prefWidth=\"397.0\">\n               <children>\n                  <VBox alignment=\"BOTTOM_CENTER\" prefHeight=\"200.0\" prefWidth=\"100.0\" HBox.hgrow=\"ALWAYS\">\n                     <children>\n                        <Button fx:id=\"bLevel2\" mnemonicParsing=\"false\" onAction=\"#botonLevel2\">\n                           <graphic>\n                              <ImageView fitHeight=\"51.0\" fitWidth=\"44.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n                                 <image>\n                                    <Image url=\"@../../../imagenes/fonodsnivel/telescope%20(2).png\" />\n                                 </image>\n                              </ImageView>\n                           </graphic>\n                        </Button>\n                        <Label text=\"Level 2\" textFill=\"WHITE\">\n                           <font>\n                              <Font name=\"System Bold\" size=\"14.0\" />\n                           </font>\n                        </Label>\n                     </children>\n                  </VBox>\n                  <VBox alignment=\"TOP_CENTER\" prefHeight=\"200.0\" prefWidth=\"100.0\" HBox.hgrow=\"ALWAYS\">\n                     <children>\n                        <Button fx:id=\"bLevel1\" mnemonicParsing=\"false\" onAction=\"#botonLevel1\">\n                           <graphic>\n                              <ImageView fitHeight=\"70.0\" fitWidth=\"44.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n                                 <image>\n                                    <Image url=\"@../../../imagenes/fonodsnivel/telescope.png\" />\n                                 </image>\n                              </ImageView>\n                           </graphic>\n                        </Button>\n                        <Label text=\"Level 1\" textFill=\"WHITE\">\n                           <font>\n                              <Font name=\"System Bold\" size=\"14.0\" />\n                           </font>\n                        </Label>\n                     </children>\n                  </VBox>\n                  <Region prefHeight=\"165.0\" prefWidth=\"26.0\" />\n               </children>\n            </HBox>\n         </children>\n      </VBox>\n      <VBox prefHeight=\"200.0\" prefWidth=\"100.0\" HBox.hgrow=\"ALWAYS\">\n         <children>\n            <HBox alignment=\"CENTER_RIGHT\" prefHeight=\"100.0\" prefWidth=\"200.0\" VBox.vgrow=\"ALWAYS\">\n               <children>\n                  <Label text=\"Level 4\" textFill=\"WHITE\">\n                     <font>\n                        <Font name=\"System Bold\" size=\"14.0\" />\n                     </font>\n                  </Label>\n                  <Button fx:id=\"bLevel4\" mnemonicParsing=\"false\" onAction=\"#botonLevvel4\">\n                     <graphic>\n                        <ImageView fitHeight=\"69.0\" fitWidth=\"59.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n                           <image>\n                              <Image url=\"@../../../imagenes/fonodsnivel/telescopio-espacial-hubble%20(1).png\" />\n                           </image>\n                        </ImageView>\n                     </graphic>\n                  </Button>\n                  <Region prefHeight=\"300.0\" prefWidth=\"73.0\" />\n               </children>\n            </HBox>\n            <HBox alignment=\"CENTER\" prefHeight=\"100.0\" prefWidth=\"200.0\" VBox.vgrow=\"ALWAYS\">\n               <children>\n                  <Button fx:id=\"bLevel5\" mnemonicParsing=\"false\" onAction=\"#BotonLevel5\">\n                     <graphic>\n                        <ImageView fitHeight=\"83.0\" fitWidth=\"55.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n                           <image>\n                              <Image url=\"@../../../imagenes/fonodsnivel/James-webb.png\" />\n                           </image>\n                        </ImageView>\n                     </graphic>\n                  </Button>\n                  <Label text=\"Level 5\" textFill=\"WHITE\">\n                     <font>\n                        <Font name=\"System Bold\" size=\"14.0\" />\n                     </font>\n                  </Label>\n               </children>\n            </HBox>\n         </children>\n      </VBox>\n   </children>\n</HBox>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/classes/com/example/spaceapps/selectorNiveles.fxml b/target/classes/com/example/spaceapps/selectorNiveles.fxml
+--- a/target/classes/com/example/spaceapps/selectorNiveles.fxml	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
++++ b/target/classes/com/example/spaceapps/selectorNiveles.fxml	(date 1664634766111)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
++<?import javafx.geometry.Insets?>
+ <?import javafx.scene.control.Button?>
+ <?import javafx.scene.control.Label?>
+ <?import javafx.scene.image.Image?>
+@@ -39,7 +40,7 @@
+                         </ImageView>
+                      </graphic>
+                   </Button>
+-                  <Label text="Level 3" textFill="WHITE">
++                  <Label text="Level 3">
+                      <font>
+                         <Font name="System Bold" size="14.0" />
+                      </font>
+@@ -48,7 +49,7 @@
+             </HBox>
+             <HBox prefHeight="165.0" prefWidth="397.0">
+                <children>
+-                  <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
++                  <VBox alignment="BOTTOM_CENTER" prefHeight="165.0" prefWidth="88.0" HBox.hgrow="ALWAYS">
+                      <children>
+                         <Button fx:id="bLevel2" mnemonicParsing="false" onAction="#botonLevel2">
+                            <graphic>
+@@ -59,12 +60,15 @@
+                               </ImageView>
+                            </graphic>
+                         </Button>
+-                        <Label text="Level 2" textFill="WHITE">
++                        <Label text="Level 2">
+                            <font>
+                               <Font name="System Bold" size="14.0" />
+                            </font>
+                         </Label>
+                      </children>
++                     <HBox.margin>
++                        <Insets />
++                     </HBox.margin>
+                   </VBox>
+                   <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                      <children>
+@@ -77,9 +81,9 @@
+                               </ImageView>
+                            </graphic>
+                         </Button>
+-                        <Label text="Level 1" textFill="WHITE">
++                        <Label text="Level 1">
+                            <font>
+-                              <Font name="System Bold" size="14.0" />
++                              <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                         </Label>
+                      </children>
+Index: target/classes/com/example/spaceapps/indice.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.Button?>\n<?import javafx.scene.control.Label?>\n<?import javafx.scene.layout.Pane?>\n<?import javafx.scene.layout.VBox?>\n\n\n<Pane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"600.0\" prefWidth=\"899.0\" xmlns=\"http://javafx.com/javafx/18\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.spaceapps.HelloController\">\n   <children>\n      <VBox fx:id=\"fondo\" layoutX=\"-5.0\" layoutY=\"-1.0\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"611.0\" prefWidth=\"914.0\" stylesheets=\"@../../../css/indice.css\">\n         <children>\n            <Label fx:id=\"titulo\" alignment=\"CENTER\" contentDisplay=\"CENTER\" prefHeight=\"102.0\" prefWidth=\"667.0\" text=\"BROWSE THE WEBB\">\n               <VBox.margin>\n                  <Insets left=\"100.0\" top=\"40.0\" />\n               </VBox.margin>\n            </Label>\n            <Button fx:id=\"bBegin\" contentDisplay=\"CENTER\" mnemonicParsing=\"false\" onAction=\"#pressBegin\" prefHeight=\"67.0\" prefWidth=\"332.0\" stylesheets=\"@../../../css/indice.css\" text=\"NEW\">\n               <VBox.margin>\n                  <Insets left=\"270.0\" top=\"80.0\" />\n               </VBox.margin>\n            </Button>\n            <Button fx:id=\"bContinue\" mnemonicParsing=\"false\" onAction=\"#pressContinue\" prefHeight=\"67.0\" prefWidth=\"336.0\" stylesheets=\"@../../../css/indice.css\" text=\"CONTINUAR\">\n               <VBox.margin>\n                  <Insets left=\"270.0\" top=\"110.0\" />\n               </VBox.margin>\n            </Button>\n         </children>\n      </VBox>\n   </children>\n</Pane>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/classes/com/example/spaceapps/indice.fxml b/target/classes/com/example/spaceapps/indice.fxml
+--- a/target/classes/com/example/spaceapps/indice.fxml	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
++++ b/target/classes/com/example/spaceapps/indice.fxml	(date 1664634766123)
+@@ -1,32 +1,32 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
++<?import java.net.URL?>
+ <?import javafx.geometry.Insets?>
+ <?import javafx.scene.control.Button?>
+-<?import javafx.scene.control.Label?>
+-<?import javafx.scene.layout.Pane?>
++<?import javafx.scene.image.Image?>
++<?import javafx.scene.image.ImageView?>
+ <?import javafx.scene.layout.VBox?>
+ 
+-
+-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.HelloController">
++<VBox fx:id="fondo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.HelloController">
+    <children>
+-      <VBox fx:id="fondo" layoutX="-5.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="914.0" stylesheets="@../../../css/indice.css">
+-         <children>
+-            <Label fx:id="titulo" alignment="CENTER" contentDisplay="CENTER" prefHeight="102.0" prefWidth="667.0" text="BROWSE THE WEBB">
+-               <VBox.margin>
+-                  <Insets left="100.0" top="40.0" />
+-               </VBox.margin>
+-            </Label>
+-            <Button fx:id="bBegin" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pressBegin" prefHeight="67.0" prefWidth="332.0" stylesheets="@../../../css/indice.css" text="NEW">
+-               <VBox.margin>
+-                  <Insets left="270.0" top="80.0" />
+-               </VBox.margin>
+-            </Button>
+-            <Button fx:id="bContinue" mnemonicParsing="false" onAction="#pressContinue" prefHeight="67.0" prefWidth="336.0" stylesheets="@../../../css/indice.css" text="CONTINUAR">
+-               <VBox.margin>
+-                  <Insets left="270.0" top="110.0" />
+-               </VBox.margin>
+-            </Button>
+-         </children>
+-      </VBox>
+-   </children>
+-</Pane>
++      <ImageView fitHeight="326.0" fitWidth="417.0" pickOnBounds="true" preserveRatio="true">
++         <image>
++            <Image url="@../../../imagenes/logo/logo.png" />
++         </image>
++      </ImageView>
++      <Button fx:id="bBegin" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pressBegin" prefHeight="67.0" prefWidth="332.0" stylesheets="@../../../css/indice.css" text="NEW">
++         <VBox.margin>
++            <Insets top="40.0" />
++         </VBox.margin>
++      </Button>
++      <Button fx:id="bContinue" mnemonicParsing="false" onAction="#pressContinue" prefHeight="67.0" prefWidth="336.0" stylesheets="@../../../css/indice.css" text="CONTINUAR">
++         <VBox.margin>
++            <Insets top="30.0" />
++         </VBox.margin>
++      </Button>
++   </children>
++   <stylesheets>
++      <URL value="@../../../css/fuente.css" />
++      <URL value="@../../../css/indice.css" />
++   </stylesheets>
++</VBox>
+Index: target/classes/css/indice.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#fondo{\n    -fx-background-image: url(\"buena.jpg\");}\n\n\n#titulo{\n    -fx-text-fill: white;\n    -fx-font-size: 25pt;\n    -fx-font-family: \"Engravers MT\";\n}\n#bBegin{\n    -fx-font-size: 22pt;\n    -fx-font-family: \"Engravers MT\";\n    -fx-background-color: transparent;\n    -fx-text-fill: white;\n    -fx-border-color: white;\n    -fx-border-width: 5;\n    -fx-border-width: 5;\n\n}\n#bContinue{\n    -fx-font-size: 22pt;\n    -fx-font-family: \"Engravers MT\";\n    -fx-background-color: transparent;\n    -fx-text-fill: white;\n    -fx-border-color: white;\n    -fx-border-width: 5;\n    -fx-border-width: 5;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/classes/css/indice.css b/target/classes/css/indice.css
+--- a/target/classes/css/indice.css	(revision bdc42501aebc7b3da326c8ffce014313bafea26c)
++++ b/target/classes/css/indice.css	(date 1664634766131)
+@@ -1,15 +1,8 @@
+ #fondo{
+-    -fx-background-image: url("buena.jpg");}
+-
+-
+-#titulo{
+-    -fx-text-fill: white;
+-    -fx-font-size: 25pt;
+-    -fx-font-family: "Engravers MT";
++    -fx-background-image: url("buena.jpg");
+ }
+ #bBegin{
+     -fx-font-size: 22pt;
+-    -fx-font-family: "Engravers MT";
+     -fx-background-color: transparent;
+     -fx-text-fill: white;
+     -fx-border-color: white;
+@@ -19,10 +12,9 @@
+ }
+ #bContinue{
+     -fx-font-size: 22pt;
+-    -fx-font-family: "Engravers MT";
+     -fx-background-color: transparent;
+     -fx-text-fill: white;
+     -fx-border-color: white;
+     -fx-border-width: 5;
+     -fx-border-width: 5;
+-}
+\ No newline at end of file
++}

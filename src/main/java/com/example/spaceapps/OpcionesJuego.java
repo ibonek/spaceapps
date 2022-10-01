@@ -7,7 +7,6 @@ public class OpcionesJuego {
 
     Juego juego;
     public void Guardar(Juego juego) throws IOException {
-        juego.setPuntos(juego.getPuntos()+1);
         FileOutputStream fos = new FileOutputStream( "juego.bin");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(juego);

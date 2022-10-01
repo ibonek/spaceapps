@@ -36,12 +36,14 @@ public class nombreController {
         if(!nombre.getText().isBlank()) {
             errornombre.visibleProperty().set(false);
             OpcionesJuego opciones = new OpcionesJuego();
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel1.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("selectorNiveles.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
             Stage stage1 = (Stage) bContinue.getScene().getWindow();
-            nivel1Controller controlador = fxmlLoader.getController();
-            controlador.ponerNombre(nombre.getText());
+           // nivel1Controller controlador = fxmlLoader.getController();
+            //controlador.ponerNombre(nombre.getText());
+            SelectorController controlador =fxmlLoader.getController();
+
             opciones.crearJuego();
             opciones.juego.setNombre(nombre.getText());
             controlador.setOpciones(opciones);
