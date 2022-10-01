@@ -1,5 +1,26 @@
 #fondo{
-    -fx-background-image: url("marco.png");
+    -fx-background-image: url("fondoPreguntas.png");
+}
+
+.fondoBoton{
+    -fx-padding: 10 30 10 10;
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-border-color: white;
+}
+.radio-button:selected {
+     -fx-border-color: gray;
+     -fx-text-fill: gray;
+}
+
+.radio-button > .radio {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+  -fx-background-radius: 0px;
+  -fx-padding: 0.0em; /* 4 8 4 8 */
+}
+.radio-button:selected > .radio > .dot {
+  -fx-background-color: transparent;
 }
 
 #opcion1{
@@ -29,5 +50,6 @@
 #pregunta{
     -fx-font-size: 16pt;
     -fx-text-fill: white;
+
 
 }
