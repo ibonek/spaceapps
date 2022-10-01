@@ -18,7 +18,7 @@ import static javafx.scene.paint.Color.*;
 
 public class controllerOpciones {
     @FXML
-    private Button tryAgain;
+    private Button bTryAgain;
     OpcionesJuego opciones;
 
     public OpcionesJuego getOpciones() {
@@ -82,6 +82,7 @@ public class controllerOpciones {
     @FXML
     void botonTryAgain(ActionEvent event) throws IOException {
        setearPreguntas(p);
+       continuar.setDisable(true);
     }
 
     @FXML
@@ -159,9 +160,10 @@ public class controllerOpciones {
     @FXML
     void botonComprobar(ActionEvent event) throws IOException {
 
-
+        if (respuestaSeleccionada == null) return ;
         if(!respuestaSeleccionada.isCorrecta()){
-
+            bTryAgain.setDisable(false);
+            bTryAgain.setVisible(true);
             if(r==1) opcion1.setTextFill(RED);
 
             if(r==2) opcion2.setTextFill(RED);
@@ -170,8 +172,10 @@ public class controllerOpciones {
 
             if(r==4) opcion4.setTextFill(RED);
          }
-        if(respuestaSeleccionada.isCorrecta()){
 
+        if(respuestaSeleccionada.isCorrecta()){
+            comprobar.setDisable(true);
+            continuar.setDisable(false);
             opciones.juego.setAciertos();
             opciones.Guardar(opciones.juego);
 
@@ -187,8 +191,8 @@ public class controllerOpciones {
         opcion2.setDisable(true);
         opcion3.setDisable(true);
         opcion4.setDisable(true);
-        comprobar.setDisable(true);
-        continuar.setDisable(false);
+
+
 
     }
 

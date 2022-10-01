@@ -11,7 +11,7 @@
    <children>
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="365.0">
          <children>
-            <Button fx:id="bTryAgain" mnemonicParsing="false" onAction="#botonTryAgain" text="Try Again" />
+            <Button fx:id="bTryAgain" disable="true" mnemonicParsing="false" onAction="#botonTryAgain" text="Try Again" visible="false" />
          </children>
       </HBox>
       <Label fx:id="pregunta" wrapText="true" />
