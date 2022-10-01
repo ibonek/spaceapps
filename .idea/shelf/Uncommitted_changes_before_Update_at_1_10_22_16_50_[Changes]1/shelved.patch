@@ -1,0 +1,96 @@
+Index: .idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml
+new file mode 100644
+--- /dev/null	(date 1664634823390)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml	(date 1664634823390)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.openjfx:javafx-base:linux:18-ea+6">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18-ea+6/javafx-base-18-ea+6-linux.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18-ea+6/javafx-base-18-ea+6-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18-ea+6/javafx-base-18-ea+6-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml
+new file mode 100644
+--- /dev/null	(date 1664634823414)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml	(date 1664634823414)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.openjfx:javafx-fxml:linux:18-ea+6">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-linux.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml
+new file mode 100644
+--- /dev/null	(date 1664634823406)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml	(date 1664634823406)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.openjfx:javafx-controls:linux:19-ea+7">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-linux.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml
+new file mode 100644
+--- /dev/null	(date 1664634823434)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml	(date 1664634823434)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.openjfx:javafx-graphics:linux:19-ea+7">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-linux.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
