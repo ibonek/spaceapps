@@ -52,6 +52,9 @@
                            <VBox.margin>
                               <Insets left="20.0" />
                            </VBox.margin>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
                         </Label>
                      </children>
                   </VBox>
@@ -61,7 +64,7 @@
                <children>
                   <Label fx:id="eNombre" prefHeight="38.0" prefWidth="288.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="16.0" />
+                        <Font name="System Bold" size="22.0" />
                      </font>
                   </Label>
                </children>
@@ -81,7 +84,7 @@
                   </Button>
                   <Label prefHeight="38.0" prefWidth="125.0" text="13" textAlignment="CENTER" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="16.0" />
+                        <Font name="System Bold" size="27.0" />
                      </font>
                      <HBox.margin>
                         <Insets left="15.0" />
@@ -96,7 +99,7 @@
             <Region prefHeight="21.0" prefWidth="198.0" />
             <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="bAnillos" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonAnillos" prefHeight="169.0" prefWidth="173.0" text="Button">
+                  <Button fx:id="bAnillos" contentDisplay="GRAPHIC_ONLY" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonAnillos" prefHeight="169.0" prefWidth="173.0" text="Button">
                      <graphic>
                         <ImageView fx:id="imagenAnillos" fitHeight="172.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -112,9 +115,9 @@
                   <Insets right="10.0" />
                </padding>
                <children>
-                  <Label prefHeight="38.0" prefWidth="125.0" text="14" textAlignment="CENTER" textFill="WHITE">
+                  <Label text="14" textFill="#7c7979">
                      <font>
-                        <Font name="System Bold" size="16.0" />
+                        <Font size="27.0" />
                      </font>
                   </Label>
                </children>
@@ -126,7 +129,7 @@
             <HBox prefHeight="20.0" prefWidth="196.0" />
             <HBox alignment="TOP_CENTER" prefHeight="184.0" prefWidth="196.0">
                <children>
-                  <Button fx:id="bSuperNova" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonSuperNova" prefHeight="143.0" prefWidth="115.0" text="Button">
+                  <Button fx:id="bSuperNova" contentDisplay="GRAPHIC_ONLY" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonSuperNova" prefHeight="143.0" prefWidth="115.0" text="Button">
                      <graphic>
                         <ImageView fx:id="imagenSuperNova" fitHeight="151.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -135,12 +138,12 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label prefHeight="38.0" prefWidth="39.0" text="15" textAlignment="CENTER" textFill="WHITE">
+                  <Label text="15" textFill="#7c7979">
                      <font>
-                        <Font name="System Bold" size="16.0" />
+                        <Font size="27.0" />
                      </font>
                      <HBox.margin>
-                        <Insets left="20.0" />
+                        <Insets left="10.0" />
                      </HBox.margin>
                   </Label>
                </children>

@@ -75,8 +75,14 @@ public class controllerOpciones {
     boolean resp4;
     Respuesta respuestaSeleccionada;
 
+    public boolean bien;
+
+    public boolean getBoolean(){
+        return bien;
+    }
     @FXML
     void botonContinuar(ActionEvent event) throws IOException {
+        bien = true;
         Stage stage1 = (Stage) pregunta.getScene().getWindow();
         stage1.close();
     }

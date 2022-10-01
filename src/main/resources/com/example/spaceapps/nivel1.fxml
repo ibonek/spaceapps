@@ -46,11 +46,17 @@
                                  </image>
                               </ImageView>
                            </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
                         </HBox>
                         <Label fx:id="puntos" text="0">
                            <VBox.margin>
-                              <Insets left="20.0" />
+                              <Insets bottom="5.0" left="20.0" />
                            </VBox.margin>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
                         </Label>
                      </children>
                   </VBox>
@@ -60,7 +66,7 @@
                <children>
                   <Label fx:id="eNombre" prefHeight="38.0" prefWidth="307.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="16.0" />
+                        <Font name="System Bold" size="22.0" />
                      </font>
                   </Label>
                </children>
@@ -74,7 +80,7 @@
             <HBox prefHeight="100.0" prefWidth="200.0" />
             <HBox alignment="BOTTOM_CENTER" prefHeight="150.0" prefWidth="198.0">
                <children>
-                  <Label prefHeight="32.0" prefWidth="31.0" text="2" textFill="#7c7979">
+                  <Label fx:id="e2" prefHeight="32.0" prefWidth="31.0" text="2" textFill="#7c7979">
                      <HBox.margin>
                         <Insets bottom="100.0" />
                      </HBox.margin>
@@ -91,11 +97,20 @@
                         </ImageView>
                      </graphic>
                   </Button>
+                  <Button fx:id="expVenus" disable="true" mnemonicParsing="false" onAction="#botonExpVenus" prefHeight="46.0" prefWidth="41.0" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/libro.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                </children>
             </HBox>
             <HBox alignment="BOTTOM_LEFT" prefHeight="205.0" prefWidth="198.0">
                <children>
-                  <Button fx:id="bLuna" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonLuna" prefHeight="34.0" prefWidth="32.0" text="Button">
+                  <Button fx:id="bLuna" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonLuna" prefHeight="77.0" prefWidth="77.0" text="Button">
                      <graphic>
                         <ImageView fitHeight="92.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -104,7 +119,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label text="1" textFill="WHITE">
+                  <Label fx:id="e1" text="1" textFill="WHITE">
                      <font>
                         <Font size="27.0" />
                      </font>
@@ -112,6 +127,15 @@
                         <Insets bottom="70.0" />
                      </HBox.margin>
                   </Label>
+                  <Button fx:id="expLuna" disable="true" mnemonicParsing="false" onAction="#botonExpLuna" prefHeight="46.0" prefWidth="41.0" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/libro.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                </children>
                <padding>
                   <Insets right="10.0" />
@@ -121,7 +145,7 @@
       </VBox>
       <VBox alignment="BOTTOM_RIGHT" prefHeight="400.0" prefWidth="196.0" HBox.hgrow="ALWAYS">
          <children>
-            <Label prefHeight="19.0" prefWidth="41.0" text="3" textFill="#7c7979">
+            <Label fx:id="e3" prefHeight="19.0" prefWidth="41.0" text="3" textFill="#7c7979">
                <padding>
                   <Insets right="20.0" />
                </padding>
@@ -144,10 +168,21 @@
                      </graphic>
                   </Button>
                </children></HBox>
-            <HBox alignment="BOTTOM_RIGHT" prefHeight="184.0" prefWidth="196.0">
+            <HBox alignment="TOP_CENTER" prefHeight="184.0" prefWidth="196.0">
                <VBox.margin>
                   <Insets right="15.0" />
                </VBox.margin>
+               <children>
+                  <Button fx:id="expMercurio" disable="true" mnemonicParsing="false" onAction="#botonExpMercurio" prefHeight="46.0" prefWidth="41.0" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/libro.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
             </HBox>
             <Button fx:id="bLupa" ellipsisString="" mnemonicParsing="false" onAction="#botonLupa" prefHeight="56.0" prefWidth="72.0" text="Button">
                <graphic>
