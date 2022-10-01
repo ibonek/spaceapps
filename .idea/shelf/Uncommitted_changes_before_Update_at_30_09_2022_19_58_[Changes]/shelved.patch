@@ -1,0 +1,34 @@
+Index: .idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_19_ea_7.xml
+rename from .idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml
+rename to .idea/libraries/Maven__org_openjfx_javafx_graphics_win_19_ea_7.xml
+--- a/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml	
++++ b/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_19_ea_7.xml	
+@@ -1,7 +1,7 @@
+ <component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-graphics:linux:19-ea+7">
++  <library name="Maven: org.openjfx:javafx-graphics:win:19-ea+7">
+     <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-linux.jar!/" />
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-win.jar!/" />
+     </CLASSES>
+     <JAVADOC>
+       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-javadoc.jar!/" />
+Index: .idea/libraries/Maven__org_openjfx_javafx_base_linux_19_ea_7.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_base_linux_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_base_win_19_ea_7.xml
+rename from .idea/libraries/Maven__org_openjfx_javafx_base_linux_19_ea_7.xml
+rename to .idea/libraries/Maven__org_openjfx_javafx_base_win_19_ea_7.xml
+--- a/.idea/libraries/Maven__org_openjfx_javafx_base_linux_19_ea_7.xml	
++++ b/.idea/libraries/Maven__org_openjfx_javafx_base_win_19_ea_7.xml	
+@@ -1,7 +1,7 @@
+ <component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-base:linux:19-ea+7">
++  <library name="Maven: org.openjfx:javafx-base:win:19-ea+7">
+     <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19-ea+7/javafx-base-19-ea+7-linux.jar!/" />
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19-ea+7/javafx-base-19-ea+7-win.jar!/" />
+     </CLASSES>
+     <JAVADOC>
+       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19-ea+7/javafx-base-19-ea+7-javadoc.jar!/" />
