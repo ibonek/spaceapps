@@ -13,6 +13,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static javafx.scene.paint.Color.WHITE;
+
+import static javafx.scene.paint.Color.YELLOW;
+
 public class nivel1Controller {
 
     @FXML
@@ -130,11 +134,14 @@ public class nivel1Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
-        if(controller.getBoolean()){
-            //habilitar botonVenus
+        if(controller.getBoolean() == true){
+            bVenus.setDisable(false);
+            e2.setTextFill(WHITE);
         }
         if(controller.getBoolean()){
             //deshabilitar luna
+            bLuna.setDisable(true);
+            e1.setTextFill(YELLOW);
         }
         if(controller.getBoolean()){
             expLuna.setVisible(true);
