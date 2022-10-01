@@ -1,0 +1,19 @@
+Index: src/main/java/com/example/spaceapps/nombreController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.spaceapps;\n\nimport javafx.event.ActionEvent;\nimport javafx.fxml.FXML;\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Button;\nimport javafx.scene.control.Label;\nimport javafx.scene.control.TextField;\nimport javafx.scene.layout.VBox;\nimport javafx.stage.Stage;\n\nimport java.io.IOException;\n\npublic class nombreController {\n    private OpcionesJuego opciones;\n    @FXML\n    private Label errornombre;\n    @FXML\n    private Button bContinue;\n\n    @FXML\n    private Label lNew;\n\n    @FXML\n    private Label lNew1;\n\n    @FXML\n    private VBox marcoNombre;\n\n    @FXML\n    private TextField nombre;\n\n    @FXML\n    void pressContinue(ActionEvent event) throws IOException {\n        if(!nombre.getText().isBlank()) {\n            errornombre.visibleProperty().set(false);\n            OpcionesJuego opciones = new OpcionesJuego();\n            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"nivel1.fxml\"));\n            Scene scene = new Scene(fxmlLoader.load());\n            Stage stage = new Stage();\n            Stage stage1 = (Stage) bContinue.getScene().getWindow();\n            nivel1Controller controlador = fxmlLoader.getController();\n            controlador.ponerNombre(nombre.getText());\n            opciones.crearJuego();\n            opciones.juego.setNombre(nombre.getText());\n            controlador.setOpciones(opciones);\n            stage1.close();\n            stage.setTitle(\"Level 1\");\n            stage.setMaximized(false);\n            stage.setResizable(false);\n            stage.setScene(scene);\n            stage.show();\n        }\n        else {\n            errornombre.visibleProperty().set(true);\n            errornombre.setText(\"You must introduce a valid name\");\n        }}}\n\n    public OpcionesJuego getOpciones() {\n        return opciones;\n    }\n\n    public void setOpciones(OpcionesJuego opciones) {\n        this.opciones = opciones;\n    }\n\n    }\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/nombreController.java b/src/main/java/com/example/spaceapps/nombreController.java
+--- a/src/main/java/com/example/spaceapps/nombreController.java	(revision 93e9f122ba3fdf854e5239d0e690f76e74d39b4a)
++++ b/src/main/java/com/example/spaceapps/nombreController.java	(date 1664626298181)
+@@ -55,7 +55,7 @@
+         else {
+             errornombre.visibleProperty().set(true);
+             errornombre.setText("You must introduce a valid name");
+-        }}}
++        }}
+ 
+     public OpcionesJuego getOpciones() {
+         return opciones;
