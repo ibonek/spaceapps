@@ -1,0 +1,9 @@
+#fondo{
+    -fx-background-image: url("indice.jpg");
+
+}
+#titulo{
+    -fx-text-fill: white;
+    -fx-font-size: 22pt;
+    -fx-font-family: "Engravers MT";
+}
