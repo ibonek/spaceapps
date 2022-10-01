@@ -142,6 +142,7 @@ public class nivel1Controller {
             //deshabilitar luna
             bLuna.setDisable(true);
             e1.setTextFill(YELLOW);
+
         }
         if(controller.getBoolean()){
             expLuna.setVisible(true);

@@ -9,6 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -49,12 +50,13 @@ public class HelloController {
             nombreController controlador = fxmlLoader.getController();
             opciones.crearJuego();
             controlador.setOpciones(opciones);
-            stage1.close();
+            //stage1.close();
             stage.setTitle("Login");
             stage.setMaximized(false);
+            stage.initModality(Modality.APPLICATION_MODAL);
             stage.setResizable(false);
             stage.setScene(scene);
-            stage.show();
+            stage.showAndWait();
 
     }
 

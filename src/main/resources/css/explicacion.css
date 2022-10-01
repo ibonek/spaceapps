@@ -1,0 +1,13 @@
+#fondo{
+    -fx-background-image: url("nivel1.jpg");
+}
+#texto{
+    -fx-text-fill: white;
+    -fx-font-size: 20pt;
+    -fx-border-color: white;
+    -fx-border-width: 5;
+}
+/*magen{
+    -fx-background-image: url("");
+}
+  /*
