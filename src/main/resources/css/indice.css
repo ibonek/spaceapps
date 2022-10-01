@@ -1,9 +1,28 @@
 #fondo{
-    -fx-background-image: url("indice.jpg");
+    -fx-background-image: url("buena.jpg");
 
 }
 #titulo{
     -fx-text-fill: white;
+    -fx-font-size: 25pt;
+    -fx-font-family: "Engravers MT";
+}
+#botonNew{
     -fx-font-size: 22pt;
     -fx-font-family: "Engravers MT";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 5;
+    -fx-border-width: 5;
+
+}
+#botonContinuar{
+    -fx-font-size: 22pt;
+    -fx-font-family: "Engravers MT";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 5;
+    -fx-border-width: 5;
 }
