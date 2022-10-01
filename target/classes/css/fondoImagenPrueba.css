@@ -13,6 +13,21 @@
 #fondo5{
     -fx-background-image: url("nivel5.jpg");
 }
+#cabecera1{
+    -fx-background-image: url("star1.jpg");
+}
+#cabecera2{
+    -fx-background-image: url("star2.jpg");
+}
+#cabecera3{
+    -fx-background-image: url("star3.jpg");
+}
+#cabecera4{
+    -fx-background-image: url("star4.jpg");
+}
+#cabecera5{
+    -fx-background-image: url("star5.jpg");
+}
 #botonN2{
     -fx-background-color: TRANSPARENT;
 }
