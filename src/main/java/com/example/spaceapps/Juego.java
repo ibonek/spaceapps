@@ -23,8 +23,11 @@ public class Juego implements Serializable {
         return puntos;
     }
 
-    public void setPuntos(int puntos) {
-        this.puntos = puntos;
+    public void setPuntos() {
+        puntos += 100;
+    }
+    public void restPuntos() {
+        puntos -= 100;
     }
 
     public int getVidas() {
