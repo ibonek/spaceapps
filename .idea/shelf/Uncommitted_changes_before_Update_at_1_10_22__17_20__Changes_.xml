@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_1_10_22,_17_20_[Changes]" date="1664637620378" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22,_17_20_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 1/10/22, 17:20 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/nombreController.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/nombreController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22,_17_20_[Changes]/nombreController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/OpcionesJuego.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/OpcionesJuego.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22,_17_20_[Changes]/OpcionesJuego.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/SelectorController.class" />
+    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/SelectorController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22,_17_20_[Changes]/SelectorController.class" />
+  </binary>
+</changelist>
