@@ -7,6 +7,12 @@
 #fondo3{
     -fx-background-image: url("nivel3.jpg");
 }
+#fondo4{
+    -fx-background-image: url("nivel4.jpg");
+}
+#fondo5{
+    -fx-background-image: url("nivel5.jpg");
+}
 #botonN2{
     -fx-background-color: TRANSPARENT;
 }
