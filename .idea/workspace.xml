@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="ajuste label nombre">
+    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="niveles con pregunta">
+      <change beforePath="$PROJECT_DIR$/juego.bin" beforeDir="false" afterPath="$PROJECT_DIR$/juego.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/Juego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel3Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel4Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel4Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel5Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel5Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel2Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel3Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel3Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel5Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel5Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/vfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/vfController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664660418712</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="niveles con pregunta">
+      <created>1664660726666</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1664660726666</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +360,7 @@
     <MESSAGE value="lupita" />
     <MESSAGE value="Corazones y puntos en todos lados" />
     <MESSAGE value="ajuste label nombre" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajuste label nombre" />
+    <MESSAGE value="niveles con pregunta" />
+    <option name="LAST_COMMIT_MESSAGE" value="niveles con pregunta" />
   </component>
 </project>

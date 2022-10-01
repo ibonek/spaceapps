@@ -22,7 +22,7 @@ public class Juego implements Serializable {
     public int getPuntos() {
         return puntos;
     }
-
+    public void resetearPuntos(){puntos = 0;}
     public void setPuntos() {
         puntos += 100;
     }

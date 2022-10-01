@@ -5,15 +5,13 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 import static javafx.scene.paint.Color.*;
@@ -182,9 +180,14 @@ public class controllerOpciones {
                 vida2.setVisible(false);
                 vida1.setVisible(false);
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setTitle("You've lost");
-                alert.setHeaderText("Ypu've lost all your lives");
-                alert.showAndWait();
+                alert.setTitle("Alert");
+                alert.setHeaderText("You have lost all your lives");
+                alert.setContentText("You must restart the level");
+                Optional<ButtonType> result = alert.showAndWait();
+                if (result.isPresent() && result.get() == ButtonType.OK){
+                    Stage stage1 = (Stage) pregunta.getScene().getWindow();
+                    stage1.close();
+                }
             }
 
             bTryAgain.setDisable(false);

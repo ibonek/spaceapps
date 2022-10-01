@@ -107,10 +107,16 @@ public class nivel1Controller {
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(false);
-        } else {
+        } else if(opciones.juego.getVidas() == 1){
             vida1.setVisible(true);
             vida2.setVisible(false);
             vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+            opciones.juego.setVidas(3);
+            opciones.juego.resetearPuntos();
         }
         puntos.setText(controller.getPoints());
     }
@@ -140,10 +146,16 @@ public class nivel1Controller {
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(false);
-        } else {
+        } else if(opciones.juego.getVidas() == 1){
             vida1.setVisible(true);
             vida2.setVisible(false);
             vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+            opciones.juego.setVidas(3);
+            opciones.juego.resetearPuntos();
         }
     }
 
@@ -171,10 +183,16 @@ public class nivel1Controller {
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(false);
-        } else {
+        } else if(opciones.juego.getVidas() == 1){
             vida1.setVisible(true);
             vida2.setVisible(false);
             vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+            opciones.juego.setVidas(3);
+            opciones.juego.resetearPuntos();
         }
     }
     public void ponerNombre(String n){

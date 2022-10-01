@@ -130,18 +130,24 @@ public class nivel5Controller {
     }
 
     public void setVidas(int v){
-        if(v == 3){
+        if(opciones.juego.getVidas() == 3){
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(true);
-        } else if(v == 2){
+        } else if(opciones.juego.getVidas() == 2){
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(false);
-        } else {
+        } else if(opciones.juego.getVidas() == 1){
             vida1.setVisible(true);
             vida2.setVisible(false);
             vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+            opciones.juego.setVidas(3);
+            opciones.juego.resetearPuntos();
         }
     }
 }
