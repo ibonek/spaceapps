@@ -16,7 +16,13 @@ public class nivel4Controller {
     private Button bGalaxia;
 
     @FXML
+    private Button bLupa;
+
+    @FXML
     private Button bNebulosa;
+
+    @FXML
+    private HBox cabecera5;
 
     @FXML
     private Label eNombre;
@@ -31,12 +37,29 @@ public class nivel4Controller {
     private ImageView imagenNebulosa;
 
     @FXML
+    private Label puntos;
+
+    @FXML
+    private ImageView vida1;
+
+    @FXML
+    private ImageView vida2;
+
+    @FXML
+    private ImageView vida3;
+
+    @FXML
     void botonCometa(ActionEvent event) {
 
     }
 
     @FXML
     void botonGalaxia(ActionEvent event) {
+
+    }
+
+    @FXML
+    void botonLupa(ActionEvent event) {
 
     }
 

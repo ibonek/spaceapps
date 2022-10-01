@@ -3,8 +3,6 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
@@ -15,29 +13,49 @@
 <HBox fx:id="fondo5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@../../../css/fondoImagenPrueba.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.nivel5Controller">
    <children>
       <VBox prefHeight="400.0" prefWidth="26.0" />
-      <VBox HBox.hgrow="ALWAYS">
+      <VBox prefHeight="590.0" prefWidth="409.0" HBox.hgrow="ALWAYS">
          <children>
-            <MenuButton fx:id="botonN2" blendMode="SRC_ATOP" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.91" prefHeight="58.0" prefWidth="66.0" style="-fx-border-color: #0; -fx-border-width: #0; -fx-background-radius: #0;" textFill="TRANSPARENT">
-              <items>
-                <MenuItem disable="true" mnemonicParsing="false" onAction="#IrANivel1" text="Level 1" />
-                <MenuItem mnemonicParsing="false" onAction="#irANivel2" text="Level 2" />
-                  <MenuItem disable="true" mnemonicParsing="false" onAction="#IrANivel4" text="Level 4" />
-                  <MenuItem disable="true" mnemonicParsing="false" onAction="#IrANivel5" text="Level 5" />
-              </items>
-               <graphic>
-                  <ImageView fitHeight="66.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../imagenes/star5.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets right="2.0" />
-               </VBox.margin>
-            </MenuButton>
+            <HBox fx:id="cabecera5" alignment="TOP_RIGHT" prefHeight="107.0" prefWidth="327.0">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="97.0" prefWidth="130.0">
+                     <children>
+                        <ImageView fitHeight="111.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/star5.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="121.0" prefWidth="350.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="350.0" spacing="10.0">
+                           <children>
+                              <ImageView fx:id="vida1" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../imagenes/corazon.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="vida2" fitHeight="50.0" fitWidth="40.0" layoutX="10.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../imagenes/corazon.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="vida3" fitHeight="50.0" fitWidth="40.0" layoutX="10.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../imagenes/corazon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <Label fx:id="puntos" text="0">
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
                   <Label fx:id="eNombre" prefHeight="20.0" prefWidth="91.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
@@ -47,15 +65,15 @@
                   </Label>
                </children>
                <VBox.margin>
-                  <Insets left="10.0" />
+                  <Insets left="30.0" />
                </VBox.margin></HBox>
-            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="bUrano" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonUrano" prefHeight="34.0" prefWidth="32.0" text="Button">
+                  <Button fx:id="bAguNegro" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonAguNegro" prefHeight="75.0" prefWidth="78.0" text="Button">
                      <graphic>
-                        <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imagenAguNegro" fitHeight="104.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../imagenes/urano.png" />
+                              <Image url="@../../../imagenes/black-hole.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -64,16 +82,16 @@
             </HBox>
          </children>
       </VBox>
-      <VBox alignment="CENTER" prefHeight="407.0" prefWidth="198.0">
+      <VBox alignment="BOTTOM_CENTER" prefHeight="407.0" prefWidth="198.0">
          <children>
             <Region prefHeight="21.0" prefWidth="198.0" />
             <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Button fx:id="bNeptuno" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bNeptuno" prefHeight="58.0" prefWidth="55.0" text="Button">
+                  <Button fx:id="bAnillos" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonAnillos" prefHeight="169.0" prefWidth="173.0" text="Button">
                      <graphic>
-                        <ImageView fitHeight="54.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imagenAnillos" fitHeight="172.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../imagenes/neptuno.png" />
+                              <Image url="@../../../imagenes/supernova.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -87,16 +105,16 @@
             </HBox>
          </children>
       </VBox>
-      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="196.0">
+      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="196.0">
          <children>
-            <HBox prefHeight="100.0" prefWidth="200.0" />
-            <HBox alignment="BOTTOM_LEFT" prefHeight="184.0" prefWidth="196.0">
+            <HBox prefHeight="20.0" prefWidth="196.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="184.0" prefWidth="196.0">
                <children>
-                  <Button fx:id="bPluto" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonPluto" prefHeight="23.0" prefWidth="19.0" text="Button">
+                  <Button fx:id="bSuperNova" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonSuperNova" prefHeight="143.0" prefWidth="115.0" text="Button">
                      <graphic>
-                        <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imagenSuperNova" fitHeight="151.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../imagenes/pluto.png" />
+                              <Image url="@../../../imagenes/supernova(1).png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -105,6 +123,19 @@
                <VBox.margin>
                   <Insets right="15.0" />
                </VBox.margin>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="bLupa" ellipsisString="" mnemonicParsing="false" onAction="#botonLupa" prefHeight="56.0" prefWidth="72.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/lupa.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
             </HBox>
          </children>
       </VBox>

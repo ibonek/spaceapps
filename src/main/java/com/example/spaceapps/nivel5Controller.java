@@ -16,7 +16,13 @@ public class nivel5Controller {
     private Button bAnillos;
 
     @FXML
+    private Button bLupa;
+
+    @FXML
     private Button bSuperNova;
+
+    @FXML
+    private HBox cabecera5;
 
     @FXML
     private Label eNombre;
@@ -34,12 +40,29 @@ public class nivel5Controller {
     private ImageView imagenSuperNova;
 
     @FXML
+    private Label puntos;
+
+    @FXML
+    private ImageView vida1;
+
+    @FXML
+    private ImageView vida2;
+
+    @FXML
+    private ImageView vida3;
+
+    @FXML
     void botonAguNegro(ActionEvent event) {
 
     }
 
     @FXML
     void botonAnillos(ActionEvent event) {
+
+    }
+
+    @FXML
+    void botonLupa(ActionEvent event) {
 
     }
 

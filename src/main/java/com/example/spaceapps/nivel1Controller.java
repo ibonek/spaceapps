@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.MenuButton;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
@@ -25,10 +24,10 @@ public class nivel1Controller {
     }
 
     @FXML
-    private HBox fondo1;
+    private Button bLuna;
 
     @FXML
-    private Button bLuna;
+    private Button bLupa;
 
     @FXML
     private Button bMercurio;
@@ -37,27 +36,28 @@ public class nivel1Controller {
     private Button bVenus;
 
     @FXML
-    private MenuButton botonN2;
-
-    @FXML
-    private ImageView botonSaturno;
-
-    @FXML
     private Label eNombre;
 
     @FXML
-    void IrANivel3(ActionEvent event) {
-
-    }
+    private HBox fondo1;
 
     @FXML
-    void IrANivel4(ActionEvent event) {
+    private ImageView imagenMercurio;
 
-    }
     @FXML
-    void IrANivel5(ActionEvent event) {
+    private ImageView imagenVenus;
 
-    }
+    @FXML
+    private Label puntos;
+
+    @FXML
+    private ImageView vida1;
+
+    @FXML
+    private ImageView vida2;
+
+    @FXML
+    private ImageView vida3;
 
     @FXML
     void bVenus(ActionEvent event) throws IOException {
@@ -107,34 +107,16 @@ public class nivel1Controller {
         stage.show();
 
     }
-    @FXML
-    void irANivel2(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel2.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        Stage stage1 = (Stage) bVenus.getScene().getWindow();
-        nivel2Controller controlador = fxmlLoader.getController();
-        stage1.close();
-        stage.setTitle("Level 2");
-        stage.setMaximized(false);
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
-
-    }
     void comprobarAciertos(){
-
-        OpcionesJuego opciones = new OpcionesJuego();
-        if (opciones.juego.getAciertos()>=3 ) {
-            botonN2.setDisable(false);
-
-
-        }
 
     }
     public void ponerNombre(String n){
         eNombre.setText(n);
 
     }
-}
+    @FXML
+    void botonLupa(ActionEvent event) {
 
+    }
+
+}
