@@ -71,6 +71,7 @@ public class HelloController {
             SelectorController controlador = fxmlLoader.getController();
             controlador.setPuntos(opciones.juego.getPuntos());
             controlador.setOpciones(opciones, opciones.juego.getNombre());
+            controlador.setVidas(opciones.juego.getVidas());
             stage1.close();
             stage.setTitle("Browse the Webb");
             stage.setMaximized(false);

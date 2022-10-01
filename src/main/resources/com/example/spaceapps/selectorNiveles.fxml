@@ -20,6 +20,28 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
+            <HBox prefHeight="24.0" prefWidth="105.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="vida1" fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagenes/corazon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="vida2" fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagenes/corazon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="vida3" fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagenes/corazon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
             <ImageView fitHeight="71.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../imagenes/astronaut.png" />

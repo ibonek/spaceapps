@@ -171,11 +171,11 @@ public class controllerOpciones {
             opciones.juego.restPuntos();
             if(vida3.isVisible()){
                 vida3.setVisible(false);
-                juego.setVidas(2);
+                opciones.juego.setVidas(2);
             }else if(vida2.isVisible()){
                 vida3.setVisible(false);
                 vida2.setVisible(false);
-                juego.setVidas(1);
+                opciones.juego.setVidas(1);
             }else {
                 vida3.setVisible(false);
                 vida2.setVisible(false);
