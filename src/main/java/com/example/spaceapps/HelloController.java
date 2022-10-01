@@ -44,12 +44,16 @@ public class HelloController {
     void pressBegin(ActionEvent event) throws IOException {
         if(!nombre.getText().isBlank()) {
             errornombre.visibleProperty().set(false);
+            OpcionesJuego opciones = new OpcionesJuego();
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel1.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
             Stage stage1 = (Stage) bBegin.getScene().getWindow();
             nivel1Controller controlador = fxmlLoader.getController();
             controlador.ponerNombre(nombre.getText());
+            opciones.crearJuego();
+            opciones.juego.setNombre(nombre.getText());
+            controlador.setOpciones(opciones);
             stage1.close();
             stage.setTitle("Level 1");
             stage.setMaximized(false);
@@ -59,14 +63,21 @@ public class HelloController {
         }
         else {
             errornombre.visibleProperty().set(true);
-            errornombre.setText("Debe introducir un nombre");
+            errornombre.setText("You must introduce a valid name");
         }
     }
 
     @FXML
     void pressContinue(ActionEvent event) throws IOException, ClassNotFoundException {
+
         OpcionesJuego opciones = new OpcionesJuego();
-        opciones.juego = opciones.Cargar("juego.bin");
+        try {
+            opciones.juego = opciones.Cargar("juego.bin");
+        } catch (Exception ex){
+            ///Aqui va el codigo para que informe  que no puedes hacer eso
+            System.out.println("No puedes cargar payaso");
+        }
+
 
     }
 

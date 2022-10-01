@@ -1,8 +1,9 @@
 package com.example.spaceapps;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 
-public class Pregunta {
+public class Pregunta  implements Serializable {
     private String cuerpoPregunta;
     private LinkedList<Respuesta> listaOpciones=new LinkedList<>();
     private String explicacion;

@@ -21,4 +21,12 @@ public class OpcionesJuego {
         ois.close();
         return juego;
     }
+
+    public void crearJuego(){
+        juego = new Juego();
+
+
+
+
+    }
 }

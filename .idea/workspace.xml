@@ -5,16 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="algo2">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_19_ea_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_19_ea_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_19_ea_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_18_ea_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_18_ea_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_19_ea_7.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/Juego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/OpcionesJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/OpcionesJuego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/Pregunta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/Pregunta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/Respuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/Respuesta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel3Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel4Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel4Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/vfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/vfController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/Juego.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/Juego.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/indice_y_nombre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/indice_y_nombre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel2Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel3Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel3Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel4Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/vfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/vfController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +124,7 @@
       <workItem from="1664531652163" duration="96000" />
       <workItem from="1664531880746" duration="42000" />
       <workItem from="1664531941749" duration="2795000" />
-      <workItem from="1664611383206" duration="334000" />
+      <workItem from="1664611383206" duration="6426000" />
     </task>
     <task id="LOCAL-00001" summary="algo">
       <created>1664313547737</created>
@@ -159,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664560719082</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="algo2">
+      <created>1664611774389</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664611774389</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,5 +204,16 @@
     <MESSAGE value="commit tonto" />
     <MESSAGE value="algo2" />
     <option name="LAST_COMMIT_MESSAGE" value="algo2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

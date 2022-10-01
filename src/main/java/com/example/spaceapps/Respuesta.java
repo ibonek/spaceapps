@@ -1,6 +1,8 @@
 package com.example.spaceapps;
 
-public class Respuesta {
+import java.io.Serializable;
+
+public class Respuesta  implements Serializable {
     private String cuerpoRespuesta;
     private boolean correcta = false;
 

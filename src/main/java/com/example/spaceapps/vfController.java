@@ -19,6 +19,15 @@ public class vfController {
     @FXML
     private Button compr;
 
+    public OpcionesJuego getOpciones() {
+        return opciones;
+    }
+
+    public void setOpciones(OpcionesJuego opciones) {
+        this.opciones = opciones;
+    }
+
+    private OpcionesJuego opciones;
     @FXML
     private RadioButton opcionF;
 

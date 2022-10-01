@@ -17,6 +17,17 @@ import java.util.ResourceBundle;
 import static javafx.scene.paint.Color.*;
 
 public class controllerOpciones {
+    @FXML
+    private Button tryAgain;
+    OpcionesJuego opciones;
+
+    public OpcionesJuego getOpciones() {
+        return opciones;
+    }
+
+    public void setOpciones(OpcionesJuego opciones) {
+        this.opciones = opciones;
+    }
 
     @FXML
     private RadioButton opcion1;
@@ -38,8 +49,6 @@ public class controllerOpciones {
     @FXML
     private Button continuar;
     @FXML
-    private Label progreso;
-    int contador;
     int p;
     int r;
     Juego juego = new Juego();
@@ -47,14 +56,18 @@ public class controllerOpciones {
     boolean resp2;
     boolean resp3;
     boolean resp4;
+    int aciertos;
     Respuesta respuestaSeleccionada;
     Respuesta respuestaCorrecta;
 
     @FXML
-    void botonAceptar(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel1.fxml"));
+    void botonContinuar(ActionEvent event) throws IOException {
+        int nivel = (opciones.juego.getAciertos()/3)+1;
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel"+nivel + ".fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
+        nivel1Controller controller = fxmlLoader.getController();
+        controller.comprobarAciertos();
         Stage stage1 = (Stage) pregunta.getScene().getWindow();
         stage1.close();
         stage.setMaximized(false);
@@ -67,9 +80,8 @@ public class controllerOpciones {
 
 
     @FXML
-    void botonAtras(ActionEvent event) throws IOException {
-        Stage stage1 = (Stage) pregunta.getScene().getWindow();
-        stage1.close();
+    void botonTryAgain(ActionEvent event) throws IOException {
+       setearPreguntas(p);
     }
 
     @FXML
@@ -145,12 +157,8 @@ public class controllerOpciones {
 
     }
     @FXML
-    void botonComprobar(ActionEvent event) {
+    void botonComprobar(ActionEvent event) throws IOException {
 
-        if (resp1) opcion1.setTextFill(DARKSEAGREEN);
-        if (resp2) opcion2.setTextFill(DARKSEAGREEN);
-        if (resp3) opcion3.setTextFill(DARKSEAGREEN);
-        if (resp4) opcion4.setTextFill(DARKSEAGREEN);
 
         if(!respuestaSeleccionada.isCorrecta()){
 
@@ -162,6 +170,19 @@ public class controllerOpciones {
 
             if(r==4) opcion4.setTextFill(RED);
          }
+        if(respuestaSeleccionada.isCorrecta()){
+
+            opciones.juego.setAciertos();
+            opciones.Guardar(opciones.juego);
+
+            if(r==1) opcion1.setTextFill(DARKSEAGREEN);
+
+            if(r==2) opcion2.setTextFill(DARKSEAGREEN);
+
+            if(r==3) opcion3.setTextFill(DARKSEAGREEN);
+
+            if(r==4) opcion4.setTextFill(DARKSEAGREEN);
+        }
         opcion1.setDisable(true);
         opcion2.setDisable(true);
         opcion3.setDisable(true);
