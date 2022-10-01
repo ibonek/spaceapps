@@ -8,6 +8,15 @@ public class Pregunta  implements Serializable {
     private LinkedList<Respuesta> listaOpciones=new LinkedList<>();
     private String explicacion;
 
+    public String getPista() {
+        return pista;
+    }
+
+    public void setPista(String pista) {
+        this.pista = pista;
+    }
+
+    private String pista;
     private boolean resuelta = false;
 
 

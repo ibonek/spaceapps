@@ -80,8 +80,10 @@ public class Juego implements Serializable {
 
         pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("What is the James Webb?");
+        pregunta.setPista("It is an object related to space");
         pregunta.setExplicacion("James Webb is a NASA space telescope that was launched on December 25, 2021. And it is scanning a large part of the sky.");
         Respuesta respuesta = new Respuesta();
+
         respuesta.setCuerpoRespuesta("A mobile phone");
         pregunta.getListaOpciones().add(respuesta);
 
@@ -96,7 +98,7 @@ public class Juego implements Serializable {
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("A satellite");
+        respuesta.setCuerpoRespuesta("A microscope");
 
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
@@ -210,22 +212,22 @@ public class Juego implements Serializable {
 
         pregunta.setCuerpoPregunta("Which organizations participated in the creation of the James Webb Telescope?");
         pregunta.setExplicacion("Since 1996, NASA, ESA and CSA have been collaborating in the creation of the James Webb Telescope. This means that a total of 20 countries are major contributors to this project");
-
+        pregunta.setPista("It is strongly related to USA");
         respuesta= new Respuesta();
         respuesta.setCuerpoRespuesta("NASA, ESA and CSA");
         respuesta.setCorrecta();
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("CNSA");
+        respuesta.setCuerpoRespuesta("'Club Natacio Sant Andreu' (CNSA)");
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("RSA");
+        respuesta.setCuerpoRespuesta("'Roskosmos' (RSA)");
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("JAXA");
+        respuesta.setCuerpoRespuesta("Japan Aerospace Exploration Agency (JAXA)");
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
         //preguntas.add(pregunta);
@@ -235,7 +237,7 @@ public class Juego implements Serializable {
         pregunta.setCuerpoPregunta("Approximately where is the James Webb telescope located?");
         pregunta.setExplicacion("The orbit of the James Webb Space Telescope is around L2, 1.500.000km from Earth. This is one of the 5 Lagrange points. Lagrange points are points of gravitational equilibrium for small-mass objects under the influence of two massive orbiting bodies." +
         "Webb's orbit does not lie exactly at the L2 point because the Earth's shadow on the Sun would be large enough to reduce the amount of energy available to Webb's solar panels.");
-
+        pregunta.setPista("It is not located on Earth");
         respuesta = new Respuesta();
         respuesta.setCuerpoRespuesta("Approximately the distance of the Moon");
         pregunta.getListaOpciones().add(respuesta);
