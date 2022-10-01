@@ -25,13 +25,7 @@ public class controllerOpciones {
         return puntos.getText();
     }
     public int getVidas(){
-        if(vida3.isVisible()){
-            return 3;
-        } else if(vida2.isVisible()){
-            return 2;
-        } else {
-            return 1;
-        }
+        return vida;
     }
     OpcionesJuego opciones;
 

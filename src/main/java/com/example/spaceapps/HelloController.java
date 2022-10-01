@@ -69,6 +69,7 @@ public class HelloController {
             Stage stage = new Stage();
             Stage stage1 = (Stage) bBegin.getScene().getWindow();
             nivel1Controller controlador = fxmlLoader.getController();
+            controlador.setPuntos(opciones.juego.getPuntos());
             controlador.ponerNombre(opciones.juego.getNombre());
             controlador.setOpciones(opciones);
             stage1.close();

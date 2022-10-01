@@ -4,8 +4,17 @@
 }
 *{
     -fx-font-family: "Minecraft";
-    -fx-font-size: 22pt;
 }
 #marcoNombre{
-    -fx-background-image: url("buena.jpg");
+    -fx-background-image: url("marco.png");
+
+}
+#errornombre{
+    -fx-font-size: 15pt;
+}
+#nombre{
+    -fx-font-size: 22pt;
+}
+#bContinue{
+    -fx-font-size: 22pt;
 }
