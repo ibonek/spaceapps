@@ -50,13 +50,13 @@ public class vfController {
 
 
     @FXML
-    void botonAceptar(ActionEvent event) throws IOException {
+    void botonContinuar(ActionEvent event) throws IOException {
 
 
     }
 
     @FXML
-    void botonAtras(ActionEvent event) throws IOException {
+    void botonTryAgain(ActionEvent event) throws IOException {
 
     }
 
