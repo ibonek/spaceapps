@@ -32,7 +32,6 @@ public class controllerOpciones {
         } else {
             return 1;
         }
-
     }
     OpcionesJuego opciones;
 
@@ -88,15 +87,6 @@ public class controllerOpciones {
     void botonContinuar(ActionEvent event) throws IOException {
         Stage stage1 = (Stage) pregunta.getScene().getWindow();
         stage1.close();
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel"+ opciones.juego.getAciertos()/3+1 + ".fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setMaximized(false);
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
-
-
     }
 
 

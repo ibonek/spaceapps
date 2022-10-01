@@ -79,12 +79,11 @@ public class nivel1Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
-        vidas = controller.getVidas();
-        if(vidas == 3){
+        if(controller.getVidas() == 3){
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(true);
-        } else if(vidas == 2){
+        } else if(controller.getVidas() == 2){
             vida1.setVisible(true);
             vida2.setVisible(true);
             vida3.setVisible(false);
