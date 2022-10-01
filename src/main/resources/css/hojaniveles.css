@@ -1,3 +1,33 @@
 #fondo{
-    -fx-background-image: url("fondoPreguntas.png");
+    -fx-background-image: url("marco.png");
+}
+
+#opcion1{
+    -fx-font-size: 16pt;
+    -fx-text-fill: white;
+
+}
+#opcion2{
+    -fx-font-size: 16pt;
+    -fx-text-fill: white;
+
+}
+#opcion3{
+    -fx-font-size: 16pt;
+    -fx-text-fill: white;
+
+}
+#opcion4 {
+    -fx-font-size: 16pt;
+    -fx-text-fill: white;
+
+}
+#puntos{
+    -fx-font-size: 22pt;
+
+}
+#pregunta{
+    -fx-font-size: 16pt;
+    -fx-text-fill: white;
+
 }

@@ -58,7 +58,7 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Label fx:id="eNombre" prefHeight="38.0" prefWidth="126.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
+                  <Label fx:id="eNombre" prefHeight="38.0" prefWidth="307.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -82,7 +82,7 @@
                         <Font size="35.0" />
                      </font>
                   </Label>
-                  <Button fx:id="bVenus" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bVenus" prefHeight="58.0" prefWidth="55.0" text="Button">
+                  <Button fx:id="bVenus" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bVenus" prefHeight="108.0" prefWidth="122.0" text="Button">
                      <graphic>
                         <ImageView fx:id="imagenVenus" fitHeight="129.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
                            <image>

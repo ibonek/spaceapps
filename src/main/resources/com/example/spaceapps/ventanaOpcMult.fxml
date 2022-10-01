@@ -84,14 +84,14 @@
          <children>
             <VBox prefHeight="200.0" prefWidth="425.0" spacing="100.0">
                <children>
-                  <RadioButton fx:id="opcion1" mnemonicParsing="false" onAction="#botonResp1" />
-                  <RadioButton fx:id="opcion2" mnemonicParsing="false" onAction="#botonResp2" />
+                  <RadioButton fx:id="opcion1" mnemonicParsing="false" onAction="#botonResp1" textFill="WHITE" />
+                  <RadioButton fx:id="opcion2" mnemonicParsing="false" onAction="#botonResp2" textFill="WHITE" />
                </children>
             </VBox>
             <VBox prefHeight="242.0" prefWidth="425.0" spacing="100.0">
                <children>
-                  <RadioButton fx:id="opcion3" mnemonicParsing="false" onAction="#botonResp3" />
-                  <RadioButton fx:id="opcion4" mnemonicParsing="false" onAction="#botonResp4" />
+                  <RadioButton fx:id="opcion3" mnemonicParsing="false" onAction="#botonResp3" textFill="WHITE" />
+                  <RadioButton fx:id="opcion4" mnemonicParsing="false" onAction="#botonResp4" textFill="WHITE" />
                </children>
             </VBox>
          </children>
