@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+Index: .idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml
+rename from .idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml
+rename to .idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml
+--- a/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml	(revision b837e8bbcc2f4075997364e030392e822f404c1f)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml	(date 1664631607349)
+@@ -1,7 +1,7 @@
+ <component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-controls:mac:19-ea+7">
++  <library name="Maven: org.openjfx:javafx-controls:linux:19-ea+7">
+     <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-mac.jar!/" />
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-linux.jar!/" />
+     </CLASSES>
+     <JAVADOC>
+       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-javadoc.jar!/" />
+=======
+>>>>>>> origin/main
 Index: .idea/libraries/Maven__org_openjfx_javafx_base_mac_18_ea_6.xml
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
@@ -7,7 +30,11 @@ diff --git a/.idea/libraries/Maven__org_openjfx_javafx_base_mac_18_ea_6.xml b/.i
 rename from .idea/libraries/Maven__org_openjfx_javafx_base_mac_18_ea_6.xml
 rename to .idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml
 --- a/.idea/libraries/Maven__org_openjfx_javafx_base_mac_18_ea_6.xml	(revision b837e8bbcc2f4075997364e030392e822f404c1f)
+<<<<<<< HEAD
++++ b/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml	(date 1664631607341)
+=======
 +++ b/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml	(date 1664631785809)
+>>>>>>> origin/main
 @@ -1,7 +1,7 @@
  <component name="libraryTable">
 -  <library name="Maven: org.openjfx:javafx-base:mac:18-ea+6">
@@ -18,6 +45,8 @@ rename to .idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml
      </CLASSES>
      <JAVADOC>
        <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/18-ea+6/javafx-base-18-ea+6-javadoc.jar!/" />
+<<<<<<< HEAD
+=======
 Index: src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
@@ -126,6 +155,7 @@ diff --git a/src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml b/src/
 +      <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
     </padding>
  </VBox>
+>>>>>>> origin/main
 Index: .idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
@@ -135,7 +165,11 @@ diff --git a/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml 
 rename from .idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml
 rename to .idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml
 --- a/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml	(revision b837e8bbcc2f4075997364e030392e822f404c1f)
+<<<<<<< HEAD
++++ b/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml	(date 1664631607361)
+=======
 +++ b/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml	(date 1664631785821)
+>>>>>>> origin/main
 @@ -1,7 +1,7 @@
  <component name="libraryTable">
 -  <library name="Maven: org.openjfx:javafx-graphics:mac:19-ea+7">
@@ -146,6 +180,77 @@ rename to .idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml
      </CLASSES>
      <JAVADOC>
        <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-javadoc.jar!/" />
+<<<<<<< HEAD
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"algo2\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/juego.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/juego.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"FxmlFile\" />\n        <option value=\"Class\" />\n        <option value=\"AnnotationType\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"generalSettings\">\n      <MavenGeneralSettings>\n        <option name=\"useMavenConfig\" value=\"true\" />\n      </MavenGeneralSettings>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"2FMP6M2wRcwwxI5JFSrvFxdkITE\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CreateClassDialog.RecentsKey\">\n      <recent name=\"com.example.spaceapps\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/resources/css\" />\n      <recent name=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"HelloApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.spaceapps.HelloApplication\" />\n      <module name=\"spaceapps\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.example.spaceapps.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.HelloApplication\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"\" />\n      <created>1664298806623</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1664298806623</updated>\n      <workItem from=\"1664298810150\" duration=\"1663000\" />\n      <workItem from=\"1664301389990\" duration=\"9863000\" />\n      <workItem from=\"1664314821535\" duration=\"60000\" />\n      <workItem from=\"1664358906258\" duration=\"1839000\" />\n      <workItem from=\"1664360987849\" duration=\"5375000\" />\n      <workItem from=\"1664531652163\" duration=\"96000\" />\n      <workItem from=\"1664531880746\" duration=\"42000\" />\n      <workItem from=\"1664531941749\" duration=\"2795000\" />\n      <workItem from=\"1664611383206\" duration=\"334000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"algo\">\n      <created>1664313547737</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664313547737</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"algo\">\n      <created>1664359725564</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664359725564</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"algo\">\n      <created>1664360526505</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664360526505</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"algo2\">\n      <created>1664365925695</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664365925695</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"algo2\">\n      <created>1664365935369</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664365935369</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"commit tonto\">\n      <created>1664519157536</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664519157536</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"algo2\">\n      <created>1664560719082</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664560719082</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"algo2\">\n      <created>1664626514602</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664626514602</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"algo2\">\n      <created>1664630313733</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664630313733</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"10\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"algo\" />\n    <MESSAGE value=\"commit tonto\" />\n    <MESSAGE value=\"Niveles finales (tamaño y botones)\" />\n    <MESSAGE value=\"algo2\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"algo2\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b837e8bbcc2f4075997364e030392e822f404c1f)
++++ b/.idea/workspace.xml	(date 1664632620440)
+@@ -4,13 +4,13 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="algo2">
++    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="Seleccion niveles">
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_linux_18_ea_6.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/juego.bin" beforeDir="false" afterPath="$PROJECT_DIR$/juego.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/css/fondoImagenPrueba.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/css/fondoImagenPrueba.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -155,19 +155,19 @@
+       <option name="project" value="LOCAL" />
+       <updated>1664560719082</updated>
+     </task>
+-    <task id="LOCAL-00008" summary="algo2">
+-      <created>1664626514602</created>
++    <task id="LOCAL-00008" summary="Seleccion niveles">
++      <created>1664631670702</created>
+       <option name="number" value="00008" />
+       <option name="presentableId" value="LOCAL-00008" />
+       <option name="project" value="LOCAL" />
+-      <updated>1664626514602</updated>
++      <updated>1664631670702</updated>
+     </task>
+-    <task id="LOCAL-00009" summary="algo2">
+-      <created>1664630313733</created>
++    <task id="LOCAL-00009" summary="Seleccion niveles">
++      <created>1664631753984</created>
+       <option name="number" value="00009" />
+       <option name="presentableId" value="LOCAL-00009" />
+       <option name="project" value="LOCAL" />
+-      <updated>1664630313733</updated>
++      <updated>1664631753984</updated>
+     </task>
+     <option name="localTasksCounter" value="10" />
+     <servers />
+@@ -189,8 +189,9 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="algo" />
+     <MESSAGE value="commit tonto" />
+-    <MESSAGE value="Niveles finales (tamaño y botones)" />
+     <MESSAGE value="algo2" />
+-    <option name="LAST_COMMIT_MESSAGE" value="algo2" />
++    <MESSAGE value="Niveles finales (tamaño y botones)" />
++    <MESSAGE value="Seleccion niveles" />
++    <option name="LAST_COMMIT_MESSAGE" value="Seleccion niveles" />
+   </component>
+ </project>
+\ No newline at end of file
+=======
 Index: .idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
@@ -166,6 +271,7 @@ rename to .idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml
      </CLASSES>
      <JAVADOC>
        <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-javadoc.jar!/" />
+>>>>>>> origin/main
 Index: .idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
@@ -175,7 +281,11 @@ diff --git a/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml b/.i
 rename from .idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml
 rename to .idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml
 --- a/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml	(revision b837e8bbcc2f4075997364e030392e822f404c1f)
+<<<<<<< HEAD
++++ b/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml	(date 1664631607357)
+=======
 +++ b/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml	(date 1664631785825)
+>>>>>>> origin/main
 @@ -1,7 +1,7 @@
  <component name="libraryTable">
 -  <library name="Maven: org.openjfx:javafx-fxml:mac:18-ea+6">
@@ -186,6 +296,25 @@ rename to .idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml
      </CLASSES>
      <JAVADOC>
        <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-javadoc.jar!/" />
+<<<<<<< HEAD
+Index: target/classes/css/fondoImagenPrueba.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#fondo1{\n    -fx-background-image: url(\"nivel1.jpg\");\n}\n#fondo2{\n    -fx-background-image: url(\"nivel2.jpg\");\n}\n#fondo3{\n    -fx-background-image: url(\"nivel3.jpg\");\n}\n#fondo4{\n    -fx-background-image: url(\"nivel4.jpg\");\n}\n#fondo5{\n    -fx-background-image: url(\"nivel5.jpg\");\n}\n#botonN2{\n    -fx-background-color: TRANSPARENT;\n}\n.button{\n    -fx-background-color: TRANSPARENT;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/classes/css/fondoImagenPrueba.css b/target/classes/css/fondoImagenPrueba.css
+--- a/target/classes/css/fondoImagenPrueba.css	(revision b837e8bbcc2f4075997364e030392e822f404c1f)
++++ b/target/classes/css/fondoImagenPrueba.css	(date 1664631872217)
+@@ -1,3 +1,6 @@
++#fondoSelect{
++    -fx-background-image: url("selec.jpg");
++}
+ #fondo1{
+     -fx-background-image: url("nivel1.jpg");
+ }
+=======
 Index: .idea/workspace.xml
 IDEA additional info:
 Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
@@ -231,3 +360,4 @@ diff --git a/.idea/workspace.xml b/.idea/workspace.xml
      <servers />
    </component>
    <component name="TypeScriptGeneratedFilesManager">
+>>>>>>> origin/main
