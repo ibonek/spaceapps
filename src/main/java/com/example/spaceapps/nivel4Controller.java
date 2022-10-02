@@ -76,18 +76,48 @@ public class nivel4Controller {
 
 
     @FXML
-    void botonExpCometa(ActionEvent event) {
-
+    void botonExpCometa(ActionEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(10);
+        controller.setTexto(opciones.juego.getPreguntas().get(9).getExplicacion());
+        stage.setTitle("Explanation");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    void botonExpGalaxia(ActionEvent event) {
-
+    void botonExpGalaxia(ActionEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(11);
+        controller.setTexto(opciones.juego.getPreguntas().get(10).getExplicacion());
+        stage.setTitle("Explanation");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    void botonExpNebulosa(ActionEvent event) {
-
+    void botonExpNebulosa(ActionEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(12);
+        controller.setTexto(opciones.juego.getPreguntas().get(11).getExplicacion());
+        stage.setTitle("Explanation");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML

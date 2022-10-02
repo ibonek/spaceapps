@@ -73,18 +73,48 @@ public class nivel2Controller {
     private ImageView vida3;
 
     @FXML
-    void botonExpJupiter(ActionEvent event) {
-
+    void botonExpJupiter(ActionEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(5);
+        controller.setTexto(opciones.juego.getPreguntas().get(4).getExplicacion());
+        stage.setTitle("Explanation");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    void botonExpMarte(ActionEvent event) {
-
+    void botonExpMarte(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(4);
+        controller.setTexto(opciones.juego.getPreguntas().get(3).getExplicacion());
+        stage.setTitle("Explanation");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    void botonExpSaturno(ActionEvent event) {
-
+    void botonExpSaturno(ActionEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(6);
+        controller.setTexto(opciones.juego.getPreguntas().get(5).getExplicacion());
+        stage.setTitle("Explanation");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
     public boolean correcto;
     private OpcionesJuego opciones;

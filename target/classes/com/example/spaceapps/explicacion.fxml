@@ -13,74 +13,77 @@
    <children>
       <VBox alignment="CENTER" prefHeight="567.0" prefWidth="452.0">
          <children>
-            <ImageView fx:id="imagen" fitHeight="441.0" fitWidth="439.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS" />
-            <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="428.0" prefWidth="452.0">
                <children>
                   <ImageView fx:id="NASA_logo" fitHeight="19.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../../../../java/com/example/spaceapps/NASA_logo.png" />
+                        <Image url="@../../../imagenes/Explicaciones/NASA_logo.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="james_webb_1" fitHeight="19.0" fitWidth="18.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../../../../java/com/example/spaceapps/james_webb_1.jpg" />
+                        <Image url="@../../../imagenes/Explicaciones/james_webb_1.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="ultraviolet" fitHeight="19.0" fitWidth="18.0" layoutX="28.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../../../../java/com/example/spaceapps/ultraviolet.jpg" />
+                        <Image url="@../../../imagenes/Explicaciones/ultraviolet.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="webb_cameras" fitHeight="19.0" fitWidth="18.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../../../../java/com/example/spaceapps/webb_cameras.jpg" />
+                        <Image url="@../../../imagenes/Explicaciones/webb_cameras.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="webb_dimensiones" fitHeight="19.0" fitWidth="18.0" layoutX="28.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../../../../java/com/example/spaceapps/webb_dimensions.jpeg" />
+                        <Image url="@../../../imagenes/Explicaciones/webb_dimensions.jpeg" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="webb_distance" fitHeight="19.0" fitWidth="18.0" layoutX="46.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../../../../java/com/example/spaceapps/webb_distance.jpg" />
+                        <Image url="@../../../imagenes/Explicaciones/webb_distance.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="webb_locations" fitHeight="19.0" fitWidth="18.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../../../../java/com/example/spaceapps/webb_location.png" />
+                        <Image url="@../../../imagenes/Explicaciones/webb_location.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="webb_mars" fitHeight="19.0" fitWidth="18.0" layoutX="28.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../../../../java/com/example/spaceapps/webb_mars.png" />
+                        <Image url="@../../../imagenes/Explicaciones/webb_mars.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="webb_objective" fitHeight="19.0" fitWidth="18.0" layoutX="46.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../../../../java/com/example/spaceapps/webb_objective.jpeg" />
+                        <Image url="@../../../imagenes/Explicaciones/webb_objective.jpeg" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="webb_southern" fitHeight="19.0" fitWidth="18.0" layoutX="64.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../../../../java/com/example/spaceapps/webb_southern.jpg" />
+                        <Image url="@../../../imagenes/Explicaciones/webb_southern.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="webb_telescope" fitHeight="19.0" fitWidth="18.0" layoutX="82.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../../../../java/com/example/spaceapps/webb_telescope.jpg" />
+                        <Image url="@../../../imagenes/Explicaciones/webb_telescope.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="webb_temperature" fitHeight="19.0" fitWidth="18.0" layoutX="100.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../../../../java/com/example/spaceapps/webb_temperature.jpeg" />
+                        <Image url="@../../../imagenes/Explicaciones/webb_temperature.jpeg" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="webb_vs_hubble" fitHeight="19.0" fitWidth="18.0" layoutX="190.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../../../../java/com/example/spaceapps/webb_vs_hubble.jpg" />
+                        <Image url="@../../../imagenes/Explicaciones/webb_vs_hubble.jpg" />
                      </image>
                   </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="121.0" prefWidth="452.0">
+               <children>
                   <Button fx:id="bBack" mnemonicParsing="false" onAction="#botonBack" text="Back" />
                </children>
             </HBox>

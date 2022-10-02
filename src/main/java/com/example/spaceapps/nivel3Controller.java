@@ -70,18 +70,48 @@ private OpcionesJuego opciones;
 
     public boolean correcto;
     @FXML
-    void botonExpNeptuno(ActionEvent event) {
-
+    void botonExpNeptuno(ActionEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(7);
+        controller.setTexto(opciones.juego.getPreguntas().get(6).getExplicacion());
+        stage.setTitle("Explanation");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    void botonExpPluton(ActionEvent event) {
-
+    void botonExpPluton(ActionEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(9);
+        controller.setTexto(opciones.juego.getPreguntas().get(8).getExplicacion());
+        stage.setTitle("Explanation");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    void botonExpUrano(ActionEvent event) {
-
+    void botonExpUrano(ActionEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(8);
+        controller.setTexto(opciones.juego.getPreguntas().get(7).getExplicacion());
+        stage.setTitle("Explanation");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
     @FXML
     void bNeptuno(ActionEvent event) throws IOException {

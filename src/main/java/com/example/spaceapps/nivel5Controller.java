@@ -80,18 +80,49 @@ public class nivel5Controller {
     private OpcionesJuego opciones;
 
     @FXML
-    void botonExpAguNegro(ActionEvent event) {
+    void botonExpAguNegro(ActionEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(13);
+        controller.setTexto(opciones.juego.getPreguntas().get(12).getExplicacion());
+        stage.setTitle("Explanation");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    void botonExpAnillos(ActionEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(14);
+        controller.setTexto(opciones.juego.getPreguntas().get(13).getExplicacion());
+        stage.setTitle("Explanation");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
 
     }
 
     @FXML
-    void botonExpAnillos(ActionEvent event) {
-
-    }
-
-    @FXML
-    void botonExpSuperNova(ActionEvent event) {
-
+    void botonExpSuperNova(ActionEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(15);
+        controller.setTexto(opciones.juego.getPreguntas().get(14).getExplicacion());
+        stage.setTitle("Explanation");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
     @FXML
     void botonAguNegro(ActionEvent event) throws IOException{

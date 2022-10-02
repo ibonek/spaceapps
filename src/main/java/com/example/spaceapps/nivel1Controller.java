@@ -85,6 +85,7 @@ public class nivel1Controller {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(2);
         controller.setTexto(opciones.juego.getPreguntas().get(1).getExplicacion());
         stage.setTitle("Explanation");
         stage.setMaximized(false);
@@ -98,9 +99,8 @@ public class nivel1Controller {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         explicacionController controller = fxmlLoader.getController();
-        Image image = new Image("file: webb_telescope.jpg");
         controller.setOpciones(opciones);
-        controller.setearImagenes(image);
+        controller.setImageView(1);
         controller.setTexto(opciones.juego.getPreguntas().get(0).getExplicacion());
         stage.setTitle("Explanation");
         stage.setMaximized(false);
@@ -117,6 +117,7 @@ public class nivel1Controller {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         explicacionController controller = fxmlLoader.getController();
+        controller.setImageView(3);
         controller.setTexto(opciones.juego.getPreguntas().get(2).getExplicacion());
         stage.setTitle("Explanation");
         stage.setMaximized(false);

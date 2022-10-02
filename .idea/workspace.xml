@@ -4,21 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_19_ea_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml" beforeDir="false" />
+    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="imagen metodo">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_19_ea_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_linux_19_ea_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juego.bin" beforeDir="false" afterPath="$PROJECT_DIR$/juego.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/NASA_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones/NASA_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/explicacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/explicacionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/james_webb_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones/james_webb_1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel3Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel3Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel4Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel4Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel5Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel5Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/ultraviolet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones/ultraviolet.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/webb_cameras.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones/webb_cameras.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/webb_dimensions.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones/webb_dimensions.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/webb_distance.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones/webb_distance.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/webb_location.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones/webb_location.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/webb_mars.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones/webb_mars.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/webb_objective.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones/webb_objective.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/webb_southern.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones/webb_southern.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/webb_telescope.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones/webb_telescope.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/webb_temperature.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones/webb_temperature.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/webb_vs_hubble.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones/webb_vs_hubble.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/explicacion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/explicacion.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/indice.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/indice.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/explicacion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/explicacion.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/explicacionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/explicacionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/indice.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/css/indice.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +75,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -72,6 +88,7 @@
       <recent name="com.example.spaceapps" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/imagenes/Explicaciones" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/spaceapps" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/spaceapps" />
       <recent name="$PROJECT_DIR$/src/main/resources/css" />
@@ -430,7 +447,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664702602060</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="imagen metodo">
+      <created>1664707317974</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1664707317974</updated>
+    </task>
+    <task id="LOCAL-00047" summary="imagen metodo">
+      <created>1664707497954</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1664707497954</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -7,11 +7,13 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class explicacionController {
-
     @FXML
-    private ImageView NASA_logo;
+    public ImageView NASA_logo;
 
     @FXML
     private Button bBack;
@@ -20,65 +22,127 @@ public class explicacionController {
     private HBox fondo;
 
     @FXML
-    private ImageView james_webb_1;
+    public ImageView james_webb_1;
 
     @FXML
     private Label texto;
 
     @FXML
-    private ImageView ultraviolet;
+    public ImageView ultraviolet;
 
     @FXML
-    private ImageView webb_cameras;
+    public ImageView webb_cameras;
 
     @FXML
-    private ImageView webb_dimensiones;
+    public ImageView webb_dimensiones;
 
     @FXML
-    private ImageView webb_distance;
+    public ImageView webb_distance;
 
     @FXML
-    private ImageView webb_locations;
+    public ImageView webb_locations;
 
     @FXML
-    private ImageView webb_mars;
+    public ImageView webb_mars;
 
     @FXML
-    private ImageView webb_objective;
+    public ImageView webb_objective;
 
     @FXML
-    private ImageView webb_southern;
+    public ImageView webb_southern;
 
     @FXML
-    private ImageView webb_telescope;
+    public ImageView webb_telescope;
 
     @FXML
-    private ImageView webb_temperature;
+    public ImageView webb_temperature;
 
     @FXML
-    private ImageView webb_vs_hubble;
+    public ImageView webb_vs_hubble;
 
     @FXML
     private ImageView imagen;
 
     @FXML
-    void botonBack(ActionEvent event) {
-
+    void botonBack(ActionEvent event) throws IOException {
+        Stage stage1 = (Stage) bBack.getScene().getWindow();
+        stage1.close();
     }
     OpcionesJuego opciones;
 
     public void setTexto(String t){
         texto.setText(t);
     }
-
-    private Image image;
-    public void setearImagenes(Image imagenRec){
-        image = imagenRec;
-        imagen.setImage(image);
-        imagen.setVisible(true);
-        System.out.println("he llegado" + image.getUrl());
+    public void setearImagenes(ImageView imagenRec){
+        imagen.setImage(imagenRec.getImage());
     }
-
+    public void setImageView(int n){
+        if(n == 1){
+            webb_telescope.setVisible(true);
+            webb_telescope.setFitWidth(799);
+            webb_telescope.setFitHeight(500);
+        }
+        if(n == 2){
+            webb_telescope.setVisible(true);
+            webb_telescope.setFitWidth(799);
+            webb_telescope.setFitHeight(500);
+        }
+        if(n == 3){
+            webb_telescope.setVisible(true);
+            webb_telescope.setFitWidth(799);
+            webb_telescope.setFitHeight(500);
+        }
+        if(n == 4){
+            webb_telescope.setVisible(true);
+            webb_telescope.setFitWidth(799);
+            webb_telescope.setFitHeight(500);
+        }
+        if(n == 5){
+            webb_telescope.setVisible(true);
+            webb_telescope.setFitWidth(799);
+            webb_telescope.setFitHeight(500);
+        }
+        if(n == 6){
+            webb_telescope.setVisible(true);
+            webb_telescope.setFitWidth(799);
+            webb_telescope.setFitHeight(500);
+        }
+        if(n == 7){
+            webb_telescope.setVisible(true);
+            webb_telescope.setFitWidth(799);
+            webb_telescope.setFitHeight(500);
+        }
+        if(n == 8){
+            webb_telescope.setVisible(true);
+            webb_telescope.setFitWidth(799);
+            webb_telescope.setFitHeight(500);
+        }
+        if(n == 9){
+            webb_telescope.setVisible(true);
+            webb_telescope.setFitWidth(799);
+            webb_telescope.setFitHeight(500);
+        }
+        if(n == 10){
+            webb_telescope.setVisible(true);
+            webb_telescope.setFitWidth(799);
+            webb_telescope.setFitHeight(500);
+        }
+        if(n == 11){
+            webb_telescope.setVisible(true);
+            webb_telescope.setFitWidth(799);
+            webb_telescope.setFitHeight(500);
+        }
+        if(n == 12){
+            webb_telescope.setVisible(true);
+            webb_telescope.setFitWidth(799);
+            webb_telescope.setFitHeight(500);
+        }
+        if(n == 13){
+            webb_telescope.setVisible(true);
+            webb_telescope.setFitWidth(799);
+            webb_telescope.setFitHeight(500);
+        }
+    }
     public void setOpciones(OpcionesJuego opciones) { this.opciones = opciones; }
 
 
