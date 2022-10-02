@@ -7,6 +7,7 @@
     -fx-border-style: solid inside;
     -fx-border-width: 2;
     -fx-border-color: white;
+    -fx-background-color: #0a1c4c;
 }
 .radio-button:selected {
      -fx-border-color: gray;
@@ -50,6 +51,7 @@
 #pregunta{
     -fx-font-size: 16pt;
     -fx-text-fill: white;
+    -fx-background-color: #0a1c4c;
 
 
 }
