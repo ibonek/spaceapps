@@ -147,21 +147,21 @@ public class Juego implements Serializable {
         pregunta.setCuerpoPregunta("How big is James Webb Telescope?");
         pregunta.setExplicacion("The sunshield dimensions are 21.2 by 14.2 meters (69.5 by 46.5 feet) and the height of the entire observatory is 8 meters (28 feet).\n");
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("Diameter of 90 meters and area of approximately 23 square meters");
+        respuesta.setCuerpoRespuesta("Diameter of 90 meters");
         pregunta.getListaOpciones().add(respuesta);
 
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("Diameter of 6.6 meters and area of approximately 25 square meters");
+        respuesta.setCuerpoRespuesta("Diameter of 6.6 meters");
         respuesta.setCorrecta();
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("Diameter of 16.75 meters and area of approximately 180 square meters");
+        respuesta.setCuerpoRespuesta("Diameter of 16.75 meters");
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("Diameter of 77 meters and area of approximately 243 square meters");
+        respuesta.setCuerpoRespuesta("Diameter of 77 meters");
 
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
@@ -169,7 +169,7 @@ public class Juego implements Serializable {
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 //3
         pregunta= new Pregunta();
-        pregunta.setCuerpoPregunta("James Webb Space Telescope is considered the formal succesor to the Hubbel Space Telescope");
+        pregunta.setCuerpoPregunta("James Webb Telescope is considered the formal succesor to the Hubbel");
 
         respuesta = new Respuesta();
         respuesta.setCuerpoRespuesta("True");
@@ -185,7 +185,7 @@ public class Juego implements Serializable {
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 //4
         pregunta = new Pregunta();
-        pregunta.setCuerpoPregunta("Which organizations participated in the creation of the James Webb Telescope?");
+        pregunta.setCuerpoPregunta("Which organizations participated in the creation of the James Webb ?");
         pregunta.setExplicacion("Since 1996, NASA, ESA and CSA have been collaborating in the creation of the James Webb Telescope. This means that a total of 20 countries are major contributors to this project");
         pregunta.setPista("It is strongly related to USA");
         respuesta= new Respuesta();
@@ -194,7 +194,7 @@ public class Juego implements Serializable {
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("'Club Natacio Sant Andreu' (CNSA)");
+        respuesta.setCuerpoRespuesta("'Club Natacio S. Andreu'");
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
@@ -202,7 +202,7 @@ public class Juego implements Serializable {
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("Japan Aerospace Exploration Agency (JAXA)");
+        respuesta.setCuerpoRespuesta("JAXA");
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
         //preguntas.add(pregunta);
@@ -235,7 +235,7 @@ public class Juego implements Serializable {
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
      //6
         pregunta = new Pregunta();
-        pregunta.setCuerpoPregunta("It is necessary to keep the James Webb Telescope's temperature under 50 K (-223,2 ºC)?");
+        pregunta.setCuerpoPregunta("It's necessary to keep the James Webb's temperature under 50 K (-223,2 ºC)?");
 
         respuesta= new Respuesta();
         respuesta.setCuerpoRespuesta("True");
@@ -290,7 +290,7 @@ public class Juego implements Serializable {
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 //9
         pregunta = new Pregunta();
-        pregunta.setCuerpoPregunta("Which is one of the main objectives of the James Webb Telescope?");
+        pregunta.setCuerpoPregunta("Which is one of the main objectives of the James Webb ?");
         pregunta.setExplicacion("The James Webb Space Telescope has 4 main objectives: to study the formation and evolution of galaxies, to understand the formation of stars, to study the origins of life and to search for light from the first stars that formed in the universe after the Big Bang");
 
         respuesta= new Respuesta();
@@ -298,15 +298,15 @@ public class Juego implements Serializable {
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta= new Respuesta();
-        respuesta.setCuerpoRespuesta("To understand the rotation of the Moon");
+        respuesta.setCuerpoRespuesta("To study Moon's rotation");
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta= new Respuesta();
-        respuesta.setCuerpoRespuesta("To study the changes in the Earth's temperature");
+        respuesta.setCuerpoRespuesta("To study Earth's temperature");
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta= new Respuesta();
-        respuesta.setCuerpoRespuesta("To study galaxy formation and evolution");
+        respuesta.setCuerpoRespuesta("To study galaxy formation");
         respuesta.setCorrecta();
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
@@ -314,7 +314,7 @@ public class Juego implements Serializable {
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 //10
         pregunta= new Pregunta();
-        pregunta.setCuerpoPregunta("Does the James Webb Space Telescope measure visible and ultraviolet light?");
+        pregunta.setCuerpoPregunta("Does the James Webb Space measure visible and ultraviolet light?");
 
         respuesta= new Respuesta();
         respuesta.setCuerpoRespuesta("True");
@@ -357,7 +357,7 @@ public class Juego implements Serializable {
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
         //12
         pregunta = new Pregunta();
-        pregunta.setCuerpoPregunta("The first operational image taken by the James Webb Space Telescope captured a tiny area from the Northern hemisphere");
+        pregunta.setCuerpoPregunta("The first image taken by the James Webb Space captured area from the Northern hemisphere");
         respuesta= new Respuesta();
         respuesta.setCuerpoRespuesta("True");
         pregunta.getListaOpciones().add(respuesta);
@@ -375,13 +375,13 @@ public class Juego implements Serializable {
         pregunta.setCuerpoPregunta("Which cameras are on the Webb Telescope");
         pregunta.setExplicacion("Webb has four scientific instruments, the Near-Infrared Camera (NIRCam), the Near-Infrared Spectrograph (NIRSpec), the Near-Infrared Imager and Slitless Spectrograph (NIRISS), and the Mid-Infrared Instrument (MIRI).");
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("NIRCam, NIRSpec, NIRISS and MIRI");
+        respuesta.setCuerpoRespuesta("NIRCam, NIRSpec,\n NIRISS and MIRI");
         respuesta.setCorrecta();
         pregunta.getListaOpciones().add(respuesta);
 
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("CRIOCam, CRIOSpec, CRIOISS and CRIORI");
+        respuesta.setCuerpoRespuesta("CRIOCam, CRIOSpec,\n CRIOISS and CRIORI");
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
@@ -389,7 +389,7 @@ public class Juego implements Serializable {
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("NIRCam, NIRSpec, CRIOISS and CRIORI");
+        respuesta.setCuerpoRespuesta("NIRCam, NIRSpec,\n CRIOISS and CRIORI");
 
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
@@ -399,12 +399,12 @@ public class Juego implements Serializable {
         pregunta.setCuerpoPregunta("How is Webb powered");
         pregunta.setExplicacion("The Webb telescope is powered by an on-board solar array. It also has a propulsion system to maintain the observatory’s orbit and attitude. The solar array provides 2,000 watts of electrical power for the life of the mission, and there is enough propellant onboard for at least 10 years of science operations.");
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("It is powered by the power of love");
+        respuesta.setCuerpoRespuesta("By the power of love");
         pregunta.getListaOpciones().add(respuesta);
 
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("Is powered by an on-board solar array");
+        respuesta.setCuerpoRespuesta("By an on-board solar array");
         respuesta.setCorrecta();
         pregunta.getListaOpciones().add(respuesta);
 
@@ -413,7 +413,7 @@ public class Juego implements Serializable {
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("It's powered by the energy of one of Jupiter's moons");
+        respuesta.setCuerpoRespuesta("By the energy of one of Jupiter's moons");
 
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);

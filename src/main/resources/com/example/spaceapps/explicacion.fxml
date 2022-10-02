@@ -13,76 +13,82 @@
    <children>
       <VBox alignment="CENTER" prefHeight="567.0" prefWidth="452.0">
          <children>
-            <HBox alignment="BOTTOM_RIGHT" prefHeight="428.0" prefWidth="452.0">
+            <HBox alignment="CENTER" prefHeight="400.0" prefWidth="452.0" style="-fx-border-color: WHITE; -fx-border-width: 3;">
                <children>
-                  <ImageView fx:id="NASA_logo" fitHeight="19.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <ImageView fx:id="NASA_logo" fitHeight="1.0" fitWidth="1.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../imagenes/Explicaciones/NASA_logo.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="james_webb_1" fitHeight="19.0" fitWidth="18.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <ImageView fx:id="james_webb_1" fitHeight="3.0" fitWidth="1.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../imagenes/Explicaciones/james_webb_1.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="ultraviolet" fitHeight="19.0" fitWidth="18.0" layoutX="28.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <ImageView fx:id="ultraviolet" fitHeight="1.0" fitWidth="1.0" layoutX="28.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../imagenes/Explicaciones/ultraviolet.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="webb_cameras" fitHeight="19.0" fitWidth="18.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <ImageView fx:id="webb_cameras" fitHeight="1.0" fitWidth="1.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../imagenes/Explicaciones/webb_cameras.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="webb_dimensiones" fitHeight="19.0" fitWidth="18.0" layoutX="28.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <ImageView fx:id="webb_dimensiones" fitHeight="1.0" fitWidth="1.0" layoutX="28.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../imagenes/Explicaciones/webb_dimensions.jpeg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="webb_distance" fitHeight="19.0" fitWidth="18.0" layoutX="46.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <ImageView fx:id="webb_distance" fitHeight="1.0" fitWidth="1.0" layoutX="46.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../imagenes/Explicaciones/webb_distance.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="webb_locations" fitHeight="19.0" fitWidth="18.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <ImageView fx:id="webb_locations" fitHeight="1.0" fitWidth="1.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../imagenes/Explicaciones/webb_location.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="webb_mars" fitHeight="19.0" fitWidth="18.0" layoutX="28.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <ImageView fx:id="webb_mars" fitHeight="1.0" fitWidth="1.0" layoutX="28.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../imagenes/Explicaciones/webb_mars.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="webb_objective" fitHeight="19.0" fitWidth="18.0" layoutX="46.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <ImageView fx:id="webb_objective" fitHeight="7.0" fitWidth="1.0" layoutX="46.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../imagenes/Explicaciones/webb_objective.jpeg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="webb_southern" fitHeight="19.0" fitWidth="18.0" layoutX="64.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <ImageView fx:id="webb_southern" fitHeight="1.0" fitWidth="1.0" layoutX="64.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../imagenes/Explicaciones/webb_southern.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="webb_telescope" fitHeight="19.0" fitWidth="18.0" layoutX="82.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <ImageView fx:id="webb_telescope" fitHeight="1.0" fitWidth="1.0" layoutX="82.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../imagenes/Explicaciones/webb_telescope.jpg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="webb_temperature" fitHeight="19.0" fitWidth="18.0" layoutX="100.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <ImageView fx:id="webb_temperature" fitHeight="1.0" fitWidth="1.0" layoutX="100.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../imagenes/Explicaciones/webb_temperature.jpeg" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="webb_vs_hubble" fitHeight="19.0" fitWidth="18.0" layoutX="190.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <ImageView fx:id="webb_vs_hubble" fitHeight="1.0" fitWidth="1.0" layoutX="190.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
                         <Image url="@../../../imagenes/Explicaciones/webb_vs_hubble.jpg" />
                      </image>
                   </ImageView>
                </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
             </HBox>
-            <HBox alignment="BOTTOM_RIGHT" prefHeight="121.0" prefWidth="452.0">
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="147.0" prefWidth="452.0">
                <children>
                   <Button fx:id="bBack" mnemonicParsing="false" onAction="#botonBack" text="Back" />
                </children>
