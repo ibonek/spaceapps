@@ -57,11 +57,11 @@
                      <children>
                         <VBox prefHeight="101.0" prefWidth="274.0" spacing="5.0">
                            <children>
-                              <Button fx:id="bAyuda" disable="true" mnemonicParsing="false" onAction="#botonAyuda" visible="false">
+                              <Button fx:id="bAyuda" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonAyuda" prefHeight="45.0" prefWidth="50.0" visible="false">
                                  <graphic>
-                                    <ImageView fx:id="imagenAyuda" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fx:id="imagenAyuda" fitHeight="57.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../imagenes/lupa.png" />
+                                          <Image url="@../../../imagenes/logo/buscando.png" />
                                        </image></ImageView>
                                  </graphic>
                               </Button>
@@ -79,7 +79,7 @@
                               <Insets right="20.0" top="20.0" />
                            </HBox.margin>
                            <graphic>
-                              <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="61.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../../imagenes/repetir.png" />
                                  </image></ImageView>

@@ -176,10 +176,10 @@ public class nivel4Controller {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         controllerOpciones controller = fxmlLoader.getController();
+        controller.setOpciones(opciones);
         controller.setearPreguntas(11);
         controller.setVidas(opciones.juego.getVidas());
         controller.setearPuntos();
-        controller.setOpciones(opciones);
         stage.setTitle("Question 12");
         stage.setMaximized(false);
         stage.setResizable(false);

@@ -57,6 +57,10 @@
     -fx-font-size: 16pt;
     -fx-text-fill: white;
     -fx-background-color: #0a1c4c;
-
-
 }
+#bTryAgain{
+    -fx-background-color: TRANSPARENT;
+}
+#bAyuda{
+     -fx-background-color: TRANSPARENT;
+ }

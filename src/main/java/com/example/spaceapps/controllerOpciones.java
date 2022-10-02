@@ -232,7 +232,6 @@ public class controllerOpciones {
             alerta.setTitle("Alert");
             alerta.setHeaderText("CONGRATULATIONS");
             alerta.setContentText("Your answer is correct");
-            Optional<ButtonType> result = alerta.showAndWait();
             opciones.juego.setPuntos();
             comprobar.setDisable(true);
             continuar.setDisable(false);
