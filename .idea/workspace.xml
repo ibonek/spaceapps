@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/juego.bin" beforeDir="false" afterPath="$PROJECT_DIR$/juego.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/Juego.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/v-f.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/v-f.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml" afterDir="false" />
     </list>
@@ -109,13 +110,6 @@
       <workItem from="1664531880746" duration="42000" />
       <workItem from="1664531941749" duration="2795000" />
       <workItem from="1664611383206" duration="334000" />
-    </task>
-    <task id="LOCAL-00002" summary="algo">
-      <created>1664359725564</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1664359725564</updated>
     </task>
     <task id="LOCAL-00003" summary="algo">
       <created>1664360526505</created>
@@ -453,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664712061133</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="imagen metodo">
+      <created>1664712721332</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1664712721332</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

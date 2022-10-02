@@ -418,11 +418,5 @@ public class Juego implements Serializable {
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
     }
-
 }
