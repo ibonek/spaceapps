@@ -85,12 +85,14 @@ private OpcionesJuego opciones;
     }
     @FXML
     void bNeptuno(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("v-f.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        controllerOpciones controller = fxmlLoader.getController();
-        controller.setearPreguntas(3);
+        vfController controller = fxmlLoader.getController();
+        controller.setearPreguntas(6);
         controller.setVidas(opciones.juego.getVidas());
+        controller.setOpciones(opciones);
+        controller.setPuntos(opciones.juego.getPuntos());
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -123,8 +125,10 @@ private OpcionesJuego opciones;
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         controllerOpciones controller = fxmlLoader.getController();
-        controller.setearPreguntas(3);
+        controller.setearPreguntas(8);
         controller.setVidas(opciones.juego.getVidas());
+        controller.setOpciones(opciones);
+        controller.setearPuntos();
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -140,12 +144,14 @@ private OpcionesJuego opciones;
 
     @FXML
     void botonUrano(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("v-f.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        controllerOpciones controller = fxmlLoader.getController();
-        controller.setearPreguntas(3);
+        vfController controller = fxmlLoader.getController();
+        controller.setearPreguntas(7);
         controller.setVidas(opciones.juego.getVidas());
+        controller.setOpciones(opciones);
+        controller.setPuntos(opciones.juego.getPuntos());
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);

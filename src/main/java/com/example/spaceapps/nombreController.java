@@ -44,6 +44,7 @@ public class nombreController {
             //controlador.ponerNombre(nombre.getText());
             SelectorController controlador =fxmlLoader.getController();
 
+            controlador.desbloquear();
             opciones.crearJuego();
             opciones.juego.setNombre(nombre.getText());
             controlador.setOpciones(opciones, opciones.juego.getNombre());

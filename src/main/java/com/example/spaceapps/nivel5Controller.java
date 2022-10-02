@@ -13,6 +13,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static javafx.scene.paint.Color.WHITE;
+import static javafx.scene.paint.Color.YELLOW;
+
 public class nivel5Controller {
 
     @FXML
@@ -92,12 +95,14 @@ public class nivel5Controller {
     }
     @FXML
     void botonAguNegro(ActionEvent event) throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("v-f.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        controllerOpciones controller = fxmlLoader.getController();
-        controller.setearPreguntas(3);
+        vfController controller = fxmlLoader.getController();
+        controller.setearPreguntas(12);
         controller.setVidas(opciones.juego.getVidas());
+        controller.setOpciones(opciones);
+        controller.setPuntos(opciones.juego.getPuntos());
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -105,6 +110,9 @@ public class nivel5Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
+        if(controller.getBoolean()){
+            desbloquear();
+        }
     }
 
     @FXML
@@ -113,8 +121,10 @@ public class nivel5Controller {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         controllerOpciones controller = fxmlLoader.getController();
-        controller.setearPreguntas(3);
+        controller.setearPreguntas(13);
         controller.setVidas(opciones.juego.getVidas());
+        controller.setearPuntos();
+        controller.setOpciones(opciones);
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -122,6 +132,9 @@ public class nivel5Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
+        if(controller.getBoolean()){
+            desbloquear();
+        }
     }
 
     @FXML
@@ -136,8 +149,10 @@ public class nivel5Controller {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         controllerOpciones controller = fxmlLoader.getController();
-        controller.setearPreguntas(3);
+        controller.setearPreguntas(14);
         controller.setVidas(opciones.juego.getVidas());
+        controller.setearPuntos();
+        controller.setOpciones(opciones);
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -145,6 +160,9 @@ public class nivel5Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
+        if(controller.getBoolean()){
+            desbloquear();
+        }
     }
     public void ponerNombre(String n){
         eNombre.setText(n);
@@ -181,6 +199,43 @@ public class nivel5Controller {
             vida3.setVisible(true);
             opciones.juego.setVidas(3);
             opciones.juego.resetearPuntos();
+        }
+    }
+    public void desbloquear(){
+        if(opciones.juego.getAciertos() > 11){
+            e13.setTextFill(YELLOW);
+            e14.setTextFill(YELLOW);
+            e15.setTextFill(YELLOW);
+            expAguNegro.setVisible(true);
+            expAguNegro.setDisable(false);
+            expAnillos.setVisible(true);
+            expAnillos.setDisable(false);
+            expSuperNova.setVisible(true);
+            expSuperNova.setDisable(false);
+            bAguNegro.setDisable(true);
+            bAnillos.setDisable(true);
+            bSuperNova.setDisable(true);
+        }
+        if(opciones.juego.getAciertos() == 11){
+            e13.setTextFill(YELLOW);
+            e14.setTextFill(YELLOW);
+            e15.setTextFill(WHITE);
+            expAguNegro.setVisible(true);
+            expAguNegro.setDisable(false);
+            expAnillos.setVisible(true);
+            expAnillos.setDisable(false);
+            bAguNegro.setDisable(true);
+            bAnillos.setDisable(true);
+            bSuperNova.setDisable(false);
+        }
+        if(opciones.juego.getAciertos() == 10){
+            bAnillos.setDisable(false);
+            e14.setTextFill(WHITE);
+            bAguNegro.setDisable(true);
+            e13.setTextFill(YELLOW);
+            expAguNegro.setVisible(true);
+            expAguNegro.setDisable(false);
+            bAnillos.setDisable(true);
         }
     }
 }

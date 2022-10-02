@@ -190,13 +190,13 @@ public class nivel1Controller {
 
     @FXML
     void botonMercurio(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("v-f.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        vfController controller = fxmlLoader.getController();
+        controllerOpciones controller = fxmlLoader.getController();
         controller.setearPreguntas(2);
         controller.setOpciones(opciones);
-        controller.setPuntos(opciones.juego.getPuntos());
+        controller.setearPuntos();
         controller.setVidas(opciones.juego.getVidas());
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);

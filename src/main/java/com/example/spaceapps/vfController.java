@@ -4,15 +4,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 import static javafx.scene.paint.Color.DARKSEAGREEN;
@@ -66,7 +65,7 @@ public class vfController {
         return bien;
     }
     public String getPoints(){
-        return puntos.getText();
+        return opciones.juego.getPuntos() + "";
     }
     public OpcionesJuego getOpciones() {
         return opciones;
@@ -112,15 +111,40 @@ public class vfController {
     @FXML
     void botonComprobar(ActionEvent event) throws IOException {
         if(r==1&&resp1 || r==2 && resp2){
-            opciones.juego.getPuntos();
-            puntos.setText(opciones.juego.getPuntos());
+            opciones.juego.setPuntos();
+            puntos.setText(opciones.juego.getPuntos() + "");
             comprobar.setDisable(true);
             continuar.setDisable(false);
+            opciones.Guardar(opciones.juego);
+            opciones.juego.setAciertos();
         } else {
             opciones.juego.setVidas(opciones.juego.getVidas());
             opciones.juego.restPuntos();
             bTryAgain.setVisible(true);
             bTryAgain.setDisable(false);
+            if(vida3.isVisible()){
+                vida3.setVisible(false);
+                opciones.juego.setVidas(2);
+            }else if(vida2.isVisible()){
+                vida3.setVisible(false);
+                vida2.setVisible(false);
+                opciones.juego.setVidas(1);
+            }else {
+                vida3.setVisible(false);
+                vida2.setVisible(false);
+                vida1.setVisible(false);
+                opciones.juego.setVidas(3);
+                opciones.juego.resetearPuntos();
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Alert");
+                alert.setHeaderText("You have lost all your lives");
+                alert.setContentText("You must restart the level");
+                Optional<ButtonType> result = alert.showAndWait();
+                if (result.isPresent() && result.get() == ButtonType.OK){
+                    Stage stage1 = (Stage) pregunta.getScene().getWindow();
+                    stage1.close();
+                }
+            }
         }
         if (resp1) opcionV.setTextFill(DARKSEAGREEN);
         if (resp2) opcionF.setTextFill(DARKSEAGREEN);
@@ -128,7 +152,7 @@ public class vfController {
 
         opcionV.setDisable(true);
         opcionF.setDisable(true);
-        puntos.setText(opciones.juego.getPuntos());
+        puntos.setText(opciones.juego.getPuntos() + "");
     }
 
 

@@ -74,6 +74,7 @@ public class HelloController {
             controlador.setPuntos(opciones.juego.getPuntos());
             controlador.setOpciones(opciones, opciones.juego.getNombre());
             controlador.setVidas(opciones.juego.getVidas());
+            controlador.desbloquear();
             stage1.close();
             stage.setTitle("Browse the Webb");
             stage.setMaximized(false);

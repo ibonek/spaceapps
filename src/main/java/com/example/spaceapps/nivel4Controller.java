@@ -13,6 +13,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static javafx.scene.paint.Color.WHITE;
+import static javafx.scene.paint.Color.YELLOW;
+
 public class nivel4Controller {
 
     @FXML
@@ -93,8 +96,10 @@ public class nivel4Controller {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         controllerOpciones controller = fxmlLoader.getController();
-        controller.setearPreguntas(3);
+        controller.setearPreguntas(9);
         controller.setVidas(opciones.juego.getVidas());
+        controller.setOpciones(opciones);
+        controller.setearPuntos();
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -102,16 +107,21 @@ public class nivel4Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
+        if(controller.getBoolean()){
+            desbloquear();
+        }
     }
 
     @FXML
     void botonGalaxia(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("v-f.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        controllerOpciones controller = fxmlLoader.getController();
-        controller.setearPreguntas(3);
+        vfController controller = fxmlLoader.getController();
+        controller.setearPreguntas(10);
         controller.setVidas(opciones.juego.getVidas());
+        controller.setPuntos(opciones.juego.getPuntos());
+        controller.setOpciones(opciones);
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -119,6 +129,9 @@ public class nivel4Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
+        if(controller.getBoolean()){
+            desbloquear();
+        }
     }
 
     @FXML
@@ -133,8 +146,10 @@ public class nivel4Controller {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         controllerOpciones controller = fxmlLoader.getController();
-        controller.setearPreguntas(3);
+        controller.setearPreguntas(11);
         controller.setVidas(opciones.juego.getVidas());
+        controller.setearPuntos();
+        controller.setOpciones(opciones);
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);
         stage.setResizable(false);
@@ -142,6 +157,9 @@ public class nivel4Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
+        if(controller.getBoolean()){
+            desbloquear();
+        }
     }
     public void ponerNombre(String n){
         eNombre.setText(n);
@@ -178,6 +196,43 @@ public class nivel4Controller {
             vida3.setVisible(true);
             opciones.juego.setVidas(3);
             opciones.juego.resetearPuntos();
+        }
+    }
+    public void desbloquear(){
+        if(opciones.juego.getAciertos() > 11){
+            e10.setTextFill(YELLOW);
+            e11.setTextFill(YELLOW);
+            e12.setTextFill(YELLOW);
+            expCometa.setVisible(true);
+            expCometa.setDisable(false);
+            expGalaxia.setVisible(true);
+            expGalaxia.setDisable(false);
+            expNebulosa.setVisible(true);
+            expNebulosa.setDisable(false);
+            bCometa.setDisable(true);
+            bGalaxia.setDisable(true);
+            bNebulosa.setDisable(true);
+        }
+        if(opciones.juego.getAciertos() == 11){
+            e10.setTextFill(YELLOW);
+            e11.setTextFill(YELLOW);
+            e12.setTextFill(WHITE);
+            expCometa.setVisible(true);
+            expCometa.setDisable(false);
+            expGalaxia.setVisible(true);
+            expGalaxia.setDisable(false);
+            bCometa.setDisable(true);
+            bGalaxia.setDisable(true);
+            bNebulosa.setDisable(false);
+        }
+        if(opciones.juego.getAciertos() == 10){
+            bGalaxia.setDisable(false);
+            e11.setTextFill(WHITE);
+            bCometa.setDisable(true);
+            e10.setTextFill(YELLOW);
+            expCometa.setVisible(true);
+            expCometa.setDisable(false);
+            bNebulosa.setDisable(true);
         }
     }
 }

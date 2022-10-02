@@ -68,7 +68,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label text="Level 3" textFill="#7c7979">
+                  <Label fx:id="l3" text="Level 3" textFill="#7c7979">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -79,7 +79,7 @@
                <children>
                   <VBox alignment="TOP_RIGHT" prefHeight="165.0" prefWidth="88.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <Label text="Level 2" textFill="#7c7979">
+                        <Label fx:id="l2" text="Level 2" textFill="#7c7979">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
@@ -125,7 +125,7 @@
          <children>
             <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                <children>
-                  <Label text="Level 4" textFill="#7c7979">
+                  <Label fx:id="l4" text="Level 4" textFill="#7c7979">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -153,7 +153,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label text="Level 5" textFill="#7c7979">
+                  <Label fx:id="l5" text="Level 5" textFill="#7c7979">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>

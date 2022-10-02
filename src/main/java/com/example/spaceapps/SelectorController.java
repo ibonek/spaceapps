@@ -12,6 +12,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static javafx.scene.paint.Color.WHITE;
+
 public class SelectorController {
 
     OpcionesJuego opciones;
@@ -47,6 +49,18 @@ public class SelectorController {
 
     @FXML
     private ImageView vida3;
+
+    @FXML
+    private Label l2;
+
+    @FXML
+    private Label l3;
+
+    @FXML
+    private Label l4;
+
+    @FXML
+    private Label l5;
 
 
     public void setPuntos(int n){
@@ -179,16 +193,26 @@ public class SelectorController {
         if(opciones.juego.getAciertos() > 12){
             bLevel5.setDisable(false);
             bLevel4.setDisable(false);
+            l5.setTextFill(WHITE);
+            l4.setTextFill(WHITE);
+            l3.setTextFill(WHITE);
+            l2.setTextFill(WHITE);
         }
         if(opciones.juego.getAciertos() > 9){
             bLevel4.setDisable(false);
             bLevel3.setDisable(false);
+            l4.setTextFill(WHITE);
+            l3.setTextFill(WHITE);
+            l2.setTextFill(WHITE);
         }
         if(opciones.juego.getAciertos() > 6){
             bLevel3.setDisable(false);
+            l3.setTextFill(WHITE);
+            l2.setTextFill(WHITE);
         }
         if(opciones.juego.getAciertos() > 3){
             bLevel2.setDisable(false);
+            l2.setTextFill(WHITE);
         }
     }
 }
