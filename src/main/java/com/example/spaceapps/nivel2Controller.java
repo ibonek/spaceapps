@@ -86,6 +86,7 @@ public class nivel2Controller {
     void botonExpSaturno(ActionEvent event) {
 
     }
+    public boolean correcto;
     private OpcionesJuego opciones;
 
     public OpcionesJuego getOpciones() {
@@ -140,7 +141,10 @@ public class nivel2Controller {
         stage.showAndWait();
 
         puntos.setText(controller.getPoints());
-
+        correcto = controller.getBoolean();
+        if(correcto){
+            desbloquear();
+        }
     }
 
     @FXML
@@ -158,7 +162,10 @@ public class nivel2Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
-
+        correcto = controller.getBoolean();
+        if(correcto){
+            desbloquear();
+        }
     }
     @FXML
     void botonSaturno(ActionEvent event) throws IOException {
@@ -175,6 +182,10 @@ public class nivel2Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
+        correcto = controller.getBoolean();
+        if(correcto){
+            desbloquear();
+        }
     }
     @FXML
     void botonLupa(ActionEvent event) throws IOException {

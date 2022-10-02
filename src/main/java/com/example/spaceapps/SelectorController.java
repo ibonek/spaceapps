@@ -101,6 +101,7 @@ public class SelectorController {
         controlador.setPuntos(Integer.parseInt(puntos.getText()));
         controlador.setOpciones(opciones);
         controlador.setVidas(opciones.juego.getVidas());
+        controlador.desbloquear();
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
@@ -167,5 +168,22 @@ public class SelectorController {
     }
     public OpcionesJuego getOpciones() {
         return opciones;
+    }
+    public void desbloquear(){
+        if(opciones.juego.getAciertos() > 12){
+            bLevel5.setDisable(false);
+            bLevel4.setDisable(false);
+        }
+        if(opciones.juego.getAciertos() > 9){
+            bLevel4.setDisable(false);
+            bLevel3.setDisable(false);
+        }
+        if(opciones.juego.getAciertos() > 6){
+            bLevel3.setDisable(false);
+        }
+        if(opciones.juego.getAciertos() > 3){
+            bLevel2.setDisable(false);
+        }
+
     }
 }
