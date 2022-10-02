@@ -135,7 +135,7 @@ public class nivel2Controller {
         controller.setOpciones(opciones);
         controller.setVidas(opciones.juego.getVidas());
         controller.setearPuntos();
-        stage.setTitle("Pregunta 3");
+        stage.setTitle("Question 5");
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
@@ -159,7 +159,7 @@ public class nivel2Controller {
         controller.setOpciones(opciones);
         controller.setVidas(opciones.juego.getVidas());
         controller.setPuntos(opciones.juego.getPuntos());
-        stage.setTitle("Pregunta 4");
+        stage.setTitle("Question 4");
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
@@ -182,7 +182,7 @@ public class nivel2Controller {
         controller.setOpciones(opciones);
         controller.setVidas(opciones.juego.getVidas());
         controller.setearPuntos();
-        stage.setTitle("Pregunta 5");
+        stage.setTitle("Question 6");
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);

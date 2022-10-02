@@ -86,7 +86,7 @@ public class nivel1Controller {
         Stage stage = new Stage();
         explicacionController controller = fxmlLoader.getController();
         controller.setTexto(opciones.juego.getPreguntas().get(1).getExplicacion());
-        stage.setTitle("Explicación");
+        stage.setTitle("Explanation");
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.setScene(scene);
@@ -102,7 +102,7 @@ public class nivel1Controller {
         controller.setOpciones(opciones);
         controller.setearImagenes(image);
         controller.setTexto(opciones.juego.getPreguntas().get(0).getExplicacion());
-        stage.setTitle("Explicación");
+        stage.setTitle("Explanation");
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.setScene(scene);
@@ -118,7 +118,7 @@ public class nivel1Controller {
         Stage stage = new Stage();
         explicacionController controller = fxmlLoader.getController();
         controller.setTexto(opciones.juego.getPreguntas().get(2).getExplicacion());
-        stage.setTitle("Explicación");
+        stage.setTitle("Explanation");
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.setScene(scene);
@@ -134,7 +134,7 @@ public class nivel1Controller {
         controller.setOpciones(opciones);
         controller.setPuntos(opciones.juego.getPuntos());
         controller.setVidas(opciones.juego.getVidas());
-        stage.setTitle("Pregunta 1");
+        stage.setTitle("Question 2");
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
@@ -174,7 +174,7 @@ public class nivel1Controller {
         controller.setOpciones(opciones);
         controller.setearPuntos();
         controller.setVidas(opciones.juego.getVidas());
-        stage.setTitle("Pregunta 2");
+        stage.setTitle("Question 1");
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
@@ -211,7 +211,7 @@ public class nivel1Controller {
         controller.setOpciones(opciones);
         controller.setearPuntos();
         controller.setVidas(opciones.juego.getVidas());
-        stage.setTitle("Pregunta 3");
+        stage.setTitle("Question 3");
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
