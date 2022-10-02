@@ -214,7 +214,7 @@ public class Juego implements Serializable {
         "Webb's orbit does not lie exactly at the L2 point because the Earth's shadow on the Sun would be large enough to reduce the amount of energy available to Webb's solar panels.");
         pregunta.setPista("It is not located on Earth");
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("Approximately the distance of the Moon");
+        respuesta.setCuerpoRespuesta("Approximately at the Moon");
         pregunta.getListaOpciones().add(respuesta);
 
 
