@@ -1,0 +1,135 @@
+Index: src/main/java/com/example/spaceapps/SelectorController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.spaceapps;\nimport javafx.event.ActionEvent;\nimport javafx.fxml.FXML;\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Button;\nimport javafx.scene.control.Label;\nimport javafx.scene.image.ImageView;\nimport javafx.scene.layout.HBox;\nimport javafx.stage.Modality;\nimport javafx.stage.Stage;\n\nimport java.io.IOException;\n\npublic class SelectorController {\n\n    OpcionesJuego opciones;\n    @FXML\n    private Button bLevel1;\n\n    @FXML\n    private Button bLevel2;\n\n    @FXML\n    private Button bLevel3;\n\n    @FXML\n    private Button bLevel4;\n\n    @FXML\n    private Button bLevel5;\n\n    @FXML\n    private Label eNombre;\n\n    @FXML\n    private HBox fondoSelect;\n\n    @FXML\n    private Label puntos;\n\n    @FXML\n    private ImageView vida1;\n\n    @FXML\n    private ImageView vida2;\n\n    @FXML\n    private ImageView vida3;\n\n\n    public void setPuntos(int n){\n        puntos.setText(n + \"\");\n    }\n    public void setVidas(int v){\n        if(v == 3){\n            vida1.setVisible(true);\n            vida2.setVisible(true);\n            vida3.setVisible(true);\n        } else if(v == 2){\n            vida1.setVisible(true);\n            vida2.setVisible(true);\n            vida3.setVisible(false);\n        } else {\n            vida1.setVisible(true);\n            vida2.setVisible(false);\n            vida3.setVisible(false);\n        }\n    }\n    public void setOpciones(OpcionesJuego opciones, String n) {\n        this.opciones = opciones;\n        eNombre.setText(n);\n    }\n    @FXML\n    void botonLevel1(ActionEvent event) throws IOException {\n        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"nivel1.fxml\"));\n        Scene scene = new Scene(fxmlLoader.load());\n        Stage stage = new Stage();\n        nivel1Controller controlador = fxmlLoader.getController();\n        controlador.setOpciones(opciones);\n        controlador.ponerNombre(opciones.juego.getNombre());\n        controlador.setVidas(opciones.juego.getVidas());\n        controlador.setPuntos(Integer.parseInt(puntos.getText()));\n        controlador.desbloquear();\n        stage.setMaximized(false);\n        stage.setResizable(false);\n        stage.initModality(Modality.APPLICATION_MODAL);\n        stage.setScene(scene);\n        stage.showAndWait();\n        puntos.setText(controlador.getPuntos());\n        setVidas(opciones.juego.getVidas());\n    }\n\n    @FXML\n    void botonLevel2(ActionEvent event) throws IOException {\n        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"nivel2.fxml\"));\n        Scene scene = new Scene(fxmlLoader.load());\n        Stage stage = new Stage();\n        nivel2Controller controlador = fxmlLoader.getController();\n        controlador.ponerNombre(opciones.juego.getNombre());\n        controlador.setPuntos(Integer.parseInt(puntos.getText()));\n        controlador.setOpciones(opciones);\n        controlador.setVidas(opciones.juego.getVidas());\n        controlador.desbloquear();\n        stage.setMaximized(false);\n        stage.setResizable(false);\n        stage.initModality(Modality.APPLICATION_MODAL);\n        stage.setScene(scene);\n        stage.showAndWait();\n        puntos.setText(controlador.getPuntos());\n        setVidas(opciones.juego.getVidas());\n    }\n\n    @FXML\n    void botonLevel3(ActionEvent event) throws IOException {\n        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"nivel3.fxml\"));\n        Scene scene = new Scene(fxmlLoader.load());\n        Stage stage = new Stage();\n        nivel3Controller controlador = fxmlLoader.getController();\n        controlador.ponerNombre(opciones.juego.getNombre());\n        controlador.setPuntos(Integer.parseInt(puntos.getText()));\n        controlador.setOpciones(opciones);\n        controlador.setVidas(opciones.juego.getVidas());\n        stage.setMaximized(false);\n        stage.setResizable(false);\n        stage.initModality(Modality.APPLICATION_MODAL);\n        stage.setScene(scene);\n        stage.showAndWait();\n        puntos.setText(controlador.getPuntos());\n        setVidas(opciones.juego.getVidas());\n    }\n\n    @FXML\n    void botonLevvel4(ActionEvent event) throws IOException {\n        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"nivel4.fxml\"));\n        Scene scene = new Scene(fxmlLoader.load());\n        Stage stage = new Stage();\n        nivel4Controller controlador = fxmlLoader.getController();\n        controlador.ponerNombre(opciones.juego.getNombre());\n        controlador.setPuntos(Integer.parseInt(puntos.getText()));\n        controlador.setOpciones(opciones);\n        stage.setMaximized(false);\n        controlador.setVidas(opciones.juego.getVidas());\n        stage.setResizable(false);\n        stage.initModality(Modality.APPLICATION_MODAL);\n        stage.setScene(scene);\n        stage.showAndWait();\n        puntos.setText(controlador.getPuntos());\n        setVidas(opciones.juego.getVidas());\n    }\n    @FXML\n    void BotonLevel5(ActionEvent event) throws IOException {\n        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"nivel5.fxml\"));\n        Scene scene = new Scene(fxmlLoader.load());\n        Stage stage = new Stage();\n        nivel5Controller controlador = fxmlLoader.getController();\n        controlador.ponerNombre(opciones.juego.getNombre());\n        controlador.setPuntos(Integer.parseInt(puntos.getText()));\n        controlador.setOpciones(opciones);\n        controlador.setVidas(opciones.juego.getVidas());\n        stage.setMaximized(false);\n        stage.setResizable(false);\n        stage.initModality(Modality.APPLICATION_MODAL);\n        stage.setScene(scene);\n        stage.showAndWait();\n        puntos.setText(controlador.getPuntos());\n        setVidas(opciones.juego.getVidas());\n    }\n    public OpcionesJuego getOpciones() {\n        return opciones;\n    }\n    public void desbloquear(){\n        if(opciones.juego.getAciertos() > 12){\n            bLevel5.setDisable(false);\n            bLevel4.setDisable(false);\n        }\n        if(opciones.juego.getAciertos() > 9){\n            bLevel4.setDisable(false);\n            bLevel3.setDisable(false);\n        }\n        if(opciones.juego.getAciertos() > 6){\n            bLevel3.setDisable(false);\n        }\n        if(opciones.juego.getAciertos() > 3){\n            bLevel2.setDisable(false);\n        }\n\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/SelectorController.java b/src/main/java/com/example/spaceapps/SelectorController.java
+--- a/src/main/java/com/example/spaceapps/SelectorController.java	(revision bc9081e43935ec2bb553264ec92dc677308bf388)
++++ b/src/main/java/com/example/spaceapps/SelectorController.java	(date 1664673745741)
+@@ -184,6 +184,5 @@
+         if(opciones.juego.getAciertos() > 3){
+             bLevel2.setDisable(false);
+         }
+-
+     }
+ }
+Index: .idea/libraries/Maven__org_openjfx_javafx_graphics_win_19_ea_7.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_19_ea_7.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_19_ea_7.xml	(revision bc9081e43935ec2bb553264ec92dc677308bf388)
++++ /dev/null	(revision bc9081e43935ec2bb553264ec92dc677308bf388)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-graphics:win:19-ea+7">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-win.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_controls_win_19_ea_7.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_controls_win_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_controls_win_19_ea_7.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_controls_win_19_ea_7.xml	(revision bc9081e43935ec2bb553264ec92dc677308bf388)
++++ /dev/null	(revision bc9081e43935ec2bb553264ec92dc677308bf388)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-controls:win:19-ea+7">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-win.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_base_win_19_ea_7.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_base_win_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_base_win_19_ea_7.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_base_win_19_ea_7.xml	(revision bc9081e43935ec2bb553264ec92dc677308bf388)
++++ /dev/null	(revision bc9081e43935ec2bb553264ec92dc677308bf388)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-base:win:19-ea+7">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19-ea+7/javafx-base-19-ea+7-win.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19-ea+7/javafx-base-19-ea+7-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19-ea+7/javafx-base-19-ea+7-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml	(revision bc9081e43935ec2bb553264ec92dc677308bf388)
++++ /dev/null	(revision bc9081e43935ec2bb553264ec92dc677308bf388)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-fxml:win:18-ea+6">
+-    <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-win.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: spaceapps.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule=\"true\" type=\"JAVA_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\" LANGUAGE_LEVEL=\"JDK_17\">\n    <output url=\"file://$MODULE_DIR$/target/classes\" />\n    <output-test url=\"file://$MODULE_DIR$/target/test-classes\" />\n    <content url=\"file://$MODULE_DIR$\">\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/java\" isTestSource=\"false\" />\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/resources\" type=\"java-resource\" />\n      <excludeFolder url=\"file://$MODULE_DIR$/target\" />\n    </content>\n    <orderEntry type=\"inheritedJdk\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-controls:19-ea+7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-controls:win:19-ea+7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-fxml:18-ea+6\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-fxml:win:18-ea+6\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter-api:5.8.1\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.opentest4j:opentest4j:1.2.0\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.platform:junit-platform-commons:1.8.1\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.apiguardian:apiguardian-api:1.1.2\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter-engine:5.8.1\" level=\"project\" />\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.platform:junit-platform-engine:1.8.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: javax.servlet:javax.servlet-api:4.0.1\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-graphics:19-ea+7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-graphics:win:19-ea+7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-base:19-ea+7\" level=\"project\" />\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-base:win:19-ea+7\" level=\"project\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spaceapps.iml b/spaceapps.iml
+--- a/spaceapps.iml	(revision bc9081e43935ec2bb553264ec92dc677308bf388)
++++ b/spaceapps.iml	(date 1664673125027)
+@@ -11,9 +11,9 @@
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:19-ea+7" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:19-ea+7" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:linux:19-ea+7" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:18-ea+6" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:18-ea+6" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:linux:18-ea+6" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.1" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.opentest4j:opentest4j:1.2.0" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-commons:1.8.1" level="project" />
+@@ -22,8 +22,8 @@
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.8.1" level="project" />
+     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:19-ea+7" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:win:19-ea+7" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:linux:19-ea+7" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-base:19-ea+7" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:19-ea+7" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:linux:19-ea+7" level="project" />
+   </component>
+ </module>
+\ No newline at end of file

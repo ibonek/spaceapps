@@ -34,10 +34,12 @@ public class HelloApplication extends Application {
 
 
         Las preguntas verdadero y falso solo tienen 2 posibles respuestas obviamente así que cuidado al usar numRespuesta > 1 porque puede que estés en una pregunta con 2 respuestas
-         */
+
         int numPregunta = 3;
         int numRespuesta = 1;
         System.out.println(juego.getPreguntas().get(numPregunta).getListaOpciones().get(numRespuesta));
+
+         */
         launch();
     }
 

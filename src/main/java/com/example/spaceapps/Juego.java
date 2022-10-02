@@ -93,14 +93,14 @@ public class Juego implements Serializable {
 
 
     private void crearPreguntas() throws Exception {
-        Pregunta pregunta = new Pregunta();
+        Pregunta pregunta;
 
         // 0
         pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("What is the James Webb?");
         pregunta.setPista("It is an object related to space");
         pregunta.setExplicacion("James Webb is a NASA space telescope that was launched on December 25, 2021. And it is scanning a large part of the sky.");
-        image = new Image("../../imagenes/webb_telescope.jpg");
+        //image = new Image("../../imagenes/webb_telescope.jpg");
         Respuesta respuesta = new Respuesta();
 
         respuesta.setCuerpoRespuesta("A mobile phone");
@@ -143,6 +143,7 @@ public class Juego implements Serializable {
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
        //2
+        pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("How big is James Webb Telescope?");
         pregunta.setExplicacion("The sunshield dimensions are 21.2 by 14.2 meters (69.5 by 46.5 feet) and the height of the entire observatory is 8 meters (28 feet).\n");
         respuesta = new Respuesta();
@@ -183,6 +184,7 @@ public class Juego implements Serializable {
         addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 //4
+        pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("Which organizations participated in the creation of the James Webb Telescope?");
         pregunta.setExplicacion("Since 1996, NASA, ESA and CSA have been collaborating in the creation of the James Webb Telescope. This means that a total of 20 countries are major contributors to this project");
         pregunta.setPista("It is strongly related to USA");
@@ -247,6 +249,7 @@ public class Juego implements Serializable {
         addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
      //7
+        pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("Mars was the second thing the James Webb telescope captured");
         pregunta.setExplicacion("NASA’s James Webb Space Telescope captured its first images and spectra of Mars Sept. 5. The telescope, an international collaboration with ESA (European Space Agency) and CSA (Canadian Space Agency), provides a unique perspective with its infrared sensitivity on our neighboring planet, complementing data being collected by orbiters, rovers, and other telescopes");
 
@@ -328,6 +331,7 @@ public class Juego implements Serializable {
 
         ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
         //11
+        pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("How much of the sky can Webb see");
         pregunta.setExplicacion("Over the course of six months, as Webb orbits the Sun with Earth, it has the ability to observe almost any point in the sky. Webb’s field of regard is limited to a 50-degree swath of the celestial sphere: About 39% of the sky is potentially visible to Webb at any given time. Because Webb must face away from objects that are warm and close enough to interfere with its ability to observe faint infrared light, it cannot observe the Sun, Mercury, Venus, Earth, or the Moon.");
         respuesta = new Respuesta();
@@ -352,6 +356,7 @@ public class Juego implements Serializable {
 
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
         //12
+        pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("The first operational image taken by the James Webb Space Telescope captured a tiny area from the Northern hemisphere");
         respuesta= new Respuesta();
         respuesta.setCuerpoRespuesta("True");
@@ -366,6 +371,7 @@ public class Juego implements Serializable {
         addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
         //13
+        pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("Which cameras are on the Webb Telescope");
         pregunta.setExplicacion("Webb has four scientific instruments, the Near-Infrared Camera (NIRCam), the Near-Infrared Spectrograph (NIRSpec), the Near-Infrared Imager and Slitless Spectrograph (NIRISS), and the Mid-Infrared Instrument (MIRI).");
         respuesta = new Respuesta();
@@ -389,6 +395,7 @@ public class Juego implements Serializable {
         addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
         //14
+        pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("How is Webb powered");
         pregunta.setExplicacion("The Webb telescope is powered by an on-board solar array. It also has a propulsion system to maintain the observatory’s orbit and attitude. The solar array provides 2,000 watts of electrical power for the life of the mission, and there is enough propellant onboard for at least 10 years of science operations.");
         respuesta = new Respuesta();

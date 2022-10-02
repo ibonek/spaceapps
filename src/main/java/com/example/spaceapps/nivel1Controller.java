@@ -158,7 +158,7 @@ public class nivel1Controller {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         controllerOpciones controller = fxmlLoader.getController();
-        controller.setearPreguntas(1);
+        controller.setearPreguntas(0);
         controller.setOpciones(opciones);
         controller.setearPuntos();
         controller.setVidas(opciones.juego.getVidas());

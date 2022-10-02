@@ -2,12 +2,17 @@
     -fx-background-image: url("fondoPreguntas.png");
 }
 
+#fondo2{
+    -fx-background-image: url("fondoPreguntas.png");
+}
 .fondoBoton{
     -fx-padding: 10 30 10 10;
     -fx-border-style: solid inside;
     -fx-border-width: 2;
     -fx-border-color: white;
     -fx-background-color: #0a1c4c;
+    -fx-font-size: 16pt;
+    -fx-text-fill: white;
 }
 .radio-button:selected {
      -fx-border-color: gray;
