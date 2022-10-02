@@ -87,6 +87,7 @@ public class SelectorController {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
         stage.showAndWait();
+        desbloquear();
         puntos.setText(controlador.getPuntos());
         setVidas(opciones.juego.getVidas());
     }
@@ -107,6 +108,7 @@ public class SelectorController {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
         stage.showAndWait();
+        desbloquear();
         puntos.setText(controlador.getPuntos());
         setVidas(opciones.juego.getVidas());
     }
@@ -121,11 +123,13 @@ public class SelectorController {
         controlador.setPuntos(Integer.parseInt(puntos.getText()));
         controlador.setOpciones(opciones);
         controlador.setVidas(opciones.juego.getVidas());
+        controlador.desbloquear();
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
         stage.showAndWait();
+        desbloquear();
         puntos.setText(controlador.getPuntos());
         setVidas(opciones.juego.getVidas());
     }
@@ -145,6 +149,7 @@ public class SelectorController {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
         stage.showAndWait();
+        desbloquear();
         puntos.setText(controlador.getPuntos());
         setVidas(opciones.juego.getVidas());
     }
@@ -163,6 +168,7 @@ public class SelectorController {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
         stage.showAndWait();
+        desbloquear();
         puntos.setText(controlador.getPuntos());
         setVidas(opciones.juego.getVidas());
     }

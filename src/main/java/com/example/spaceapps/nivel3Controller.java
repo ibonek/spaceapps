@@ -13,6 +13,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static javafx.scene.paint.Color.WHITE;
+import static javafx.scene.paint.Color.YELLOW;
+
 public class nivel3Controller {
 private OpcionesJuego opciones;
     @FXML
@@ -65,6 +68,7 @@ private OpcionesJuego opciones;
     @FXML
     private Button expUrano;
 
+    public boolean correcto;
     @FXML
     void botonExpNeptuno(ActionEvent event) {
 
@@ -94,7 +98,10 @@ private OpcionesJuego opciones;
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
-
+        correcto = controller.getBoolean();
+        if(correcto){
+            desbloquear();
+        }
     }
 
     public OpcionesJuego getOpciones() {
@@ -125,7 +132,10 @@ private OpcionesJuego opciones;
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
-
+        correcto = controller.getBoolean();
+        if(correcto){
+            desbloquear();
+        }
     }
 
     @FXML
@@ -143,7 +153,10 @@ private OpcionesJuego opciones;
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
-
+        correcto = controller.getBoolean();
+        if(correcto){
+            desbloquear();
+        }
     }
     public void ponerNombre(String n){
         eNombre.setText(n);
@@ -172,6 +185,43 @@ private OpcionesJuego opciones;
             vida3.setVisible(true);
             opciones.juego.setVidas(3);
             opciones.juego.resetearPuntos();
+        }
+    }
+    public void desbloquear(){
+        if(opciones.juego.getAciertos() > 9){
+            e7.setTextFill(YELLOW);
+            e8.setTextFill(YELLOW);
+            e9.setTextFill(YELLOW);
+            expUrano.setVisible(true);
+            expUrano.setDisable(false);
+            expNeptuno.setVisible(true);
+            expNeptuno.setDisable(false);
+            expPluton.setVisible(true);
+            expPluton.setDisable(false);
+            bUrano.setDisable(true);
+            bNeptuno.setDisable(true);
+            bPluto.setDisable(true);
+        }
+        if(opciones.juego.getAciertos() == 9){
+            e7.setTextFill(YELLOW);
+            e8.setTextFill(YELLOW);
+            e9.setTextFill(WHITE);
+            expUrano.setVisible(true);
+            expUrano.setDisable(false);
+            expNeptuno.setVisible(true);
+            expNeptuno.setDisable(false);
+            bUrano.setDisable(true);
+            bNeptuno.setDisable(true);
+            bPluto.setDisable(false);
+        }
+        if(opciones.juego.getAciertos() == 8){
+            bNeptuno.setDisable(false);
+            e8.setTextFill(WHITE);
+            bUrano.setDisable(true);
+            e7.setTextFill(YELLOW);
+            expUrano.setVisible(true);
+            expUrano.setDisable(false);
+            bPluto.setDisable(true);
         }
     }
 }
