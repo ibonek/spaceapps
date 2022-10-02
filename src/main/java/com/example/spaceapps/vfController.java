@@ -117,7 +117,7 @@ public class vfController {
             comprobar.setDisable(true);
             continuar.setDisable(false);
         } else {
-
+            opciones.juego.setVidas(opciones.juego.getVidas());
             opciones.juego.restPuntos();
             bTryAgain.setVisible(true);
             bTryAgain.setDisable(false);

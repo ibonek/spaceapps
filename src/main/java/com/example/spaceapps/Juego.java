@@ -23,7 +23,7 @@ public class Juego implements Serializable {
         this.nombre = nombre;
     }
 
-    public String getPuntos() {
+    public int getPuntos() {
         return puntos;
     }
     public void resetearPuntos(){puntos = 0;}
