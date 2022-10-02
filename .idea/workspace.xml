@@ -5,41 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/NASA_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_19_ea_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/juego.bin" beforeDir="false" afterPath="$PROJECT_DIR$/juego.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/explicacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/explicacionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/explicacion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/explicacion.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/NASA_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/james_webb_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/ultraviolet.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/webb_cameras.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/webb_dimensions.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/webb_distance.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/webb_location.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/webb_mars.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/webb_objective.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/webb_southern.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/webb_telescope.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/webb_temperature.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imagenes/webb_vs_hubble.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/indice.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/indice.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/explicacion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/explicacion.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/explicacionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/explicacionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/nivel1Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/NASA_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/james_webb_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/ultraviolet.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/webb_cameras.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/webb_dimensions.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/webb_distance.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/webb_location.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/webb_mars.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/webb_objective.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/webb_southern.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/webb_telescope.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/webb_temperature.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imagenes/webb_vs_hubble.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/indice.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/css/indice.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
