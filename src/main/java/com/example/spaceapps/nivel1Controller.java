@@ -98,7 +98,7 @@ public class nivel1Controller {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         explicacionController controller = fxmlLoader.getController();
-        Image image = new Image(".jpg");
+        Image image = new Image("file: webb_telescope.jpg");
         controller.setOpciones(opciones);
         controller.setearImagenes(image);
         controller.setTexto(opciones.juego.getPreguntas().get(0).getExplicacion());
