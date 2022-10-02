@@ -75,8 +75,17 @@ public class nivel1Controller {
 
     public boolean correcto;
     @FXML
-    void botonExpVenus(ActionEvent event) {
-
+    void botonExpVenus(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setTexto(opciones.juego.getPreguntas().get(1).getExplicacion());
+        stage.setTitle("Explicación");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
     @FXML
     void botonExpLuna(ActionEvent event) throws IOException {
@@ -85,7 +94,7 @@ public class nivel1Controller {
         Stage stage = new Stage();
         explicacionController controller = fxmlLoader.getController();
         controller.setTexto(opciones.juego.getPreguntas().get(0).getExplicacion());
-        stage.setTitle("Expliación");
+        stage.setTitle("Explicación");
         stage.setMaximized(false);
         stage.setResizable(false);
         stage.setScene(scene);
@@ -95,8 +104,17 @@ public class nivel1Controller {
 
     }
     @FXML
-    void botonExpMercurio(ActionEvent event) {
-
+    void botonExpMercurio(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setTexto(opciones.juego.getPreguntas().get(2).getExplicacion());
+        stage.setTitle("Explicación");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
     @FXML
     void bVenus(ActionEvent event) throws IOException {

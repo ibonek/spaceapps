@@ -1,11 +1,15 @@
 package com.example.spaceapps;
 
+import javafx.scene.image.Image;
+
 import java.io.Serializable;
 import java.util.LinkedList;
 
 public class Juego implements Serializable {
     private LinkedList<Pregunta> preguntas = new LinkedList<>();
     private int aciertos = 1;
+
+    private Image image;
 
     private int puntos = 0;
     private String nombre;
@@ -58,6 +62,19 @@ public class Juego implements Serializable {
         return aciertos;
     }
 
+    public Image getImage() {
+        return image;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
+    }
+
+    public Image imagenExpl(){
+        return image;
+    }
+
+
     public void addConComprobacion(Pregunta pregunta)throws Exception{
         /*
         int contador = 0;
@@ -78,10 +95,12 @@ public class Juego implements Serializable {
     private void crearPreguntas() throws Exception {
         Pregunta pregunta = new Pregunta();
 
+        // 0
         pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("What is the James Webb?");
         pregunta.setPista("It is an object related to space");
         pregunta.setExplicacion("James Webb is a NASA space telescope that was launched on December 25, 2021. And it is scanning a large part of the sky.");
+        //image = new Image();
         Respuesta respuesta = new Respuesta();
 
         respuesta.setCuerpoRespuesta("A mobile phone");
@@ -102,36 +121,11 @@ public class Juego implements Serializable {
 
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------
-        /*
-        //pregunta de imagen
-        pregunta.setCuerpoPregunta("");
-        pregunta.setExplicacion("");
-        respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
-        pregunta.getListaOpciones().add(respuesta);
 
-
-        respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta(".");
-        respuesta.setCorrecta();
-        pregunta.getListaOpciones().add(respuesta);
-
-        respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
-        pregunta.getListaOpciones().add(respuesta);
-
-        respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
-
-        pregunta.getListaOpciones().add(respuesta);
-        addConComprobacion(pregunta);
-
-         */
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
-        /*
+        // 1
         pregunta= new Pregunta();
-        pregunta.setCuerpoPregunta("");
+        pregunta.setCuerpoPregunta("NASA stands for 'National Aeronautics and Space Administration'");
 
         respuesta = new Respuesta();
         respuesta.setCuerpoRespuesta("True");
@@ -142,58 +136,37 @@ public class Juego implements Serializable {
         respuesta.setCuerpoRespuesta("False");
         pregunta.getListaOpciones().add(respuesta);
 
-        pregunta.setExplicacion("");
+        pregunta.setExplicacion("NASA is an independent agency of the US Federal government responsible for the civil space program, aeronautics research and space research. It was established in 1958 and the Headquarters are located in Washinton D.C.");
         addConComprobacion(pregunta);
-        */
+
+
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------
- /*       //imagen
-        pregunta.setCuerpoPregunta("");
-        pregunta.setExplicacion("");
+
+       //2
+        pregunta.setCuerpoPregunta("How big is James Webb Telescope?");
+        pregunta.setExplicacion("The sunshield dimensions are 21.2 by 14.2 meters (69.5 by 46.5 feet) and the height of the entire observatory is 8 meters (28 feet).\n");
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
+        respuesta.setCuerpoRespuesta("Diameter of 90 meters and area of approximately 23 square meters");
         pregunta.getListaOpciones().add(respuesta);
 
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta(".");
+        respuesta.setCuerpoRespuesta("Diameter of 6.6 meters and area of approximately 25 square meters");
         respuesta.setCorrecta();
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
+        respuesta.setCuerpoRespuesta("Diameter of 16.75 meters and area of approximately 180 square meters");
         pregunta.getListaOpciones().add(respuesta);
 
         respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
+        respuesta.setCuerpoRespuesta("Diameter of 77 meters and area of approximately 243 square meters");
 
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
-*/
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------
-/*        pregunta.setCuerpoPregunta("");
-        pregunta.setExplicacion("");
-        respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
-        pregunta.getListaOpciones().add(respuesta);
 
-
-        respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta(".");
-        respuesta.setCorrecta();
-        pregunta.getListaOpciones().add(respuesta);
-
-        respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
-        pregunta.getListaOpciones().add(respuesta);
-
-        respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
-
-        pregunta.getListaOpciones().add(respuesta);
-        addConComprobacion(pregunta);
-*/
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+//3
         pregunta= new Pregunta();
         pregunta.setCuerpoPregunta("James Webb Space Telescope is considered the formal succesor to the Hubbel Space Telescope");
 
@@ -209,7 +182,7 @@ public class Juego implements Serializable {
         pregunta.setExplicacion("The James Webb Space Telescope is considered the formal successor to the Hubbel Space Telescope and the Spitzer Space Telescope. In addition, the James Webb will surpass these two telescopes by being able to see many more stars and older galaxies, giving us the highest resolution images of space to date");
         addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+//4
         pregunta.setCuerpoPregunta("Which organizations participated in the creation of the James Webb Telescope?");
         pregunta.setExplicacion("Since 1996, NASA, ESA and CSA have been collaborating in the creation of the James Webb Telescope. This means that a total of 20 countries are major contributors to this project");
         pregunta.setPista("It is strongly related to USA");
@@ -232,7 +205,7 @@ public class Juego implements Serializable {
         addConComprobacion(pregunta);
         //preguntas.add(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+//5
         pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("Approximately where is the James Webb telescope located?");
         pregunta.setExplicacion("The orbit of the James Webb Space Telescope is around L2, 1.500.000km from Earth. This is one of the 5 Lagrange points. Lagrange points are points of gravitational equilibrium for small-mass objects under the influence of two massive orbiting bodies." +
@@ -258,6 +231,7 @@ public class Juego implements Serializable {
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
+     //6
         pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("It is necessary to keep the James Webb Telescope's temperature under 50 K (-223,2 ºC)?");
 
@@ -272,32 +246,23 @@ public class Juego implements Serializable {
         pregunta.setExplicacion("The James Webb Space Telescope must be kept below 50 K (-223.2 ºC); otherwise, infrared radiation from the telescope itself would overwhelm its sensors. To maintain this temperature, a large sunshield blocks light and heat from nearby space bodies and stops impacts from small asteroids. In addition, a mechanical helium gas cooler is located on the hot side of the environmental shield");
         addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
-        /*
-        pregunta.setCuerpoPregunta("");
-        pregunta.setExplicacion("");
-        respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
-        pregunta.getListaOpciones().add(respuesta);
+     //7
+        pregunta.setCuerpoPregunta("Mars was the second thing the James Webb telescope captured");
+        pregunta.setExplicacion("NASA’s James Webb Space Telescope captured its first images and spectra of Mars Sept. 5. The telescope, an international collaboration with ESA (European Space Agency) and CSA (Canadian Space Agency), provides a unique perspective with its infrared sensitivity on our neighboring planet, complementing data being collected by orbiters, rovers, and other telescopes");
 
-
-        respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta(".");
+        respuesta= new Respuesta();
+        respuesta.setCuerpoRespuesta("True");
         respuesta.setCorrecta();
         pregunta.getListaOpciones().add(respuesta);
 
-        respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
-        pregunta.getListaOpciones().add(respuesta);
-
-        respuesta = new Respuesta();
-        respuesta.setCuerpoRespuesta("");
-
+        respuesta= new Respuesta();
+        respuesta.setCuerpoRespuesta("False");
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
 
-         */
-///---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+///---------------------------------------------------------------------------------------------------------------------------------------------------------------
+//8
         pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("When was James Webb Telescope launched?");
         pregunta.setExplicacion("The James Webb Space Telescope was launched on 25 December 2021 on an Ariane 5 Rocket from French Guiana");
@@ -320,9 +285,7 @@ public class Juego implements Serializable {
         pregunta.getListaOpciones().add(respuesta);
         addConComprobacion(pregunta);
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-///---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+//9
         pregunta = new Pregunta();
         pregunta.setCuerpoPregunta("Which is one of the main objectives of the James Webb Telescope?");
         pregunta.setExplicacion("The James Webb Space Telescope has 4 main objectives: to study the formation and evolution of galaxies, to understand the formation of stars, to study the origins of life and to search for light from the first stars that formed in the universe after the Big Bang");
@@ -346,7 +309,7 @@ public class Juego implements Serializable {
         addConComprobacion(pregunta);
 
 ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+//10
         pregunta= new Pregunta();
         pregunta.setCuerpoPregunta("Does the James Webb Space Telescope measure visible and ultraviolet light?");
 
@@ -362,27 +325,95 @@ public class Juego implements Serializable {
         pregunta.setExplicacion("The James Webb Space Telescope observes in near-infrared light rather than visible or ultraviolet light in order to accomplish more effectively its objectives");
         addConComprobacion(pregunta);
 
+
         ///---------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //11
+        pregunta.setCuerpoPregunta("How much of the sky can Webb see");
+        pregunta.setExplicacion("Over the course of six months, as Webb orbits the Sun with Earth, it has the ability to observe almost any point in the sky. Webb’s field of regard is limited to a 50-degree swath of the celestial sphere: About 39% of the sky is potentially visible to Webb at any given time. Because Webb must face away from objects that are warm and close enough to interfere with its ability to observe faint infrared light, it cannot observe the Sun, Mercury, Venus, Earth, or the Moon.");
+        respuesta = new Respuesta();
+        respuesta.setCuerpoRespuesta("22%");
+        pregunta.getListaOpciones().add(respuesta);
 
-        /*
-        ¿Se pueden hacer preguntas que en vez de elegir entre opciones de texto se tenga que elegir entre imágenes? si se puede:
 
-        HAY QUE CAMBIAR ESTO Y SEGUIR LA ESTRUCTURA DEL RESTO
+        respuesta = new Respuesta();
+        respuesta.setCuerpoRespuesta("81%");
+        pregunta.getListaOpciones().add(respuesta);
 
-        pregunta.setCuerpoPregunta(Select the image which was captured by James Webb Space Telescope);
-        pregunta.getListaOpciones().add(RUTA A IMAGEN DEL WEBBS FIRST DEEP FIELD);
-        pregunta.getListaOpciones().add(RUTA A IMAGEN DEL HABBEL FIRST DEEP FIELD);
-        pregunta.setOpcionCorrecta(0);
-        pregunta.setExplicacion("That image corresponds to Webb's First Deep Field which was the first full false-color image from the James Webb Telescope and the highest-resolution infrared view of the universe to date. The other image corresponds to the same galaxy cluster being captured by the Hubbel Telescope in 2017");
-        preguntas.add(pregunta);
+        respuesta = new Respuesta();
+        respuesta.setCuerpoRespuesta("45%");
+        pregunta.getListaOpciones().add(respuesta);
 
-        pregunta.setCuerpoPregunta(Select the Neptune's image which was captured by James Webb Space Telescope);
-        pregunta.getListaOpciones().add(RUTA A IMAGEN DEL NEPTUNO HABBEL);
-        pregunta.getListaOpciones().add(RUTA A IMAGEN DEL NEPTUNO WEBB);
-        pregunta.setOpcionCorrecta(1);
-        pregunta.setExplicacion("That image is the clearest ever seen of Neptune with its rings, moons and space dust. The other image is the Hubbel view of the same planet, the difference between the two images is due to the different wavelengths of light used by the two telescopes.");
-        preguntas.add(pregunta);
-         */
+        respuesta = new Respuesta();
+        respuesta.setCuerpoRespuesta("39%");
+        pregunta.getListaOpciones().add(respuesta);
+        respuesta.setCorrecta();
+
+        addConComprobacion(pregunta);
+
+///---------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //12
+        pregunta.setCuerpoPregunta("The first operational image taken by the James Webb Space Telescope captured a tiny area from the Northern hemisphere");
+        respuesta= new Respuesta();
+        respuesta.setCuerpoRespuesta("True");
+        pregunta.getListaOpciones().add(respuesta);
+
+        respuesta= new Respuesta();
+        respuesta.setCuerpoRespuesta("False");
+        respuesta.setCorrecta();
+        pregunta.getListaOpciones().add(respuesta);
+
+        pregunta.setExplicacion("The first operational image taken by the James Webb Space Telescope captured a tiny area from the Southern hemisphere, centered on SMACS 0723, a galaxy cluster in the constellation of Volans. Thousands of galaxies are visible in the image, some as old as 13 billion years. The image is the highest-resolution image of the early universe ever taken. Published on the 11th of July 2022");
+        addConComprobacion(pregunta);
+///---------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //13
+        pregunta.setCuerpoPregunta("Which cameras are on the Webb Telescope");
+        pregunta.setExplicacion("Webb has four scientific instruments, the Near-Infrared Camera (NIRCam), the Near-Infrared Spectrograph (NIRSpec), the Near-Infrared Imager and Slitless Spectrograph (NIRISS), and the Mid-Infrared Instrument (MIRI).");
+        respuesta = new Respuesta();
+        respuesta.setCuerpoRespuesta("NIRCam, NIRSpec, NIRISS and MIRI");
+        respuesta.setCorrecta();
+        pregunta.getListaOpciones().add(respuesta);
+
+
+        respuesta = new Respuesta();
+        respuesta.setCuerpoRespuesta("CRIOCam, CRIOSpec, CRIOISS and CRIORI");
+        pregunta.getListaOpciones().add(respuesta);
+
+        respuesta = new Respuesta();
+        respuesta.setCuerpoRespuesta("NIRCam and NIRSpec");
+        pregunta.getListaOpciones().add(respuesta);
+
+        respuesta = new Respuesta();
+        respuesta.setCuerpoRespuesta("NIRCam, NIRSpec, CRIOISS and CRIORI");
+
+        pregunta.getListaOpciones().add(respuesta);
+        addConComprobacion(pregunta);
+///---------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //14
+        pregunta.setCuerpoPregunta("How is Webb powered");
+        pregunta.setExplicacion("The Webb telescope is powered by an on-board solar array. It also has a propulsion system to maintain the observatory’s orbit and attitude. The solar array provides 2,000 watts of electrical power for the life of the mission, and there is enough propellant onboard for at least 10 years of science operations.");
+        respuesta = new Respuesta();
+        respuesta.setCuerpoRespuesta("It is powered by the power of love");
+        pregunta.getListaOpciones().add(respuesta);
+
+
+        respuesta = new Respuesta();
+        respuesta.setCuerpoRespuesta("Is powered by an on-board solar array");
+        respuesta.setCorrecta();
+        pregunta.getListaOpciones().add(respuesta);
+
+        respuesta = new Respuesta();
+        respuesta.setCuerpoRespuesta("It doesn't need power");
+        pregunta.getListaOpciones().add(respuesta);
+
+        respuesta = new Respuesta();
+        respuesta.setCuerpoRespuesta("It's powered by the energy of one of Jupiter's moons");
+
+        pregunta.getListaOpciones().add(respuesta);
+        addConComprobacion(pregunta);
+///---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
     }

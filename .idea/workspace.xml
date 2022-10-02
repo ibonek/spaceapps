@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="inutil">
+    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="controlador">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juego.bin" beforeDir="false" afterPath="$PROJECT_DIR$/juego.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/vfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/vfController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/indice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/indice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/indice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/indice.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +47,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.spaceapps" />
@@ -367,14 +372,7 @@
       <option name="project" value="LOCAL" />
       <updated>1664668696427</updated>
     </task>
-    <task id="LOCAL-00039" summary="inutil">
-      <created>1664671522237</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1664671522237</updated>
-    </task>
-    <option name="localTasksCounter" value="40" />
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,6 +400,7 @@
     <MESSAGE value="Vacio" />
     <MESSAGE value="Hoja de estilos" />
     <MESSAGE value="Paso parámetros" />
+    <MESSAGE value="inutil" />
     <MESSAGE value="Puntos en todos los niveles" />
     <MESSAGE value="." />
     <MESSAGE value="lupita" />
@@ -410,7 +409,6 @@
     <MESSAGE value="niveles con pregunta" />
     <MESSAGE value="disable" />
     <MESSAGE value="controlador" />
-    <MESSAGE value="inutil" />
-    <option name="LAST_COMMIT_MESSAGE" value="inutil" />
+    <option name="LAST_COMMIT_MESSAGE" value="controlador" />
   </component>
 </project>
