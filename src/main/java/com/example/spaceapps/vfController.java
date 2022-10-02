@@ -20,7 +20,7 @@ import static javafx.scene.paint.Color.RED;
 public class vfController {
 
     @FXML
-    private Button bTryAgain;
+    private Button bTryAgain1;
 
     @FXML
     private HBox cabecera5;
@@ -104,8 +104,12 @@ public class vfController {
     void botonTryAgain(ActionEvent event) throws IOException {
         setearPreguntas(p);
         continuar.setDisable(true);
-        bTryAgain.setDisable(true);
-        bTryAgain.setVisible(false);
+        bTryAgain1.setDisable(true);
+        bTryAgain1.setVisible(false);
+        opcionV.setDisable(false);
+        opcionF.setDisable(false);
+        opcionF.setSelected(false);
+        opcionV.setSelected(false);
     }
 
     @FXML
@@ -117,11 +121,12 @@ public class vfController {
             continuar.setDisable(false);
             opciones.Guardar(opciones.juego);
             opciones.juego.setAciertos();
+
         } else {
             opciones.juego.setVidas(opciones.juego.getVidas());
             opciones.juego.restPuntos();
-            bTryAgain.setVisible(true);
-            bTryAgain.setDisable(false);
+            bTryAgain1.setVisible(true);
+            bTryAgain1.setDisable(false);
             if(vida3.isVisible()){
                 vida3.setVisible(false);
                 opciones.juego.setVidas(2);
