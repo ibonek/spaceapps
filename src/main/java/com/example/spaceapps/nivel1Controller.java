@@ -79,7 +79,19 @@ public class nivel1Controller {
 
     }
     @FXML
-    void botonExpLuna(ActionEvent event) {
+    void botonExpLuna(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setTexto(opciones.juego.getPreguntas().get(0).getExplicacion());
+        stage.setTitle("Expliación");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+
+
 
     }
     @FXML
