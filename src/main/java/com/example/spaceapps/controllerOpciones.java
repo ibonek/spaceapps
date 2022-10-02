@@ -19,10 +19,7 @@ import static javafx.scene.paint.Color.*;
 public class controllerOpciones {
     @FXML
     private Button bTryAgain;
-    @FXML
-    private Button bAyuda;
-    @FXML
-    private ImageView imagenAyuda;
+
     public String getPoints(){
         return puntos.getText();
     }
@@ -62,8 +59,7 @@ public class controllerOpciones {
     private Label puntos;
     @FXML
     private ImageView vida1;
-    @FXML
-    private Label ayudaTexto;
+
     @FXML
     private ImageView vida2;
 
@@ -91,11 +87,7 @@ public class controllerOpciones {
         stage1.close();
     }
 
-    @FXML
-    void botonAyuda(ActionEvent event) {
-    ayudaTexto.setText(opciones.juego.getPreguntas().get(p).getPista());
-    bAyuda.setVisible(true);
-    }
+
     @FXML
     void botonTryAgain(ActionEvent event) throws IOException {
        setearPreguntas(p);
@@ -181,8 +173,12 @@ public class controllerOpciones {
 
         if (respuestaSeleccionada == null) return ;
         if(!respuestaSeleccionada.isCorrecta()){
-            bAyuda.setDisable(false);
-            bAyuda.setVisible(true);
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Alert");
+            alert.setHeaderText("OH NO!");
+            alert.setContentText("Your answer is not correct, try again");
+            Optional<ButtonType> result = alert.showAndWait();
+
             opciones.juego.restPuntos();
             if(vida3.isVisible()){
                 vida3.setVisible(false);
@@ -197,11 +193,11 @@ public class controllerOpciones {
                 vida1.setVisible(false);
                 opciones.juego.setVidas(3);
                 opciones.juego.resetearPuntos();
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setTitle("Alert");
-                alert.setHeaderText("You have lost all your lives");
-                alert.setContentText("You must restart the level");
-                Optional<ButtonType> result = alert.showAndWait();
+                Alert alerte = new Alert(Alert.AlertType.INFORMATION);
+                alerte.setTitle("Alert");
+                alerte.setHeaderText("You have lost all your lives");
+                alerte.setContentText("You must restart the level");
+                Optional<ButtonType> resultad = alerte.showAndWait();
                 if (result.isPresent() && result.get() == ButtonType.OK){
                     Stage stage1 = (Stage) pregunta.getScene().getWindow();
                     stage1.close();
@@ -221,6 +217,11 @@ public class controllerOpciones {
          }
 
         if(respuestaSeleccionada.isCorrecta()){
+            Alert alerta = new Alert(Alert.AlertType.INFORMATION);
+            alerta.setTitle("Alert");
+            alerta.setHeaderText("CONGRATULATIONS");
+            alerta.setContentText("Your answer is correct");
+            Optional<ButtonType> result = alerta.showAndWait();
             opciones.juego.setPuntos();
             comprobar.setDisable(true);
             continuar.setDisable(false);
