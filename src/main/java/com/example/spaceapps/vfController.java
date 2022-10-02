@@ -113,6 +113,7 @@ public class vfController {
     void botonComprobar(ActionEvent event) throws IOException {
         if(r==1&&resp1 || r==2 && resp2){
             opciones.juego.getPuntos();
+            puntos.setText(opciones.juego.getPuntos());
             comprobar.setDisable(true);
             continuar.setDisable(false);
         } else {
@@ -127,7 +128,7 @@ public class vfController {
 
         opcionV.setDisable(true);
         opcionF.setDisable(true);
-
+        puntos.setText(opciones.juego.getPuntos());
     }
 
 
