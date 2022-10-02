@@ -118,13 +118,13 @@ public class nivel1Controller {
     }
     @FXML
     void bVenus(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("v-f.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        controllerOpciones controller = fxmlLoader.getController();
-        controller.setearPreguntas(0);
+        vfController controller = fxmlLoader.getController();
+        controller.setearPreguntas(1);
         controller.setOpciones(opciones);
-        controller.setearPuntos();
+        controller.setPuntos(opciones.juego.getPuntos());
         controller.setVidas(opciones.juego.getVidas());
         stage.setTitle("Pregunta 1");
         stage.setMaximized(false);

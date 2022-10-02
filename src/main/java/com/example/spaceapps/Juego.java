@@ -70,7 +70,7 @@ public class Juego implements Serializable {
         this.image = image;
     }
 
-    public Image imagenExpl(){
+    public Image imagenExpl() {
         return image;
     }
 

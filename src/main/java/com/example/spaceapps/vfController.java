@@ -111,15 +111,23 @@ public class vfController {
 
     @FXML
     void botonComprobar(ActionEvent event) throws IOException {
+        if(r==1&&resp1 || r==2 && resp2){
+            opciones.juego.getPuntos();
+            comprobar.setDisable(true);
+            continuar.setDisable(false);
+        } else {
 
+            opciones.juego.restPuntos();
+            bTryAgain.setVisible(true);
+            bTryAgain.setDisable(false);
+        }
         if (resp1) opcionV.setTextFill(DARKSEAGREEN);
         if (resp2) opcionF.setTextFill(DARKSEAGREEN);
         if(r==2 && resp1) {opcionF.setTextFill(RED);}
 
         opcionV.setDisable(true);
         opcionF.setDisable(true);
-        comprobar.setDisable(true);
-        comprobar.setDisable(false);
+
     }
 
 
