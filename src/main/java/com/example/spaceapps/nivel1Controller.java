@@ -158,10 +158,6 @@ public class nivel1Controller {
             vida3.setVisible(false);
         }
         puntos.setText(controller.getPoints());
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("explicacion.fxml"));
-        explicacionController controller1 = fxmlLoader1.getController();
-        Image image = new Image("NASA_logo.png");
-        controller1.setearImagenes(image);
     }
 
     @FXML
@@ -241,10 +237,6 @@ public class nivel1Controller {
             opciones.juego.setVidas(3);
             opciones.juego.resetearPuntos();
         }
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("explicacion.fxml"));
-        explicacionController controller1 = fxmlLoader1.getController();
-        Image image = new Image("webb_dimensions.jpg");
-        controller1.setearImagenes(image);
     }
     public void ponerNombre(String n){
         eNombre.setText(n);
