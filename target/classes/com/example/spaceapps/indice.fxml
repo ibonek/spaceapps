@@ -19,7 +19,7 @@
             <Insets top="40.0" />
          </VBox.margin>
       </Button>
-      <Button fx:id="bContinue" mnemonicParsing="false" onAction="#pressContinue" prefHeight="67.0" prefWidth="336.0" stylesheets="@../../../css/indice.css" text="CONTINUAR">
+      <Button fx:id="bContinue" mnemonicParsing="false" onAction="#pressContinue" prefHeight="67.0" prefWidth="336.0" stylesheets="@../../../css/indice.css" text="CONTINUE">
          <VBox.margin>
             <Insets top="30.0" />
          </VBox.margin>

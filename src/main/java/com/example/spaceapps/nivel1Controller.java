@@ -75,16 +75,46 @@ public class nivel1Controller {
 
     public boolean correcto;
     @FXML
-    void botonExpVenus(ActionEvent event) {
+    void botonExpVenus(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setTexto(opciones.juego.getPreguntas().get(1).getExplicacion());
+        stage.setTitle("Explicación");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    void botonExpLuna(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setTexto(opciones.juego.getPreguntas().get(0).getExplicacion());
+        stage.setTitle("Explicación");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+
+
 
     }
     @FXML
-    void botonExpLuna(ActionEvent event) {
-
-    }
-    @FXML
-    void botonExpMercurio(ActionEvent event) {
-
+    void botonExpMercurio(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        explicacionController controller = fxmlLoader.getController();
+        controller.setTexto(opciones.juego.getPreguntas().get(2).getExplicacion());
+        stage.setTitle("Explicación");
+        stage.setMaximized(false);
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
     @FXML
     void bVenus(ActionEvent event) throws IOException {
@@ -102,6 +132,10 @@ public class nivel1Controller {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
         stage.showAndWait();
+        correcto = controller.getBoolean();
+        if(correcto){
+            desbloquear();
+        }
         if(opciones.juego.getVidas() == 3){
             vida1.setVisible(true);
             vida2.setVisible(true);
@@ -170,6 +204,10 @@ public class nivel1Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
+        correcto = controller.getBoolean();
+        if(correcto){
+            desbloquear();
+        }
         if(opciones.juego.getVidas() == 3){
             vida1.setVisible(true);
             vida2.setVisible(true);
@@ -235,11 +273,40 @@ public class nivel1Controller {
         }
     }
     public void desbloquear(){
-        bVenus.setDisable(false);
-        e2.setTextFill(WHITE);
-        bLuna.setDisable(true);
-        e1.setTextFill(YELLOW);
-        expLuna.setVisible(true);
-        expLuna.setDisable(false);
+        if(opciones.juego.getAciertos() > 3){
+            e1.setTextFill(YELLOW);
+            e2.setTextFill(YELLOW);
+            e3.setTextFill(YELLOW);
+            expLuna.setVisible(true);
+            expLuna.setDisable(false);
+            expVenus.setVisible(true);
+            expVenus.setDisable(false);
+            expMercurio.setVisible(true);
+            expMercurio.setDisable(false);
+            bLuna.setDisable(true);
+            bVenus.setDisable(true);
+            bMercurio.setDisable(true);
+        }
+        if(opciones.juego.getAciertos() == 3){
+            e1.setTextFill(YELLOW);
+            e2.setTextFill(YELLOW);
+            e3.setTextFill(WHITE);
+            expLuna.setVisible(true);
+            expLuna.setDisable(false);
+            expVenus.setVisible(true);
+            expVenus.setDisable(false);
+            bLuna.setDisable(true);
+            bVenus.setDisable(true);
+            bMercurio.setDisable(false);
+        }
+        if(opciones.juego.getAciertos() == 2){
+            bVenus.setDisable(false);
+            e2.setTextFill(WHITE);
+            bLuna.setDisable(true);
+            e1.setTextFill(YELLOW);
+            expLuna.setVisible(true);
+            expLuna.setDisable(false);
+            bMercurio.setDisable(true);
+        }
     }
 }
