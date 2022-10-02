@@ -184,6 +184,5 @@ public class SelectorController {
         if(opciones.juego.getAciertos() > 3){
             bLevel2.setDisable(false);
         }
-
     }
 }
