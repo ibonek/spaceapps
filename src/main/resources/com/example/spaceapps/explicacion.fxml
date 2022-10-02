@@ -22,7 +22,7 @@
       </HBox>
       <HBox layoutX="12.0" layoutY="9.0" prefHeight="318.0" prefWidth="456.0">
          <children>
-            <ImageView fx:id="imagen" fitHeight="256.0" fitWidth="341.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imagen" fitHeight="256.0" fitWidth="341.0" preserveRatio="true" HBox.hgrow="ALWAYS" />
          </children>
       </HBox>
    </children>

@@ -1,17 +1,22 @@
 package com.example.spaceapps;
 
+import javafx.css.converter.URLConverter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import static javafx.scene.paint.Color.WHITE;
 
@@ -93,6 +98,9 @@ public class nivel1Controller {
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         explicacionController controller = fxmlLoader.getController();
+        Image image = new Image(".jpg");
+        controller.setOpciones(opciones);
+        controller.setearImagenes(image);
         controller.setTexto(opciones.juego.getPreguntas().get(0).getExplicacion());
         stage.setTitle("Explicación");
         stage.setMaximized(false);
@@ -150,6 +158,10 @@ public class nivel1Controller {
             vida3.setVisible(false);
         }
         puntos.setText(controller.getPoints());
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        explicacionController controller1 = fxmlLoader1.getController();
+        Image image = new Image("NASA_logo.png");
+        controller1.setearImagenes(image);
     }
 
     @FXML
@@ -186,6 +198,7 @@ public class nivel1Controller {
             vida2.setVisible(false);
             vida3.setVisible(false);
         }
+
     }
 
     @FXML
@@ -228,6 +241,10 @@ public class nivel1Controller {
             opciones.juego.setVidas(3);
             opciones.juego.resetearPuntos();
         }
+        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("explicacion.fxml"));
+        explicacionController controller1 = fxmlLoader1.getController();
+        Image image = new Image("webb_dimensions.jpg");
+        controller1.setearImagenes(image);
     }
     public void ponerNombre(String n){
         eNombre.setText(n);
@@ -273,7 +290,7 @@ public class nivel1Controller {
             opciones.juego.resetearPuntos();
         }
     }
-    public void desbloquear(){
+    public void desbloquear() throws IOException  {
         if(opciones.juego.getAciertos() > 3){
             e1.setTextFill(YELLOW);
             e2.setTextFill(YELLOW);
@@ -308,6 +325,8 @@ public class nivel1Controller {
             expLuna.setVisible(true);
             expLuna.setDisable(false);
             bMercurio.setDisable(true);
+
         }
     }
 }
+
