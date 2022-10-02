@@ -196,6 +196,7 @@ public class nivel1Controller {
         vfController controller = fxmlLoader.getController();
         controller.setearPreguntas(2);
         controller.setOpciones(opciones);
+        controller.setPuntos(opciones.juego.getPuntos());
         controller.setVidas(opciones.juego.getVidas());
         stage.setTitle("Pregunta 3");
         stage.setMaximized(false);

@@ -100,7 +100,7 @@ public class Juego implements Serializable {
         pregunta.setCuerpoPregunta("What is the James Webb?");
         pregunta.setPista("It is an object related to space");
         pregunta.setExplicacion("James Webb is a NASA space telescope that was launched on December 25, 2021. And it is scanning a large part of the sky.");
-        //image = new Image();
+        image = new Image("../../imagenes/webb_telescope.jpg");
         Respuesta respuesta = new Respuesta();
 
         respuesta.setCuerpoRespuesta("A mobile phone");

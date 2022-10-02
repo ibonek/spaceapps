@@ -13,6 +13,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static javafx.scene.paint.Color.WHITE;
+import static javafx.scene.paint.Color.YELLOW;
+
 
 public class nivel2Controller {
 
@@ -38,11 +41,28 @@ public class nivel2Controller {
     private Label eNombre;
 
     @FXML
+    private Button expJupiter;
+
+    @FXML
+    private Button expMarte;
+
+    @FXML
+    private Button expSaturno;
+
+    @FXML
     private HBox fondo2;
 
     @FXML
     private Label puntos;
 
+    @FXML
+    private Label e4;
+
+    @FXML
+    private Label e5;
+
+    @FXML
+    private Label e6;
     @FXML
     private ImageView vida1;
 
@@ -52,6 +72,20 @@ public class nivel2Controller {
     @FXML
     private ImageView vida3;
 
+    @FXML
+    void botonExpJupiter(ActionEvent event) {
+
+    }
+
+    @FXML
+    void botonExpMarte(ActionEvent event) {
+
+    }
+
+    @FXML
+    void botonExpSaturno(ActionEvent event) {
+
+    }
     private OpcionesJuego opciones;
 
     public OpcionesJuego getOpciones() {
@@ -149,6 +183,43 @@ public class nivel2Controller {
     }
     public void ponerNombre(String n){
         eNombre.setText(n);
+    }
+    public void desbloquear(){
+        if(opciones.juego.getAciertos() > 6){
+            e4.setTextFill(YELLOW);
+            e5.setTextFill(YELLOW);
+            e6.setTextFill(YELLOW);
+            expMarte.setVisible(true);
+            expMarte.setDisable(false);
+            expSaturno.setVisible(true);
+            expSaturno.setDisable(false);
+            expJupiter.setVisible(true);
+            expJupiter.setDisable(false);
+            bJupiter.setDisable(true);
+            bMarte.setDisable(true);
+            bSaturno.setDisable(true);
+        }
+        if(opciones.juego.getAciertos() == 6){
+            e4.setTextFill(YELLOW);
+            e5.setTextFill(YELLOW);
+            e6.setTextFill(WHITE);
+            expMarte.setVisible(true);
+            expMarte.setDisable(false);
+            expJupiter.setVisible(true);
+            expJupiter.setDisable(false);
+            bMarte.setDisable(true);
+            bJupiter.setDisable(true);
+            bSaturno.setDisable(false);
+        }
+        if(opciones.juego.getAciertos() == 5){
+            bJupiter.setDisable(false);
+            e5.setTextFill(WHITE);
+            bMarte.setDisable(true);
+            e4.setTextFill(YELLOW);
+            expMarte.setVisible(true);
+            expMarte.setDisable(false);
+            bSaturno.setDisable(true);
+        }
     }
 }
 

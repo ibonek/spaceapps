@@ -67,7 +67,10 @@ public class SelectorController {
             vida3.setVisible(false);
         }
     }
-
+    public void setOpciones(OpcionesJuego opciones, String n) {
+        this.opciones = opciones;
+        eNombre.setText(n);
+    }
     @FXML
     void botonLevel1(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("nivel1.fxml"));
@@ -164,10 +167,5 @@ public class SelectorController {
     }
     public OpcionesJuego getOpciones() {
         return opciones;
-    }
-
-    public void setOpciones(OpcionesJuego opciones, String n) {
-        this.opciones = opciones;
-        eNombre.setText(n);
     }
 }
