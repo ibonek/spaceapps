@@ -102,6 +102,10 @@ public class nivel1Controller {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
         stage.showAndWait();
+        correcto = controller.getBoolean();
+        if(correcto){
+            desbloquear();
+        }
         if(opciones.juego.getVidas() == 3){
             vida1.setVisible(true);
             vida2.setVisible(true);
@@ -170,6 +174,10 @@ public class nivel1Controller {
         stage.setScene(scene);
         stage.showAndWait();
         puntos.setText(controller.getPoints());
+        correcto = controller.getBoolean();
+        if(correcto){
+            desbloquear();
+        }
         if(opciones.juego.getVidas() == 3){
             vida1.setVisible(true);
             vida2.setVisible(true);
@@ -245,23 +253,30 @@ public class nivel1Controller {
             expVenus.setDisable(false);
             expMercurio.setVisible(true);
             expMercurio.setDisable(false);
+            bLuna.setDisable(true);
+            bVenus.setDisable(true);
+            bMercurio.setDisable(true);
         }
-        if(opciones.juego.getAciertos() > 2){
+        if(opciones.juego.getAciertos() == 3){
             e1.setTextFill(YELLOW);
             e2.setTextFill(YELLOW);
+            e3.setTextFill(WHITE);
             expLuna.setVisible(true);
             expLuna.setDisable(false);
             expVenus.setVisible(true);
             expVenus.setDisable(false);
+            bLuna.setDisable(true);
+            bVenus.setDisable(true);
             bMercurio.setDisable(false);
         }
-        if(opciones.juego.getAciertos() > 1){
+        if(opciones.juego.getAciertos() == 2){
             bVenus.setDisable(false);
             e2.setTextFill(WHITE);
             bLuna.setDisable(true);
             e1.setTextFill(YELLOW);
             expLuna.setVisible(true);
             expLuna.setDisable(false);
+            bMercurio.setDisable(true);
         }
     }
 }
