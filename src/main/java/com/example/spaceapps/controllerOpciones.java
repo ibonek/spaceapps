@@ -65,7 +65,12 @@ public class controllerOpciones {
 
     @FXML
     private ImageView vida3;
-
+    @FXML
+    private Button bAyuda;
+    @FXML
+    private Label ayudaTexto;
+    @FXML
+    private ImageView imagenAyuda;
     int p;
     int r;
     Juego juego = new Juego();
@@ -87,7 +92,11 @@ public class controllerOpciones {
         stage1.close();
     }
 
-
+    @FXML
+    void botonAyuda(ActionEvent event) {
+        this.ayudaTexto.setText(((Pregunta)this.opciones.juego.getPreguntas().get(this.p)).getPista());
+        this.bAyuda.setVisible(true);
+    }
     @FXML
     void botonTryAgain(ActionEvent event) throws IOException {
        setearPreguntas(p);
@@ -173,6 +182,8 @@ public class controllerOpciones {
 
         if (respuestaSeleccionada == null) return ;
         if(!respuestaSeleccionada.isCorrecta()){
+            bAyuda.setVisible(true);
+            bAyuda.setDisable(false);
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Alert");
             alert.setHeaderText("OH NO!");
