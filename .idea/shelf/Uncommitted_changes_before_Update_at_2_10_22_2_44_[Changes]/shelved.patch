@@ -1,0 +1,333 @@
+Index: src/main/java/com/example/spaceapps/vfController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.spaceapps;\n\nimport javafx.event.ActionEvent;\nimport javafx.fxml.FXML;\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Button;\nimport javafx.scene.control.Label;\nimport javafx.scene.control.RadioButton;\nimport javafx.scene.image.ImageView;\nimport javafx.scene.layout.HBox;\nimport javafx.stage.Stage;\n\nimport java.io.IOException;\nimport java.net.URL;\nimport java.util.ResourceBundle;\n\nimport static javafx.scene.paint.Color.DARKSEAGREEN;\nimport static javafx.scene.paint.Color.RED;\n\npublic class vfController {\n\n    @FXML\n    private Button bTryAgain;\n\n    @FXML\n    private HBox cabecera5;\n\n    @FXML\n    private Button comprobar;\n\n    @FXML\n    private Button continuar;\n\n    @FXML\n    private RadioButton opcionF;\n\n    @FXML\n    private RadioButton opcionV;\n\n    @FXML\n    private Label pregunta;\n\n    @FXML\n    private Label puntos;\n\n    @FXML\n    private ImageView vida1;\n\n    @FXML\n    private ImageView vida2;\n\n    @FXML\n    private ImageView vida3;\n    OpcionesJuego opciones;\n    Respuesta respuestaSeleccionada;\n    Respuesta respuestaCorrecta;\n    boolean resp1;\n    boolean resp2;\n    int p;\n    int r;\n    Juego juego = new Juego();\n\n    public boolean bien;\n    public boolean getBoolean(){\n        return bien;\n    }\n    public String getPoints(){\n        return puntos.getText();\n    }\n    public OpcionesJuego getOpciones() {\n        return opciones;\n    }\n\n    public void setOpciones(OpcionesJuego opciones) {\n        this.opciones = opciones;\n    }\n    public void setVidas(int v){\n        if(v == 3){\n            vida1.setVisible(true);\n            vida2.setVisible(true);\n            vida3.setVisible(true);\n        } else if(v == 2){\n            vida1.setVisible(true);\n            vida2.setVisible(true);\n            vida3.setVisible(false);\n        } else {\n            vida1.setVisible(true);\n            vida2.setVisible(false);\n            vida3.setVisible(false);\n        }\n    }\n\n    @FXML\n    void botonContinuar(ActionEvent event) throws IOException {\n        bien = true;\n        Stage stage1 = (Stage) comprobar.getScene().getWindow();\n        stage1.close();\n    }\n\n    @FXML\n    void botonTryAgain(ActionEvent event) throws IOException {\n        setearPreguntas(p);\n        continuar.setDisable(true);\n        bTryAgain.setDisable(true);\n        bTryAgain.setVisible(false);\n    }\n\n    @FXML\n    void botonComprobar(ActionEvent event) throws IOException {\n\n        if (resp1) opcionV.setTextFill(DARKSEAGREEN);\n        if (resp2) opcionF.setTextFill(DARKSEAGREEN);\n        if(r==2 && resp1) {opcionF.setTextFill(RED);}\n\n        opcionV.setDisable(true);\n        opcionF.setDisable(true);\n\n        comprobar.setDisable(true);\n        comprobar.setDisable(false);\n    }\n\n\n\n    @FXML\n    void botonRespV(ActionEvent event) {\n        opcionV.setSelected(true);\n        opcionF.setSelected(false);\n        r=1;\n\n    }\n    @FXML\n    void botonRespF(ActionEvent event) {\n        opcionV.setSelected(false);\n        opcionF.setSelected(true);\n        r=2;\n\n    }\n    public void setearPreguntas(int n){\n        p = n;\n        pregunta.setText(juego.getPreguntas().get(p).getCuerpoPregunta().toString() );\n\n        opcionV.setText(\"True\");\n        resp1= juego.getPreguntas().get(p).getListaOpciones().get(0).isCorrecta();\n        opcionF.setText(\"False\");\n        resp2= juego.getPreguntas().get(p).getListaOpciones().get(1).isCorrecta();\n\n\n\n    }\n\n}\n\n\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/vfController.java b/src/main/java/com/example/spaceapps/vfController.java
+--- a/src/main/java/com/example/spaceapps/vfController.java	(revision 463628ded77113d55122bd96351738d3158b5045)
++++ b/src/main/java/com/example/spaceapps/vfController.java	(date 1664670952048)
+@@ -127,26 +127,20 @@
+         opcionV.setSelected(true);
+         opcionF.setSelected(false);
+         r=1;
+-
+     }
+     @FXML
+     void botonRespF(ActionEvent event) {
+         opcionV.setSelected(false);
+         opcionF.setSelected(true);
+         r=2;
+-
+     }
+     public void setearPreguntas(int n){
+         p = n;
+         pregunta.setText(juego.getPreguntas().get(p).getCuerpoPregunta().toString() );
+-
+         opcionV.setText("True");
+         resp1= juego.getPreguntas().get(p).getListaOpciones().get(0).isCorrecta();
+         opcionF.setText("False");
+         resp2= juego.getPreguntas().get(p).getListaOpciones().get(1).isCorrecta();
+-
+-
+-
+     }
+ 
+ }
+Index: src/main/java/com/example/spaceapps/HelloController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.spaceapps;\n\nimport javafx.event.ActionEvent;\nimport javafx.fxml.FXML;\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Button;\nimport javafx.scene.control.Label;\nimport javafx.scene.control.TextField;\nimport javafx.scene.layout.HBox;\nimport javafx.scene.layout.VBox;\nimport javafx.stage.Modality;\nimport javafx.stage.Stage;\n\nimport java.io.IOException;\n\npublic class HelloController {\n\n    @FXML\n    private Button bBegin;\n    @FXML\n    private Label errornombre;\n\n    @FXML\n    private TextField nombre;\n    @FXML\n    private VBox fondo;\n    @FXML\n    private Button bContinue;\n\n\n\n    @FXML\n    private Label lLoad;\n\n    @FXML\n    private Label lNew;\n\n    @FXML\n    private VBox marcoNombre;\n\n    @FXML\n    void pressBegin(ActionEvent event) throws IOException {\n\n            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"new_preuba.fxml\"));\n            Scene scene = new Scene(fxmlLoader.load());\n            OpcionesJuego opciones = new OpcionesJuego();\n            Stage stage = new Stage();\n            Stage stage1 = (Stage) bBegin.getScene().getWindow();\n            nombreController controlador = fxmlLoader.getController();\n            opciones.crearJuego();\n            controlador.setOpciones(opciones);\n            //stage1.close();\n            stage.setTitle(\"Login\");\n            stage.setMaximized(false);\n            stage.initModality(Modality.APPLICATION_MODAL);\n            stage.setResizable(false);\n            stage.setScene(scene);\n            stage.showAndWait();\n\n    }\n\n    @FXML\n    void pressContinue(ActionEvent event) throws IOException, ClassNotFoundException {\n\n        OpcionesJuego opciones = new OpcionesJuego();\n        try {\n            opciones.juego = opciones.Cargar(\"juego.bin\");\n            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"selectorNiveles.fxml\"));\n            Scene scene = new Scene(fxmlLoader.load());\n            Stage stage = new Stage();\n            Stage stage1 = (Stage) bBegin.getScene().getWindow();\n            SelectorController controlador = fxmlLoader.getController();\n            controlador.setPuntos(opciones.juego.getPuntos());\n            controlador.setOpciones(opciones, opciones.juego.getNombre());\n            controlador.setVidas(opciones.juego.getVidas());\n            stage1.close();\n            stage.setTitle(\"Browse the Webb\");\n            stage.setMaximized(false);\n            stage.setResizable(false);\n            stage.setScene(scene);\n            stage.show();\n        } catch (IOException ex){\n            ///Aqui va el codigo para que informe  que no puedes hacer eso\n            System.out.println(\"No puedes cargar payaso\");\n        }\n\n\n    }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/HelloController.java b/src/main/java/com/example/spaceapps/HelloController.java
+--- a/src/main/java/com/example/spaceapps/HelloController.java	(revision 463628ded77113d55122bd96351738d3158b5045)
++++ b/src/main/java/com/example/spaceapps/HelloController.java	(date 1664671321922)
+@@ -50,13 +50,12 @@
+             nombreController controlador = fxmlLoader.getController();
+             opciones.crearJuego();
+             controlador.setOpciones(opciones);
+-            //stage1.close();
++            stage1.close();
+             stage.setTitle("Login");
+             stage.setMaximized(false);
+-            stage.initModality(Modality.APPLICATION_MODAL);
+             stage.setResizable(false);
+             stage.setScene(scene);
+-            stage.showAndWait();
++            stage.show();
+ 
+     }
+ 
+@@ -74,6 +73,7 @@
+             controlador.setPuntos(opciones.juego.getPuntos());
+             controlador.setOpciones(opciones, opciones.juego.getNombre());
+             controlador.setVidas(opciones.juego.getVidas());
++            controlador.desbloquear();
+             stage1.close();
+             stage.setTitle("Browse the Webb");
+             stage.setMaximized(false);
+Index: src/main/java/com/example/spaceapps/SelectorController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.spaceapps;\nimport javafx.event.ActionEvent;\nimport javafx.fxml.FXML;\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Button;\nimport javafx.scene.control.Label;\nimport javafx.scene.image.ImageView;\nimport javafx.scene.layout.HBox;\nimport javafx.stage.Modality;\nimport javafx.stage.Stage;\n\nimport java.io.IOException;\n\npublic class SelectorController {\n\n    OpcionesJuego opciones;\n    @FXML\n    private Button bLevel1;\n\n    @FXML\n    private Button bLevel2;\n\n    @FXML\n    private Button bLevel3;\n\n    @FXML\n    private Button bLevel4;\n\n    @FXML\n    private Button bLevel5;\n\n    @FXML\n    private Label eNombre;\n\n    @FXML\n    private HBox fondoSelect;\n\n    @FXML\n    private Label puntos;\n\n    @FXML\n    private ImageView vida1;\n\n    @FXML\n    private ImageView vida2;\n\n    @FXML\n    private ImageView vida3;\n\n\n    public void setPuntos(int n){\n        puntos.setText(n + \"\");\n    }\n    public void setVidas(int v){\n        if(v == 3){\n            vida1.setVisible(true);\n            vida2.setVisible(true);\n            vida3.setVisible(true);\n        } else if(v == 2){\n            vida1.setVisible(true);\n            vida2.setVisible(true);\n            vida3.setVisible(false);\n        } else {\n            vida1.setVisible(true);\n            vida2.setVisible(false);\n            vida3.setVisible(false);\n        }\n    }\n\n    @FXML\n    void botonLevel1(ActionEvent event) throws IOException {\n        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"nivel1.fxml\"));\n        Scene scene = new Scene(fxmlLoader.load());\n        Stage stage = new Stage();\n        nivel1Controller controlador = fxmlLoader.getController();\n        controlador.setOpciones(opciones);\n        controlador.ponerNombre(opciones.juego.getNombre());\n        controlador.setVidas(opciones.juego.getVidas());\n        controlador.setPuntos(Integer.parseInt(puntos.getText()));\n        controlador.desbloquear();\n        stage.setMaximized(false);\n        stage.setResizable(false);\n        stage.initModality(Modality.APPLICATION_MODAL);\n        stage.setScene(scene);\n        stage.showAndWait();\n        puntos.setText(controlador.getPuntos());\n        setVidas(opciones.juego.getVidas());\n    }\n\n    @FXML\n    void botonLevel2(ActionEvent event) throws IOException {\n        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"nivel2.fxml\"));\n        Scene scene = new Scene(fxmlLoader.load());\n        Stage stage = new Stage();\n        nivel2Controller controlador = fxmlLoader.getController();\n        controlador.ponerNombre(opciones.juego.getNombre());\n        controlador.setPuntos(Integer.parseInt(puntos.getText()));\n        controlador.setOpciones(opciones);\n        controlador.setVidas(opciones.juego.getVidas());\n        stage.setMaximized(false);\n        stage.setResizable(false);\n        stage.initModality(Modality.APPLICATION_MODAL);\n        stage.setScene(scene);\n        stage.showAndWait();\n        puntos.setText(controlador.getPuntos());\n        setVidas(opciones.juego.getVidas());\n    }\n\n    @FXML\n    void botonLevel3(ActionEvent event) throws IOException {\n        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"nivel3.fxml\"));\n        Scene scene = new Scene(fxmlLoader.load());\n        Stage stage = new Stage();\n        nivel3Controller controlador = fxmlLoader.getController();\n        controlador.ponerNombre(opciones.juego.getNombre());\n        controlador.setPuntos(Integer.parseInt(puntos.getText()));\n        controlador.setOpciones(opciones);\n        controlador.setVidas(opciones.juego.getVidas());\n        stage.setMaximized(false);\n        stage.setResizable(false);\n        stage.initModality(Modality.APPLICATION_MODAL);\n        stage.setScene(scene);\n        stage.showAndWait();\n        puntos.setText(controlador.getPuntos());\n        setVidas(opciones.juego.getVidas());\n    }\n\n    @FXML\n    void botonLevvel4(ActionEvent event) throws IOException {\n        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"nivel4.fxml\"));\n        Scene scene = new Scene(fxmlLoader.load());\n        Stage stage = new Stage();\n        nivel4Controller controlador = fxmlLoader.getController();\n        controlador.ponerNombre(opciones.juego.getNombre());\n        controlador.setPuntos(Integer.parseInt(puntos.getText()));\n        controlador.setOpciones(opciones);\n        stage.setMaximized(false);\n        controlador.setVidas(opciones.juego.getVidas());\n        stage.setResizable(false);\n        stage.initModality(Modality.APPLICATION_MODAL);\n        stage.setScene(scene);\n        stage.showAndWait();\n        puntos.setText(controlador.getPuntos());\n        setVidas(opciones.juego.getVidas());\n    }\n    @FXML\n    void BotonLevel5(ActionEvent event) throws IOException {\n        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"nivel5.fxml\"));\n        Scene scene = new Scene(fxmlLoader.load());\n        Stage stage = new Stage();\n        nivel5Controller controlador = fxmlLoader.getController();\n        controlador.ponerNombre(opciones.juego.getNombre());\n        controlador.setPuntos(Integer.parseInt(puntos.getText()));\n        controlador.setOpciones(opciones);\n        controlador.setVidas(opciones.juego.getVidas());\n        stage.setMaximized(false);\n        stage.setResizable(false);\n        stage.initModality(Modality.APPLICATION_MODAL);\n        stage.setScene(scene);\n        stage.showAndWait();\n        puntos.setText(controlador.getPuntos());\n        setVidas(opciones.juego.getVidas());\n    }\n    public OpcionesJuego getOpciones() {\n        return opciones;\n    }\n\n    public void setOpciones(OpcionesJuego opciones, String n) {\n        this.opciones = opciones;\n        eNombre.setText(n);\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/SelectorController.java b/src/main/java/com/example/spaceapps/SelectorController.java
+--- a/src/main/java/com/example/spaceapps/SelectorController.java	(revision 463628ded77113d55122bd96351738d3158b5045)
++++ b/src/main/java/com/example/spaceapps/SelectorController.java	(date 1664671321914)
+@@ -86,6 +86,7 @@
+         stage.showAndWait();
+         puntos.setText(controlador.getPuntos());
+         setVidas(opciones.juego.getVidas());
++        desbloquear();
+     }
+ 
+     @FXML
+@@ -105,6 +106,7 @@
+         stage.showAndWait();
+         puntos.setText(controlador.getPuntos());
+         setVidas(opciones.juego.getVidas());
++        desbloquear();
+     }
+ 
+     @FXML
+@@ -124,6 +126,7 @@
+         stage.showAndWait();
+         puntos.setText(controlador.getPuntos());
+         setVidas(opciones.juego.getVidas());
++        desbloquear();
+     }
+ 
+     @FXML
+@@ -143,6 +146,7 @@
+         stage.showAndWait();
+         puntos.setText(controlador.getPuntos());
+         setVidas(opciones.juego.getVidas());
++        desbloquear();
+     }
+     @FXML
+     void BotonLevel5(ActionEvent event) throws IOException {
+@@ -161,6 +165,7 @@
+         stage.showAndWait();
+         puntos.setText(controlador.getPuntos());
+         setVidas(opciones.juego.getVidas());
++        desbloquear();
+     }
+     public OpcionesJuego getOpciones() {
+         return opciones;
+@@ -170,4 +175,27 @@
+         this.opciones = opciones;
+         eNombre.setText(n);
+     }
++    public void desbloquear(){
++        if(opciones.juego.getAciertos() > 12){
++            bLevel5.setDisable(false);
++            bLevel4.setDisable(false);
++            bLevel3.setDisable(false);
++            bLevel2.setDisable(false);
++
++        }
++        if(opciones.juego.getAciertos() > 9){
++            bLevel4.setDisable(false);
++            bLevel3.setDisable(false);
++            bLevel2.setDisable(false);
++
++        }
++        if(opciones.juego.getAciertos() > 6){
++            bLevel3.setDisable(false);
++            bLevel2.setDisable(false);
++
++        }
++        if(opciones.juego.getAciertos() > 3){
++            bLevel2.setDisable(false);
++        }
++    }
+ }
+Index: target/classes/com/example/spaceapps/ventanaOpcMult.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.Button?>\n<?import javafx.scene.control.Label?>\n<?import javafx.scene.control.RadioButton?>\n<?import javafx.scene.image.Image?>\n<?import javafx.scene.image.ImageView?>\n<?import javafx.scene.layout.HBox?>\n<?import javafx.scene.layout.VBox?>\n<?import javafx.scene.text.Font?>\n\n<VBox fx:id=\"fondo\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"600.0\" prefWidth=\"899.0\" stylesheets=\"@../../../css/hojaniveles.css\" xmlns=\"http://javafx.com/javafx/18\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.spaceapps.controllerOpciones\">\n   <children>\n      <HBox maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"100.0\" prefWidth=\"333.0\" spacing=\"365.0\" stylesheets=\"@../../../css/fuente.css\">\n         <children>\n            <HBox fx:id=\"cabecera5\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"121.0\" prefWidth=\"851.0\">\n               <children>\n                  <VBox maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"97.0\" prefWidth=\"130.0\">\n                     <children>\n                        <ImageView fitHeight=\"111.0\" fitWidth=\"325.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n                           <image>\n                              <Image url=\"@../../../imagenes/barra%20exp%20y%20vida.png\" />\n                           </image>\n                        </ImageView>\n                     </children>\n                  </VBox>\n                  <VBox alignment=\"CENTER_LEFT\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"121.0\" prefWidth=\"239.0\" HBox.hgrow=\"ALWAYS\">\n                     <children>\n                        <HBox alignment=\"BOTTOM_LEFT\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"57.0\" prefWidth=\"151.0\" spacing=\"10.0\">\n                           <children>\n                              <ImageView fx:id=\"vida1\" fitHeight=\"50.0\" fitWidth=\"40.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n                                 <image>\n                                    <Image url=\"@../../../imagenes/corazon.png\" />\n                                 </image>\n                              </ImageView>\n                              <ImageView fx:id=\"vida2\" fitHeight=\"50.0\" fitWidth=\"40.0\" layoutX=\"10.0\" layoutY=\"36.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n                                 <image>\n                                    <Image url=\"@../../../imagenes/corazon.png\" />\n                                 </image>\n                              </ImageView>\n                              <ImageView fx:id=\"vida3\" fitHeight=\"50.0\" fitWidth=\"40.0\" layoutX=\"10.0\" layoutY=\"36.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n                                 <image>\n                                    <Image url=\"@../../../imagenes/corazon.png\" />\n                                 </image>\n                              </ImageView>\n                           </children>\n                        </HBox>\n                        <Label fx:id=\"puntos\" text=\"0\">\n                           <VBox.margin>\n                              <Insets left=\"20.0\" />\n                           </VBox.margin>\n                        </Label>\n                     </children>\n                  </VBox>\n                  <HBox alignment=\"TOP_RIGHT\" prefHeight=\"121.0\" prefWidth=\"466.0\" HBox.hgrow=\"ALWAYS\">\n                     <children>\n                        <Button fx:id=\"bTryAgain\" disable=\"true\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" mnemonicParsing=\"false\" onAction=\"#botonTryAgain\" prefHeight=\"45.0\" prefWidth=\"45.0\" visible=\"false\">\n                           <HBox.margin>\n                              <Insets right=\"20.0\" top=\"20.0\" />\n                           </HBox.margin>\n                           <graphic>\n                              <ImageView fitHeight=\"45.0\" fitWidth=\"45.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n                                 <image>\n                                    <Image url=\"@../../../imagenes/repetir.png\" />\n                                 </image></ImageView>\n                           </graphic>\n                        </Button>\n                     </children>\n                  </HBox>\n               </children>\n            </HBox>\n            <HBox maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"100.0\" prefWidth=\"223.0\" spacing=\"40.0\" />\n         </children>\n      </HBox>\n      <Label fx:id=\"pregunta\" alignment=\"CENTER\" prefHeight=\"95.0\" prefWidth=\"859.0\" textFill=\"WHITE\" wrapText=\"true\">\n         <VBox.margin>\n            <Insets top=\"100.0\" />\n         </VBox.margin>\n         <font>\n            <Font size=\"17.0\" />\n         </font></Label>\n      <HBox prefHeight=\"250.0\" prefWidth=\"850.0\">\n         <children>\n            <VBox prefHeight=\"200.0\" prefWidth=\"425.0\" spacing=\"100.0\">\n               <children>\n                  <RadioButton fx:id=\"opcion1\" mnemonicParsing=\"false\" onAction=\"#botonResp1\" textFill=\"WHITE\" />\n                  <RadioButton fx:id=\"opcion2\" mnemonicParsing=\"false\" onAction=\"#botonResp2\" textFill=\"WHITE\" />\n               </children>\n            </VBox>\n            <VBox prefHeight=\"242.0\" prefWidth=\"425.0\" spacing=\"100.0\">\n               <children>\n                  <RadioButton fx:id=\"opcion3\" mnemonicParsing=\"false\" onAction=\"#botonResp3\" textFill=\"WHITE\" />\n                  <RadioButton fx:id=\"opcion4\" mnemonicParsing=\"false\" onAction=\"#botonResp4\" textFill=\"WHITE\" />\n               </children>\n            </VBox>\n         </children>\n         <padding>\n            <Insets left=\"30.0\" />\n         </padding>\n         <VBox.margin>\n            <Insets top=\"100.0\" />\n         </VBox.margin>\n      </HBox>\n      <HBox alignment=\"BOTTOM_RIGHT\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"68.0\" prefWidth=\"859.0\" spacing=\"30.0\">\n         <children>\n            <Button fx:id=\"comprobar\" mnemonicParsing=\"false\" onAction=\"#botonComprobar\" prefHeight=\"25.0\" prefWidth=\"80.0\" style=\"-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;\" text=\"Check\" />\n            <Button fx:id=\"continuar\" disable=\"true\" maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" mnemonicParsing=\"false\" onAction=\"#botonContinuar\" prefHeight=\"33.0\" prefWidth=\"80.0\" style=\"-fx-border-color: white; -fx-background-color: transparent; -fx-border-width: 3;\" text=\"Continue\">\n               <HBox.margin>\n                  <Insets />\n               </HBox.margin></Button>\n         </children>\n      </HBox>\n   </children>\n   <padding>\n      <Insets bottom=\"20.0\" left=\"30.0\" right=\"30.0\" top=\"20.0\" />\n   </padding>\n</VBox>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/classes/com/example/spaceapps/ventanaOpcMult.fxml b/target/classes/com/example/spaceapps/ventanaOpcMult.fxml
+--- a/target/classes/com/example/spaceapps/ventanaOpcMult.fxml	(revision 463628ded77113d55122bd96351738d3158b5045)
++++ b/target/classes/com/example/spaceapps/ventanaOpcMult.fxml	(date 1664670749424)
+@@ -1,16 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import javafx.geometry.Insets?>
+-<?import javafx.scene.control.Button?>
+-<?import javafx.scene.control.Label?>
+-<?import javafx.scene.control.RadioButton?>
+-<?import javafx.scene.image.Image?>
+-<?import javafx.scene.image.ImageView?>
+-<?import javafx.scene.layout.HBox?>
+-<?import javafx.scene.layout.VBox?>
+-<?import javafx.scene.text.Font?>
++<?import javafx.geometry.*?>
++<?import javafx.scene.control.*?>
++<?import javafx.scene.image.*?>
++<?import javafx.scene.layout.*?>
++<?import javafx.scene.text.*?>
+ 
+-<VBox fx:id="fondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="899.0" stylesheets="@../../../css/hojaniveles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.controllerOpciones">
++<VBox fx:id="fondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="899.0" stylesheets="@../../../css/hojaniveles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.controllerOpciones">
+    <children>
+       <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="333.0" spacing="365.0" stylesheets="@../../../css/fuente.css">
+          <children>
+@@ -27,7 +23,7 @@
+                   </VBox>
+                   <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="121.0" prefWidth="239.0" HBox.hgrow="ALWAYS">
+                      <children>
+-                        <HBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="151.0" spacing="10.0">
++                        <HBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="62.0" prefWidth="151.0" spacing="10.0">
+                            <children>
+                               <ImageView fx:id="vida1" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+@@ -82,16 +78,16 @@
+          </font></Label>
+       <HBox prefHeight="250.0" prefWidth="850.0">
+          <children>
+-            <VBox prefHeight="200.0" prefWidth="425.0" spacing="100.0">
++            <VBox prefHeight="200.0" prefWidth="425.0" spacing="30.0">
+                <children>
+-                  <RadioButton fx:id="opcion1" mnemonicParsing="false" onAction="#botonResp1" textFill="WHITE" />
+-                  <RadioButton fx:id="opcion2" mnemonicParsing="false" onAction="#botonResp2" textFill="WHITE" />
++                  <RadioButton fx:id="opcion1" mnemonicParsing="false" onAction="#botonResp1" prefWidth="380.0" styleClass="fondoBoton" textAlignment="CENTER" textFill="WHITE" />
++                  <RadioButton fx:id="opcion2" mnemonicParsing="false" onAction="#botonResp2" prefWidth="380.0" styleClass="fondoBoton" textAlignment="CENTER" textFill="WHITE" />
+                </children>
+             </VBox>
+-            <VBox prefHeight="242.0" prefWidth="425.0" spacing="100.0">
++            <VBox prefHeight="242.0" prefWidth="425.0" spacing="30.0">
+                <children>
+-                  <RadioButton fx:id="opcion3" mnemonicParsing="false" onAction="#botonResp3" textFill="WHITE" />
+-                  <RadioButton fx:id="opcion4" mnemonicParsing="false" onAction="#botonResp4" textFill="WHITE" />
++                  <RadioButton fx:id="opcion3" mnemonicParsing="false" onAction="#botonResp3" prefWidth="380.0" styleClass="fondoBoton" textAlignment="CENTER" textFill="WHITE" />
++                  <RadioButton fx:id="opcion4" mnemonicParsing="false" onAction="#botonResp4" prefWidth="380.0" styleClass="fondoBoton" textAlignment="CENTER" textFill="WHITE" />
+                </children>
+             </VBox>
+          </children>
+@@ -104,8 +100,8 @@
+       </HBox>
+       <HBox alignment="BOTTOM_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="859.0" spacing="30.0">
+          <children>
+-            <Button fx:id="comprobar" mnemonicParsing="false" onAction="#botonComprobar" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3;" text="Check" />
+-            <Button fx:id="continuar" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonContinuar" prefHeight="33.0" prefWidth="80.0" style="-fx-border-color: white; -fx-background-color: transparent; -fx-border-width: 3;" text="Continue">
++            <Button fx:id="comprobar" mnemonicParsing="false" onAction="#botonComprobar" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 3; -fx-text-fill: white;" text="Check" />
++            <Button fx:id="continuar" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonContinuar" prefHeight="33.0" prefWidth="80.0" style="-fx-border-color: white; -fx-background-color: transparent; -fx-border-width: 3; -fx-text-fill: white;" text="Continue">
+                <HBox.margin>
+                   <Insets />
+                </HBox.margin></Button>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"controlador\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/juego.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/juego.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/vfController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/vfController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/indice.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps/indice.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/indice.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/com/example/spaceapps/indice.fxml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"FxmlFile\" />\n        <option value=\"Class\" />\n        <option value=\"AnnotationType\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"generalSettings\">\n      <MavenGeneralSettings>\n        <option name=\"useMavenConfig\" value=\"true\" />\n      </MavenGeneralSettings>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"2FMP6M2wRcwwxI5JFSrvFxdkITE\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CreateClassDialog.RecentsKey\">\n      <recent name=\"com.example.spaceapps\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/resources/css\" />\n      <recent name=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"HelloApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.spaceapps.HelloApplication\" />\n      <module name=\"spaceapps\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.example.spaceapps.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.HelloApplication\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"\" />\n      <created>1664298806623</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1664298806623</updated>\n      <workItem from=\"1664298810150\" duration=\"1663000\" />\n      <workItem from=\"1664301389990\" duration=\"9863000\" />\n      <workItem from=\"1664314821535\" duration=\"60000\" />\n      <workItem from=\"1664358906258\" duration=\"1839000\" />\n      <workItem from=\"1664360987849\" duration=\"5375000\" />\n      <workItem from=\"1664531652163\" duration=\"96000\" />\n      <workItem from=\"1664531880746\" duration=\"42000\" />\n      <workItem from=\"1664531941749\" duration=\"2795000\" />\n      <workItem from=\"1664611383206\" duration=\"334000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"algo\">\n      <created>1664313547737</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664313547737</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"algo\">\n      <created>1664359725564</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664359725564</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"algo\">\n      <created>1664360526505</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664360526505</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"algo2\">\n      <created>1664365925695</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664365925695</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"algo2\">\n      <created>1664365935369</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664365935369</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"commit tonto\">\n      <created>1664519157536</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664519157536</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"algo2\">\n      <created>1664560719082</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664560719082</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"algo2\">\n      <created>1664626514602</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664626514602</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"algo2\">\n      <created>1664630313733</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664630313733</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"ventana opcion\">\n      <created>1664634761842</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664634761842</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"ventana opcion\">\n      <created>1664635140196</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664635140196</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"Hoja de estilos y nº\">\n      <created>1664640645671</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664640645671</updated>\n    </task>\n    <task id=\"LOCAL-00013\" summary=\"Vacio\">\n      <created>1664640813803</created>\n      <option name=\"number\" value=\"00013\" />\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664640813803</updated>\n    </task>\n    <task id=\"LOCAL-00014\" summary=\"Hoja de estilos\">\n      <created>1664640919143</created>\n      <option name=\"number\" value=\"00014\" />\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664640919143</updated>\n    </task>\n    <task id=\"LOCAL-00015\" summary=\"Hoja de estilos\">\n      <created>1664645596039</created>\n      <option name=\"number\" value=\"00015\" />\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664645596039</updated>\n    </task>\n    <task id=\"LOCAL-00016\" summary=\"Paso parámetros\">\n      <created>1664648004007</created>\n      <option name=\"number\" value=\"00016\" />\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664648004007</updated>\n    </task>\n    <task id=\"LOCAL-00017\" summary=\"Paso parámetros\">\n      <created>1664648298978</created>\n      <option name=\"number\" value=\"00017\" />\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664648298978</updated>\n    </task>\n    <task id=\"LOCAL-00018\" summary=\"Paso parámetros\">\n      <created>1664648562954</created>\n      <option name=\"number\" value=\"00018\" />\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664648562954</updated>\n    </task>\n    <task id=\"LOCAL-00019\" summary=\"Paso parámetros\">\n      <created>1664648770326</created>\n      <option name=\"number\" value=\"00019\" />\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664648770326</updated>\n    </task>\n    <task id=\"LOCAL-00020\" summary=\"Puntos en todos los niveles\">\n      <created>1664655892988</created>\n      <option name=\"number\" value=\"00020\" />\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664655892995</updated>\n    </task>\n    <task id=\"LOCAL-00021\" summary=\".\">\n      <created>1664655981384</created>\n      <option name=\"number\" value=\"00021\" />\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664655981384</updated>\n    </task>\n    <task id=\"LOCAL-00022\" summary=\".\">\n      <created>1664656594315</created>\n      <option name=\"number\" value=\"00022\" />\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664656594315</updated>\n    </task>\n    <task id=\"LOCAL-00023\" summary=\".\">\n      <created>1664656602796</created>\n      <option name=\"number\" value=\"00023\" />\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664656602796</updated>\n    </task>\n    <task id=\"LOCAL-00024\" summary=\".\">\n      <created>1664657534347</created>\n      <option name=\"number\" value=\"00024\" />\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664657534347</updated>\n    </task>\n    <task id=\"LOCAL-00025\" summary=\".\">\n      <created>1664658382805</created>\n      <option name=\"number\" value=\"00025\" />\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664658382805</updated>\n    </task>\n    <task id=\"LOCAL-00026\" summary=\"lupita\">\n      <created>1664658567355</created>\n      <option name=\"number\" value=\"00026\" />\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664658567355</updated>\n    </task>\n    <task id=\"LOCAL-00027\" summary=\"Corazones y puntos en todos lados\">\n      <created>1664658979818</created>\n      <option name=\"number\" value=\"00027\" />\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664658979818</updated>\n    </task>\n    <task id=\"LOCAL-00028\" summary=\"ajuste label nombre\">\n      <created>1664659805838</created>\n      <option name=\"number\" value=\"00028\" />\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664659805838</updated>\n    </task>\n    <task id=\"LOCAL-00029\" summary=\"ajuste label nombre\">\n      <created>1664660418712</created>\n      <option name=\"number\" value=\"00029\" />\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664660418712</updated>\n    </task>\n    <task id=\"LOCAL-00030\" summary=\"niveles con pregunta\">\n      <created>1664660726666</created>\n      <option name=\"number\" value=\"00030\" />\n      <option name=\"presentableId\" value=\"LOCAL-00030\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664660726666</updated>\n    </task>\n    <task id=\"LOCAL-00031\" summary=\"niveles con pregunta\">\n      <created>1664661671100</created>\n      <option name=\"number\" value=\"00031\" />\n      <option name=\"presentableId\" value=\"LOCAL-00031\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664661671100</updated>\n    </task>\n    <task id=\"LOCAL-00032\" summary=\"disable\">\n      <created>1664663674805</created>\n      <option name=\"number\" value=\"00032\" />\n      <option name=\"presentableId\" value=\"LOCAL-00032\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664663674805</updated>\n    </task>\n    <task id=\"LOCAL-00033\" summary=\"disable\">\n      <created>1664664238623</created>\n      <option name=\"number\" value=\"00033\" />\n      <option name=\"presentableId\" value=\"LOCAL-00033\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664664238623</updated>\n    </task>\n    <task id=\"LOCAL-00034\" summary=\"controlador\">\n      <created>1664665921991</created>\n      <option name=\"number\" value=\"00034\" />\n      <option name=\"presentableId\" value=\"LOCAL-00034\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664665921991</updated>\n    </task>\n    <task id=\"LOCAL-00035\" summary=\"controlador\">\n      <created>1664665934920</created>\n      <option name=\"number\" value=\"00035\" />\n      <option name=\"presentableId\" value=\"LOCAL-00035\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664665934920</updated>\n    </task>\n    <task id=\"LOCAL-00036\" summary=\"controlador\">\n      <created>1664666539972</created>\n      <option name=\"number\" value=\"00036\" />\n      <option name=\"presentableId\" value=\"LOCAL-00036\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664666539972</updated>\n    </task>\n    <task id=\"LOCAL-00037\" summary=\"controlador\">\n      <created>1664668687087</created>\n      <option name=\"number\" value=\"00037\" />\n      <option name=\"presentableId\" value=\"LOCAL-00037\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664668687088</updated>\n    </task>\n    <task id=\"LOCAL-00038\" summary=\"controlador\">\n      <created>1664668696427</created>\n      <option name=\"number\" value=\"00038\" />\n      <option name=\"presentableId\" value=\"LOCAL-00038\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1664668696427</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"39\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"algo\" />\n    <MESSAGE value=\"commit tonto\" />\n    <MESSAGE value=\"Niveles finales (tamaño y botones)\" />\n    <MESSAGE value=\"algo2\" />\n    <MESSAGE value=\"ventana opcion\" />\n    <MESSAGE value=\"Hoja de estilos y nº\" />\n    <MESSAGE value=\"Vacio\" />\n    <MESSAGE value=\"Hoja de estilos\" />\n    <MESSAGE value=\"Paso parámetros\" />\n    <MESSAGE value=\"inutil\" />\n    <MESSAGE value=\"Puntos en todos los niveles\" />\n    <MESSAGE value=\".\" />\n    <MESSAGE value=\"lupita\" />\n    <MESSAGE value=\"Corazones y puntos en todos lados\" />\n    <MESSAGE value=\"ajuste label nombre\" />\n    <MESSAGE value=\"niveles con pregunta\" />\n    <MESSAGE value=\"disable\" />\n    <MESSAGE value=\"controlador\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"controlador\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 463628ded77113d55122bd96351738d3158b5045)
++++ b/.idea/workspace.xml	(date 1664671321854)
+@@ -4,13 +4,14 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="controlador">
++    <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="todo">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/juego.bin" beforeDir="false" afterPath="$PROJECT_DIR$/juego.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/HelloController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/SelectorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/SelectorController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nombreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nombreController.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/vfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/vfController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/indice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/indice.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/indice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/indice.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/css/hojaniveles.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/css/hojaniveles.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -372,7 +373,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1664668696427</updated>
+     </task>
+-    <option name="localTasksCounter" value="39" />
++    <task id="LOCAL-00039" summary="todo">
++      <created>1664670727112</created>
++      <option name="number" value="00039" />
++      <option name="presentableId" value="LOCAL-00039" />
++      <option name="project" value="LOCAL" />
++      <updated>1664670727112</updated>
++    </task>
++    <option name="localTasksCounter" value="40" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -409,6 +417,7 @@
+     <MESSAGE value="niveles con pregunta" />
+     <MESSAGE value="disable" />
+     <MESSAGE value="controlador" />
+-    <option name="LAST_COMMIT_MESSAGE" value="controlador" />
++    <MESSAGE value="todo" />
++    <option name="LAST_COMMIT_MESSAGE" value="todo" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/main/java/com/example/spaceapps/nombreController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.spaceapps;\n\nimport javafx.event.ActionEvent;\nimport javafx.fxml.FXML;\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Button;\nimport javafx.scene.control.Label;\nimport javafx.scene.control.TextField;\nimport javafx.scene.layout.VBox;\nimport javafx.stage.Stage;\n\nimport java.io.IOException;\n\npublic class nombreController {\n    private OpcionesJuego opciones;\n    @FXML\n    private Label errornombre;\n    @FXML\n    private Button bContinue;\n\n    @FXML\n    private Label lNew;\n\n    @FXML\n    private Label lNew1;\n\n    @FXML\n    private VBox marcoNombre;\n\n    @FXML\n    private TextField nombre;\n\n    @FXML\n    void pressContinue(ActionEvent event) throws IOException {\n        if(!nombre.getText().isBlank()) {\n            errornombre.visibleProperty().set(false);\n            OpcionesJuego opciones = new OpcionesJuego();\n            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(\"selectorNiveles.fxml\"));\n            Scene scene = new Scene(fxmlLoader.load());\n            Stage stage = new Stage();\n            Stage stage1 = (Stage) bContinue.getScene().getWindow();\n           // nivel1Controller controlador = fxmlLoader.getController();\n            //controlador.ponerNombre(nombre.getText());\n            SelectorController controlador =fxmlLoader.getController();\n\n            opciones.crearJuego();\n            opciones.juego.setNombre(nombre.getText());\n            controlador.setOpciones(opciones, opciones.juego.getNombre());\n            stage1.close();\n            stage.setTitle(\"Browse the Webb\");\n            stage.setMaximized(false);\n            stage.setResizable(false);\n            stage.setScene(scene);\n            stage.show();\n        }\n        else {\n            errornombre.visibleProperty().set(true);\n            errornombre.setText(\"You must introduce a valid name\");\n        }}\n\n    public OpcionesJuego getOpciones() {\n        return opciones;\n    }\n\n    public void setOpciones(OpcionesJuego opciones) {\n        this.opciones = opciones;\n    }\n\n    }\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/spaceapps/nombreController.java b/src/main/java/com/example/spaceapps/nombreController.java
+--- a/src/main/java/com/example/spaceapps/nombreController.java	(revision 463628ded77113d55122bd96351738d3158b5045)
++++ b/src/main/java/com/example/spaceapps/nombreController.java	(date 1664671321926)
+@@ -40,13 +40,14 @@
+             Scene scene = new Scene(fxmlLoader.load());
+             Stage stage = new Stage();
+             Stage stage1 = (Stage) bContinue.getScene().getWindow();
+-           // nivel1Controller controlador = fxmlLoader.getController();
++            //nivel1Controller controlador = fxmlLoader.getController();
+             //controlador.ponerNombre(nombre.getText());
+             SelectorController controlador =fxmlLoader.getController();
+ 
+             opciones.crearJuego();
+             opciones.juego.setNombre(nombre.getText());
+             controlador.setOpciones(opciones, opciones.juego.getNombre());
++            controlador.desbloquear();
+             stage1.close();
+             stage.setTitle("Browse the Webb");
+             stage.setMaximized(false);
+Index: target/classes/css/hojaniveles.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#fondo{\n    -fx-background-image: url(\"fondoPreguntas.png\");\n}\n\n.fondoBoton{\n    -fx-padding: 10 30 10 10;\n    -fx-border-style: solid inside;\n    -fx-border-width: 2;\n    -fx-border-color: white;\n}\n.radio-button:selected {\n     -fx-border-color: gray;\n     -fx-text-fill: gray;\n}\n\n.radio-button > .radio {\n  -fx-background-color: transparent;\n  -fx-background-insets: 0;\n  -fx-background-radius: 0px;\n  -fx-padding: 0.0em; /* 4 8 4 8 */\n}\n.radio-button:selected > .radio > .dot {\n  -fx-background-color: transparent;\n}\n\n#opcion1{\n    -fx-font-size: 16pt;\n    -fx-text-fill: white;\n\n}\n#opcion2{\n    -fx-font-size: 16pt;\n    -fx-text-fill: white;\n\n}\n#opcion3{\n    -fx-font-size: 16pt;\n    -fx-text-fill: white;\n\n}\n#opcion4 {\n    -fx-font-size: 16pt;\n    -fx-text-fill: white;\n\n}\n#puntos{\n    -fx-font-size: 22pt;\n\n}\n#pregunta{\n    -fx-font-size: 16pt;\n    -fx-text-fill: white;\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/classes/css/hojaniveles.css b/target/classes/css/hojaniveles.css
+--- a/target/classes/css/hojaniveles.css	(revision 463628ded77113d55122bd96351738d3158b5045)
++++ b/target/classes/css/hojaniveles.css	(date 1664670749424)
+@@ -7,6 +7,7 @@
+     -fx-border-style: solid inside;
+     -fx-border-width: 2;
+     -fx-border-color: white;
++    -fx-background-color: #0a1c4c;
+ }
+ .radio-button:selected {
+      -fx-border-color: gray;
+@@ -50,6 +51,7 @@
+ #pregunta{
+     -fx-font-size: 16pt;
+     -fx-text-fill: white;
++    -fx-background-color: #0a1c4c;
+ 
+ 
+ }

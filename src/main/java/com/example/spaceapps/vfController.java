@@ -127,14 +127,12 @@ public class vfController {
         opcionV.setSelected(true);
         opcionF.setSelected(false);
         r=1;
-
     }
     @FXML
     void botonRespF(ActionEvent event) {
         opcionV.setSelected(false);
         opcionF.setSelected(true);
         r=2;
-
     }
     public void setearPreguntas(int n){
         p = n;
