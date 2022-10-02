@@ -1,0 +1,271 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_2_10_22__00_42__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_22__00_42__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_22__00_42__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_22__00_42__Changes_.xml	(revision 93c971c0a67423aa4f5db536e894182096d03fd2)
++++ /dev/null	(revision 93c971c0a67423aa4f5db536e894182096d03fd2)
+@@ -1,19 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_2_10_22,_00_42_[Changes]" date="1664664169176" recycled="false" toDelete="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_22,_00_42_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2/10/22, 00:42 [Changes]" />
+-  <binary>
+-    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/Pregunta.class" />
+-    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/Pregunta.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_22,_00_42_[Changes]/Pregunta.class" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="juego.bin" />
+-    <option name="AFTER_PATH" value="juego.bin" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_22,_00_42_[Changes]/juego.bin" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="target/classes/com/example/spaceapps/Juego.class" />
+-    <option name="AFTER_PATH" value="target/classes/com/example/spaceapps/Juego.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_22,_00_42_[Changes]/Juego.class" />
+-  </binary>
+-</changelist>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml b/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml
+rename from .idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml
+rename to .idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml
+--- a/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml	(revision 93c971c0a67423aa4f5db536e894182096d03fd2)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml	(date 1664668772702)
+@@ -1,7 +1,7 @@
+ <component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-fxml:linux:18-ea+6">
++  <library name="Maven: org.openjfx:javafx-fxml:win:18-ea+6">
+     <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-linux.jar!/" />
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-win.jar!/" />
+     </CLASSES>
+     <JAVADOC>
+       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/18-ea+6/javafx-fxml-18-ea+6-javadoc.jar!/" />
+Index: .idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_controls_win_19_ea_7.xml
+rename from .idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml
+rename to .idea/libraries/Maven__org_openjfx_javafx_controls_win_19_ea_7.xml
+--- a/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml	(revision 93c971c0a67423aa4f5db536e894182096d03fd2)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_controls_win_19_ea_7.xml	(date 1664668772691)
+@@ -1,7 +1,7 @@
+ <component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-controls:linux:19-ea+7">
++  <library name="Maven: org.openjfx:javafx-controls:win:19-ea+7">
+     <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-linux.jar!/" />
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-win.jar!/" />
+     </CLASSES>
+     <JAVADOC>
+       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-javadoc.jar!/" />
+Index: spaceapps.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule=\"true\" type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" LANGUAGE_LEVEL=\"JDK_17\">\r\n    <output url=\"file://$MODULE_DIR$/target/classes\" />\r\n    <output-test url=\"file://$MODULE_DIR$/target/test-classes\" />\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/java\" isTestSource=\"false\" />\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src/main/resources\" type=\"java-resource\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/target\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-controls:19-ea+7\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-controls:linux:19-ea+7\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-fxml:18-ea+6\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-fxml:linux:18-ea+6\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter-api:5.8.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.opentest4j:opentest4j:1.2.0\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.platform:junit-platform-commons:1.8.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.apiguardian:apiguardian-api:1.1.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.jupiter:junit-jupiter-engine:5.8.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"TEST\" name=\"Maven: org.junit.platform:junit-platform-engine:1.8.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: javax.servlet:javax.servlet-api:4.0.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-graphics:19-ea+7\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-graphics:linux:19-ea+7\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-base:19-ea+7\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Maven: org.openjfx:javafx-base:linux:19-ea+7\" level=\"project\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/spaceapps.iml b/spaceapps.iml
+--- a/spaceapps.iml	(revision 93c971c0a67423aa4f5db536e894182096d03fd2)
++++ b/spaceapps.iml	(date 1664668772649)
+@@ -11,9 +11,9 @@
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:19-ea+7" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:linux:19-ea+7" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:19-ea+7" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:18-ea+6" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:linux:18-ea+6" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:18-ea+6" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.1" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.opentest4j:opentest4j:1.2.0" level="project" />
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-commons:1.8.1" level="project" />
+@@ -22,8 +22,8 @@
+     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.8.1" level="project" />
+     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:19-ea+7" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:linux:19-ea+7" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:win:19-ea+7" level="project" />
+     <orderEntry type="library" name="Maven: org.openjfx:javafx-base:19-ea+7" level="project" />
+-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:linux:19-ea+7" level="project" />
++    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:19-ea+7" level="project" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"controlador\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"FxmlFile\" />\r\n        <option value=\"Class\" />\r\n        <option value=\"AnnotationType\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"useMavenConfig\" value=\"true\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2FMP6M2wRcwwxI5JFSrvFxdkITE\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateClassDialog.RecentsKey\">\r\n      <recent name=\"com.example.spaceapps\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/src/main/resources/css\" />\r\n      <recent name=\"$PROJECT_DIR$/src/main/resources/com/example/spaceapps\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"HelloApplication\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.spaceapps.HelloApplication\" />\r\n      <module name=\"spaceapps\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.example.spaceapps.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.HelloApplication\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a97776ba-d60d-4d1e-a9ea-511d167e16f5\" name=\"Changes\" comment=\"\" />\r\n      <created>1664298806623</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1664298806623</updated>\r\n      <workItem from=\"1664298810150\" duration=\"1663000\" />\r\n      <workItem from=\"1664301389990\" duration=\"9863000\" />\r\n      <workItem from=\"1664314821535\" duration=\"60000\" />\r\n      <workItem from=\"1664358906258\" duration=\"1839000\" />\r\n      <workItem from=\"1664360987849\" duration=\"5375000\" />\r\n      <workItem from=\"1664531652163\" duration=\"96000\" />\r\n      <workItem from=\"1664531880746\" duration=\"42000\" />\r\n      <workItem from=\"1664531941749\" duration=\"2795000\" />\r\n      <workItem from=\"1664611383206\" duration=\"334000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"algo\">\r\n      <created>1664313547737</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664313547737</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"algo\">\r\n      <created>1664359725564</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664359725564</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"algo\">\r\n      <created>1664360526505</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664360526505</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"algo2\">\r\n      <created>1664365925695</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664365925695</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"algo2\">\r\n      <created>1664365935369</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664365935369</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"commit tonto\">\r\n      <created>1664519157536</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664519157536</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"algo2\">\r\n      <created>1664560719082</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664560719082</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"algo2\">\r\n      <created>1664626514602</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664626514602</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"algo2\">\r\n      <created>1664630313733</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664630313733</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"ventana opcion\">\r\n      <created>1664634761842</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664634761842</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"ventana opcion\">\r\n      <created>1664635140196</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664635140196</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Hoja de estilos y nº\">\r\n      <created>1664640645671</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664640645671</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Vacio\">\r\n      <created>1664640813803</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664640813803</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"Hoja de estilos\">\r\n      <created>1664640919143</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664640919143</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"Hoja de estilos\">\r\n      <created>1664645596039</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664645596039</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Paso parámetros\">\r\n      <created>1664648004007</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664648004007</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"Paso parámetros\">\r\n      <created>1664648298978</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664648298978</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"Paso parámetros\">\r\n      <created>1664648562954</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664648562954</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"Paso parámetros\">\r\n      <created>1664648770326</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664648770326</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"Puntos en todos los niveles\">\r\n      <created>1664655892988</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664655892995</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\".\">\r\n      <created>1664655981384</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664655981384</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\".\">\r\n      <created>1664656594315</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664656594315</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00023\" summary=\".\">\r\n      <created>1664656602796</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664656602796</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00024\" summary=\".\">\r\n      <created>1664657534347</created>\r\n      <option name=\"number\" value=\"00024\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664657534347</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00025\" summary=\".\">\r\n      <created>1664658382805</created>\r\n      <option name=\"number\" value=\"00025\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664658382805</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00026\" summary=\"lupita\">\r\n      <created>1664658567355</created>\r\n      <option name=\"number\" value=\"00026\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664658567355</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00027\" summary=\"Corazones y puntos en todos lados\">\r\n      <created>1664658979818</created>\r\n      <option name=\"number\" value=\"00027\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664658979818</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00028\" summary=\"ajuste label nombre\">\r\n      <created>1664659805838</created>\r\n      <option name=\"number\" value=\"00028\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664659805838</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00029\" summary=\"ajuste label nombre\">\r\n      <created>1664660418712</created>\r\n      <option name=\"number\" value=\"00029\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664660418712</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00030\" summary=\"niveles con pregunta\">\r\n      <created>1664660726666</created>\r\n      <option name=\"number\" value=\"00030\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00030\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664660726666</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00031\" summary=\"niveles con pregunta\">\r\n      <created>1664661671100</created>\r\n      <option name=\"number\" value=\"00031\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00031\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664661671100</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00032\" summary=\"disable\">\r\n      <created>1664663674805</created>\r\n      <option name=\"number\" value=\"00032\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00032\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664663674805</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00033\" summary=\"disable\">\r\n      <created>1664664238623</created>\r\n      <option name=\"number\" value=\"00033\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00033\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664664238623</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00034\" summary=\"controlador\">\r\n      <created>1664665921991</created>\r\n      <option name=\"number\" value=\"00034\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00034\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664665921991</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00035\" summary=\"controlador\">\r\n      <created>1664665934920</created>\r\n      <option name=\"number\" value=\"00035\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00035\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664665934920</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00036\" summary=\"controlador\">\r\n      <created>1664666539972</created>\r\n      <option name=\"number\" value=\"00036\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00036\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664666539972</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"37\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"algo\" />\r\n    <MESSAGE value=\"commit tonto\" />\r\n    <MESSAGE value=\"Niveles finales (tamaño y botones)\" />\r\n    <MESSAGE value=\"algo2\" />\r\n    <MESSAGE value=\"ventana opcion\" />\r\n    <MESSAGE value=\"Hoja de estilos y nº\" />\r\n    <MESSAGE value=\"Vacio\" />\r\n    <MESSAGE value=\"Hoja de estilos\" />\r\n    <MESSAGE value=\"Paso parámetros\" />\r\n    <MESSAGE value=\"inutil\" />\r\n    <MESSAGE value=\"Puntos en todos los niveles\" />\r\n    <MESSAGE value=\".\" />\r\n    <MESSAGE value=\"lupita\" />\r\n    <MESSAGE value=\"Corazones y puntos en todos lados\" />\r\n    <MESSAGE value=\"ajuste label nombre\" />\r\n    <MESSAGE value=\"niveles con pregunta\" />\r\n    <MESSAGE value=\"disable\" />\r\n    <MESSAGE value=\"controlador\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"controlador\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 93c971c0a67423aa4f5db536e894182096d03fd2)
++++ b/.idea/workspace.xml	(date 1664670116632)
+@@ -5,7 +5,62 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="controlador">
++      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_19_ea_7.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_19_ea_7.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/explicacionController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_19_ea_7.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_18_ea_6.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_19_ea_7.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_10_11__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_10_11__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_10_15__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_10_15__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_10_16__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_10_16__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_06__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_19__Changes_1.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_11_21__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_13_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_13_57__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_13_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_13_59__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_15_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_15_23__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_15_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_15_35__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_15_37__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_15_37__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_15_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_15_38__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_15_41__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_15_41__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_15_43__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_15_43__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_16_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_16_32__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_16_50__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_16_50__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_16_50__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_16_50__Changes_1.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_17_33__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_17_33__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_17_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_17_55__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_18_12__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_18_12__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_20_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_20_13__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_20_52__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_20_52__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_20_58__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22_20_58__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__11_07__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__11_07__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__12_33__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__12_33__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__14_11__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__14_11__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__17_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__17_20__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__22_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_10_22__22_55__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_09_2022_18_51__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_09_2022_18_51__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_09_2022_20_22__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_09_2022_20_22__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22__12_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22__12_21__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22__20_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22__20_31__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22__20_31__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_9_22__20_31__Changes_1.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_9_22_18_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_9_22_18_01__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_9_22_18_36__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_9_22_18_36__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_9_22_18_36__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_9_22_18_36__Changes_1.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_9_22__22_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_9_22__22_20__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_22__00_42__Changes_.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_09_2022_19_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_09_2022_19_29__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_09_2022_19_58__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_09_2022_19_58__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_09_2022_19_58__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_09_2022_19_58__Changes_1.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_9_22_13_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_9_22_13_32__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_9_22_8_24__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_9_22_8_24__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_9_22__19_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_9_22__19_56__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/juego.bin" beforeDir="false" afterPath="$PROJECT_DIR$/juego.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/nivel1Controller.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/explicacion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/explicacion.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -16,8 +71,8 @@
+     <option name="RECENT_TEMPLATES">
+       <list>
+         <option value="FxmlFile" />
+-        <option value="Class" />
+         <option value="AnnotationType" />
++        <option value="Class" />
+       </list>
+     </option>
+   </component>
+@@ -101,6 +156,7 @@
+       <workItem from="1664531880746" duration="42000" />
+       <workItem from="1664531941749" duration="2795000" />
+       <workItem from="1664611383206" duration="334000" />
++      <workItem from="1664668746632" duration="1369000" />
+     </task>
+     <task id="LOCAL-00001" summary="algo">
+       <created>1664313547737</created>
+@@ -393,4 +449,9 @@
+     <MESSAGE value="controlador" />
+     <option name="LAST_COMMIT_MESSAGE" value="controlador" />
+   </component>
++  <component name="com.intellij.coverage.CoverageDataManagerImpl">
++    <SUITE FILE_PATH="coverage/spaceapps$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1664669321839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
++      <FILTER>com.example.spaceapps.*</FILTER>
++    </SUITE>
++  </component>
+ </project>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_base_19_ea_7.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_base_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_base_19_ea_7.xml
+new file mode 100644
+--- /dev/null	(date 1664668772668)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_base_19_ea_7.xml	(date 1664668772668)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.openjfx:javafx-base:19-ea+7">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19-ea+7/javafx-base-19-ea+7.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19-ea+7/javafx-base-19-ea+7-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19-ea+7/javafx-base-19-ea+7-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_base_win_19_ea_7.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_base_win_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_base_win_19_ea_7.xml
+new file mode 100644
+--- /dev/null	(date 1664668772679)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_base_win_19_ea_7.xml	(date 1664668772679)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.openjfx:javafx-base:win:19-ea+7">
++    <CLASSES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19-ea+7/javafx-base-19-ea+7-win.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19-ea+7/javafx-base-19-ea+7-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/19-ea+7/javafx-base-19-ea+7-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml b/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_19_ea_7.xml
+rename from .idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml
+rename to .idea/libraries/Maven__org_openjfx_javafx_graphics_win_19_ea_7.xml
+--- a/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml	(revision 93c971c0a67423aa4f5db536e894182096d03fd2)
++++ b/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_19_ea_7.xml	(date 1664668772712)
+@@ -1,7 +1,7 @@
+ <component name="libraryTable">
+-  <library name="Maven: org.openjfx:javafx-graphics:linux:19-ea+7">
++  <library name="Maven: org.openjfx:javafx-graphics:win:19-ea+7">
+     <CLASSES>
+-      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-linux.jar!/" />
++      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-win.jar!/" />
+     </CLASSES>
+     <JAVADOC>
+       <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/19-ea+7/javafx-graphics-19-ea+7-javadoc.jar!/" />
