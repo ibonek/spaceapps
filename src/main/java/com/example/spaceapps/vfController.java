@@ -121,12 +121,22 @@ public class vfController {
             continuar.setDisable(false);
             opciones.Guardar(opciones.juego);
             opciones.juego.setAciertos();
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Alert");
+            alert.setHeaderText("CONGRATULATIONS");
+            alert.setContentText("Your answer is correct");
+            Optional<ButtonType> result = alert.showAndWait();
 
         } else {
             opciones.juego.setVidas(opciones.juego.getVidas());
             opciones.juego.restPuntos();
             bTryAgain1.setVisible(true);
             bTryAgain1.setDisable(false);
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Alert");
+            alert.setHeaderText("OH NO!");
+            alert.setContentText("Your answer is not correct, try again");
+            Optional<ButtonType> result = alert.showAndWait();
             if(vida3.isVisible()){
                 vida3.setVisible(false);
                 opciones.juego.setVidas(2);
@@ -140,11 +150,11 @@ public class vfController {
                 vida1.setVisible(false);
                 opciones.juego.setVidas(3);
                 opciones.juego.resetearPuntos();
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                Alert alerta = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Alert");
                 alert.setHeaderText("You have lost all your lives");
                 alert.setContentText("You must restart the level");
-                Optional<ButtonType> result = alert.showAndWait();
+                Optional<ButtonType> resulta = alert.showAndWait();
                 if (result.isPresent() && result.get() == ButtonType.OK){
                     Stage stage1 = (Stage) pregunta.getScene().getWindow();
                     stage1.close();
