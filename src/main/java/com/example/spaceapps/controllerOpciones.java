@@ -173,6 +173,12 @@ public class controllerOpciones {
 
         if (respuestaSeleccionada == null) return ;
         if(!respuestaSeleccionada.isCorrecta()){
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Alert");
+            alert.setHeaderText("OH NO!");
+            alert.setContentText("Your answer is not correct, try again");
+            Optional<ButtonType> result = alert.showAndWait();
+
             opciones.juego.restPuntos();
             if(vida3.isVisible()){
                 vida3.setVisible(false);
@@ -187,11 +193,11 @@ public class controllerOpciones {
                 vida1.setVisible(false);
                 opciones.juego.setVidas(3);
                 opciones.juego.resetearPuntos();
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setTitle("Alert");
-                alert.setHeaderText("You have lost all your lives");
-                alert.setContentText("You must restart the level");
-                Optional<ButtonType> result = alert.showAndWait();
+                Alert alerte = new Alert(Alert.AlertType.INFORMATION);
+                alerte.setTitle("Alert");
+                alerte.setHeaderText("You have lost all your lives");
+                alerte.setContentText("You must restart the level");
+                Optional<ButtonType> resultad = alerte.showAndWait();
                 if (result.isPresent() && result.get() == ButtonType.OK){
                     Stage stage1 = (Stage) pregunta.getScene().getWindow();
                     stage1.close();
@@ -211,6 +217,11 @@ public class controllerOpciones {
          }
 
         if(respuestaSeleccionada.isCorrecta()){
+            Alert alerta = new Alert(Alert.AlertType.INFORMATION);
+            alerta.setTitle("Alert");
+            alerta.setHeaderText("CONGRATULATIONS");
+            alerta.setContentText("Your answer is correct");
+            Optional<ButtonType> result = alerta.showAndWait();
             opciones.juego.setPuntos();
             comprobar.setDisable(true);
             continuar.setDisable(false);
