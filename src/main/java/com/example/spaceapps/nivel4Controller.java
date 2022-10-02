@@ -52,8 +52,41 @@ public class nivel4Controller {
     private ImageView vida2;
 
     @FXML
+    private Button expCometa;
+
+    @FXML
+    private Button expGalaxia;
+
+    @FXML
+    private Button expNebulosa;
+    @FXML
+    private Label e10;
+
+    @FXML
+    private Label e11;
+
+    @FXML
+    private Label e12;
+    @FXML
     private ImageView vida3;
     private OpcionesJuego opciones;
+
+
+    @FXML
+    void botonExpCometa(ActionEvent event) {
+
+    }
+
+    @FXML
+    void botonExpGalaxia(ActionEvent event) {
+
+    }
+
+    @FXML
+    void botonExpNebulosa(ActionEvent event) {
+
+    }
+
     @FXML
     void botonCometa(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
