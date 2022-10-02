@@ -46,8 +46,39 @@ private OpcionesJuego opciones;
     private ImageView vida2;
 
     @FXML
+    private Label e7;
+
+    @FXML
+    private Label e8;
+
+    @FXML
+    private Label e9;
+    @FXML
     private ImageView vida3;
 
+    @FXML
+    private Button expNeptuno;
+
+    @FXML
+    private Button expPluton;
+
+    @FXML
+    private Button expUrano;
+
+    @FXML
+    void botonExpNeptuno(ActionEvent event) {
+
+    }
+
+    @FXML
+    void botonExpPluton(ActionEvent event) {
+
+    }
+
+    @FXML
+    void botonExpUrano(ActionEvent event) {
+
+    }
     @FXML
     void bNeptuno(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
