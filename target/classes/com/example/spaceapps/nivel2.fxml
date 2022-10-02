@@ -28,7 +28,7 @@
                   </VBox>
                   <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="121.0" prefWidth="350.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="350.0" spacing="10.0">
+                        <HBox alignment="BOTTOM_LEFT" prefHeight="57.0" prefWidth="350.0" spacing="10.0">
                            <children>
                               <ImageView fx:id="vida1" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -47,10 +47,13 @@
                               </ImageView>
                            </children>
                         </HBox>
-                        <Label fx:id="puntos" text="0">
+                        <Label fx:id="puntos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="69.0" text="0">
                            <VBox.margin>
                               <Insets left="20.0" />
                            </VBox.margin>
+                           <font>
+                              <Font size="22.0" />
+                           </font>
                         </Label>
                      </children>
                   </VBox>
@@ -60,7 +63,7 @@
                <children>
                   <Label fx:id="eNombre" prefHeight="20.0" prefWidth="91.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="16.0" />
+                        <Font name="System Bold" size="22.0" />
                      </font>
                   </Label>
                </children>
