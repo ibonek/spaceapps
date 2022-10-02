@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox fx:id="fondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="899.0" stylesheets="@../../../css/hojaniveles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.controllerOpciones">
+<VBox fx:id="fondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="899.0" stylesheets="@../../../css/hojaniveles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.controllerOpciones">
    <children>
       <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="333.0" spacing="365.0" stylesheets="@../../../css/fuente.css">
          <children>
@@ -49,8 +53,21 @@
                         </Label>
                      </children>
                   </VBox>
-                  <HBox alignment="TOP_RIGHT" prefHeight="121.0" prefWidth="466.0" HBox.hgrow="ALWAYS">
+                  <HBox alignment="TOP_RIGHT" prefHeight="121.0" prefWidth="466.0" spacing="200.0" HBox.hgrow="ALWAYS">
                      <children>
+                        <VBox prefHeight="101.0" prefWidth="274.0" spacing="5.0">
+                           <children>
+                              <Button fx:id="bAyuda" disable="true" mnemonicParsing="false" onAction="#botonAyuda" visible="false">
+                                 <graphic>
+                                    <ImageView fx:id="imagenAyuda" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../imagenes/lupa.png" />
+                                       </image></ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label fx:id="ayudaTexto" prefHeight="72.0" prefWidth="217.0" textAlignment="JUSTIFY" wrapText="true" />
+                           </children>
+                        </VBox>
                         <Button fx:id="bTryAgain" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonTryAgain" prefHeight="45.0" prefWidth="45.0" visible="false">
                            <HBox.margin>
                               <Insets right="20.0" top="20.0" />
@@ -63,6 +80,9 @@
                            </graphic>
                         </Button>
                      </children>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
                   </HBox>
                </children>
             </HBox>

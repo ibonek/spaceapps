@@ -19,7 +19,10 @@ import static javafx.scene.paint.Color.*;
 public class controllerOpciones {
     @FXML
     private Button bTryAgain;
-
+    @FXML
+    private Button bAyuda;
+    @FXML
+    private ImageView imagenAyuda;
     public String getPoints(){
         return puntos.getText();
     }
@@ -59,7 +62,8 @@ public class controllerOpciones {
     private Label puntos;
     @FXML
     private ImageView vida1;
-
+    @FXML
+    private Label ayudaTexto;
     @FXML
     private ImageView vida2;
 
@@ -87,7 +91,11 @@ public class controllerOpciones {
         stage1.close();
     }
 
-
+    @FXML
+    void botonAyuda(ActionEvent event) {
+    ayudaTexto.setText(opciones.juego.getPreguntas().get(p).getPista());
+    bAyuda.setVisible(true);
+    }
     @FXML
     void botonTryAgain(ActionEvent event) throws IOException {
        setearPreguntas(p);
@@ -173,6 +181,8 @@ public class controllerOpciones {
 
         if (respuestaSeleccionada == null) return ;
         if(!respuestaSeleccionada.isCorrecta()){
+            bAyuda.setDisable(false);
+            bAyuda.setVisible(true);
             opciones.juego.restPuntos();
             if(vida3.isVisible()){
                 vida3.setVisible(false);

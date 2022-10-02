@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a97776ba-d60d-4d1e-a9ea-511d167e16f5" name="Changes" comment="Desbloqueao de nivel 2">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/imagenes/logo/buscando.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_linux_19_ea_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_mac_19_ea_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_linux_19_ea_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_mac_19_ea_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_linux_18_ea_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_mac_18_ea_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_linux_19_ea_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_mac_19_ea_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/juego.bin" beforeDir="false" afterPath="$PROJECT_DIR$/juego.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/vfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/vfController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/vfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/vfController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spaceapps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spaceapps.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/spaceapps/controllerOpciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/spaceapps/ventanaOpcMult.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/controllerOpciones.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/spaceapps/ventanaOpcMult.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,21 +53,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/yaaii/Desktop/spaceapps/src/main/resources/imagenes/logo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.spaceapps" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/imagenes/logo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/css" />
@@ -102,6 +116,7 @@
       <workItem from="1664531880746" duration="42000" />
       <workItem from="1664531941749" duration="2795000" />
       <workItem from="1664611383206" duration="334000" />
+      <workItem from="1664702393789" duration="2080000" />
     </task>
     <task id="LOCAL-00001" summary="algo">
       <created>1664313547737</created>
