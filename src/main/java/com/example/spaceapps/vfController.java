@@ -75,6 +75,9 @@ public class vfController {
     public void setOpciones(OpcionesJuego opciones) {
         this.opciones = opciones;
     }
+    public void setPuntos(int n){
+        puntos.setText(n + "");
+    }
     public void setVidas(int v){
         if(v == 3){
             vida1.setVisible(true);
@@ -115,7 +118,6 @@ public class vfController {
 
         opcionV.setDisable(true);
         opcionF.setDisable(true);
-
         comprobar.setDisable(true);
         comprobar.setDisable(false);
     }
@@ -137,14 +139,10 @@ public class vfController {
     public void setearPreguntas(int n){
         p = n;
         pregunta.setText(juego.getPreguntas().get(p).getCuerpoPregunta().toString() );
-
         opcionV.setText("True");
         resp1= juego.getPreguntas().get(p).getListaOpciones().get(0).isCorrecta();
         opcionF.setText("False");
         resp2= juego.getPreguntas().get(p).getListaOpciones().get(1).isCorrecta();
-
-
-
     }
 
 }
