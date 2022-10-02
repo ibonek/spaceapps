@@ -14,7 +14,7 @@
 <HBox fx:id="fondo5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spaceapps.nivel5Controller">
    <children>
       <VBox prefHeight="400.0" prefWidth="26.0" />
-      <VBox prefHeight="590.0" prefWidth="409.0" HBox.hgrow="ALWAYS">
+      <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="420.0" HBox.hgrow="ALWAYS">
          <children>
             <HBox fx:id="cabecera5" alignment="TOP_RIGHT" prefHeight="107.0" prefWidth="327.0">
                <children>
@@ -73,6 +73,15 @@
                </VBox.margin></HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
+                  <Button fx:id="expAguNegro" disable="true" mnemonicParsing="false" onAction="#botonExpAguNegro" prefHeight="46.0" prefWidth="41.0" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/libro.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                   <Button fx:id="bAguNegro" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonAguNegro" prefHeight="75.0" prefWidth="78.0" text="Button">
                      <graphic>
                         <ImageView fx:id="imagenAguNegro" fitHeight="104.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
@@ -82,7 +91,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label prefHeight="38.0" prefWidth="125.0" text="13" textAlignment="CENTER" textFill="WHITE">
+                  <Label fx:id="e13" prefHeight="38.0" prefWidth="125.0" text="13" textAlignment="CENTER" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="27.0" />
                      </font>
@@ -94,7 +103,7 @@
             </HBox>
          </children>
       </VBox>
-      <VBox alignment="BOTTOM_CENTER" prefHeight="407.0" prefWidth="198.0">
+      <VBox alignment="BOTTOM_CENTER" prefHeight="590.0" prefWidth="251.0">
          <children>
             <Region prefHeight="21.0" prefWidth="198.0" />
             <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
@@ -108,6 +117,15 @@
                         </ImageView>
                      </graphic>
                   </Button>
+                  <Button fx:id="expAnillos" disable="true" mnemonicParsing="false" onAction="#botonExpAnillos" prefHeight="46.0" prefWidth="41.0" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/libro.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                </children>
             </HBox>
             <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
@@ -115,7 +133,7 @@
                   <Insets right="10.0" />
                </padding>
                <children>
-                  <Label text="14" textFill="#7c7979">
+                  <Label fx:id="e14" text="14" textFill="#7c7979">
                      <font>
                         <Font size="27.0" />
                      </font>
@@ -124,11 +142,20 @@
             </HBox>
          </children>
       </VBox>
-      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="196.0">
+      <VBox alignment="TOP_CENTER" prefHeight="590.0" prefWidth="252.0">
          <children>
             <HBox prefHeight="20.0" prefWidth="196.0" />
             <HBox alignment="TOP_CENTER" prefHeight="184.0" prefWidth="196.0">
                <children>
+                  <Button fx:id="expSuperNova" disable="true" mnemonicParsing="false" onAction="#botonExpSuperNova" prefHeight="46.0" prefWidth="41.0" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/libro.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                   <Button fx:id="bSuperNova" contentDisplay="GRAPHIC_ONLY" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#botonSuperNova" prefHeight="143.0" prefWidth="115.0" text="Button">
                      <graphic>
                         <ImageView fx:id="imagenSuperNova" fitHeight="151.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
@@ -138,7 +165,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Label text="15" textFill="#7c7979">
+                  <Label fx:id="e15" text="15" textFill="#7c7979">
                      <font>
                         <Font size="27.0" />
                      </font>

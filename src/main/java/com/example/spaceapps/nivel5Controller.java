@@ -49,6 +49,24 @@ public class nivel5Controller {
     private Label puntos;
 
     @FXML
+    private Label e13;
+
+    @FXML
+    private Label e14;
+
+    @FXML
+    private Label e15;
+
+    @FXML
+    private Button expAguNegro;
+
+    @FXML
+    private Button expAnillos;
+
+    @FXML
+    private Button expSuperNova;
+
+    @FXML
     private ImageView vida1;
 
     @FXML
@@ -57,6 +75,21 @@ public class nivel5Controller {
     @FXML
     private ImageView vida3;
     private OpcionesJuego opciones;
+
+    @FXML
+    void botonExpAguNegro(ActionEvent event) {
+
+    }
+
+    @FXML
+    void botonExpAnillos(ActionEvent event) {
+
+    }
+
+    @FXML
+    void botonExpSuperNova(ActionEvent event) {
+
+    }
     @FXML
     void botonAguNegro(ActionEvent event) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ventanaOpcMult.fxml"));
