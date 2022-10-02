@@ -141,7 +141,7 @@ public class nivel2Controller {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
         stage.showAndWait();
-
+        setVidas();
         puntos.setText(controller.getPoints());
         correcto = controller.getBoolean();
         if(correcto){
@@ -165,6 +165,7 @@ public class nivel2Controller {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
         stage.showAndWait();
+        setVidas();
         puntos.setText(controller.getPoints());
         correcto = controller.getBoolean();
         if(correcto){
@@ -187,6 +188,7 @@ public class nivel2Controller {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
         stage.showAndWait();
+        setVidas();
         puntos.setText(controller.getPoints());
         correcto = controller.getBoolean();
         if(correcto){
@@ -236,6 +238,27 @@ public class nivel2Controller {
             expMarte.setVisible(true);
             expMarte.setDisable(false);
             bSaturno.setDisable(true);
+        }
+    }
+    public void setVidas(){
+        if(opciones.juego.getVidas() == 3){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+        } else if(opciones.juego.getVidas() == 2){
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(false);
+        } else if(opciones.juego.getVidas() == 1){
+            vida1.setVisible(true);
+            vida2.setVisible(false);
+            vida3.setVisible(false);
+        } else {
+            vida1.setVisible(true);
+            vida2.setVisible(true);
+            vida3.setVisible(true);
+            opciones.juego.setVidas(3);
+            opciones.juego.resetearPuntos();
         }
     }
 }

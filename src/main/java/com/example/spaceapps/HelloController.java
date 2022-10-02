@@ -57,7 +57,7 @@ public class HelloController {
             stage.setResizable(false);
             stage.setScene(scene);
             stage.showAndWait();
-
+            stage1.close();
     }
 
     @FXML
@@ -72,6 +72,7 @@ public class HelloController {
             Stage stage1 = (Stage) bBegin.getScene().getWindow();
             SelectorController controlador = fxmlLoader.getController();
             controlador.setPuntos(opciones.juego.getPuntos());
+
             controlador.setOpciones(opciones, opciones.juego.getNombre());
             controlador.setVidas(opciones.juego.getVidas());
             controlador.desbloquear();

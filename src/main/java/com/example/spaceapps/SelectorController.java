@@ -81,8 +81,8 @@ public class SelectorController {
             vida3.setVisible(false);
         }
     }
-    public void setOpciones(OpcionesJuego opciones, String n) {
-        this.opciones = opciones;
+    public void setOpciones(OpcionesJuego op, String n) {
+        this.opciones = op;
         eNombre.setText(n);
     }
     @FXML

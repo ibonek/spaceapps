@@ -199,7 +199,7 @@ public class nivel4Controller {
         }
     }
     public void desbloquear(){
-        if(opciones.juego.getAciertos() > 11){
+        if(opciones.juego.getAciertos() > 12){
             e10.setTextFill(YELLOW);
             e11.setTextFill(YELLOW);
             e12.setTextFill(YELLOW);
@@ -213,7 +213,7 @@ public class nivel4Controller {
             bGalaxia.setDisable(true);
             bNebulosa.setDisable(true);
         }
-        if(opciones.juego.getAciertos() == 11){
+        if(opciones.juego.getAciertos() == 12){
             e10.setTextFill(YELLOW);
             e11.setTextFill(YELLOW);
             e12.setTextFill(WHITE);
@@ -225,7 +225,7 @@ public class nivel4Controller {
             bGalaxia.setDisable(true);
             bNebulosa.setDisable(false);
         }
-        if(opciones.juego.getAciertos() == 10){
+        if(opciones.juego.getAciertos() == 11){
             bGalaxia.setDisable(false);
             e11.setTextFill(WHITE);
             bCometa.setDisable(true);

@@ -40,11 +40,10 @@ public class nombreController {
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
             Stage stage1 = (Stage) bContinue.getScene().getWindow();
-           // nivel1Controller controlador = fxmlLoader.getController();
+            //nivel1Controller controlador = fxmlLoader.getController();
             //controlador.ponerNombre(nombre.getText());
             SelectorController controlador =fxmlLoader.getController();
 
-            controlador.desbloquear();
             opciones.crearJuego();
             opciones.juego.setNombre(nombre.getText());
             controlador.setOpciones(opciones, opciones.juego.getNombre());
